@@ -1,0 +1,64 @@
+package centurylink.cpms;
+
+import java.util.ArrayList;
+
+import com.sun.org.apache.bcel.internal.generic.NEW;
+
+public class SearchArray {
+	
+	
+	private String cuid,name,startTime,source,destination;
+     private ArrayList<String>	others=new ArrayList<String>();
+
+	public String getCuid() {
+		return cuid;
+	}
+
+	public void setCuid(String cuid) {
+		this.cuid = cuid;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+
+
+	public ArrayList<String> getOthers() {
+		return others;
+		
+	}
+
+	public void setOthers(ArrayList<String> others) {
+		this.others = others;
+	}
+
+	public String getStartTime() {
+		return startTime;
+	}
+
+	public void setStartTime(String startTime) {
+		this.startTime = startTime;
+	}
+
+	public String getSource() {
+		return source;
+	}
+
+	public void setSource(String source) {
+		this.source = source;
+	}
+
+	public String getDestination() {
+		return destination;
+	}
+
+	public void setDestination(String destination) {
+		this.destination = destination;
+	}
+
+}

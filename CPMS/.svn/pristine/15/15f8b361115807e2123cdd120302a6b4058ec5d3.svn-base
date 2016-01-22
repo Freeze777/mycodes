@@ -1,0 +1,118 @@
+package centurylink.cpms;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "cpms_request_logs")
+public class CpmsRequestLogs {
+	
+
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	private Long rid;
+	 
+	@Column(name = "rcid")
+	private String rcid;
+	 
+	 @Column(name = "ocid")
+	private String ocid;
+	 
+	 @Column(name = "requeststatus")
+	private int requeststatus;
+	 
+	 
+	 @Column(name = "source")
+	private int source;
+	 
+	 
+	 @Column(name = "destination")
+	 private int destination;
+	 
+	 
+	 public Long getRid() {
+		return rid;
+	}
+
+
+	public void setRid(Long rid) {
+		this.rid = rid;
+	}
+
+
+	public String getRcid() {
+		return rcid;
+	}
+
+
+	public void setRcuid(String rcid) {
+		this.rcid = rcid;
+	}
+
+
+	public String getOcid() {
+		return ocid;
+	}
+
+
+	public void setOcid(String ocid) {
+		this.ocid = ocid;
+	}
+
+
+
+
+
+	public int getRequeststatus() {
+
+		return requeststatus;
+	}
+
+
+	public void setRequeststatus(int requeststatus) {
+		this.requeststatus = requeststatus;
+	}
+
+
+	public int getSource() {
+		return source;
+	}
+
+
+	public void setSource(int source) {
+		this.source = source;
+	}
+
+
+	public int getDestination() {
+		return destination;
+	}
+
+
+	public void setDestination(int destination) {
+		this.destination = destination;
+	}
+
+
+	public int getTime() {
+		return time;
+	}
+
+
+	public void setTime(int time) {
+		this.time = time;
+	}
+
+
+	@Column(name = "time")
+		private int time;
+		 
+	
+	
+	 
+
+}

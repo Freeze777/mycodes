@@ -1,0 +1,67 @@
+package com.ctl.cpms.action;
+
+import com.ctl.cpms.dao.UserDao;
+import com.ctl.cpms.domain.User;
+import com.ctl.cpms.util.PasswordEncodingUtil;
+import com.opensymphony.xwork2.ActionSupport;
+import org.apache.struts2.ServletActionContext;
+import org.hibernate.classic.Session;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+
+public class LoginAction extends ActionSupport {
+
+    public static final String USER_ATTRIBUTE = "user";
+    private String cuid;
+    private String password;
+
+    public String signInPage() {
+        return SUCCESS;
+    }
+
+    public String processSignIn() {
+        HttpServletRequest request = ServletActionContext.getRequest();
+        final HttpSession httpSession = request.getSession();
+        TransactionalExecutor transactionalExecutor = new TransactionalExecutor();
+        transactionalExecutor.execute(new TransactionalExecutor.Task() {
+            @Override
+            public void execute(Session session) {
+                UserDao userDao = new UserDao(session);
+                String encodedPassword = PasswordEncodingUtil.encode(getPassword());
+                User user = userDao.findByUsernameAndPassword(getCuid(), encodedPassword);
+                if(user!=null){
+                    httpSession.setAttribute(USER_ATTRIBUTE, user);
+                }
+            }
+        });
+        if(httpSession.getAttribute(USER_ATTRIBUTE)!=null){
+            return "home";
+        }
+        return "signin";
+    }
+
+    public String signOut(){
+        HttpServletRequest request = ServletActionContext.getRequest();
+        request.getSession().removeAttribute(USER_ATTRIBUTE);
+        request.getSession().invalidate();
+        return SUCCESS;
+    }
+
+
+    public String getCuid() {
+        return cuid;
+    }
+
+    public void setCuid(String cuid) {
+        this.cuid = cuid;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+}

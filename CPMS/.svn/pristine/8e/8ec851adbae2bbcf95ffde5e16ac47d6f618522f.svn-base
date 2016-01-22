@@ -1,0 +1,36 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+         pageEncoding="ISO-8859-1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<%@taglib uri="/struts-tags" prefix="s" %>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <link type="text/css" href="${pageContext.request.contextPath}/css/style.css" rel="stylesheet">
+    <style type="text/css">
+        body {
+            background-image: url('${pageContext.request.contextPath}/css/green.jpg');
+        }
+    </style>
+    <title>Login</title>
+</head>
+<body>
+<div id="div11">
+    <img src="${pageContext.request.contextPath}/images/centurylink-logo.png" height="110" >
+    <h1>Login</h1>
+    <form id="login" name="login" onsubmit="return true;" action="${pageContext.request.contextPath}/processSignIn.action" method="post">
+        CUID: &nbsp&nbsp&nbsp&nbsp<input type="text" name="cuid" required/>
+        <br/>
+        Password:<input type="password" name="password" required/>
+        <br/>
+        <input type="submit" id="login_0" value="Login"/>
+    </form>
+    <h3><s:property value="message"/></h3>
+    <br/>
+</div>
+
+
+<div id="div22">
+    <footer> Copyright &copy CTLI 2014<br/></footer>
+</div>
+</body>
+</html>

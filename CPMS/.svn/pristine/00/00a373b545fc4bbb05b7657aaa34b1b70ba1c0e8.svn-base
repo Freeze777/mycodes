@@ -1,0 +1,20 @@
+package com.ctl.cpms.dao;
+
+import com.ctl.cpms.domain.User;
+import org.hibernate.Criteria;
+import org.hibernate.classic.Session;
+
+import java.util.List;
+
+public class UserDao {
+
+    public List<User> findAllUsers(Session session) {
+        Criteria criteria = session.createCriteria(User.class);
+        return criteria.list();
+    }
+
+    public void createUser(Session session, User user) {
+        session.saveOrUpdate(user);
+    }
+
+}

@@ -1,0 +1,181 @@
+package centurylink.cpms;
+
+import java.sql.SQLException;
+import java.util.ArrayList;
+
+import com.sun.net.httpserver.Authenticator.Success;
+
+import centurylink.cpms.User;
+
+
+
+public class ServiceLayer implements ServiceInterface {
+
+	private static DAOInterface daoObj=new DAOLayer();
+
+	//register user will return 
+	/*
+	 * fp  -- freak problem  -- datbase failed
+	 * iat  -- id taken  -- primary key violated
+	 * ok  -- everything ok  -- everything ok
+	 * 
+	 * 
+	 */
+	public String registerUser(User user) {
+		// TODO Auto-generated method stub
+		System.out.println("registeruser-in servicelayer");
+		String bls ="fp";
+
+		try {
+			daoObj.storeUserDetailsInDB(user);
+			bls  ="ok";
+		} catch (IllegalArgumentException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			//System.out.println(e.getErrorCode());
+			bls ="iat";
+			e.printStackTrace();
+		}
+		return bls;
+	}
+
+	public String loginUser(User user) {
+		// TODO Auto-generated method stub
+		System.out.println("in loginuser-in servicelayer");
+		String userName=null;
+
+		try {
+			userName=daoObj.retrieveDetailsInDB(user);
+		} catch (IllegalArgumentException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			System.out.println();
+			e.printStackTrace();
+		}
+		return userName;
+	}
+
+	@Override
+	public String addUserRoutes(Routes routes,long cid) {
+		// TODO Auto-generated method stub
+		System.out.println("in addUserRoutes");
+		String bls = "fp";
+
+		try {
+			daoObj.storeRoutesDetailsInDB(routes,cid);
+			bls  ="ok";
+		} catch (IllegalArgumentException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			//System.out.println(e.getErrorCode());
+			bls ="iat";
+			e.printStackTrace();
+		}
+
+		return bls;
+	}
+
+	@Override
+	public String addUserTransit(Routes routes, Long cid) {
+		// TODO Auto-generated method stub
+		System.out.println("adding transit points");
+		String bls = "fp";
+		String[] toTrasitsArray = routes.getTowardsTransits().split("\\,");
+		String[] fromTrasitsArray = routes.getFromTransits().split("\\,");
+		int toLength = toTrasitsArray.length;
+		int fromLength = fromTrasitsArray.length;
+		
+		try {
+			daoObj.storeTransitsDetailsInDB(routes.getToRouteId(),routes.getFromRouteId(),cid,toTrasitsArray,toLength,fromTrasitsArray,fromLength);
+			bls  ="ok";
+		} catch (IllegalArgumentException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+
+
+		return bls;
+	}
+
+	@Override
+	public ArrayList<String> fillList() {
+		// TODO Auto-generated method stub
+		ArrayList<String> list =null;
+
+		try {
+			list = daoObj.getTransitListFromDB();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			//e.printStackTrace();
+		}
+	
+		return list;
+	}
+
+	@Override
+	public ArrayList<SearchArray> getSearchUserResult(String to, String from,int time) {
+		// TODO Auto-generated method stub
+		ArrayList<SearchArray> list =null;
+		list=daoObj.getUserSearchResultsFromDB(to,from,time);
+		return list;
+	}
+
+
+	
+	
+	@Override
+	public String addUserSeats(Routes routes, Long cid) {
+		System.out.println("adding seats");
+		String bls = "fp";
+			
+		try {
+			daoObj.storeTransitsDetailsInDB(routes,cid);
+			bls  ="ok";
+		} catch (IllegalArgumentException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+
+
+		return bls;
+	}
+
+	@Override
+	public String makeUserRequest(String rcuid, String ocuid, String from,String to,int time,Long routeid) {
+		
+		
+	String bls=	daoObj.makeUserRequestinDB( rcuid, ocuid,  from, to,time,routeid);
+return bls;
+	}
+
+
+	@Override
+	public ArrayList<CpmsRequestLogs> getUserDashboard(Long cid) {
+		// TODO Auto-generated method stub
+		ArrayList<CpmsRequestLogs> list=null;
+	
+			list=daoObj.getDashboardinDB(cid);
+
+		return list;
+	}
+
+
+
+
+
+	
+}

@@ -1,0 +1,7 @@
+package com.ctl.cpms.domain;
+
+public enum RouteStatus {
+
+    Active, Disabled
+
+}

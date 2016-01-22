@@ -1,0 +1,289 @@
+package centurylink.cpms;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+import org.hibernate.*;
+import org.hibernate.criterion.Projections;
+import org.hibernate.criterion.Restrictions;
+
+public class HibernateOps {
+
+	/* Method to CREATE an cpms_user in the database */
+	public void addCpmsUser(User user, SessionFactory factory) {
+		System.out.println("HibernateOps-addCmpsUser");
+		Session session = factory.openSession();
+		Transaction tx = null;
+
+		try {
+			tx = session.beginTransaction();
+			CpmsUser cpms_user = new CpmsUser(user);
+
+			user.setCid((Long)session.save(cpms_user));
+			tx.commit();
+		} catch (HibernateException e) {
+			if (tx != null)
+				tx.rollback();
+			e.printStackTrace();
+		} finally {
+			session.close();
+		}
+
+		System.out.println("inserted successfully");
+
+	}
+
+	public String selectCpmsUser(User user, SessionFactory factory) {
+		// TODO Auto-generated method stub
+		System.out.println("HibernateOPs-selectCpmsuser");
+		Session session = factory.openSession();
+		Transaction tx = null;
+		String cuid =user.getCuid().trim();
+		int password = user.getPassword().trim().hashCode();
+		CpmsUser cpmsuser = null;
+		try {
+			//System.out.println("in try"+cuid+password);
+
+			tx = session.beginTransaction();
+			// List cpmsusers =
+			// session.createQuery("FROM cpms_user where cuid=:cuid and password=:password").list();
+			Query query = session.createQuery("FROM CpmsUser WHERE cuid=:cuid");
+			System.out.println(query);
+			query.setParameter("cuid", cuid);
+			cpmsuser = (CpmsUser) query.uniqueResult();
+			System.out.println(cpmsuser);
+
+			if (cpmsuser != null) {
+				if(cpmsuser.getPassword()==password)
+				{	user.setCid(cpmsuser.getCid());
+				return cpmsuser.getName();
+				}
+			}
+			/*
+			 * for (Iterator iterator =cpmsusers.iterator();
+			 * iterator.hasNext();){ cpmsuser = (CpmsUser) iterator.next(); if(
+			 * (cpmsuser.getCuid()==Integer.parseInt(user.getCuid().trim()))&&
+			 * (cpmsuser.getPassword()==user.getPassword().trim().hashCode())) {
+			 * return cpmsuser.getName(); }
+			 *//*
+			 * System.out.print("First Name: " + employee.getFirstName());
+			 * System.out.print("  Last Name: " + employee.getLastName());
+			 * System.out.println("  Salary: " + employee.getSalary());
+			 */
+			// }
+			tx.commit();
+		} catch (HibernateException e) {
+			if (tx != null)
+				tx.rollback();
+			e.printStackTrace();
+		} finally {
+			session.close();
+		}
+
+		return null;
+
+	}
+
+	public void addCpmsRoutes(Routes routes, SessionFactory factory,long cid) {
+		// TODO Auto-generated method stub
+		System.out.println("HibernateOps-addCmpsRoutes");
+		Session session = factory.openSession();
+		Transaction tx = null;
+
+		System.out.println(routes);
+
+		try {
+
+			tx = session.beginTransaction();
+			CpmsRoutes cpmsRouteTo = new CpmsRoutes(cid, routes.getToSource(), routes.getToDestination(), 1, Integer.parseInt(routes.getToOfficeStartTime()), Integer.parseInt(routes.getToOfficeEndTime()), 0);
+			CpmsRoutes cpmsRouteAway = new CpmsRoutes(cid, routes.getFromSource(), routes.getFromDestination(), 1, Integer.parseInt(routes.getFromOfficeStartTime()), Integer.parseInt(routes.getFromOfficeEndTime()), 1);
+			routes.setToRouteId((Long)session.save(cpmsRouteTo));
+
+			routes.setFromRouteId((Long)session.save(cpmsRouteAway));
+
+			tx.commit();
+		} catch (HibernateException e) {
+			if (tx != null)
+				tx.rollback();
+			e.printStackTrace();
+		} finally {
+			session.close();
+		}
+
+		System.out.println("route inserted successfully");
+
+	}
+
+
+
+	public void addCpmsTransits(long toRouteId, long fromRouteId, Long cid,
+			String[] toTrasitsArray, int toLength, String[] fromTrasitsArray,
+			int fromLength, SessionFactory factory) {
+		// TODO Auto-generated method stub
+		System.out.println("HibernateOps-addCmpsTransits");
+		Session session = factory.openSession();
+		Transaction tx = null;
+
+		try {
+
+			tx = session.beginTransaction();
+			for(int i =0; i<toLength; i++)
+			{
+				CpmsTransits cpmsTransitTo = new CpmsTransits(cid, toRouteId, toTrasitsArray[i],0);
+				session.save(cpmsTransitTo);
+			}
+
+			for(int i =0; i<fromLength; i++)
+			{
+				CpmsTransits cpmsTransitFrom = new CpmsTransits(cid, fromRouteId, fromTrasitsArray[i],1);
+				session.save(cpmsTransitFrom);
+			}
+			tx.commit();
+		} catch (HibernateException e) {
+			if (tx != null)
+				tx.rollback();
+			e.printStackTrace();
+		} finally {
+			session.close();
+		}
+
+		System.out.println("Trasits inserted successfully");
+
+
+	}
+
+	public ArrayList<String> fillCpmsTransitList(int i, SessionFactory factory) {
+		// TODO Auto-generated method stub
+		System.out.println("HibernateOPs-fillCpmsTransits");
+		Session session = factory.openSession();
+		Transaction tx = null;
+		ArrayList<String> list = null;
+		//		ICriteria c = session.CreateCriteria(typeof(Tribble));
+		//		c.SetProjection(Projections.ProjectionList().Add(Projections.Property("Name")));
+		//		IList<string> names = c.List<string>();
+
+		try {
+			tx = session.beginTransaction();
+			Criteria cr = (Criteria)session.createCriteria(CpmsTransits.class);
+			if(i == 0)
+			{
+				cr.add(Restrictions.eq("type", 0));
+				cr.setProjection(Projections.distinct(Projections.projectionList().add(Projections.property("transit"))));
+				list = (ArrayList<String>) cr.list();
+			}
+
+			else if(i ==1)
+			{
+				cr.add(Restrictions.eq("type", 1));
+				cr.setProjection(Projections.distinct(Projections.projectionList().add(Projections.property("transit"))));
+				list = (ArrayList<String>) cr.list();
+			}
+			tx.commit();
+		} catch (HibernateException e) {
+			// TODO Auto-generated catch block
+			if (tx != null)
+				tx.rollback();
+			e.printStackTrace();
+		} finally {
+			session.close();
+		}
+		System.out.println(list);
+		return list;
+	}
+
+	public ArrayList<SearchArray> searchCpmsRoutes(String src,String dest,int time,SessionFactory factory)
+	{
+		System.out.println("HibernateOPs-fillCpmsTransits");
+		Session session = factory.openSession();
+		Transaction tx = null;
+		ArrayList<Integer> routeList = new ArrayList<Integer>();
+		ArrayList<SearchArray> searchArrayList = new ArrayList<SearchArray>();
+		SearchArray searchArrayObj = new SearchArray();
+		//		ICriteria c = session.CreateCriteria(typeof(Tribble));
+		//		c.SetProjection(Projections.ProjectionList().Add(Projections.Property("Name")));
+		//		IList<string> names = c.List<string>();
+
+		try {
+			tx = session.beginTransaction();
+			Criteria cr = (Criteria)session.createCriteria(CpmsTransits.class);
+			if(dest.equals("CTLI"))
+			{
+				cr.add(Restrictions.eq("type", 0)).add(Restrictions.like("transit",src));
+				cr.setProjection(Projections.distinct(Projections.projectionList().add(Projections.property("routeid"))));
+				routeList = (ArrayList<Integer>) cr.list();
+			}
+
+			else if(src.equals("CTLI"))
+			{
+				cr.add(Restrictions.eq("type", 1)).add(Restrictions.like("transit",dest));
+				cr.setProjection(Projections.distinct(Projections.projectionList().add(Projections.property("routeid"))));
+				routeList = (ArrayList<Integer>) cr.list();
+			}
+
+			Criteria crRoutes = (Criteria)session.createCriteria(CpmsRoutes.class);
+			crRoutes.add(Restrictions.in("routeid", routeList)).add(Restrictions.between("sourcetime",(time-2000),time));
+			ArrayList<CpmsRoutes> routesArray = (ArrayList<CpmsRoutes>)crRoutes.list();
+			//ArrayList<String> stringList = (ArrayList<String>)cr.list();
+			//String stringRow = (String)stringList.get(0);
+			//System.out.println(stringRow);
+			//	System.out.println(routesArray);
+			//System.out.println((cr.list().get(0)));
+			int numberOfRoutes = routesArray.size();
+
+			for (int i=0;i<numberOfRoutes;i++) 
+			{
+				CpmsRoutes cpmsRoutes =  routesArray.get(i);
+				searchArrayObj.setSource(cpmsRoutes.getSource());
+				searchArrayObj.setDestination(cpmsRoutes.getDestination());
+				searchArrayObj.setStartTime(((Integer)cpmsRoutes.getSourcetime()).toString());
+				CpmsUser cpmsUser = (CpmsUser) session.get(CpmsUser.class, cpmsRoutes.getCid());
+				searchArrayObj.setCuid(cpmsUser.getCuid());
+				searchArrayObj.setName(cpmsUser.getName());
+
+				ArrayList<CpmsRequestLogs> requestLogArray = (ArrayList<CpmsRequestLogs>) session.get(CpmsRequestLogs.class, cpmsRoutes.getRouteid());
+				if(requestLogArray != null)
+				{
+
+					int numberOfOtherGuys = requestLogArray.size();
+					for (int j=0;j<numberOfOtherGuys;j++)
+					{
+						CpmsRequestLogs cpmsRequestLogs = requestLogArray.get(i);
+						if(cpmsRequestLogs.getRequeststatus()==1)
+						{
+							CpmsUser cpmsUser1 = (CpmsUser) session.get(CpmsUser.class,cpmsRequestLogs.getRcid());
+							searchArrayObj.getOthers().add(cpmsUser1.getName());
+
+						}
+
+					}
+
+				}
+				else{
+					searchArrayObj.getOthers().add("Empty");
+				}
+				searchArrayList.add(searchArrayObj);
+
+
+			}
+			tx.commit();
+		} catch (HibernateException e) {
+			// TODO Auto-generated catch block
+			if (tx != null)
+				tx.rollback();
+			e.printStackTrace();
+		} finally {
+			session.close();
+		}
+		return searchArrayList;
+
+	}
+}
+
+	//	public static void main(String[] args) {
+	//		HibernateConnection.createConnection();
+	//		HibernateOps hb = new HibernateOps();
+	//		hb.fillCpmsTransitList(0, HibernateConnection.getFactory());
+	//	}
+
+

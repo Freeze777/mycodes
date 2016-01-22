@@ -1,0 +1,16 @@
+package com.ctl.cpms.dao;
+
+import com.ctl.cpms.domain.Route;
+import com.ctl.cpms.domain.User;
+import org.hibernate.Criteria;
+import org.hibernate.classic.Session;
+
+import java.util.List;
+
+public class RouteDao {
+
+    public void createRoute(Session session, Route route) {
+        session.saveOrUpdate(route);
+    }
+
+}

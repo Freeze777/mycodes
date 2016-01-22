@@ -1,0 +1,30 @@
+package com.ctl.cpms.action;
+
+import com.ctl.cpms.domain.TransitPoint;
+import com.opensymphony.xwork2.ActionSupport;
+
+import java.util.List;
+
+/**
+ * User: Dinesh
+ * Date: 11/5/14
+ * Time: 3:17 PM
+ */
+public class DashboardAction extends ActionSupport {
+
+    private List<TransitPoint> transitPoints;
+
+
+    public String homePage(){
+
+        return SUCCESS;
+    }
+
+    public List<TransitPoint> getTransitPoints() {
+        return transitPoints;
+    }
+
+    public void setTransitPoints(List<TransitPoint> transitPoints) {
+        this.transitPoints = transitPoints;
+    }
+}

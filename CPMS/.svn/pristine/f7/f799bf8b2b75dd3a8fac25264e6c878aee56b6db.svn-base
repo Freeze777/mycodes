@@ -1,0 +1,31 @@
+package com.ctl.cpms.dao;
+
+import com.ctl.cpms.domain.Route;
+import com.ctl.cpms.model.RouteSearchVO;
+import org.hibernate.Criteria;
+import org.hibernate.classic.Session;
+import org.hibernate.criterion.Restrictions;
+
+import java.util.List;
+
+public class RouteDao {
+
+    private Session session;
+
+    public RouteDao(Session session) {
+        this.session = session;
+    }
+
+    public List<Route> searchRoutes(RouteSearchVO routeSearchVO){
+        Criteria criteria = session.createCriteria(Route.class);
+        if(routeSearchVO.getSource()!=null){
+            //
+        }
+        return criteria.list();
+    }
+
+    public void createRoute(Route route) {
+        session.saveOrUpdate(route);
+    }
+
+}

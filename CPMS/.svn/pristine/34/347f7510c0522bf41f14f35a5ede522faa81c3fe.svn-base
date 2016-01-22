@@ -1,0 +1,169 @@
+package centurylink.cpms;
+
+import java.util.ArrayList;
+import java.util.Map;
+
+import org.apache.struts2.interceptor.SessionAware;
+
+import com.opensymphony.xwork2.ActionSupport;
+
+public class SearchAction extends ActionSupport implements SessionAware {
+	private static ServiceInterface serviceObj =new ServiceLayer();
+	
+	private String to;
+	
+	private String from;
+	private String time;
+	private String 	message;
+	private ArrayList<SearchArray> searchList;
+	public ArrayList<SearchArray> getSearchList() {
+		return searchList;
+	}
+	public void setSearchList(ArrayList<SearchArray> searchList) {
+		this.searchList = searchList;
+	}
+
+
+	private ArrayList<String> toList;
+	private ArrayList<String> fromList;
+	private ArrayList<String> timeList;
+private Map<String,Object> sessionMap;
+	
+	@Override
+	public void setSession(Map sessionMap) {
+		// TODO Auto-generated method stub
+		System.out.println("in setsession-search action");
+		this.sessionMap=sessionMap; 
+		setMessage((String) this.sessionMap.get("usename") );
+	}
+	public String getMessage() {
+		return message;
+	}
+
+
+	public void setMessage(String message) {
+		this.message = message;
+	}
+	
+
+
+	public String populate() {
+
+	System.out.println("in SearchAction-populate");
+		
+		toList = new ArrayList<String>();
+		fromList=new ArrayList<String>();
+		timeList=new ArrayList<>();
+	
+	timeList.add("07:00");
+	timeList.add("07:30");	
+	timeList.add("08:00");
+	timeList.add("08:30");
+	timeList.add("09:00");
+	timeList.add("09:30");
+	timeList.add("10:00");
+	timeList.add("10:30");
+	timeList.add("11:00");
+	timeList.add("17:00");
+	timeList.add("17:30");	
+	timeList.add("18:00");
+	timeList.add("18:30");
+	timeList.add("19:00");
+	timeList.add("19:30");
+	timeList.add("20:00");
+	timeList.add("20:30");
+	timeList.add("21:00");	
+			//servce----->dao calls;	
+		
+		toList=serviceObj.fillList(0);
+		toList.add("CTLI");
+		fromList=serviceObj.fillList(1);
+		fromList.add("CTLI");
+	
+		
+		return "success";
+	}
+	
+	
+	
+	public SearchAction() {
+
+	}
+	
+	
+public String getSearchResults()
+{   String[] data = time.split("\\:");
+
+
+int intTime=Integer.parseInt(data[0])*100+Integer.parseInt(data[1]);
+
+
+	searchList=serviceObj.getSearchUserResult(to,from,intTime);
+	sessionMap.put("searchList",searchList);
+return SUCCESS;
+
+}
+
+	public String getTime() {
+		return time;
+	}
+	public void setTime(String time) {
+		this.time = time;
+	}
+	public ArrayList<String> getTimeList() {
+		return timeList;
+	}
+	public void setTimeList(ArrayList<String> timeList) {
+		this.timeList = timeList;
+	}
+	public String getTo() {
+		return to;
+	}
+
+
+	public void setTo(String to) {
+		this.to = to;
+	}
+
+
+	public String getFrom() {
+		return from;
+	}
+
+
+	public void setFrom(String from) {
+		this.from = from;
+	}
+
+
+	public ArrayList<String> getToList() {
+		return toList;
+	}
+
+
+	public void setToList(ArrayList<String> toList) {
+		this.toList = toList;
+	}
+
+
+	public ArrayList<String> getFromList() {
+		return fromList;
+	}
+
+
+	public void setFromList(ArrayList<String> fromList) {
+		this.fromList = fromList;
+	}
+
+
+	public String searchRoutes()
+	{
+		System.out.println("in searchAction-searchRoutes");
+		return "success";
+		
+	}
+
+
+	
+
+}

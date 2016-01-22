@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+    <package name="default" extends="struts-default">
+
+        <action name="register" class="centurylink.cpms.CpmsAction"
+                method="registerUser">
+            <result name="success">/WEB-INF/addroute.jsp</result>
+            <result name="iat">/WEB-INF/register.jsp</result>
+            <result name="error">/WEB-INF/error.jsp</result>
+        </action>
+
+        <action name="home" class="centurylink.cpms.CpmsAction"
+                method="homepage">
+            <result name="login">/home.jsp</result>
+        </action>
+
+        <action name="registeruser" class="centurylink.cpms.CpmsAction"
+                method="registerUser">
+            <result name="success">/WEB-INF/search.jsp</result>
+            <result name="iat">/WEB-INF/register.jsp</result>
+            <result name="error">/WEB-INF/error.jsp</result>
+        </action>
+
+        <action name="login" class="centurylink.cpms.CpmsAction"
+                method="validateLogin">
+            <result name="success">/WEB-INF/postlogin.jsp</result>
+            <result name="error">/home.jsp</result>
+        </action>
+
+        <action name="logout" class="centurylink.cpms.CpmsAction"
+                method="logoutUser">
+            <result name="success">/home.jsp</result>
+        </action>
+
+        <!-- METHOD signup() olways returns success -->
+        <action name="signup" class="centurylink.cpms.CpmsAction"
+                method="signup">
+            <result name="success">/WEB-INF/register.jsp</result>
+        </action>
+
+        <!-- RouteAction -->
+        <action name="addRoute" class="centurylink.cpms.RouteAction"
+                method="addRoute">
+            <result name="success">/WEB-INF/postlogin.jsp</result>
+        </action>
+
+
+        <action name="updateRoute" class="centurylink.cpms.RouteAction"
+                method="updateRoutes">
+            <result name="success">/WEB-INF/updateRoute.jsp</result>
+            <result name="error">/WEB-INF/error.jsp</result>
+        </action>
+
+
+        <!-- SearchAction -->
+        <action name="search" class="centurylink.cpms.SearchAction"
+                method="searchRoutes">
+            <result name="success">/WEB-INF/intra.jsp</result>
+            <result name="error">/WEB-INF/error.jsp</result>
+        </action>
+
+        <action name="*Reg" class="centurylink.cpms.SearchAction"
+                method="{1}">
+            <result name="success">/WEB-INF/search.jsp</result>
+            <result name="error">/WEB-INF/error.jsp</result>
+        </action>
+        <action name="aftersearch" class="centurylink.cpms.SearchAction"
+                method="getSearchResults">
+            <result name="success">/WEB-INF/error.jsp</result>
+            <result name="error">/WEB-INF/error.jsp</result>
+        </action>
+
+        <!--Dinesh-->
+
+        <action name="signin" class="com.ctl.cpms.action.LoginAction" method="signInPage">
+            <result name="success">/WEB-INF/jsp/signIn.jsp</result>
+        </action>
+        <action name="processSignIn" class="com.ctl.cpms.action.LoginAction" method="processSignIn">
+            <result name="signin" type="redirect">/signin.action</result>
+            <result name="home" type="redirect">/homePage.action</result>
+        </action>
+
+        <action name="signOut" class="com.ctl.cpms.action.LoginAction" method="signOut">
+            <result name="success" type="redirect">/signin.action</result>
+        </action>
+
+        <action name="homePage" class="com.ctl.cpms.action.DashboardAction" method="homePage">
+            <result name="success">/WEB-INF/jsp/homepage.jsp</result>
+        </action>
+
+    </package>
+    <constant name="struts.action.excludePattern" value="/images/*,/css/*,*.css,*.jpg"/>
+
+</struts>

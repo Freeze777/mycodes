@@ -1,0 +1,133 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@taglib uri="/struts-tags" prefix="s" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+<style type="text/css">
+   <%@include file="../css-files/style3.css" %>
+ body{
+  background-image:url(green.jpg)
+    }
+    </style>
+   
+</head>
+<body>
+<body>
+
+
+<jsp:include page="/WEB-INF/header.jsp"/>
+
+
+
+<div class="container" style="border: 1px solid black;width:65%;">
+
+<div class="header">
+<h2>SEARCH</h2>
+</div>
+
+<div class="submainbody">
+<H6>
+<a href="getMyDashboardLog.action" >HOME</a>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<a href="search.action" >FIND A CAR</a>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<a href="updateRoute.action" >ADD MY CAR</a>
+<!-- <input type="submit" id="updateRoute_0" name="action:updateRoute" value="   Update Route   "/> -->
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+</H6>
+
+
+</div>
+ 
+<div class="mainbody">
+
+<!-- <div class="innerdiv"> -->
+<%if (session.getAttribute("searchList") == null) 
+{
+%>
+<s:form action="aftersearch">
+<s:select name="from" list="fromList" 
+		label="Source" />
+
+<s:select name="to" list="toList" 
+		label="Destination" />
+		<s:select name="time" list="timeList" 
+		label="Time" />
+		
+<s:submit value="search"/>
+</s:form>
+<%
+}
+else
+{
+	
+	
+	
+%>
+<table class="tables" border="5" cellpadding="6" cellspacing="0"  >
+	  <tr valign="baseline" bgcolor="#c0c0c0">
+	 <th align="center"> CUID </th>
+	 
+	 <th align="center"> NAME </th>
+	 <th align="center"> START TIME </th>
+	 <th align="center"> SOURCE </th>
+	  <th align="center"> DESTINATION </th>
+	  <th align="center"> AVAILABILITY </th>
+	    
+	  
+	  
+	</tr>
+<s:iterator value="searchList" status="rowstatus">
+ 
+<tr  style="border:#ccc;" > 
+<td align="center"><s:property value="cuid" /></td> 
+<td align="center"><s:property value="name"/></td> 
+<td align="center"><s:property value="startTime"/></td> 
+<td align="center"><s:property value="source"/></td> 
+<td align="center"><s:property value="destination"/></td> 
+
+
+<form id="search" name="search" onsubmit="return true;" action="/cpms/search.action" method="post">
+
+<s:hidden  value="%{cuid}" name="ocuid" />
+<s:hidden  value="%{routeid}" name="routeid" />
+
+<td align="center">	
+<s:set name="noSeats" value="seats"/>
+<s:if test="%{#noSeats>0}">
+<%-- <s:property value="seats"/>&nbsp&nbsp --%>
+<input type="submit" name="action:makerequest" value="Make Request" />
+</s:if>
+<s:else>
+    No seats available
+   <%--  <s:property value="seats"/> --%>
+</s:else>
+</td> 
+</form>
+
+
+</tr> 
+</s:iterator> 
+</table> 
+<%
+session.removeAttribute("searchList");
+} %>
+
+<h4><s:property value="searchMessage"/></h4>
+</div>
+<!-- </div> -->
+ 
+<div class="footer">	
+Copyright &copy CTLI 2014<br/>
+</div>
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,6 @@
+package com.ctl.cpms.domain;
+
+public enum PoolRequestStatus {
+
+    Pending, Accepted, Rejected, RequestTimedOut
+}

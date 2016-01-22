@@ -1,0 +1,117 @@
+<%@page import="centurylink.cpms.User"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+    <%@taglib uri="/struts-tags" prefix="s"%>
+    
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+<style type="text/css">
+    <%@include file="../css-files/style3.css" %>
+ body{
+  background-image:url(green.jpg)
+    }
+    </style>
+<title>Insert title here</title>
+       
+
+</head>
+<body>
+   
+<div class="logo">
+    <img src="${pageContext.request.contextPath}/images/centurylink-logo.png" height="90" >
+</div>
+<div class="logout">
+<h3><%=session.getAttribute("username") %></h3>
+<form id="search" name="search" onsubmit="return true;" action="/cpms/search.action" method="post">
+<!-- <input type="submit" id="logout_0" name="action:logout"  value="        Logout         "/> -->
+<a href="logout.action" >Logout</a>
+</div>
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+<div class="container">
+<div class="header">
+<h2>CAR POOL MANAGEMENT SYSTEM</h2>
+</div>
+
+<div class="submainbody">
+<br/>
+<br/>
+<br/>
+
+<form id="search" name="search" onsubmit="return true;" action="/cpms/search.action" method="post">
+<!-- <input type="submit" id="search_0" value="Search For Seats"/> -->
+<a href="search.action" >Search For Seats</a>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<a href="updateRoute.action" >Update Route</a>
+<!-- <input type="submit" id="updateRoute_0" name="action:updateRoute" value="   Update Route   "/> -->
+
+
+</form>
+
+</div>
+ 
+<div class="mainbody">
+<br/>
+ <br/>
+<h2>Notifications</h2>
+<table border="5" style="border: 1px solid black;width:100%;" cellpadding="6" cellspacing="0" width="75%">
+	 <tr valign="baseline" bgcolor="#404060">
+	 <th align="center"> Requestee</th>
+	 <th align="center"> Owner</th>
+	 <th align="center"> Status </th>
+	 <th align="center"> Source </th>
+	 <th align="center"> Destination </th>
+	 <th align="center"> Time</th>
+	 <th align="center">  </th>
+	  
+	  
+	</tr>
+<s:iterator value="dashBoard" status="rowstatus">
+ 
+<tr  style="border:#ccc;" > 
+<td align="center"><s:property value="rcid" /></td> 
+<td align="center"><s:property value="ocid"/></td> 
+<td align="center"><s:property value="requeststatus"/></td> 
+<td align="center"><s:property value="source"/></td> 
+<td align="center"><s:property value="destination"/></td> 
+<td align="center"><s:property value="time"/></td> 
+
+<form id="search" name="search" onsubmit="return true;" action="/cpms/search.action" method="post">
+
+
+
+<td align="center">	
+<% Long sessionID=( (User) session.getAttribute("user") ) %>
+<s:if test=""></s:if>
+<input type="submit" name="action:accept" value="Accept" />
+</td>
+<td>
+<input type="submit" name="action:reject" value="Reject" />
+</td> 
+</form>
+
+
+</tr> 
+</s:iterator> 
+</table> 
+</div>
+ 
+<div class="footer">	
+Copyright &copy CTLI 2014<br/>
+</div>
+
+
+</div>
+
+</body>
+</html>

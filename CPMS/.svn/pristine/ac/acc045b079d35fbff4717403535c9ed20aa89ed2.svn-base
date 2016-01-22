@@ -1,0 +1,161 @@
+package centurylink.cpms;
+
+import javax.persistence.*;
+
+@Entity
+@Table(name = "cpms_users")
+public class CpmsUser {
+	
+	
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	private Long cid;
+	 
+	@Override
+	public String toString() {
+		return "CpmsUser [cid=" + cid + ", name=" + name + ", email=" + email
+				+ ", cuid=" + cuid + ", password=" + password + ", contact="
+				+ contact + "]";
+	}
+
+
+	@Column(name = "name")
+	private String name;
+	 
+	 @Column(name = "email")
+	private String email;
+	 
+	 @Column(name = "cuid",unique=true)
+	private String cuid;
+	 
+	 
+	 @Column(name = "password")
+	private int password;
+	 
+	 
+	 @Column(name = "contact")
+	 private Long contact;
+
+/*
+	public CpmsUser(User user) {
+		setCuid(user.getCuid());
+	}
+*/
+	
+
+	public CpmsUser(User user) {
+		// TODO Auto-generated constructor stub
+	
+		this.name = user.getName().trim();
+		this.email = user.getEmail().trim();
+		this.cuid = user.getCuid().trim();
+		this.password = user.getPassword().trim().hashCode();
+		this.contact=Long.parseLong(user.getContact().trim());
+		//this.contact = Integer.parseInt(user.getContact().trim());
+	}
+
+
+	
+
+
+
+
+	public CpmsUser() {
+		//super();
+		// TODO Auto-generated constructor stub
+	}
+
+
+
+
+
+
+
+	public Long getCid() {
+		return cid;
+	}
+
+
+
+
+
+
+
+	public void setCid(Long cid) {
+		this.cid = cid;
+	}
+
+
+
+
+
+
+
+	public String getName() {
+		return name;
+	}
+
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+
+	public String getEmail() {
+		return email;
+	}
+
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+
+	public String getCuid() {
+		return cuid;
+	}
+
+
+	public void setCuid(String cuid) {
+		this.cuid = cuid;
+	}
+
+
+	public int getPassword() {
+		return password;
+	}
+
+
+	public void setPassword(int password) {
+		this.password = password;
+	}
+
+
+
+
+
+
+
+	public Long getContact() {
+		return contact;
+	}
+
+
+
+
+
+
+
+	public void setContact(Long contact) {
+		this.contact = contact;
+	}
+
+
+	
+	 
+	 
+	
+	
+	
+	
+}

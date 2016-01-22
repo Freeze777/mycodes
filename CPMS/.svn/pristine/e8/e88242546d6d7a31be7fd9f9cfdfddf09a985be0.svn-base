@@ -1,0 +1,18 @@
+<%@ taglib prefix="s" uri="/struts-tags" %>
+<table width="100%">
+    <tr>
+        <td width="300px"><img src="${pageContext.request.contextPath}/images/centurylink-logo.png" alt="Centurylink">
+        </td>
+        <td><h1>CAR POOL MANAGEMENT SYSTEM</h1></td>
+        <td align="right" width="200px"><a href="${pageContext.request.contextPath}/signOut.action">Logout</a></td>
+    </tr>
+</table>
+<div class="menubar">
+    <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Add Route</a></li>
+        <li><a href="">Update Route</a></li>
+        <li><a href="">Pending Requests</a></li>
+    </ul>
+</div>
+

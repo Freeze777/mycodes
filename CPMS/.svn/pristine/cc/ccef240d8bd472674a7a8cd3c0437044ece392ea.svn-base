@@ -1,0 +1,40 @@
+package com.ctl.cpms.test;
+
+
+import com.ctl.cpms.action.TransactionalExecutor;
+import com.ctl.cpms.dao.RouteDao;
+import com.ctl.cpms.dao.UserDao;
+import com.ctl.cpms.domain.User;
+import com.ctl.cpms.util.HibernateConnection;
+import org.hibernate.SessionFactory;
+import org.hibernate.classic.Session;
+
+import java.util.List;
+
+public class UserDaoTest {
+
+    public static void main(String[] args) {
+        final User user = new User();
+        user.setName("Dinesh");
+        user.setContact("9876543210");
+        user.setCuid("aa62857");
+        user.setEmail("aa62857@centurylink.com");
+        user.setPassword("Dinesh");
+        SessionFactory sessionFactory = HibernateConnection.getSessionFactory();
+
+        TransactionalExecutor transactionalExecutor = new TransactionalExecutor(sessionFactory);
+        transactionalExecutor.execute(new TransactionalExecutor.Task() {
+            @Override
+            public void execute(Session session) {
+                UserDao userDao = new UserDao(session);
+                RouteDao routeDao = new RouteDao(session);
+                userDao.createUser(user);
+                System.out.println("user.getUserId() = " + user.getUserId());
+                List<User> allUsers = userDao.findAllUsers();
+                System.out.println(allUsers);
+            }
+        });
+
+    }
+
+}

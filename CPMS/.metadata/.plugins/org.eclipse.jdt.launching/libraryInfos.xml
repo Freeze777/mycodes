@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<libraryInfos>
+<libraryInfo home="C:\Users\qbtest\Desktop\java\jt (10.140.1.184)\ctlijava\eclipse\eclipse" version="1.6.0_18">
+<bootpath>
+<entry path="C:\Users\qbtest\Desktop\java\jt (10.140.1.184)\ctlijava\eclipse\eclipse\jre\lib\resources.jar"/>
+<entry path="C:\Users\qbtest\Desktop\java\jt (10.140.1.184)\ctlijava\eclipse\eclipse\jre\lib\rt.jar"/>
+<entry path="C:\Users\qbtest\Desktop\java\jt (10.140.1.184)\ctlijava\eclipse\eclipse\jre\lib\sunrsasign.jar"/>
+<entry path="C:\Users\qbtest\Desktop\java\jt (10.140.1.184)\ctlijava\eclipse\eclipse\jre\lib\jsse.jar"/>
+<entry path="C:\Users\qbtest\Desktop\java\jt (10.140.1.184)\ctlijava\eclipse\eclipse\jre\lib\jce.jar"/>
+<entry path="C:\Users\qbtest\Desktop\java\jt (10.140.1.184)\ctlijava\eclipse\eclipse\jre\lib\charsets.jar"/>
+<entry path="C:\Users\qbtest\Desktop\java\jt (10.140.1.184)\ctlijava\eclipse\eclipse\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\Users\qbtest\Desktop\java\jt (10.140.1.184)\ctlijava\eclipse\eclipse\jre\lib\ext"/>
+<entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\Users\qbtest\Desktop\java\jt (10.140.1.184)\ctlijava\eclipse\eclipse\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="/usr/lib/jvm/java-7-openjdk-amd64/jre" version="1.7.0_79">
+<bootpath>
+<entry path="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/resources.jar"/>
+<entry path="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rt.jar"/>
+<entry path="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/sunrsasign.jar"/>
+<entry path="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jsse.jar"/>
+<entry path="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jce.jar"/>
+<entry path="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/charsets.jar"/>
+<entry path="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rhino.jar"/>
+<entry path="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jfr.jar"/>
+<entry path="/usr/lib/jvm/java-7-openjdk-amd64/jre/classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/ext"/>
+<entry path="/usr/java/packages/lib/ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="C:\Users\ab09505\Desktop\eclipse\eclipse" version="1.6.0_18">
+<bootpath>
+<entry path="C:\Users\ab09505\Desktop\eclipse\eclipse\jre\lib\resources.jar"/>
+<entry path="C:\Users\ab09505\Desktop\eclipse\eclipse\jre\lib\rt.jar"/>
+<entry path="C:\Users\ab09505\Desktop\eclipse\eclipse\jre\lib\sunrsasign.jar"/>
+<entry path="C:\Users\ab09505\Desktop\eclipse\eclipse\jre\lib\jsse.jar"/>
+<entry path="C:\Users\ab09505\Desktop\eclipse\eclipse\jre\lib\jce.jar"/>
+<entry path="C:\Users\ab09505\Desktop\eclipse\eclipse\jre\lib\charsets.jar"/>
+<entry path="C:\Users\ab09505\Desktop\eclipse\eclipse\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\Users\ab09505\Desktop\eclipse\eclipse\jre\lib\ext"/>
+<entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\Users\ab09505\Desktop\eclipse\eclipse\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="C:\Program Files\Java\jdk1.7.0_60" version="1.7.0_60-ea">
+<bootpath>
+<entry path="C:\Program Files\Java\jdk1.7.0_60\jre\lib\resources.jar"/>
+<entry path="C:\Program Files\Java\jdk1.7.0_60\jre\lib\rt.jar"/>
+<entry path="C:\Program Files\Java\jdk1.7.0_60\jre\lib\sunrsasign.jar"/>
+<entry path="C:\Program Files\Java\jdk1.7.0_60\jre\lib\jsse.jar"/>
+<entry path="C:\Program Files\Java\jdk1.7.0_60\jre\lib\jce.jar"/>
+<entry path="C:\Program Files\Java\jdk1.7.0_60\jre\lib\charsets.jar"/>
+<entry path="C:\Program Files\Java\jdk1.7.0_60\jre\lib\jfr.jar"/>
+<entry path="C:\Program Files\Java\jdk1.7.0_60\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\Program Files\Java\jdk1.7.0_60\jre\lib\ext"/>
+<entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\Program Files\Java\jdk1.7.0_60\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="/usr/lib/jvm/java-8-openjdk-amd64" version="1.8.0_66-internal">
+<bootpath>
+<entry path="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar"/>
+<entry path="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar"/>
+<entry path="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar"/>
+<entry path="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar"/>
+<entry path="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar"/>
+<entry path="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar"/>
+<entry path="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar"/>
+<entry path="/usr/lib/jvm/java-8-openjdk-amd64/jre/classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext"/>
+<entry path="/usr/java/packages/lib/ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="/usr/lib/jvm/java-7-openjdk-amd64" version="1.7.0_79">
+<bootpath>
+<entry path="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/resources.jar"/>
+<entry path="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rt.jar"/>
+<entry path="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/sunrsasign.jar"/>
+<entry path="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jsse.jar"/>
+<entry path="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jce.jar"/>
+<entry path="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/charsets.jar"/>
+<entry path="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rhino.jar"/>
+<entry path="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jfr.jar"/>
+<entry path="/usr/lib/jvm/java-7-openjdk-amd64/jre/classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/ext"/>
+<entry path="/usr/java/packages/lib/ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="C:\Users\qbtest\Desktop\java\jt (10.140.1.184)\ctlijava\eclipse\eclipse\jre" version="1.6.0_18">
+<bootpath>
+<entry path="C:\Users\qbtest\Desktop\java\jt (10.140.1.184)\ctlijava\eclipse\eclipse\jre\lib\resources.jar"/>
+<entry path="C:\Users\qbtest\Desktop\java\jt (10.140.1.184)\ctlijava\eclipse\eclipse\jre\lib\rt.jar"/>
+<entry path="C:\Users\qbtest\Desktop\java\jt (10.140.1.184)\ctlijava\eclipse\eclipse\jre\lib\sunrsasign.jar"/>
+<entry path="C:\Users\qbtest\Desktop\java\jt (10.140.1.184)\ctlijava\eclipse\eclipse\jre\lib\jsse.jar"/>
+<entry path="C:\Users\qbtest\Desktop\java\jt (10.140.1.184)\ctlijava\eclipse\eclipse\jre\lib\jce.jar"/>
+<entry path="C:\Users\qbtest\Desktop\java\jt (10.140.1.184)\ctlijava\eclipse\eclipse\jre\lib\charsets.jar"/>
+<entry path="C:\Users\qbtest\Desktop\java\jt (10.140.1.184)\ctlijava\eclipse\eclipse\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\Users\qbtest\Desktop\java\jt (10.140.1.184)\ctlijava\eclipse\eclipse\jre\lib\ext"/>
+<entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\Users\qbtest\Desktop\java\jt (10.140.1.184)\ctlijava\eclipse\eclipse\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+</libraryInfos>

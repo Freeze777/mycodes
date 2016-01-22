@@ -1,0 +1,28 @@
+
+package centurylink.cpms;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import centurylink.cpms.User;
+
+public interface ServiceInterface {
+    //void makeConnection();
+
+	//functions used for user info
+	String registerUser(User user);
+	String loginUser(User user);
+	
+	//String updateUser(User user);
+
+	//void blockuser(User user);
+	//void killConnection();
+	
+	//functions used for adding route
+	String addUserRoutes(Routes routes,long cid);
+	String addUserTransit(Routes routes, Long cid);
+	ArrayList<String> fillList(int i);
+	
+	ArrayList<SearchArray> getSearchUserResult(String to, String from,int intTime);
+	
+}

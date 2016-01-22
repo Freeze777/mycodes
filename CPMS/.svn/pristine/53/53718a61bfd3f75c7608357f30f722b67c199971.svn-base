@@ -1,0 +1,23 @@
+package centurylink.cpms;
+
+import java.sql.SQLException;
+import java.util.ArrayList;
+
+import centurylink.cpms.User;
+
+public interface DAOInterface {
+
+ public void storeUserDetailsInDB(User user) throws SQLException,IllegalArgumentException;
+public String retrieveDetailsInDB(User user)throws SQLException,IllegalArgumentException;
+public void makeDBconnection() throws SQLException,IllegalArgumentException;
+public void killDBconnection() throws SQLException,IllegalArgumentException;
+//public String updateUserDetailsInDB(User user)throws SQLException,IllegalArgumentException;
+//public void userblockInDB(User user)throws SQLException,IllegalArgumentException;
+public void storeRoutesDetailsInDB(Routes routes,long cid)throws SQLException,IllegalArgumentException;
+
+public void storeTransitsDetailsInDB(long toRouteId,long fromRouteId, Long cid,
+		String[] toTrasitsArray, int toLength, String[] fromTrasitsArray,
+		int fromLength)throws SQLException,IllegalArgumentException;
+public ArrayList<String> getTransitListFromDB(int i)throws SQLException;
+
+}

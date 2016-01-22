@@ -1,0 +1,42 @@
+package com.ctl.cpms.action;
+
+
+import org.hibernate.HibernateException;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.classic.Session;
+
+public class TransactionalExecutor {
+
+    private SessionFactory sessionFactory;
+
+    public TransactionalExecutor(SessionFactory sessionFactory) {
+        this.sessionFactory = sessionFactory;
+    }
+
+    public void execute(Task task) {
+        if (task != null) {
+            Session session = sessionFactory.openSession();
+            Transaction tx = null;
+            try {
+                tx = session.beginTransaction();
+                task.execute(session);
+                tx.commit();
+            } catch (HibernateException e) {
+                if (tx != null)
+                    tx.rollback();
+                e.printStackTrace();
+                throw new RuntimeException("findAllUsers failed");
+            } finally {
+                session.close();
+            }
+
+        }
+    }
+
+    public static interface Task {
+
+        void execute(Session session);
+
+    }
+}

@@ -1,0 +1,92 @@
+package com.ctl.cpms.domain;
+
+import javax.persistence.*;
+
+@Entity
+@Table(name = "cpm_pool_request")
+public class PoolRequest {
+
+	@Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE,generator = "cpmPoolReqSeq")
+    @SequenceGenerator(name = "cpmPoolReqSeq", sequenceName = "CPM_POOL_REQ_SEQ", allocationSize = 1)
+	private Long id;
+	 
+	@ManyToOne(optional = false)
+    @JoinColumn(name = "route_id")
+	private Route route;
+
+    @Column(name = "pool_request_status")
+    private PoolRequestStatus poolRequestStatus;
+
+    @ManyToOne(optional = false)
+    @JoinColumn(name = "user_id")
+	private User user;
+
+    @OneToOne
+    @JoinColumn(name = "source_id")
+	private TransitPoint source;
+
+    @OneToOne
+    @JoinColumn(name = "destination_id")
+	private TransitPoint destination;
+
+    @Column(name = "route_type")
+    @Enumerated(EnumType.STRING)
+    private RouteType routeType;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Route getRoute() {
+        return route;
+    }
+
+    public void setRoute(Route route) {
+        this.route = route;
+    }
+
+    public PoolRequestStatus getPoolRequestStatus() {
+        return poolRequestStatus;
+    }
+
+    public void setPoolRequestStatus(PoolRequestStatus poolRequestStatus) {
+        this.poolRequestStatus = poolRequestStatus;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+    public TransitPoint getSource() {
+        return source;
+    }
+
+    public void setSource(TransitPoint source) {
+        this.source = source;
+    }
+
+    public TransitPoint getDestination() {
+        return destination;
+    }
+
+    public void setDestination(TransitPoint destination) {
+        this.destination = destination;
+    }
+
+    public RouteType getRouteType() {
+        return routeType;
+    }
+
+    public void setRouteType(RouteType routeType) {
+        this.routeType = routeType;
+    }
+}
