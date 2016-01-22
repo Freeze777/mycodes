@@ -1,0 +1,706 @@
+<CustomerOrderResponse xmlns="http://www.qwest.com/XMLSchema" xmlns:qb="http://www.qwest.com/XMLSchema/BIM" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<qb:TargetSchemaVersionUsed xmlns:qb="http://www.qwest.com/XMLSchema/BIM">
+		<qb:TargetXSDName>http://oeservicese2e.dev.qintra.com/03.25/XMLCanon/ProjectSpecific/COD/Production/CustomerOrderResponse_v02_02.xsd</qb:TargetXSDName>
+		<qb:MajorVersionNumber>0</qb:MajorVersionNumber>
+		<qb:MinorVersionNumber>0</qb:MinorVersionNumber>
+	</qb:TargetSchemaVersionUsed>
+	<qb:MessageStatus xmlns:qb="http://www.qwest.com/XMLSchema/BIM">
+		<qb:ErrorStatus>OK</qb:ErrorStatus>
+	</qb:MessageStatus>
+	<CustomerOrder xmlns="http://www.qwest.com/XMLSchema" xmlns:qb="http://www.qwest.com/XMLSchema/BIM" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<qb:ServiceOrderId name="ORDER_ID" owner="PROD"	type="GenericId">###</qb:ServiceOrderId>
+		<OrderStatus>PRO</OrderStatus>
+		<OrderCreateDate>2012-10-04T00:00:00.000</OrderCreateDate>
+		<OrderTakenDate>2012-10-02T12:00:00.000-05:00</OrderTakenDate>
+		<OrderReceivedDate>2012-10-02T12:00:00.000-05:00</OrderReceivedDate>
+		<OrderSourceSystemName>OANS</OrderSourceSystemName>
+		<OrderSourceSystemVersion>1.0</OrderSourceSystemVersion>
+		<TypistId>WEBOE_AS</TypistId>
+		<PartnerOrderFlag>false</PartnerOrderFlag>
+		<OrderCustomer>
+			<OrderCustomerAccount>
+				<qb:CustomerAccountId name="CUSTOMER_ACCT_ID" owner="PROD" type="GenericId">###</qb:CustomerAccountId>
+				<UserDefinedAccountName>CUST_ACCT_NM</UserDefinedAccountName>
+				<OrderItem>
+					<OrderItemId>1</OrderItemId>
+					<qb:CustomerAccountId name="CUSTOMER_ACCT_ID" owner="PROD" type="GenericId">###</qb:CustomerAccountId>
+					<ActionCode>N</ActionCode>
+					<DesiredDueDate>2012-10-10T12:00:00.000-05:00</DesiredDueDate>
+					<CommitmentDate>2012-10-10T12:00:00.000-05:00</CommitmentDate>
+					<Quantity>0</Quantity>
+					<BusinessObject previousFlag="false" xsi:type="CustomerProductT" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+						<CustomerProductId name="PRD_ACCT_SERVICE_CAT_SEQ" owner="PROD" type="GenericId">123456</CustomerProductId>
+						<CustomerBrandId name="PRODUCT_ACCOUNT_ID" owner="PROD"	type="GenericId">###</CustomerBrandId>
+						<ProductTemplateId>IQ</ProductTemplateId>
+						<qb:CustomerAccountId name="CUSTOMER_ACCT_ID" owner="PROD" type="GenericId">###</qb:CustomerAccountId>
+						<CustomerAssignedName>IQ</CustomerAssignedName>
+						<GroupSalesId>GMNE</GroupSalesId>
+						<LargeCustomerDealId name="LARGE_CUSTOMER_DEAL_ID" owner="PROD" type="GenericId">XXXXX</LargeCustomerDealId>
+						<QuoteValue>721.9</QuoteValue>
+						<ServiceTypeCode>IQ INTERNET</ServiceTypeCode>
+						<ExpediteFlag>false</ExpediteFlag>
+						<CustomerChargedForExpediteFlag>false</CustomerChargedForExpediteFlag>
+						<SalesOrderId name="SALES_ORDER_ID" owner="PROD" type="GenericId">###</SalesOrderId>
+						<NRCQuoteValue>805.00</NRCQuoteValue>
+						<ServiceOrderNumber>229840581-1</ServiceOrderNumber>
+					</BusinessObject>
+					<TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+					<CoreActionCode>INS</CoreActionCode>
+					<CoreCategoryCode>ADD</CoreCategoryCode>
+					<VersionNo>0</VersionNo>
+				</OrderItem>
+				<OrderItem>
+					<OrderItemId>2</OrderItemId>
+					<qb:CustomerAccountId name="CUSTOMER_ACCT_ID" owner="PROD" type="GenericId">###</qb:CustomerAccountId>
+					<ActionCode>N</ActionCode>
+					<Quantity>0</Quantity>
+					<BusinessObject previousFlag="false" subClass="Hosted Voice Service" xsi:type="ProvisioningElementT" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+						<ProvisioningSvcElementId name="SERVICE_ELEMENT_ID"	owner="PROD" type="GenericId">###</ProvisioningSvcElementId>
+						<CustomerProductComponentId name="PRODUCT_ACCOUNT_ID" owner="OALY" type="GenericId">###</CustomerProductComponentId>
+						<BillingSvcElementId name="SERVICE_ELEMENT_ID" owner="PROD" type="GenericId">478965</BillingSvcElementId>
+						<AttributeGroup>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>ACT_HVS_MCC</AttributeName>
+								<AttributeValue>15</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>TENANT_STAT</AttributeName>
+								<AttributeValue>NEW</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>NWK_NODE_ST</AttributeName>
+								<AttributeValue>EXISTING</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>QWEST_TRANFG</AttributeName>
+								<AttributeValue>YES</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>SERV_TYPE</AttributeName>
+								<AttributeValue>HOSTED VOIP</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>DAP_APP_NUM</AttributeName>
+								<AttributeValue>123460</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false" fk_to="Tenant">
+								<AttributeName>TENANT_SEID</AttributeName>
+								<AttributeValue>###</AttributeValue>
+							</AttributeNode>
+						</AttributeGroup>
+					</BusinessObject>
+					<TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+				</OrderItem>
+				<OrderItem>
+					<OrderItemId>3</OrderItemId>
+					<qb:CustomerAccountId owner="PROD" type="GenericId"	name="CUSTOMER_ACCT_ID">###</qb:CustomerAccountId>
+					<ActionCode>N</ActionCode>
+					<Quantity>0</Quantity>
+					<BusinessObject previousFlag="false" subClass="External VOIP Entrance" xsi:type="ProvisioningElementT" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+						<ProvisioningSvcElementId owner="PROD" type="GenericId" name="SERVICE_ELEMENT_ID">###</ProvisioningSvcElementId>
+						<CustomerProductComponentId name="PRODUCT_ACCOUNT_ID" owner="OALY" type="GenericId">###</CustomerProductComponentId>
+						<BillingSvcElementId owner="PROD" type="GenericId" name="SERVICE_ELEMENT_ID">478965</BillingSvcElementId>
+						<AttributeGroup>
+							<AttributeNode fk_to="Hosted Voice Service"	IsEncrypted="false">
+								<AttributeName>VOIPSER_SEID</AttributeName>
+								<AttributeValue>###</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>QVUR_PERCENT</AttributeName>
+								<AttributeValue>100</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>IP_ADDR_TYP</AttributeName>
+								<AttributeValue>IPv4</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>CARRIER_NM</AttributeName>
+								<AttributeValue>L-CTL</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>BANDWIDTH</AttributeName>
+								<AttributeValue>100000</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>IP_ADDR</AttributeName>
+								<AttributeValue>15.15.15.15</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>ACCESS_TYPE</AttributeName>
+								<AttributeValue>DEDICATED IP ACCESS</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>WAN_PORT_BL</AttributeName>
+								<AttributeValue>INTERNET</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>PRIORITY_1</AttributeName>
+								<AttributeValue>100</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>CIRCUIT_ID</AttributeName>
+								<AttributeValue>CKT-232</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>QOS_METHOD</AttributeName>
+								<AttributeValue>QUEUING METHODOLOGY A</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>CARR_ACT_NUM</AttributeName>
+								<AttributeValue>9232</AttributeValue>
+							</AttributeNode>
+						</AttributeGroup>
+					</BusinessObject>
+					<TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+					<VersionNumber>0</VersionNumber>
+				</OrderItem>
+				<OrderItem>
+					<OrderItemId>4</OrderItemId>
+					<qb:CustomerAccountId name="CUSTOMER_ACCT_ID" owner="PROD" type="GenericId">###</qb:CustomerAccountId>
+					<ActionCode>N</ActionCode>
+					<Quantity>0</Quantity>
+					<BusinessObject previousFlag="false" subClass="Hosted Voice Group" xsi:type="ProvisioningElementT" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+						<ProvisioningSvcElementId name="SERVICE_ELEMENT_ID"	owner="PROD" type="GenericId">###</ProvisioningSvcElementId>
+						<CustomerProductComponentId name="PRODUCT_ACCOUNT_ID" owner="OALY" type="GenericId">###</CustomerProductComponentId>
+						<BillingSvcElementId name="SERVICE_ELEMENT_ID" owner="PROD" type="GenericId">478965</BillingSvcElementId>
+						<AttributeGroup>
+							<AttributeNode IsEncrypted="false" fk_to="911 and PPU Location">
+								<AttributeName>911PPUL_SEID</AttributeName>
+								<AttributeValue>###</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>TRIGGER_PT</AttributeName>
+								<AttributeValue>YES</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>GROUP_NAME</AttributeName>
+								<AttributeValue>Group7050581</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>GROUP_ID</AttributeName>
+								<AttributeValue>a-387050581</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false" fk_to="Hosted Voice Service">
+								<AttributeName>VOIPSER_SEID</AttributeName>
+								<AttributeValue>###</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>LID_GRP_NUM</AttributeName>
+								<AttributeValue>5032199800</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>LID_GRP_NM</AttributeName>
+								<AttributeValue>IP VOICE</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>TIME_ZONE</AttributeName>
+								<AttributeValue>America/New_York</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>ACT_GRP_MCC</AttributeName>
+								<AttributeValue>5</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>VOIP_CMP_COM</AttributeName>
+								<AttributeValue>Uncompressed</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>EXT_LENGTH</AttributeName>
+								<AttributeValue>5</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>MAX_SESSIONS</AttributeName>
+								<AttributeValue>50</AttributeValue>
+							</AttributeNode>
+						</AttributeGroup>
+					</BusinessObject>
+					<TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+				</OrderItem>
+				<OrderItem>
+					<OrderItemId>5</OrderItemId>
+					<qb:CustomerAccountId name="CUSTOMER_ACCT_ID" owner="PROD" type="GenericId">###</qb:CustomerAccountId>
+					<ActionCode>N</ActionCode>
+					<Quantity>0</Quantity>
+					<BusinessObject previousFlag="false" subClass="Group Domain" xsi:type="ProvisioningElementT" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+						<ProvisioningSvcElementId name="SERVICE_ELEMENT_ID"	owner="PROD" type="GenericId">###</ProvisioningSvcElementId>
+						<CustomerProductComponentId name="PRODUCT_ACCOUNT_ID" owner="OALY" type="GenericId">###</CustomerProductComponentId>
+						<BillingSvcElementId name="SERVICE_ELEMENT_ID" owner="PROD" type="GenericId">478965</BillingSvcElementId>
+						<AttributeGroup>
+							<AttributeNode IsEncrypted="false" fk_to="Enterprise Domain">
+								<AttributeName>ENTDOMN_SEID</AttributeName>
+								<AttributeValue>###</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false" fk_to="Hosted Voice Group">
+								<AttributeName>HVGROUP_SEID</AttributeName>
+								<AttributeValue>###</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>SUB_DEF_FG</AttributeName>
+								<AttributeValue>Y</AttributeValue>
+							</AttributeNode>
+						</AttributeGroup>
+					</BusinessObject>
+					<TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+				</OrderItem>
+				<OrderItem>
+					<OrderItemId>6</OrderItemId>
+					<qb:CustomerAccountId name="CUSTOMER_ACCT_ID" owner="PROD" type="GenericId">###</qb:CustomerAccountId>
+					<ActionCode>N</ActionCode>
+					<Quantity>0</Quantity>
+					<BusinessObject previousFlag="false" subClass="911 and PPU Location" xsi:type="ProvisioningElementT" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+						<ProvisioningSvcElementId name="SERVICE_ELEMENT_ID"	owner="PROD" type="GenericId">###</ProvisioningSvcElementId>
+						<CustomerProductComponentId name="PRODUCT_ACCOUNT_ID" owner="OALY" type="GenericId">###</CustomerProductComponentId>
+						<BillingSvcElementId name="SERVICE_ELEMENT_ID" owner="PROD" type="GenericId">478965</BillingSvcElementId>
+						<AttributeGroup>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>ZIPCODE</AttributeName>
+								<AttributeValue>80202</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>TRIGGER_PT</AttributeName>
+								<AttributeValue>YES</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>STATE</AttributeName>
+								<AttributeValue>CO</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>ALIAS_NAME</AttributeName>
+								<AttributeValue>Denver_Address</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>CALL_CENTER</AttributeName>
+								<AttributeValue>A</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>ADDR_LINE1</AttributeName>
+								<AttributeValue>930 15th St</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>ADDR_LINE2</AttributeName>
+								<AttributeValue></AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false" fk_to="Hosted Voice Service">
+								<AttributeName>VOIPSER_SEID</AttributeName>
+								<AttributeValue>###</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>CITY</AttributeName>
+								<AttributeValue>Denver</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>PAC_VPAC</AttributeName>
+								<AttributeValue>PAC</AttributeValue>
+							</AttributeNode>
+						</AttributeGroup>
+					</BusinessObject>
+					<TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+					<VersionNo>0</VersionNo>
+				</OrderItem>
+				<OrderItem>
+					<OrderItemId>7</OrderItemId>
+					<OrderItemId>9000302</OrderItemId>
+					<qb:CustomerAccountId name="CUSTOMER_ACCT_ID" owner="PROD" type="GenericId">###</qb:CustomerAccountId>
+					<ActionCode>N</ActionCode>
+					<Quantity>0</Quantity>
+					<BusinessObject previousFlag="false" xsi:type="ProvisioningElementT" subClass="Group Calling Policy" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+						<ProvisioningSvcElementId name="SERVICE_ELEMENT_ID"	owner="PROD" type="GenericId">###</ProvisioningSvcElementId>
+						<CustomerProductComponentId name="PRODUCT_ACCOUNT_ID" owner="OALY" type="GenericId">###</CustomerProductComponentId>
+						<BillingSvcElementId name="SERVICE_ELEMENT_ID" owner="PROD" type="GenericId">478965</BillingSvcElementId>
+						<AttributeGroup>
+							<AttributeNode IsEncrypted="false" fk_to="Hosted Voice Group">
+								<AttributeName>HVGROUP_SEID</AttributeName>
+								<AttributeValue>###</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>EMER_CALLS</AttributeName>
+								<AttributeValue>Use Group CLID</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>ALT_NUM_RID</AttributeName>
+								<AttributeValue>off</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>BLK_CNAM_EC</AttributeName>
+								<AttributeValue>off</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>MEDIA_POLICY</AttributeName>
+								<AttributeValue>No Restrictions</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>ENB_MCC_TOG</AttributeName>
+								<AttributeValue>on</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>ENB_MCC_VAL</AttributeName>
+								<AttributeValue>3</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>ENB_MCVC_TO</AttributeName>
+								<AttributeValue>on</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>ENB_MCVC_VA</AttributeName>
+								<AttributeValue>1</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>ENB_MDACT</AttributeName>
+								<AttributeValue>on</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>ENB_MDACV</AttributeName>
+								<AttributeValue>1440</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>ENB_MDUCT</AttributeName>
+								<AttributeValue>on</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>ENB_MDUCV</AttributeName>
+								<AttributeValue>2</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>ENB_MCFFT</AttributeName>
+								<AttributeValue>on</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>ENB_MCFFV</AttributeName>
+								<AttributeValue>3</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>MAX_REDIR_DV</AttributeName>
+								<AttributeValue>5</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>ENB_EXT_DT</AttributeName>
+								<AttributeValue>off</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>NONEMR_CALLS</AttributeName>
+								<AttributeValue>Use DN</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>ENB_MFFDT</AttributeName>
+								<AttributeValue>on</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>ENB_MFFDV</AttributeName>
+								<AttributeValue>3</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>ENB_MCRCT</AttributeName>
+								<AttributeValue>on</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>ENB_MCRCV</AttributeName>
+								<AttributeValue>5</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>USE_GN_CLID</AttributeName>
+								<AttributeValue>off</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>CLI_LVL</AttributeName>
+								<AttributeValue>Use Service Provider/Enterprise Calling Line ID Policy</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>CLP_LVL</AttributeName>
+								<AttributeValue>Use Service Provider/Enterprise Call Limits	Policy</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>TRP_LVL</AttributeName>
+								<AttributeValue>Use Group Translation and Routing Policy</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>MP_LVL</AttributeName>
+								<AttributeValue>Use Service Provider/Enterprise Media Policy</AttributeValue>
+							</AttributeNode>
+						</AttributeGroup>
+					</BusinessObject>
+					<TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+					<VersionNumber>0</VersionNumber>
+				</OrderItem>
+				<OrderItem>
+					<OrderItemId>8</OrderItemId>
+					<qb:CustomerAccountId name="CUSTOMER_ACCT_ID" owner="PROD" type="GenericId">###</qb:CustomerAccountId>
+					<ActionCode>N</ActionCode>
+					<Quantity>0</Quantity>
+					<BusinessObject previousFlag="false" subClass="Hosted Voice Seat" xsi:type="ProvisioningElementT" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+						<ProvisioningSvcElementId name="SERVICE_ELEMENT_ID"	owner="PROD" type="GenericId">###</ProvisioningSvcElementId>
+						<CustomerProductComponentId name="PRODUCT_ACCOUNT_ID" owner="OALY" type="GenericId">###</CustomerProductComponentId>
+						<BillingSvcElementId name="SERVICE_ELEMENT_ID" owner="PROD" type="GenericId">478965</BillingSvcElementId>
+						<AttributeGroup>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>SEAT_TYPE</AttributeName>
+								<AttributeValue>AUTO ATTENDANT</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>SEAT_QTY</AttributeName>
+								<AttributeValue>7</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false" fk_to="Hosted Voice Group">
+								<AttributeName>HVGROUP_SEID</AttributeName>
+								<AttributeValue>###</AttributeValue>
+							</AttributeNode>
+						</AttributeGroup>
+					</BusinessObject>
+					<TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+				</OrderItem>
+				<OrderItem>
+					<OrderItemId>9</OrderItemId>
+					<qb:CustomerAccountId name="CUSTOMER_ACCT_ID" owner="PROD" type="GenericId">###</qb:CustomerAccountId>
+					<ActionCode>N</ActionCode>
+					<Quantity>0</Quantity>
+					<BusinessObject previousFlag="false" subClass="Hosted Voice Add On Feature" xsi:type="ProvisioningElementT" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+						<ProvisioningSvcElementId name="SERVICE_ELEMENT_ID" owner="PROD" type="GenericId">###</ProvisioningSvcElementId>
+						<CustomerProductComponentId name="PRODUCT_ACCOUNT_ID" owner="OALY" type="GenericId">###</CustomerProductComponentId>
+						<BillingSvcElementId name="SERVICE_ELEMENT_ID" owner="PROD" type="GenericId">478965</BillingSvcElementId>
+						<AttributeGroup>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>ADD_ON</AttributeName>
+								<AttributeValue>SOFTPHONE</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>ADD_ON_QTY</AttributeName>
+								<AttributeValue>7</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false" fk_to="Hosted Voice Group">
+								<AttributeName>HVGROUP_SEID</AttributeName>
+								<AttributeValue>###</AttributeValue>
+							</AttributeNode>
+						</AttributeGroup>
+					</BusinessObject>
+					<TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+				</OrderItem>
+				<OrderItem>
+					<OrderItemId>10</OrderItemId>
+					<qb:CustomerAccountId owner="PROD" type="GenericId"	name="CUSTOMER_ACCT_ID">###</qb:CustomerAccountId>
+					<ActionCode>N</ActionCode>
+					<Quantity>0</Quantity>
+					<BusinessObject xsi:type="ProvisioningElementT"	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" previousFlag="false" subClass="Hosted Voice Trunk Group">
+						<ProvisioningSvcElementId owner="PROD" type="GenericId" name="SERVICE_ELEMENT_ID">###</ProvisioningSvcElementId>
+						<CustomerProductComponentId name="PRODUCT_ACCOUNT_ID" owner="OALY" type="GenericId">###</CustomerProductComponentId>
+						<BillingSvcElementId owner="PROD" type="GenericId" name="SERVICE_ELEMENT_ID">478965</BillingSvcElementId>
+						<AttributeGroup>
+							<AttributeNode IsEncrypted="false" fk_to="Hosted Voice Service">
+								<AttributeName>VOIPSER_SEID</AttributeName>
+								<AttributeValue>###</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>DEVICE</AttributeName>
+								<AttributeValue>CiscoCME-V15.1M4</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>TRKGRP_ALIAS</AttributeName>
+								<AttributeValue>Loc2</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>PILOT_TN</AttributeName>
+								<AttributeValue>###</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false" fk_to="Group Domain">
+								<AttributeName>GRPDOM_SEID</AttributeName>
+								<AttributeValue>###</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>PILOTTN_SEID</AttributeName>
+								<AttributeValue>###</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>MAX_SESSIONS</AttributeName>
+								<AttributeValue>2</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false" fk_to="Hosted Voice Group">
+								<AttributeName>HVGROUP_SEID</AttributeName>
+								<AttributeValue>###</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false" fk_to="911 and PPU Location">
+								<AttributeName>911PPUL_SEID</AttributeName>
+								<AttributeValue>###</AttributeValue>
+							</AttributeNode>
+						</AttributeGroup>
+					</BusinessObject>
+					<TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+					<VersionNumber>0</VersionNumber>
+				</OrderItem>
+				<OrderItem>
+					<OrderItemId>11</OrderItemId>
+					<qb:CustomerAccountId owner="PROD" type="GenericId"	name="CUSTOMER_ACCT_ID">###</qb:CustomerAccountId>
+					<ActionCode>N</ActionCode>
+					<Quantity>0</Quantity>
+					<BusinessObject xsi:type="ProvisioningElementT"	previousFlag="false" subClass="Ported TN Originating Address" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+						<ProvisioningSvcElementId owner="PROD" type="GenericId" name="SERVICE_ELEMENT_ID">###</ProvisioningSvcElementId>
+						<CustomerProductComponentId name="PRODUCT_ACCOUNT_ID" owner="OALY" type="GenericId">###</CustomerProductComponentId>
+						<BillingSvcElementId owner="PROD" type="GenericId" name="SERVICE_ELEMENT_ID">478965</BillingSvcElementId>
+						<AttributeGroup>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>ALIAS_NAME</AttributeName>
+								<AttributeValue>ORIG 01</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>CITY</AttributeName>
+								<AttributeValue>Portland</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>STATE</AttributeName>
+								<AttributeValue>OR</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>ADDR_LINE1</AttributeName>
+								<AttributeValue>2012 NW Overton St</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>ZIPCODE</AttributeName>
+								<AttributeValue>97209</AttributeValue>
+							</AttributeNode>
+						</AttributeGroup>
+					</BusinessObject>
+					<TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+					<VersionNumber>0</VersionNumber>
+				</OrderItem>
+				<OrderItem>
+					<OrderItemId>12</OrderItemId>
+					<qb:CustomerAccountId name="CUSTOMER_ACCT_ID" owner="PROD" type="GenericId">###</qb:CustomerAccountId>
+					<ActionCode>N</ActionCode>
+					<Quantity>0</Quantity>
+					<BusinessObject previousFlag="false" subClass="Hosted Voice Standard Ported TN" xsi:type="ProvisioningElementT"	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+						<ProvisioningSvcElementId name="SERVICE_ELEMENT_ID"	owner="PROD" type="GenericId">###</ProvisioningSvcElementId>
+						<CustomerProductComponentId name="PRODUCT_ACCOUNT_ID" owner="OALY" type="GenericId">###</CustomerProductComponentId>
+						<BillingSvcElementId name="SERVICE_ELEMENT_ID" owner="PROD" type="GenericId">478965</BillingSvcElementId>
+						<AttributeGroup>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>PRTG_ACT_REQ</AttributeName>
+								<AttributeValue>Y</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false" fk_to="911 and PPU Location">
+								<AttributeName>911PPUL_SEID</AttributeName>
+								<AttributeValue>###</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>PRVDR_TO_QCC</AttributeName>
+								<AttributeValue>QC</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>TELEPHONE_NO</AttributeName>
+								<AttributeValue>###</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false" fk_to="Hosted Voice Group">
+								<AttributeName>HVGROUP_SEID</AttributeName>
+								<AttributeValue>###</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>VOIP_CMP_COM</AttributeName>
+								<AttributeValue>G711</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>WP_LTNG_QTY</AttributeName>
+								<AttributeValue>8</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>PORTED_TN_FG</AttributeName>
+								<AttributeValue>Y</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>NUM_MGT_ID</AttributeName>
+								<AttributeValue>A20141224074207905</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>GRPNUM_FG</AttributeName>
+								<AttributeValue>Y</AttributeValue>
+							</AttributeNode>
+							<AttributeNode fk_to="Ported TN Originating Address" IsEncrypted="false">
+								<AttributeName>ORIGADR_SEID</AttributeName>
+								<AttributeValue>###</AttributeValue>
+							</AttributeNode>
+						</AttributeGroup>
+					</BusinessObject>
+					<TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+					<VersionNo>0</VersionNo>
+				</OrderItem>
+				<OrderItem>
+					<OrderItemId>13</OrderItemId>
+					<qb:CustomerAccountId name="CUSTOMER_ACCT_ID" owner="PROD" type="GenericId">###</qb:CustomerAccountId>
+					<ActionCode>N</ActionCode>
+					<Quantity>0</Quantity>
+					<BusinessObject previousFlag="false" subClass="Hosted Voice Standard Non-Ported TN" xsi:type="ProvisioningElementT"	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+						<ProvisioningSvcElementId name="SERVICE_ELEMENT_ID"	owner="PROD" type="GenericId">###</ProvisioningSvcElementId>
+						<CustomerProductComponentId name="PRODUCT_ACCOUNT_ID" owner="OALY" type="GenericId">###</CustomerProductComponentId>
+						<BillingSvcElementId name="SERVICE_ELEMENT_ID" owner="PROD" type="GenericId">478965</BillingSvcElementId>
+						<AttributeGroup>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>PRTG_ACT_REQ</AttributeName>
+								<AttributeValue>N</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false" fk_to="911 and PPU Location">
+								<AttributeName>911PPUL_SEID</AttributeName>
+								<AttributeValue>###</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>PRVDR_TO_QCC</AttributeName>
+								<AttributeValue>QX</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>TELEPHONE_NO</AttributeName>
+								<AttributeValue>###</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false" fk_to="Hosted Voice Group">
+								<AttributeName>HVGROUP_SEID</AttributeName>
+								<AttributeValue>###</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>VOIP_CMP_COM</AttributeName>
+								<AttributeValue>G711</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>WP_LTNG_QTY</AttributeName>
+								<AttributeValue>8</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>PORTED_TN_FG</AttributeName>
+								<AttributeValue>N</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>NUM_MGT_ID</AttributeName>
+								<AttributeValue>A20141224074207905</AttributeValue>
+							</AttributeNode>
+							<AttributeNode IsEncrypted="false">
+								<AttributeName>GRPNUM_FG</AttributeName>
+								<AttributeValue>N</AttributeValue>
+								<AttributeValueDesc />
+							</AttributeNode>
+						</AttributeGroup>
+					</BusinessObject>
+					<TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+					<VersionNo>0</VersionNo>
+				</OrderItem>
+				<OrderItem>
+					<OrderItemId>14</OrderItemId>
+					<qb:CustomerAccountId name="CUSTOMER_ACCT_ID" owner="PROD" type="GenericId">###</qb:CustomerAccountId>
+					<ActionCode>N</ActionCode>
+					<Quantity>0</Quantity>
+					<BusinessObject previousFlag="false" xsi:type="ContactT" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+						<qb:ContactId name="CONTACT_ID" owner="OALY" type="GenericId">###</qb:ContactId>
+						<ContactType>ORDR</ContactType>
+						<qb:Email>Larry.Borland@CenturyLink.com</qb:Email>
+						<ContactName>Larry Borland</ContactName>
+						<qb:ContactTN>
+							<qb:NPA>303</qb:NPA>
+							<qb:NXX>626</qb:NXX>
+							<qb:LineNumber>2421</qb:LineNumber>
+						</qb:ContactTN>
+						<CellPhoneTN>
+							<qb:NPA>303</qb:NPA>
+							<qb:NXX>710</qb:NXX>
+							<qb:LineNumber>7973</qb:LineNumber>
+						</CellPhoneTN>
+					</BusinessObject>
+					<TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+				</OrderItem>
+			</OrderCustomerAccount>
+		</OrderCustomer>
+		<ValidationRuleSetNameList>
+			<ValidationRuleSetName>NONRQ</ValidationRuleSetName>
+		</ValidationRuleSetNameList>
+	</CustomerOrder>
+</CustomerOrderResponse>

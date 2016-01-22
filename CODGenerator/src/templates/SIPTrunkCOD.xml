@@ -1,0 +1,2646 @@
+<CustomerOrderResponse xmlns = "http://www.qwest.com/XMLSchema" xmlns:qb = "http://www.qwest.com/XMLSchema/BIM" xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance">
+  	<qb:TargetSchemaVersionUsed>
+		<qb:TargetXSDName>http://oeservicese2e.dev.qintra.com/03.25/XMLCanon/ProjectSpecific/COD/Production/CustomerOrderResponse_v02_02.xsd</qb:TargetXSDName>
+		<qb:MajorVersionNumber>0</qb:MajorVersionNumber>
+		<qb:MinorVersionNumber>0</qb:MinorVersionNumber>
+	</qb:TargetSchemaVersionUsed>
+	<qb:MessageStatus>
+		<qb:ErrorStatus>OK</qb:ErrorStatus>
+	</qb:MessageStatus>
+	<CustomerOrder>
+  <qb:ServiceOrderId name = "ORDER_ID" owner = "PROD" type = "GenericId">23456789</qb:ServiceOrderId>
+  <OrderStatus>PRO</OrderStatus>
+  <OrderCreateDate>2008-09-27T13:00:00.000-06:00</OrderCreateDate>
+  <OrderTakenDate>2008-09-23T13:00:00.000-06:00</OrderTakenDate>
+  <OrderReceivedDate>2008-09-23T13:00:00.000-06:00</OrderReceivedDate>
+  <OrderSourceSystemName>OANW</OrderSourceSystemName>
+  <OrderSourceSystemVersion>1.0</OrderSourceSystemVersion>
+  <TypistId>WEBOE_AS</TypistId>
+  <PartnerOrderFlag>false</PartnerOrderFlag>
+  <OrderCustomer>
+    <OrderCustomerAccount>
+      <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+      <UserDefinedAccountName>CUST_ACCT_NM</UserDefinedAccountName>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <DesiredDueDate>2008-11-15T00:00:00.000-06:00</DesiredDueDate>
+        <CommitmentDate>2008-11-28T12:51:39.334-06:00</CommitmentDate>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductT">
+          <CustomerProductId name = "PRD_ACCT_SERVICE_CAT_SEQ" owner = "PROD" type = "GenericId">9603259</CustomerProductId>
+          <CustomerBrandId name = "PRODUCT_ACCOUNT_ID" owner = "PROD" type = "GenericId">132383701</CustomerBrandId>
+          <ProductTemplateId>VOIPTRUNK</ProductTemplateId>
+          <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+          <CustomerAssignedName>VOIPTRUNK</CustomerAssignedName>
+          <QuoteValue>1.00</QuoteValue>
+          <ServiceTypeCode>VOIP</ServiceTypeCode>
+          <CustomerPON>99999</CustomerPON>
+          <ExpediteFlag>false</ExpediteFlag>
+          <CustomerChargedForExpediteFlag>false</CustomerChargedForExpediteFlag>
+          <SalesOrderId name = "SALES_ORDER_ID" owner = "OALY" type = "GenericId">960325917</SalesOrderId>
+          <CustomerRequestNumber>VOIP-TRUNK-01</CustomerRequestNumber>
+          <NRCQuoteValue>1.00</NRCQuoteValue>
+          <ServiceOrderNumber>88888-1</ServiceOrderNumber>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+        <CoreActionCode>INS</CoreActionCode>
+        <CoreCategoryCode>ADD</CoreCategoryCode>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "SingleLocationComponentT">
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">100</CustomerProductComponentId>
+          <CustomerProductComponentName>VOIP</CustomerProductComponentName>
+          <CustomerProductId name = "PRD_ACCT_SERVICE_CAT_SEQ" owner = "PROD" type = "GenericId">9603259</CustomerProductId>
+          <AccessMethodCode>VOIPALL</AccessMethodCode>
+          <ApplicationCode>VOIP</ApplicationCode>
+          <NodeLocationId name = "LOCATION_ID" owner = "PROD" type = "GenericId">123456</NodeLocationId>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentPriceT">
+          <CustomerProductComponentPriceId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">101</CustomerProductComponentPriceId>
+          <CustomerProductComponentPriceDescription>VOIP SERV</CustomerProductComponentPriceDescription>
+          <StandardPrice>0.00</StandardPrice>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">100</CustomerProductComponentId>
+          <BillingProductComponentID name = "PRCMP_CODE" owner = "PROD" type = "GenericId">VOIP SERV</BillingProductComponentID>
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">10101</CustomerProductComponentAttributeId>
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">10102</CustomerProductComponentAttributeId>
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">10103</CustomerProductComponentAttributeId>
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">10104</CustomerProductComponentAttributeId>
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">10105</CustomerProductComponentAttributeId>
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">10106</CustomerProductComponentAttributeId>
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">10107</CustomerProductComponentAttributeId>
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">10108</CustomerProductComponentAttributeId>
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">10109</CustomerProductComponentAttributeId>
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">79697990</CustomerProductComponentAttributeId>
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">79697991</CustomerProductComponentAttributeId>
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">79697992</CustomerProductComponentAttributeId>
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">79697993</CustomerProductComponentAttributeId>
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">79697994</CustomerProductComponentAttributeId>
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">79697995</CustomerProductComponentAttributeId>
+          <ClinId>101</ClinId>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentAttributeT">
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">10101</CustomerProductComponentAttributeId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">100</CustomerProductComponentId>
+          <AttributeName>SERV_TYPE</AttributeName>
+          <AttributeValue>SIP Trunk</AttributeValue>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentAttributeT">
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">10102</CustomerProductComponentAttributeId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">100</CustomerProductComponentId>
+          <AttributeName>IP_TOLL_FREE</AttributeName>
+          <AttributeValue>NO</AttributeValue>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentAttributeT">
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">10103</CustomerProductComponentAttributeId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">100</CustomerProductComponentId>
+          <AttributeName>DID_IND</AttributeName>
+          <AttributeValue>YES</AttributeValue>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentAttributeT">
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">10104</CustomerProductComponentAttributeId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">100</CustomerProductComponentId>
+          <AttributeName>VOIP_INT</AttributeName>
+          <AttributeValue>Private Shared</AttributeValue>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentAttributeT">
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">10105</CustomerProductComponentAttributeId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">100</CustomerProductComponentId>
+          <AttributeName>QWEST_TRANS</AttributeName>
+          <AttributeValue>YES</AttributeValue>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentAttributeT">
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">10106</CustomerProductComponentAttributeId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">100</CustomerProductComponentId>
+          <AttributeName>SIP_REFER</AttributeName>
+          <AttributeValue>YES</AttributeValue>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentAttributeT">
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">10107</CustomerProductComponentAttributeId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">100</CustomerProductComponentId>
+          <AttributeName>SWI_DIV</AttributeName>
+          <AttributeValue>YES</AttributeValue>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentAttributeT">
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">10108</CustomerProductComponentAttributeId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">100</CustomerProductComponentId>
+          <AttributeName>IP_DIV</AttributeName>
+          <AttributeValue>YES</AttributeValue>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentAttributeT">
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">10109</CustomerProductComponentAttributeId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">100</CustomerProductComponentId>
+          <AttributeName>PRIORITY_1</AttributeName>
+          <AttributeValue>80</AttributeValue>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentAttributeT">
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">79697990</CustomerProductComponentAttributeId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">100</CustomerProductComponentId>
+          <AttributeName>QVUR_PERCENT</AttributeName>
+          <AttributeValue>100</AttributeValue>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentAttributeT">
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">79697991</CustomerProductComponentAttributeId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">100</CustomerProductComponentId>
+          <AttributeName>G711_PERCNT</AttributeName>
+          <AttributeValue>10</AttributeValue>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentAttributeT">
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">79697992</CustomerProductComponentAttributeId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">100</CustomerProductComponentId>
+          <AttributeName>MAX_PACKET_LENGTH</AttributeName>
+          <AttributeValue>20</AttributeValue>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentAttributeT">
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">79697993</CustomerProductComponentAttributeId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">100</CustomerProductComponentId>
+          <AttributeName>MCC_MAX_SESS</AttributeName>
+          <AttributeValue>20</AttributeValue>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentAttributeT">
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">79697994</CustomerProductComponentAttributeId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">100</CustomerProductComponentId>
+          <AttributeName>MAX_USG_SES_QTY</AttributeName>
+          <AttributeValue>10</AttributeValue>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentAttributeT">
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">79697995</CustomerProductComponentAttributeId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">100</CustomerProductComponentId>
+          <AttributeName>DAP_APP_NUM</AttributeName>
+          <AttributeValue>2569</AttributeValue>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentPriceT">
+          <CustomerProductComponentPriceId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">102</CustomerProductComponentPriceId>
+          <CustomerProductComponentPriceDescription>VOIP SERV IN</CustomerProductComponentPriceDescription>
+          <StandardPrice>0.00</StandardPrice>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">100</CustomerProductComponentId>
+          <BillingProductComponentID name = "PRCMP_CODE" owner = "PROD" type = "GenericId">VOIP SERV IN</BillingProductComponentID>
+          <ClinId>102</ClinId>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentPriceT">
+          <CustomerProductComponentPriceId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">103</CustomerProductComponentPriceId>
+          <CustomerProductComponentPriceDescription>SIP REFER</CustomerProductComponentPriceDescription>
+          <StandardPrice>0.00</StandardPrice>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">100</CustomerProductComponentId>
+          <BillingProductComponentID name = "PRCMP_CODE" owner = "PROD" type = "GenericId">SIP REFER</BillingProductComponentID>
+          <ClinId>103</ClinId>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentPriceT">
+          <CustomerProductComponentPriceId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">104</CustomerProductComponentPriceId>
+          <CustomerProductComponentPriceDescription>SIP REF SET</CustomerProductComponentPriceDescription>
+          <StandardPrice>0.00</StandardPrice>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">100</CustomerProductComponentId>
+          <BillingProductComponentID name = "PRCMP_CODE" owner = "PROD" type = "GenericId">SIP REF SET</BillingProductComponentID>
+          <ClinId>104</ClinId>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentPriceT">
+          <CustomerProductComponentPriceId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">105</CustomerProductComponentPriceId>
+          <CustomerProductComponentPriceDescription>DED VOIP INT</CustomerProductComponentPriceDescription>
+          <StandardPrice>0.00</StandardPrice>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">100</CustomerProductComponentId>
+          <BillingProductComponentID name = "PRCMP_CODE" owner = "PROD" type = "GenericId">DED VOIP INT</BillingProductComponentID>
+          <ClinId>105</ClinId>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentPriceT">
+          <CustomerProductComponentPriceId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">106</CustomerProductComponentPriceId>
+          <CustomerProductComponentPriceDescription>DED VOIP SET</CustomerProductComponentPriceDescription>
+          <StandardPrice>0.00</StandardPrice>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">100</CustomerProductComponentId>
+          <BillingProductComponentID name = "PRCMP_CODE" owner = "PROD" type = "GenericId">DED VOIP SET</BillingProductComponentID>
+          <ClinId>106</ClinId>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentPriceT">
+          <CustomerProductComponentPriceId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">107</CustomerProductComponentPriceId>
+          <CustomerProductComponentPriceDescription>VOIP SWI DIV</CustomerProductComponentPriceDescription>
+          <StandardPrice>0.00</StandardPrice>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">100</CustomerProductComponentId>
+          <BillingProductComponentID name = "PRCMP_CODE" owner = "PROD" type = "GenericId">VOIP SWI DIV</BillingProductComponentID>
+          <ClinId>107</ClinId>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentPriceT">
+          <CustomerProductComponentPriceId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">108</CustomerProductComponentPriceId>
+          <CustomerProductComponentPriceDescription>VOIP SWI SET</CustomerProductComponentPriceDescription>
+          <StandardPrice>0.00</StandardPrice>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">100</CustomerProductComponentId>
+          <BillingProductComponentID name = "PRCMP_CODE" owner = "PROD" type = "GenericId">VOIP SWI SET</BillingProductComponentID>
+          <ClinId>108</ClinId>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentPriceT">
+          <CustomerProductComponentPriceId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">109</CustomerProductComponentPriceId>
+          <CustomerProductComponentPriceDescription>IP DIV SET</CustomerProductComponentPriceDescription>
+          <StandardPrice>0.00</StandardPrice>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">100</CustomerProductComponentId>
+          <BillingProductComponentID name = "PRCMP_CODE" owner = "PROD" type = "GenericId">IP DIV SET</BillingProductComponentID>
+          <ClinId>109</ClinId>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentPriceT">
+          <CustomerProductComponentPriceId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">110</CustomerProductComponentPriceId>
+          <CustomerProductComponentPriceDescription>MAX USAGE SES</CustomerProductComponentPriceDescription>
+          <StandardPrice>0.00</StandardPrice>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">100</CustomerProductComponentId>
+          <BillingProductComponentID name = "PRCMP_CODE" owner = "PROD" type = "GenericId">MAX USAGE SES</BillingProductComponentID>
+          <ClinId>110</ClinId>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentPriceT">
+          <CustomerProductComponentPriceId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">111</CustomerProductComponentPriceId>
+          <CustomerProductComponentPriceDescription>8XX ACTIV</CustomerProductComponentPriceDescription>
+          <StandardPrice>0.00</StandardPrice>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">100</CustomerProductComponentId>
+          <BillingProductComponentID name = "PRCMP_CODE" owner = "PROD" type = "GenericId">8XX ACTIV</BillingProductComponentID>
+          <ClinId>111</ClinId>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "SingleLocationComponentT">
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">200</CustomerProductComponentId>
+          <CustomerProductComponentName>VOIP TRUNK</CustomerProductComponentName>
+          <CustomerProductId name = "PRD_ACCT_SERVICE_CAT_SEQ" owner = "PROD" type = "GenericId">9603259</CustomerProductId>
+          <AccessMethodCode>VOIP</AccessMethodCode>
+          <ApplicationCode>VOIP</ApplicationCode>
+          <NodeLocationId name = "LOCATION_ID" owner = "PROD" type = "GenericId">123456</NodeLocationId>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentPriceT">
+          <CustomerProductComponentPriceId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">201</CustomerProductComponentPriceId>
+          <CustomerProductComponentPriceDescription>MAX FIXED SESSIONS</CustomerProductComponentPriceDescription>
+          <StandardPrice>0.00</StandardPrice>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">200</CustomerProductComponentId>
+          <BillingProductComponentID name = "PRCMP_CODE" owner = "PROD" type = "GenericId">MAX FIXED SESSIONS</BillingProductComponentID>
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">20101</CustomerProductComponentAttributeId>
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">20102</CustomerProductComponentAttributeId>
+          <ClinId>201</ClinId>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentAttributeT">
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">20101</CustomerProductComponentAttributeId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">200</CustomerProductComponentId>
+          <AttributeName>VOIP_TR_TYPE</AttributeName>
+          <AttributeValue>Flat Local and Long Distance</AttributeValue>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentAttributeT">
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">20102</CustomerProductComponentAttributeId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">200</CustomerProductComponentId>
+          <AttributeName>MAX_FIX_SES_QTY</AttributeName>
+          <AttributeValue>1</AttributeValue>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentPriceT">
+          <CustomerProductComponentPriceId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">202</CustomerProductComponentPriceId>
+          <CustomerProductComponentPriceDescription>USAGE</CustomerProductComponentPriceDescription>
+          <StandardPrice>0.00</StandardPrice>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">200</CustomerProductComponentId>
+          <BillingProductComponentID name = "PRCMP_CODE" owner = "PROD" type = "GenericId">USAGE</BillingProductComponentID>
+          <ClinId>202</ClinId>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentPriceT">
+          <CustomerProductComponentPriceId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">203</CustomerProductComponentPriceId>
+          <CustomerProductComponentPriceDescription>PAC SU</CustomerProductComponentPriceDescription>
+          <StandardPrice>0.00</StandardPrice>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">200</CustomerProductComponentId>
+          <BillingProductComponentID name = "PRCMP_CODE" owner = "PROD" type = "GenericId">PAC SU</BillingProductComponentID>
+          <ClinId>203</ClinId>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentPriceT">
+          <CustomerProductComponentPriceId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">204</CustomerProductComponentPriceId>
+          <CustomerProductComponentPriceDescription>VPAC SU</CustomerProductComponentPriceDescription>
+          <StandardPrice>0.00</StandardPrice>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">200</CustomerProductComponentId>
+          <BillingProductComponentID name = "PRCMP_CODE" owner = "PROD" type = "GenericId">VPAC SU</BillingProductComponentID>
+          <ClinId>204</ClinId>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "SwitchedServiceT">
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">300</CustomerProductComponentId>
+          <CustomerProductComponentName>VOIP TN</CustomerProductComponentName>
+          <CustomerProductId name = "PRD_ACCT_SERVICE_CAT_SEQ" owner = "PROD" type = "GenericId">9603259</CustomerProductId>
+          <AccessMethodCode>VOIP</AccessMethodCode>
+          <ApplicationCode>VOIP</ApplicationCode>
+          <NodeLocationId name = "LOCATION_ID" owner = "PROD" type = "GenericId">123456</NodeLocationId>
+          <qb:WTN>
+            <qb:NPA>303</qb:NPA>
+            <qb:NXX>529</qb:NXX>
+            <qb:LineNumber>0001</qb:LineNumber>
+          </qb:WTN>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentPriceT">
+          <CustomerProductComponentPriceId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">301</CustomerProductComponentPriceId>
+          <CustomerProductComponentPriceDescription>USAGE</CustomerProductComponentPriceDescription>
+          <StandardPrice>0.00</StandardPrice>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">300</CustomerProductComponentId>
+          <BillingProductComponentID name = "PRCMP_CODE" owner = "PROD" type = "GenericId">USAGE</BillingProductComponentID>
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">30101</CustomerProductComponentAttributeId>
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">30102</CustomerProductComponentAttributeId>
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">30103</CustomerProductComponentAttributeId>
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">30104</CustomerProductComponentAttributeId>
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">30105</CustomerProductComponentAttributeId>
+          <ClinId>301</ClinId>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentAttributeT">
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">30101</CustomerProductComponentAttributeId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">300</CustomerProductComponentId>
+          <AttributeName>VN_TYPE</AttributeName>
+          <AttributeValue>Standard Number</AttributeValue>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentAttributeT">
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">30102</CustomerProductComponentAttributeId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">300</CustomerProductComponentId>
+          <AttributeName>PPU_911_SEID</AttributeName>
+          <AttributeValue>1034</AttributeValue>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentAttributeT">
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">30103</CustomerProductComponentAttributeId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">300</CustomerProductComponentId>
+          <AttributeName>VN_CGV</AttributeName>
+          <AttributeValue>3035290001</AttributeValue>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentAttributeT">
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">30104</CustomerProductComponentAttributeId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">300</CustomerProductComponentId>
+          <AttributeName>PORTING_IND</AttributeName>
+          <AttributeValue>YES</AttributeValue>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentAttributeT">
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">30105</CustomerProductComponentAttributeId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">300</CustomerProductComponentId>
+          <AttributeName>B_WP_LIST_QN</AttributeName>
+          <AttributeValue>1</AttributeValue>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentPriceT">
+          <CustomerProductComponentPriceId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">302</CustomerProductComponentPriceId>
+          <CustomerProductComponentPriceDescription>BUS WP LIST</CustomerProductComponentPriceDescription>
+          <StandardPrice>0.00</StandardPrice>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">300</CustomerProductComponentId>
+          <BillingProductComponentID name = "PRCMP_CODE" owner = "PROD" type = "GenericId">BUS WP LIST</BillingProductComponentID>
+          <ClinId>302</ClinId>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentPriceT">
+          <CustomerProductComponentPriceId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">303</CustomerProductComponentPriceId>
+          <CustomerProductComponentPriceDescription>PORTING</CustomerProductComponentPriceDescription>
+          <StandardPrice>0.00</StandardPrice>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">300</CustomerProductComponentId>
+          <BillingProductComponentID name = "PRCMP_CODE" owner = "PROD" type = "GenericId">PORTING</BillingProductComponentID>
+          <ClinId>303</ClinId>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "SwitchedServiceT">
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">400</CustomerProductComponentId>
+          <CustomerProductComponentName>VOIP TN</CustomerProductComponentName>
+          <CustomerProductId name = "PRD_ACCT_SERVICE_CAT_SEQ" owner = "PROD" type = "GenericId">9603259</CustomerProductId>
+          <AccessMethodCode>VOIP</AccessMethodCode>
+          <ApplicationCode>VOIP</ApplicationCode>
+          <NodeLocationId name = "LOCATION_ID" owner = "PROD" type = "GenericId">123456</NodeLocationId>
+          <qb:WTN>
+            <qb:NPA>303</qb:NPA>
+            <qb:NXX>624</qb:NXX>
+            <qb:LineNumber>0002</qb:LineNumber>
+          </qb:WTN>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentPriceT">
+          <CustomerProductComponentPriceId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">401</CustomerProductComponentPriceId>
+          <CustomerProductComponentPriceDescription>USAGE</CustomerProductComponentPriceDescription>
+          <StandardPrice>0.00</StandardPrice>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">400</CustomerProductComponentId>
+          <BillingProductComponentID name = "PRCMP_CODE" owner = "PROD" type = "GenericId">USAGE</BillingProductComponentID>
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">40101</CustomerProductComponentAttributeId>
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">40102</CustomerProductComponentAttributeId>
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">40103</CustomerProductComponentAttributeId>
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">40104</CustomerProductComponentAttributeId>
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">40105</CustomerProductComponentAttributeId>
+          <ClinId>401</ClinId>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentAttributeT">
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">40101</CustomerProductComponentAttributeId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">400</CustomerProductComponentId>
+          <AttributeName>VN_TYPE</AttributeName>
+          <AttributeValue>Standard Number</AttributeValue>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentAttributeT">
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">40102</CustomerProductComponentAttributeId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">400</CustomerProductComponentId>
+          <AttributeName>PPU_911_SEID</AttributeName>
+          <AttributeValue>903286</AttributeValue>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentAttributeT">
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">40103</CustomerProductComponentAttributeId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">400</CustomerProductComponentId>
+          <AttributeName>VN_CGV</AttributeName>
+          <AttributeValue>3036240002</AttributeValue>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentAttributeT">
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">40104</CustomerProductComponentAttributeId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">400</CustomerProductComponentId>
+          <AttributeName>PORTING_IND</AttributeName>
+          <AttributeValue>NO</AttributeValue>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentAttributeT">
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">40105</CustomerProductComponentAttributeId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">400</CustomerProductComponentId>
+          <AttributeName>B_WP_LIST_QN</AttributeName>
+          <AttributeValue>1</AttributeValue>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentPriceT">
+          <CustomerProductComponentPriceId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">402</CustomerProductComponentPriceId>
+          <CustomerProductComponentPriceDescription>BUS WP LIST</CustomerProductComponentPriceDescription>
+          <StandardPrice>0.00</StandardPrice>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">400</CustomerProductComponentId>
+          <BillingProductComponentID name = "PRCMP_CODE" owner = "PROD" type = "GenericId">BUS WP LIST</BillingProductComponentID>
+          <ClinId>402</ClinId>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentPriceT">
+          <CustomerProductComponentPriceId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">403</CustomerProductComponentPriceId>
+          <CustomerProductComponentPriceDescription>TN FEE</CustomerProductComponentPriceDescription>
+          <StandardPrice>0.00</StandardPrice>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">400</CustomerProductComponentId>
+          <BillingProductComponentID name = "PRCMP_CODE" owner = "PROD" type = "GenericId">TN FEE</BillingProductComponentID>
+          <ClinId>403</ClinId>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentPriceT">
+          <CustomerProductComponentPriceId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">404</CustomerProductComponentPriceId>
+          <CustomerProductComponentPriceDescription>TN FEE SET</CustomerProductComponentPriceDescription>
+          <StandardPrice>0.00</StandardPrice>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">400</CustomerProductComponentId>
+          <BillingProductComponentID name = "PRCMP_CODE" owner = "PROD" type = "GenericId">TN FEE SET</BillingProductComponentID>
+          <ClinId>404</ClinId>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "SwitchedServiceT">
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">500</CustomerProductComponentId>
+          <CustomerProductComponentName>VOIP TN</CustomerProductComponentName>
+          <CustomerProductId name = "PRD_ACCT_SERVICE_CAT_SEQ" owner = "PROD" type = "GenericId">9603259</CustomerProductId>
+          <AccessMethodCode>VOIP</AccessMethodCode>
+          <ApplicationCode>VOIP</ApplicationCode>
+          <NodeLocationId name = "LOCATION_ID" owner = "PROD" type = "GenericId">123456</NodeLocationId>
+          <qb:WTN>
+            <qb:NPA>312</qb:NPA>
+            <qb:NXX>201</qb:NXX>
+            <qb:LineNumber>5555</qb:LineNumber>
+          </qb:WTN>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentPriceT">
+          <CustomerProductComponentPriceId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">501</CustomerProductComponentPriceId>
+          <CustomerProductComponentPriceDescription>USAGE</CustomerProductComponentPriceDescription>
+          <StandardPrice>0.00</StandardPrice>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">500</CustomerProductComponentId>
+          <BillingProductComponentID name = "PRCMP_CODE" owner = "PROD" type = "GenericId">USAGE</BillingProductComponentID>
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">50101</CustomerProductComponentAttributeId>
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">50102</CustomerProductComponentAttributeId>
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">50103</CustomerProductComponentAttributeId>
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">50104</CustomerProductComponentAttributeId>
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">50105</CustomerProductComponentAttributeId>
+          <ClinId>501</ClinId>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentAttributeT">
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">50101</CustomerProductComponentAttributeId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">500</CustomerProductComponentId>
+          <AttributeName>VN_TYPE</AttributeName>
+          <AttributeValue>Remote DID</AttributeValue>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentAttributeT">
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">50102</CustomerProductComponentAttributeId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">500</CustomerProductComponentId>
+          <AttributeName>PPU_911_SEID</AttributeName>
+          <AttributeValue>903286</AttributeValue>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentAttributeT">
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">50103</CustomerProductComponentAttributeId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">500</CustomerProductComponentId>
+          <AttributeName>VN_CGV</AttributeName>
+          <AttributeValue>3122015555</AttributeValue>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentAttributeT">
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">50104</CustomerProductComponentAttributeId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">500</CustomerProductComponentId>
+          <AttributeName>PORTING_IND</AttributeName>
+          <AttributeValue>YES</AttributeValue>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentAttributeT">
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">50105</CustomerProductComponentAttributeId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">500</CustomerProductComponentId>
+          <AttributeName>B_WP_LIST_QN</AttributeName>
+          <AttributeValue>1</AttributeValue>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentPriceT">
+          <CustomerProductComponentPriceId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">502</CustomerProductComponentPriceId>
+          <CustomerProductComponentPriceDescription>BUS WP LIST</CustomerProductComponentPriceDescription>
+          <StandardPrice>0.00</StandardPrice>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">500</CustomerProductComponentId>
+          <BillingProductComponentID name = "PRCMP_CODE" owner = "PROD" type = "GenericId">BUS WP LIST</BillingProductComponentID>
+          <ClinId>502</ClinId>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentPriceT">
+          <CustomerProductComponentPriceId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">503</CustomerProductComponentPriceId>
+          <CustomerProductComponentPriceDescription>REMOTE DID</CustomerProductComponentPriceDescription>
+          <StandardPrice>0.00</StandardPrice>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">500</CustomerProductComponentId>
+          <BillingProductComponentID name = "PRCMP_CODE" owner = "PROD" type = "GenericId">REMOTE DID</BillingProductComponentID>
+          <ClinId>503</ClinId>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentPriceT">
+          <CustomerProductComponentPriceId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">504</CustomerProductComponentPriceId>
+          <CustomerProductComponentPriceDescription>RMT DID SET</CustomerProductComponentPriceDescription>
+          <StandardPrice>0.00</StandardPrice>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">500</CustomerProductComponentId>
+          <BillingProductComponentID name = "PRCMP_CODE" owner = "PROD" type = "GenericId">RMT DID SET</BillingProductComponentID>
+          <ClinId>504</ClinId>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentPriceT">
+          <CustomerProductComponentPriceId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">505</CustomerProductComponentPriceId>
+          <CustomerProductComponentPriceDescription>PORTING</CustomerProductComponentPriceDescription>
+          <StandardPrice>0.00</StandardPrice>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">500</CustomerProductComponentId>
+          <BillingProductComponentID name = "PRCMP_CODE" owner = "PROD" type = "GenericId">PORTING</BillingProductComponentID>
+          <ClinId>505</ClinId>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "SwitchedServiceT">
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">600</CustomerProductComponentId>
+          <CustomerProductComponentName>VOIP TN</CustomerProductComponentName>
+          <CustomerProductId name = "PRD_ACCT_SERVICE_CAT_SEQ" owner = "PROD" type = "GenericId">9603259</CustomerProductId>
+          <AccessMethodCode>VOIP</AccessMethodCode>
+          <ApplicationCode>VOIP</ApplicationCode>
+          <NodeLocationId name = "LOCATION_ID" owner = "PROD" type = "GenericId">123456</NodeLocationId>
+          <qb:WTN>
+            <qb:NPA>312</qb:NPA>
+            <qb:NXX>201</qb:NXX>
+            <qb:LineNumber>5789</qb:LineNumber>
+          </qb:WTN>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentPriceT">
+          <CustomerProductComponentPriceId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">601</CustomerProductComponentPriceId>
+          <CustomerProductComponentPriceDescription>USAGE</CustomerProductComponentPriceDescription>
+          <StandardPrice>0.00</StandardPrice>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">600</CustomerProductComponentId>
+          <BillingProductComponentID name = "PRCMP_CODE" owner = "PROD" type = "GenericId">USAGE</BillingProductComponentID>
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">60101</CustomerProductComponentAttributeId>
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">60102</CustomerProductComponentAttributeId>
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">60103</CustomerProductComponentAttributeId>
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">60104</CustomerProductComponentAttributeId>
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">60105</CustomerProductComponentAttributeId>
+          <ClinId>601</ClinId>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentAttributeT">
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">60101</CustomerProductComponentAttributeId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">600</CustomerProductComponentId>
+          <AttributeName>VN_TYPE</AttributeName>
+          <AttributeValue>Remote DID</AttributeValue>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentAttributeT">
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">60102</CustomerProductComponentAttributeId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">600</CustomerProductComponentId>
+          <AttributeName>PPU_911_SEID</AttributeName>
+          <AttributeValue>903286</AttributeValue>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentAttributeT">
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">60103</CustomerProductComponentAttributeId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">600</CustomerProductComponentId>
+          <AttributeName>VN_CGV</AttributeName>
+          <AttributeValue>3122015789</AttributeValue>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentAttributeT">
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">60104</CustomerProductComponentAttributeId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">600</CustomerProductComponentId>
+          <AttributeName>PORTING_IND</AttributeName>
+          <AttributeValue>YES</AttributeValue>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentAttributeT">
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">60105</CustomerProductComponentAttributeId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">600</CustomerProductComponentId>
+          <AttributeName>B_WP_LIST_QN</AttributeName>
+          <AttributeValue>1</AttributeValue>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentPriceT">
+          <CustomerProductComponentPriceId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">602</CustomerProductComponentPriceId>
+          <CustomerProductComponentPriceDescription>BUS WP LIST</CustomerProductComponentPriceDescription>
+          <StandardPrice>0.00</StandardPrice>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">600</CustomerProductComponentId>
+          <BillingProductComponentID name = "PRCMP_CODE" owner = "PROD" type = "GenericId">BUS WP LIST</BillingProductComponentID>
+          <ClinId>602</ClinId>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentPriceT">
+          <CustomerProductComponentPriceId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">603</CustomerProductComponentPriceId>
+          <CustomerProductComponentPriceDescription>REMOTE DID</CustomerProductComponentPriceDescription>
+          <StandardPrice>0.00</StandardPrice>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">600</CustomerProductComponentId>
+          <BillingProductComponentID name = "PRCMP_CODE" owner = "PROD" type = "GenericId">REMOTE DID</BillingProductComponentID>
+          <ClinId>603</ClinId>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentPriceT">
+          <CustomerProductComponentPriceId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">604</CustomerProductComponentPriceId>
+          <CustomerProductComponentPriceDescription>RMT DID SET</CustomerProductComponentPriceDescription>
+          <StandardPrice>0.00</StandardPrice>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">600</CustomerProductComponentId>
+          <BillingProductComponentID name = "PRCMP_CODE" owner = "PROD" type = "GenericId">RMT DID SET</BillingProductComponentID>
+          <ClinId>604</ClinId>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentPriceT">
+          <CustomerProductComponentPriceId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">605</CustomerProductComponentPriceId>
+          <CustomerProductComponentPriceDescription>PORTING</CustomerProductComponentPriceDescription>
+          <StandardPrice>0.00</StandardPrice>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">600</CustomerProductComponentId>
+          <BillingProductComponentID name = "PRCMP_CODE" owner = "PROD" type = "GenericId">PORTING</BillingProductComponentID>
+          <ClinId>605</ClinId>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "SwitchedServiceT">
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">700</CustomerProductComponentId>
+          <CustomerProductComponentName>VOIP TN</CustomerProductComponentName>
+          <CustomerProductId name = "PRD_ACCT_SERVICE_CAT_SEQ" owner = "PROD" type = "GenericId">9603259</CustomerProductId>
+          <AccessMethodCode>VOIP</AccessMethodCode>
+          <ApplicationCode>VOIP</ApplicationCode>
+          <NodeLocationId name = "LOCATION_ID" owner = "PROD" type = "GenericId">123456</NodeLocationId>
+          <qb:WTN>
+            <qb:NPA>303</qb:NPA>
+            <qb:NXX>865</qb:NXX>
+            <qb:LineNumber>3456</qb:LineNumber>
+          </qb:WTN>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentPriceT">
+          <CustomerProductComponentPriceId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">701</CustomerProductComponentPriceId>
+          <CustomerProductComponentPriceDescription>USAGE</CustomerProductComponentPriceDescription>
+          <StandardPrice>0.00</StandardPrice>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">700</CustomerProductComponentId>
+          <BillingProductComponentID name = "PRCMP_CODE" owner = "PROD" type = "GenericId">USAGE</BillingProductComponentID>
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">70101</CustomerProductComponentAttributeId>
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">70102</CustomerProductComponentAttributeId>
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">70103</CustomerProductComponentAttributeId>
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">70104</CustomerProductComponentAttributeId>
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">70105</CustomerProductComponentAttributeId>
+          <ClinId>701</ClinId>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentAttributeT">
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">70101</CustomerProductComponentAttributeId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">700</CustomerProductComponentId>
+          <AttributeName>VN_TYPE</AttributeName>
+          <AttributeValue>Remote DID</AttributeValue>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentAttributeT">
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">70102</CustomerProductComponentAttributeId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">700</CustomerProductComponentId>
+          <AttributeName>PPU_911_SEID</AttributeName>
+          <AttributeValue>1034</AttributeValue>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentAttributeT">
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">70103</CustomerProductComponentAttributeId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">700</CustomerProductComponentId>
+          <AttributeName>VN_CGV</AttributeName>
+          <AttributeValue>3038653456</AttributeValue>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentAttributeT">
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">70104</CustomerProductComponentAttributeId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">700</CustomerProductComponentId>
+          <AttributeName>PORTING_IND</AttributeName>
+          <AttributeValue>NO</AttributeValue>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentAttributeT">
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">70105</CustomerProductComponentAttributeId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">700</CustomerProductComponentId>
+          <AttributeName>B_WP_LIST_QN</AttributeName>
+          <AttributeValue>1</AttributeValue>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentPriceT">
+          <CustomerProductComponentPriceId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">702</CustomerProductComponentPriceId>
+          <CustomerProductComponentPriceDescription>BUS WP LIST</CustomerProductComponentPriceDescription>
+          <StandardPrice>0.00</StandardPrice>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">700</CustomerProductComponentId>
+          <BillingProductComponentID name = "PRCMP_CODE" owner = "PROD" type = "GenericId">BUS WP LIST</BillingProductComponentID>
+          <ClinId>702</ClinId>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentPriceT">
+          <CustomerProductComponentPriceId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">703</CustomerProductComponentPriceId>
+          <CustomerProductComponentPriceDescription>REMOTE DID</CustomerProductComponentPriceDescription>
+          <StandardPrice>0.00</StandardPrice>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">700</CustomerProductComponentId>
+          <BillingProductComponentID name = "PRCMP_CODE" owner = "PROD" type = "GenericId">REMOTE DID</BillingProductComponentID>
+          <ClinId>703</ClinId>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentPriceT">
+          <CustomerProductComponentPriceId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">704</CustomerProductComponentPriceId>
+          <CustomerProductComponentPriceDescription>RMT DID SET</CustomerProductComponentPriceDescription>
+          <StandardPrice>0.00</StandardPrice>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">700</CustomerProductComponentId>
+          <BillingProductComponentID name = "PRCMP_CODE" owner = "PROD" type = "GenericId">RMT DID SET</BillingProductComponentID>
+          <ClinId>704</ClinId>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "SwitchedServiceT">
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">800</CustomerProductComponentId>
+          <CustomerProductComponentName>VOIP TN</CustomerProductComponentName>
+          <CustomerProductId name = "PRD_ACCT_SERVICE_CAT_SEQ" owner = "PROD" type = "GenericId">9603259</CustomerProductId>
+          <AccessMethodCode>VOIP</AccessMethodCode>
+          <ApplicationCode>VOIP</ApplicationCode>
+          <NodeLocationId name = "LOCATION_ID" owner = "PROD" type = "GenericId">123456</NodeLocationId>
+          <qb:WTN>
+            <qb:NPA>303</qb:NPA>
+            <qb:NXX>865</qb:NXX>
+            <qb:LineNumber>2948</qb:LineNumber>
+          </qb:WTN>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentPriceT">
+          <CustomerProductComponentPriceId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">801</CustomerProductComponentPriceId>
+          <CustomerProductComponentPriceDescription>USAGE</CustomerProductComponentPriceDescription>
+          <StandardPrice>0.00</StandardPrice>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">800</CustomerProductComponentId>
+          <BillingProductComponentID name = "PRCMP_CODE" owner = "PROD" type = "GenericId">USAGE</BillingProductComponentID>
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">80101</CustomerProductComponentAttributeId>
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">80102</CustomerProductComponentAttributeId>
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">80103</CustomerProductComponentAttributeId>
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">80104</CustomerProductComponentAttributeId>
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">80105</CustomerProductComponentAttributeId>
+          <ClinId>801</ClinId>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentAttributeT">
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">80101</CustomerProductComponentAttributeId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">800</CustomerProductComponentId>
+          <AttributeName>VN_TYPE</AttributeName>
+          <AttributeValue>Remote DID</AttributeValue>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentAttributeT">
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">80102</CustomerProductComponentAttributeId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">800</CustomerProductComponentId>
+          <AttributeName>PPU_911_SEID</AttributeName>
+          <AttributeValue>1034</AttributeValue>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentAttributeT">
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">80103</CustomerProductComponentAttributeId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">800</CustomerProductComponentId>
+          <AttributeName>VN_CGV</AttributeName>
+          <AttributeValue>3038652948</AttributeValue>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentAttributeT">
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">80104</CustomerProductComponentAttributeId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">800</CustomerProductComponentId>
+          <AttributeName>PORTING_IND</AttributeName>
+          <AttributeValue>NO</AttributeValue>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentAttributeT">
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">80105</CustomerProductComponentAttributeId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">800</CustomerProductComponentId>
+          <AttributeName>B_WP_LIST_QN</AttributeName>
+          <AttributeValue>1</AttributeValue>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentPriceT">
+          <CustomerProductComponentPriceId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">802</CustomerProductComponentPriceId>
+          <CustomerProductComponentPriceDescription>BUS WP LIST</CustomerProductComponentPriceDescription>
+          <StandardPrice>0.00</StandardPrice>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">800</CustomerProductComponentId>
+          <BillingProductComponentID name = "PRCMP_CODE" owner = "PROD" type = "GenericId">BUS WP LIST</BillingProductComponentID>
+          <ClinId>802</ClinId>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentPriceT">
+          <CustomerProductComponentPriceId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">803</CustomerProductComponentPriceId>
+          <CustomerProductComponentPriceDescription>REMOTE DID</CustomerProductComponentPriceDescription>
+          <StandardPrice>0.00</StandardPrice>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">800</CustomerProductComponentId>
+          <BillingProductComponentID name = "PRCMP_CODE" owner = "PROD" type = "GenericId">REMOTE DID</BillingProductComponentID>
+          <ClinId>803</ClinId>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentPriceT">
+          <CustomerProductComponentPriceId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">804</CustomerProductComponentPriceId>
+          <CustomerProductComponentPriceDescription>RMT DID SET</CustomerProductComponentPriceDescription>
+          <StandardPrice>0.00</StandardPrice>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">800</CustomerProductComponentId>
+          <BillingProductComponentID name = "PRCMP_CODE" owner = "PROD" type = "GenericId">RMT DID SET</BillingProductComponentID>
+          <ClinId>804</ClinId>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "SwitchedServiceT">
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">900</CustomerProductComponentId>
+          <CustomerProductComponentName>VOIP TN</CustomerProductComponentName>
+          <CustomerProductId name = "PRD_ACCT_SERVICE_CAT_SEQ" owner = "PROD" type = "GenericId">9603259</CustomerProductId>
+          <AccessMethodCode>VOIP</AccessMethodCode>
+          <ApplicationCode>VOIP</ApplicationCode>
+          <NodeLocationId name = "LOCATION_ID" owner = "PROD" type = "GenericId">123456</NodeLocationId>
+          <qb:WTN>
+            <qb:NPA>303</qb:NPA>
+            <qb:NXX>865</qb:NXX>
+            <qb:LineNumber>9612</qb:LineNumber>
+          </qb:WTN>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentPriceT">
+          <CustomerProductComponentPriceId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">901</CustomerProductComponentPriceId>
+          <CustomerProductComponentPriceDescription>USAGE</CustomerProductComponentPriceDescription>
+          <StandardPrice>0.00</StandardPrice>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">900</CustomerProductComponentId>
+          <BillingProductComponentID name = "PRCMP_CODE" owner = "PROD" type = "GenericId">USAGE</BillingProductComponentID>
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">90101</CustomerProductComponentAttributeId>
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">90102</CustomerProductComponentAttributeId>
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">90103</CustomerProductComponentAttributeId>
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">90104</CustomerProductComponentAttributeId>
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">90105</CustomerProductComponentAttributeId>
+          <ClinId>901</ClinId>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentAttributeT">
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">90101</CustomerProductComponentAttributeId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">900</CustomerProductComponentId>
+          <AttributeName>VN_TYPE</AttributeName>
+          <AttributeValue>Remote DID</AttributeValue>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentAttributeT">
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">90102</CustomerProductComponentAttributeId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">900</CustomerProductComponentId>
+          <AttributeName>PPU_911_SEID</AttributeName>
+          <AttributeValue>1034</AttributeValue>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentAttributeT">
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">90103</CustomerProductComponentAttributeId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">900</CustomerProductComponentId>
+          <AttributeName>VN_CGV</AttributeName>
+          <AttributeValue>3038659612</AttributeValue>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentAttributeT">
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">90104</CustomerProductComponentAttributeId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">900</CustomerProductComponentId>
+          <AttributeName>PORTING_IND</AttributeName>
+          <AttributeValue>NO</AttributeValue>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentAttributeT">
+          <CustomerProductComponentAttributeId name = "ATTRIBUTE_NO" owner = "OALY" type = "GenericId">90105</CustomerProductComponentAttributeId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">900</CustomerProductComponentId>
+          <AttributeName>B_WP_LIST_QN</AttributeName>
+          <AttributeValue>1</AttributeValue>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentPriceT">
+          <CustomerProductComponentPriceId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">902</CustomerProductComponentPriceId>
+          <CustomerProductComponentPriceDescription>BUS WP LIST</CustomerProductComponentPriceDescription>
+          <StandardPrice>0.00</StandardPrice>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">900</CustomerProductComponentId>
+          <BillingProductComponentID name = "PRCMP_CODE" owner = "PROD" type = "GenericId">BUS WP LIST</BillingProductComponentID>
+          <ClinId>902</ClinId>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentPriceT">
+          <CustomerProductComponentPriceId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">903</CustomerProductComponentPriceId>
+          <CustomerProductComponentPriceDescription>REMOTE DID</CustomerProductComponentPriceDescription>
+          <StandardPrice>0.00</StandardPrice>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">900</CustomerProductComponentId>
+          <BillingProductComponentID name = "PRCMP_CODE" owner = "PROD" type = "GenericId">REMOTE DID</BillingProductComponentID>
+          <ClinId>903</ClinId>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "CustomerProductComponentPriceT">
+          <CustomerProductComponentPriceId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">904</CustomerProductComponentPriceId>
+          <CustomerProductComponentPriceDescription>RMT DID SET</CustomerProductComponentPriceDescription>
+          <StandardPrice>0.00</StandardPrice>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">900</CustomerProductComponentId>
+          <BillingProductComponentID name = "PRCMP_CODE" owner = "PROD" type = "GenericId">RMT DID SET</BillingProductComponentID>
+          <ClinId>904</ClinId>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" subClass = "VoIP Trunk Bidirectional Service" xsi:type = "ProvisioningElementT">
+          <ProvisioningSvcElementId name = "SERVICE_ELEMENT_ID" owner = "PROD" type = "GenericId">796912149</ProvisioningSvcElementId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">100</CustomerProductComponentId>
+          <BillingSvcElementId name = "SERVICE_ELEMENT_ID" owner = "PROD" type = "GenericId">100</BillingSvcElementId>
+          <AttributeGroup>
+            <AttributeNode>
+              <AttributeName>SERV_TYPE</AttributeName>
+              <AttributeValue>VOIP TRUNK</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>NWK_NODE_ST</AttributeName>
+              <AttributeValue>NEW</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>QWEST_TRANS</AttributeName>
+              <AttributeValue>YES</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>LTG_CHG_FLAG</AttributeName>
+              <AttributeValue>NO</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>REQ_MAX_SESS</AttributeName>
+              <AttributeValue>15</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>SALES_CHAN</AttributeName>
+              <AttributeValue>BMG</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>DOMAIN_NAME</AttributeName>
+              <AttributeValue>Qwest Test</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>MAX_PKT_LNTH</AttributeName>
+              <AttributeValue>20m</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>SUPER_TRNKFG</AttributeName>
+              <AttributeValue>YES</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>G711_PERCENT</AttributeName>
+              <AttributeValue>50</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>DAP_APP_NUM</AttributeName>
+              <AttributeValue>2569</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>MAX_FIX_RATE</AttributeName>
+              <AttributeValue>15</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>SIP_REFER</AttributeName>
+              <AttributeValue>YES</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>VOIP_INT</AttributeName>
+              <AttributeValue>Private Shared</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>SWI_DIV</AttributeName>
+              <AttributeValue>YES</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>IP_TOLL_FREE</AttributeName>
+              <AttributeValue>NO</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>DID_IND</AttributeName>
+              <AttributeValue>YES</AttributeValue>
+            </AttributeNode>
+          </AttributeGroup>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" subClass = "SAV Service Address" xsi:type = "ProvisioningElementT">
+          <ProvisioningSvcElementId name = "SERVICE_ELEMENT_ID" owner = "PROD" type = "GenericId">1059</ProvisioningSvcElementId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">100</CustomerProductComponentId>
+          <BillingSvcElementId name = "SERVICE_ELEMENT_ID" owner = "PROD" type = "GenericId">100</BillingSvcElementId>
+          <AttributeGroup>
+            <AttributeNode fk_to = "911 and PPU Location">
+              <AttributeName>VOIP_CL_SEID</AttributeName>
+              <AttributeValue>1034</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>ADDR_LINE1</AttributeName>
+              <AttributeValue>930 15th St</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>ADDR_LINE2</AttributeName>
+              <AttributeValue>2nd Fl.</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>CITY</AttributeName>
+              <AttributeValue>Denver</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>STATE</AttributeName>
+              <AttributeValue>CO</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>ZIPCODE</AttributeName>
+              <AttributeValue>80202</AttributeValue>
+            </AttributeNode>
+          </AttributeGroup>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" subClass = "SAV Service Address" xsi:type = "ProvisioningElementT">
+          <ProvisioningSvcElementId name = "SERVICE_ELEMENT_ID" owner = "PROD" type = "GenericId">1059</ProvisioningSvcElementId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">100</CustomerProductComponentId>
+          <BillingSvcElementId name = "SERVICE_ELEMENT_ID" owner = "PROD" type = "GenericId">100</BillingSvcElementId>
+          <AttributeGroup>
+            <AttributeNode fk_to = "911 and PPU Location">
+              <AttributeName>VOIP_CL_SEID</AttributeName>
+              <AttributeValue>903286</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>ADDR_LINE1</AttributeName>
+              <AttributeValue>1801 California Street</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>ADDR_LINE2</AttributeName>
+              <AttributeValue>10th Floor</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>CITY</AttributeName>
+              <AttributeValue>Denver</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>STATE</AttributeName>
+              <AttributeValue>CO</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>ZIPCODE</AttributeName>
+              <AttributeValue>80201</AttributeValue>
+            </AttributeNode>
+          </AttributeGroup>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" subClass = "VoIP Civic Valid Service Address" xsi:type = "ProvisioningElementT">
+          <ProvisioningSvcElementId name = "SERVICE_ELEMENT_ID" owner = "PROD" type = "GenericId">1057</ProvisioningSvcElementId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">100</CustomerProductComponentId>
+          <BillingSvcElementId name = "SERVICE_ELEMENT_ID" owner = "PROD" type = "GenericId">100</BillingSvcElementId>
+          <AttributeGroup>
+            <AttributeNode fk_to = "DID Remote Location">
+              <AttributeName>VOIP_CL_SEID</AttributeName>
+              <AttributeValue>1040</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>ADDR_LINE1</AttributeName>
+              <AttributeValue>100 Wacker Dr.</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>ADDR_LINE2</AttributeName>
+              <AttributeValue>1st Floor</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>CITY</AttributeName>
+              <AttributeValue>Chicago</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>STATE</AttributeName>
+              <AttributeValue>IL</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>ZIPCODE</AttributeName>
+              <AttributeValue>60601</AttributeValue>
+            </AttributeNode>
+          </AttributeGroup>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" subClass = "911 and PPU Location" xsi:type = "ProvisioningElementT">
+          <ProvisioningSvcElementId name = "SERVICE_ELEMENT_ID" owner = "PROD" type = "GenericId">805857</ProvisioningSvcElementId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">100</CustomerProductComponentId>
+          <BillingSvcElementId name = "SERVICE_ELEMENT_ID" owner = "PROD" type = "GenericId">100</BillingSvcElementId>
+          <AttributeGroup>
+            <AttributeNode fk_to = "VoIP Trunk Bidirectional Service">
+              <AttributeName>VOIPSER_SEID</AttributeName>
+              <AttributeValue>796912149</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>ALIAS_NAME</AttributeName>
+              <AttributeValue>Denver 2</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>ADDR_LINE1</AttributeName>
+              <AttributeValue>295 15th St</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>ADDR_LINE2</AttributeName>
+              <AttributeValue>5th Floor</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>CITY</AttributeName>
+              <AttributeValue>Denver</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>STATE</AttributeName>
+              <AttributeValue>CO</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>ZIPCODE</AttributeName>
+              <AttributeValue>80202</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>LOCAL_LN_EQU</AttributeName>
+              <AttributeValue>10</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>RDID_LN_EQU</AttributeName>
+              <AttributeValue>5</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>CALL_CENTER</AttributeName>
+              <AttributeValue>YES</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>REMARKS</AttributeName>
+              <AttributeValue>Test order multi TN type</AttributeValue>
+            </AttributeNode>
+          </AttributeGroup>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" subClass = "Qwest Voip Entrance" xsi:type = "ProvisioningElementT">
+          <ProvisioningSvcElementId name = "SERVICE_ELEMENT_ID" owner = "PROD" type = "GenericId">1099</ProvisioningSvcElementId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">100</CustomerProductComponentId>
+          <BillingSvcElementId name = "SERVICE_ELEMENT_ID" owner = "PROD" type = "GenericId">100</BillingSvcElementId>
+          <AttributeGroup>
+            <AttributeNode>
+              <AttributeName>BANDWIDTH</AttributeName>
+              <AttributeValue>45mbps</AttributeValue>
+            </AttributeNode>
+            <AttributeNode fk_to = "VoIP Trunk Bidirectional Service">
+              <AttributeName>VOIPSER_SEID</AttributeName>
+              <AttributeValue>796912149</AttributeValue>
+            </AttributeNode>
+            <AttributeNode fk_to = "A Fake Template">
+              <AttributeName>NNODE_SEID</AttributeName>
+              <AttributeValue>9999</AttributeValue>
+            </AttributeNode>
+          </AttributeGroup>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" subClass = "VOIP IP Diversity" xsi:type = "ProvisioningElementT">
+          <ProvisioningSvcElementId name = "SERVICE_ELEMENT_ID" owner = "PROD" type = "GenericId">1063</ProvisioningSvcElementId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">100</CustomerProductComponentId>
+          <BillingSvcElementId name = "SERVICE_ELEMENT_ID" owner = "PROD" type = "GenericId">100</BillingSvcElementId>
+          <AttributeGroup>
+            <AttributeNode fk_to = "VoIP Trunk Bidirectional Service">
+              <AttributeName>VOIPSER_SEID</AttributeName>
+              <AttributeValue>796912149</AttributeValue>
+            </AttributeNode>
+            <AttributeNode fk_to = "A Fake Template">
+              <AttributeName>NNODE_SEID</AttributeName>
+              <AttributeValue>9999</AttributeValue>
+            </AttributeNode>
+          </AttributeGroup>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" subClass = "Usage Billed Trunk Group" xsi:type = "ProvisioningElementT">
+          <ProvisioningSvcElementId name = "SERVICE_ELEMENT_ID" owner = "PROD" type = "GenericId">1015</ProvisioningSvcElementId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">100</CustomerProductComponentId>
+          <BillingSvcElementId name = "SERVICE_ELEMENT_ID" owner = "PROD" type = "GenericId">100</BillingSvcElementId>
+          <AttributeGroup>
+            <AttributeNode>
+              <AttributeName>TRUNK_GRP_NM</AttributeName>
+              <AttributeValue>ACEC4602PD01</AttributeValue>
+            </AttributeNode>
+            <AttributeNode fk_to = "VoIP Trunk Bidirectional Service">
+              <AttributeName>TBS_VOIPSEID</AttributeName>
+              <AttributeValue>796912149</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>TONE_FLAG</AttributeName>
+              <AttributeValue>YES</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>INFODIGT_IND</AttributeName>
+              <AttributeValue>YES</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>RHEADER_IND</AttributeName>
+              <AttributeValue>YES</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>PSTN_PAR_IND</AttributeName>
+              <AttributeValue>YES</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>CGN_INFO_IND</AttributeName>
+              <AttributeValue>YES</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>INTPREFX_DGT</AttributeName>
+              <AttributeValue>011</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>NADP_DIGITS</AttributeName>
+              <AttributeValue>"+1"</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>IPADDR_PRVDR</AttributeName>
+              <AttributeValue>QWEST</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>IPADDR_QTY</AttributeName>
+              <AttributeValue>1</AttributeValue>
+            </AttributeNode>
+            <AttributeNode fk_to = "VoIP Trunk Bidirectional Service">
+              <AttributeName>VOIPBIDRSEID</AttributeName>
+              <AttributeValue>796912149</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>USG_TRAF_TYP</AttributeName>
+              <AttributeValue>DID Only</AttributeValue>
+            </AttributeNode>
+          </AttributeGroup>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" subClass = "Usage Billed Trunk Group" xsi:type = "ProvisioningElementT">
+          <ProvisioningSvcElementId name = "SERVICE_ELEMENT_ID" owner = "PROD" type = "GenericId">1016</ProvisioningSvcElementId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">100</CustomerProductComponentId>
+          <BillingSvcElementId name = "SERVICE_ELEMENT_ID" owner = "PROD" type = "GenericId">100</BillingSvcElementId>
+          <AttributeGroup>
+            <AttributeNode>
+              <AttributeName>TRUNK_GRP_NM</AttributeName>
+              <AttributeValue>ACEC1322PD01</AttributeValue>
+            </AttributeNode>
+            <AttributeNode fk_to = "VoIP Trunk Bidirectional Service">
+              <AttributeName>TBS_VOIPSEID</AttributeName>
+              <AttributeValue>796912149</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>TONE_FLAG</AttributeName>
+              <AttributeValue>YES</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>INFODIGT_IND</AttributeName>
+              <AttributeValue>YES</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>RHEADER_IND</AttributeName>
+              <AttributeValue>YES</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>PSTN_PAR_IND</AttributeName>
+              <AttributeValue>YES</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>CGN_INFO_IND</AttributeName>
+              <AttributeValue>YES</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>INTPREFX_DGT</AttributeName>
+              <AttributeValue>011</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>NADP_DIGITS</AttributeName>
+              <AttributeValue>"+1"</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>IPADDR_PRVDR</AttributeName>
+              <AttributeValue>QWEST</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>IPADDR_QTY</AttributeName>
+              <AttributeValue>2</AttributeValue>
+            </AttributeNode>
+            <AttributeNode fk_to = "VoIP Trunk Bidirectional Service">
+              <AttributeName>VOIPBIDRSEID</AttributeName>
+              <AttributeValue>796912149</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>USG_TRAF_TYP</AttributeName>
+              <AttributeValue>DID Only</AttributeValue>
+            </AttributeNode>
+          </AttributeGroup>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" subClass = "Session Billed Trunk Group" xsi:type = "ProvisioningElementT">
+          <ProvisioningSvcElementId name = "SERVICE_ELEMENT_ID" owner = "PROD" type = "GenericId">1018</ProvisioningSvcElementId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">200</CustomerProductComponentId>
+          <BillingSvcElementId name = "SERVICE_ELEMENT_ID" owner = "PROD" type = "GenericId">200</BillingSvcElementId>
+          <AttributeGroup>
+            <AttributeNode>
+              <AttributeName>TRUNK_GRP_NM</AttributeName>
+              <AttributeValue>ACEC1322PL01</AttributeValue>
+            </AttributeNode>
+            <AttributeNode fk_to = "VoIP Trunk Bidirectional Service">
+              <AttributeName>TBS_VOIPSEID</AttributeName>
+              <AttributeValue>796912149</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>TONE_FLAG</AttributeName>
+              <AttributeValue>YES</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>INFODIGT_IND</AttributeName>
+              <AttributeValue>YES</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>RHEADER_IND</AttributeName>
+              <AttributeValue>YES</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>PSTN_PAR_IND</AttributeName>
+              <AttributeValue>YES</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>CGN_INFO_IND</AttributeName>
+              <AttributeValue>YES</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>INTPREFX_DGT</AttributeName>
+              <AttributeValue>011</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>NADP_DIGITS</AttributeName>
+              <AttributeValue>"+1"</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>IPADDR_PRVDR</AttributeName>
+              <AttributeValue>QWEST</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>IPADDR_QTY</AttributeName>
+              <AttributeValue>3</AttributeValue>
+            </AttributeNode>
+            <AttributeNode fk_to = "VoIP Trunk Bidirectional Service">
+              <AttributeName>VOIPBIDRSEID</AttributeName>
+              <AttributeValue>796912149</AttributeValue>
+            </AttributeNode>
+          </AttributeGroup>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" subClass = "Session Billed Trunk Group" xsi:type = "ProvisioningElementT">
+          <ProvisioningSvcElementId name = "SERVICE_ELEMENT_ID" owner = "PROD" type = "GenericId">1020</ProvisioningSvcElementId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">200</CustomerProductComponentId>
+          <BillingSvcElementId name = "SERVICE_ELEMENT_ID" owner = "PROD" type = "GenericId">200</BillingSvcElementId>
+          <AttributeGroup>
+            <AttributeNode>
+              <AttributeName>TRUNK_GRP_NM</AttributeName>
+              <AttributeValue>ACEC4602PL01</AttributeValue>
+            </AttributeNode>
+            <AttributeNode fk_to = "VoIP Trunk Bidirectional Service">
+              <AttributeName>TBS_VOIPSEID</AttributeName>
+              <AttributeValue>796912149</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>TONE_FLAG</AttributeName>
+              <AttributeValue>YES</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>INFODIGT_IND</AttributeName>
+              <AttributeValue>YES</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>RHEADER_IND</AttributeName>
+              <AttributeValue>YES</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>PSTN_PAR_IND</AttributeName>
+              <AttributeValue>YES</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>CGN_INFO_IND</AttributeName>
+              <AttributeValue>YES</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>INTPREFX_DGT</AttributeName>
+              <AttributeValue>011</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>NADP_DIGITS</AttributeName>
+              <AttributeValue>"+1"</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>IPADDR_PRVDR</AttributeName>
+              <AttributeValue>QWEST</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>IPADDR_QTY</AttributeName>
+              <AttributeValue>4</AttributeValue>
+            </AttributeNode>
+            <AttributeNode fk_to = "VoIP Trunk Bidirectional Service">
+              <AttributeName>VOIPBIDRSEID</AttributeName>
+              <AttributeValue>796912149</AttributeValue>
+            </AttributeNode>
+          </AttributeGroup>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" subClass = "Trunk Group Codec" xsi:type = "ProvisioningElementT">
+          <ProvisioningSvcElementId name = "SERVICE_ELEMENT_ID" owner = "PROD" type = "GenericId">1090</ProvisioningSvcElementId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">200</CustomerProductComponentId>
+          <BillingSvcElementId name = "SERVICE_ELEMENT_ID" owner = "PROD" type = "GenericId">200</BillingSvcElementId>
+          <AttributeGroup>
+            <AttributeNode>
+              <AttributeName>PRIORITY_SEQ</AttributeName>
+              <AttributeValue>1</AttributeValue>
+            </AttributeNode>
+            <AttributeNode fk_to = "Usage Billed Trunk Group">
+              <AttributeName>TRNKGRP_SEID</AttributeName>
+              <AttributeValue>1015</AttributeValue>
+            </AttributeNode>
+            <AttributeNode fk_to = "G711 ULAW Codec">
+              <AttributeName>CODEC_SEID</AttributeName>
+              <AttributeValue>1022</AttributeValue>
+            </AttributeNode>
+          </AttributeGroup>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" subClass = "Trunk Group Codec" xsi:type = "ProvisioningElementT">
+          <ProvisioningSvcElementId name = "SERVICE_ELEMENT_ID" owner = "PROD" type = "GenericId">1092</ProvisioningSvcElementId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">200</CustomerProductComponentId>
+          <BillingSvcElementId name = "SERVICE_ELEMENT_ID" owner = "PROD" type = "GenericId">200</BillingSvcElementId>
+          <AttributeGroup>
+            <AttributeNode>
+              <AttributeName>PRIORITY_SEQ</AttributeName>
+              <AttributeValue>2</AttributeValue>
+            </AttributeNode>
+            <AttributeNode fk_to = "Usage Billed Trunk Group">
+              <AttributeName>TRNKGRP_SEID</AttributeName>
+              <AttributeValue>1015</AttributeValue>
+            </AttributeNode>
+            <AttributeNode fk_to = "G711 ALAW Codec">
+              <AttributeName>CODEC_SEID</AttributeName>
+              <AttributeValue>1024</AttributeValue>
+            </AttributeNode>
+          </AttributeGroup>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" subClass = "Trunk Group Codec" xsi:type = "ProvisioningElementT">
+          <ProvisioningSvcElementId name = "SERVICE_ELEMENT_ID" owner = "PROD" type = "GenericId">1091</ProvisioningSvcElementId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">200</CustomerProductComponentId>
+          <BillingSvcElementId name = "SERVICE_ELEMENT_ID" owner = "PROD" type = "GenericId">200</BillingSvcElementId>
+          <AttributeGroup>
+            <AttributeNode>
+              <AttributeName>PRIORITY_SEQ</AttributeName>
+              <AttributeValue>1</AttributeValue>
+            </AttributeNode>
+            <AttributeNode fk_to = "Usage Billed Trunk Group">
+              <AttributeName>TRNKGRP_SEID</AttributeName>
+              <AttributeValue>1016</AttributeValue>
+            </AttributeNode>
+            <AttributeNode fk_to = "G711 ALAW Codec">
+              <AttributeName>CODEC_SEID</AttributeName>
+              <AttributeValue>1024</AttributeValue>
+            </AttributeNode>
+          </AttributeGroup>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" subClass = "Trunk Group Codec" xsi:type = "ProvisioningElementT">
+          <ProvisioningSvcElementId name = "SERVICE_ELEMENT_ID" owner = "PROD" type = "GenericId">1093</ProvisioningSvcElementId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">200</CustomerProductComponentId>
+          <BillingSvcElementId name = "SERVICE_ELEMENT_ID" owner = "PROD" type = "GenericId">200</BillingSvcElementId>
+          <AttributeGroup>
+            <AttributeNode>
+              <AttributeName>PRIORITY_SEQ</AttributeName>
+              <AttributeValue>1</AttributeValue>
+            </AttributeNode>
+            <AttributeNode fk_to = "Session Billed Trunk Group">
+              <AttributeName>TRNKGRP_SEID</AttributeName>
+              <AttributeValue>1018</AttributeValue>
+            </AttributeNode>
+            <AttributeNode fk_to = "G729 AB Codec">
+              <AttributeName>CODEC_SEID</AttributeName>
+              <AttributeValue>1026</AttributeValue>
+            </AttributeNode>
+          </AttributeGroup>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" subClass = "Trunk Group Codec" xsi:type = "ProvisioningElementT">
+          <ProvisioningSvcElementId name = "SERVICE_ELEMENT_ID" owner = "PROD" type = "GenericId">1093</ProvisioningSvcElementId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">200</CustomerProductComponentId>
+          <BillingSvcElementId name = "SERVICE_ELEMENT_ID" owner = "PROD" type = "GenericId">200</BillingSvcElementId>
+          <AttributeGroup>
+            <AttributeNode>
+              <AttributeName>PRIORITY_SEQ</AttributeName>
+              <AttributeValue>1</AttributeValue>
+            </AttributeNode>
+            <AttributeNode fk_to = "Session Billed Trunk Group">
+              <AttributeName>TRNKGRP_SEID</AttributeName>
+              <AttributeValue>1030</AttributeValue>
+            </AttributeNode>
+            <AttributeNode fk_to = "G729 A Codec">
+              <AttributeName>CODEC_SEID</AttributeName>
+              <AttributeValue>1028</AttributeValue>
+            </AttributeNode>
+          </AttributeGroup>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" subClass = "G711 ULAW Codec" xsi:type = "ProvisioningElementT">
+          <ProvisioningSvcElementId name = "SERVICE_ELEMENT_ID" owner = "PROD" type = "GenericId">1022</ProvisioningSvcElementId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">200</CustomerProductComponentId>
+          <BillingSvcElementId name = "SERVICE_ELEMENT_ID" owner = "PROD" type = "GenericId">200</BillingSvcElementId>
+          <AttributeGroup>
+            <AttributeNode>
+              <AttributeName>DTMF_TYPE</AttributeName>
+              <AttributeValue>RFC 2833</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>FAX_RLY_TYP</AttributeName>
+              <AttributeValue>G711</AttributeValue>
+            </AttributeNode>
+          </AttributeGroup>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" subClass = "G711 ALAW Codec" xsi:type = "ProvisioningElementT">
+          <ProvisioningSvcElementId name = "SERVICE_ELEMENT_ID" owner = "PROD" type = "GenericId">1024</ProvisioningSvcElementId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">200</CustomerProductComponentId>
+          <BillingSvcElementId name = "SERVICE_ELEMENT_ID" owner = "PROD" type = "GenericId">200</BillingSvcElementId>
+          <AttributeGroup>
+            <AttributeNode>
+              <AttributeName>DTMF_TYPE</AttributeName>
+              <AttributeValue>RFC 2833</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>FAX_RLY_TYP</AttributeName>
+              <AttributeValue>G711</AttributeValue>
+            </AttributeNode>
+          </AttributeGroup>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" subClass = "G729 AB Codec" xsi:type = "ProvisioningElementT">
+          <ProvisioningSvcElementId name = "SERVICE_ELEMENT_ID" owner = "PROD" type = "GenericId">1026</ProvisioningSvcElementId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">200</CustomerProductComponentId>
+          <BillingSvcElementId name = "SERVICE_ELEMENT_ID" owner = "PROD" type = "GenericId">200</BillingSvcElementId>
+          <AttributeGroup>
+            <AttributeNode>
+              <AttributeName>DTMF_TYPE</AttributeName>
+              <AttributeValue>RFC 2833</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>FAX_RLY_TYP</AttributeName>
+              <AttributeValue>G711</AttributeValue>
+            </AttributeNode>
+          </AttributeGroup>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" subClass = "G729 A Codec" xsi:type = "ProvisioningElementT">
+          <ProvisioningSvcElementId name = "SERVICE_ELEMENT_ID" owner = "PROD" type = "GenericId">1028</ProvisioningSvcElementId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">200</CustomerProductComponentId>
+          <BillingSvcElementId name = "SERVICE_ELEMENT_ID" owner = "PROD" type = "GenericId">200</BillingSvcElementId>
+          <AttributeGroup>
+            <AttributeNode>
+              <AttributeName>DTMF_TYPE</AttributeName>
+              <AttributeValue>RFC 2833</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>FAX_RLY_TYP</AttributeName>
+              <AttributeValue>G711</AttributeValue>
+            </AttributeNode>
+          </AttributeGroup>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" subClass = "Customer Signaling IP Address" xsi:type = "ProvisioningElementT">
+          <ProvisioningSvcElementId name = "SERVICE_ELEMENT_ID" owner = "PROD" type = "GenericId">1030</ProvisioningSvcElementId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">200</CustomerProductComponentId>
+          <BillingSvcElementId name = "SERVICE_ELEMENT_ID" owner = "PROD" type = "GenericId">200</BillingSvcElementId>
+          <AttributeGroup>
+            <AttributeNode fk_to = "Usage Billed Trunk Group">
+              <AttributeName>TRNKGRP_SEID</AttributeName>
+              <AttributeValue>1015</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>SIG_IPADDR</AttributeName>
+              <AttributeValue>255.255.255.150</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>SUBNET_MASK</AttributeName>
+              <AttributeValue>255.255.255.192</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>DIRECTION</AttributeName>
+              <AttributeValue>Transmit</AttributeValue>
+            </AttributeNode>
+          </AttributeGroup>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" subClass = "Customer Signaling IP Address" xsi:type = "ProvisioningElementT">
+          <ProvisioningSvcElementId name = "SERVICE_ELEMENT_ID" owner = "PROD" type = "GenericId">1061</ProvisioningSvcElementId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">200</CustomerProductComponentId>
+          <BillingSvcElementId name = "SERVICE_ELEMENT_ID" owner = "PROD" type = "GenericId">200</BillingSvcElementId>
+          <AttributeGroup>
+            <AttributeNode fk_to = "Usage Billed Trunk Group">
+              <AttributeName>TRNKGRP_SEID</AttributeName>
+              <AttributeValue>1015</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>SIG_IPADDR</AttributeName>
+              <AttributeValue>255.255.255.160</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>SUBNET_MASK</AttributeName>
+              <AttributeValue>255.255.255.195</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>DIRECTION</AttributeName>
+              <AttributeValue>Transmit</AttributeValue>
+            </AttributeNode>
+          </AttributeGroup>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" subClass = "Customer Signaling IP Address" xsi:type = "ProvisioningElementT">
+          <ProvisioningSvcElementId name = "SERVICE_ELEMENT_ID" owner = "PROD" type = "GenericId">1031</ProvisioningSvcElementId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">200</CustomerProductComponentId>
+          <BillingSvcElementId name = "SERVICE_ELEMENT_ID" owner = "PROD" type = "GenericId">200</BillingSvcElementId>
+          <AttributeGroup>
+            <AttributeNode fk_to = "Usage Billed Trunk Group">
+              <AttributeName>TRNKGRP_SEID</AttributeName>
+              <AttributeValue>1016</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>SIG_IPADDR</AttributeName>
+              <AttributeValue>255.255.255.125</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>SUBNET_MASK</AttributeName>
+              <AttributeValue>255.255.255.0</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>DIRECTION</AttributeName>
+              <AttributeValue>Transmit</AttributeValue>
+            </AttributeNode>
+          </AttributeGroup>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" subClass = "Customer Signaling IP Address" xsi:type = "ProvisioningElementT">
+          <ProvisioningSvcElementId name = "SERVICE_ELEMENT_ID" owner = "PROD" type = "GenericId">1032</ProvisioningSvcElementId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">200</CustomerProductComponentId>
+          <BillingSvcElementId name = "SERVICE_ELEMENT_ID" owner = "PROD" type = "GenericId">200</BillingSvcElementId>
+          <AttributeGroup>
+            <AttributeNode fk_to = "Session Billed Trunk Group">
+              <AttributeName>TRNKGRP_SEID</AttributeName>
+              <AttributeValue>1018</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>SIG_IPADDR</AttributeName>
+              <AttributeValue>255.255.248.175</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>SUBNET_MASK</AttributeName>
+              <AttributeValue>255.255.248.0</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>DIRECTION</AttributeName>
+              <AttributeValue>Transmit</AttributeValue>
+            </AttributeNode>
+          </AttributeGroup>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" subClass = "Customer Signaling IP Address" xsi:type = "ProvisioningElementT">
+          <ProvisioningSvcElementId name = "SERVICE_ELEMENT_ID" owner = "PROD" type = "GenericId">1033</ProvisioningSvcElementId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">200</CustomerProductComponentId>
+          <BillingSvcElementId name = "SERVICE_ELEMENT_ID" owner = "PROD" type = "GenericId">200</BillingSvcElementId>
+          <AttributeGroup>
+            <AttributeNode fk_to = "Session Billed Trunk Group">
+              <AttributeName>TRNKGRP_SEID</AttributeName>
+              <AttributeValue>1020</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>SIG_IPADDR</AttributeName>
+              <AttributeValue>255.255.240.199</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>SUBNET_MASK</AttributeName>
+              <AttributeValue>255.255.240.0</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>DIRECTION</AttributeName>
+              <AttributeValue>Transmit</AttributeValue>
+            </AttributeNode>
+          </AttributeGroup>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" subClass = "SIP Trunk Standard Non-Ported TN" xsi:type = "ProvisioningElementT">
+          <ProvisioningSvcElementId name = "SERVICE_ELEMENT_ID" owner = "PROD" type = "GenericId">1047</ProvisioningSvcElementId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">400</CustomerProductComponentId>
+          <BillingSvcElementId name = "SERVICE_ELEMENT_ID" owner = "PROD" type = "GenericId">400</BillingSvcElementId>
+          <AttributeGroup>
+            <AttributeNode>
+              <AttributeName>PORTED_TN_FG</AttributeName>
+              <AttributeValue>N</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>PRVDR_TO_QCC</AttributeName>
+              <AttributeValue>QC</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>WP_LTNG_QTY</AttributeName>
+              <AttributeValue>1</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>TELEPHONE_NO</AttributeName>
+              <AttributeValue>3039845207</AttributeValue>
+            </AttributeNode>
+            <AttributeNode fk_to = "VoIP Trunk Bidirectional Service">
+              <AttributeName>VOIPBIDRSEID</AttributeName>
+              <AttributeValue>796912149</AttributeValue>
+            </AttributeNode>
+            <AttributeNode fk_to = "911 and PPU Location">
+              <AttributeName>911PPUL_SEID</AttributeName>
+              <AttributeValue>805857</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>NUM_MGT_ID</AttributeName>
+              <AttributeValue>PRA123</AttributeValue>
+            </AttributeNode>
+          </AttributeGroup>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" subClass = "Usage Parameters" xsi:type = "ProvisioningElementT">
+          <ProvisioningSvcElementId name = "SERVICE_ELEMENT_ID" owner = "PROD" type = "GenericId">508111</ProvisioningSvcElementId>
+          <CustomerProductComponentId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">400</CustomerProductComponentId>
+          <BillingSvcElementId name = "SERVICE_ELEMENT_ID" owner = "PROD" type = "GenericId">400</BillingSvcElementId>
+          <AttributeGroup>
+            <AttributeNode fk_to="SIP Trunk Standard Non-Ported TN" IsEncrypted="false">
+              <AttributeName>VOIP_TN_SEID</AttributeName>
+              <AttributeValue>1047</AttributeValue>
+              <AttributeValueDesc />
+            </AttributeNode>          
+            <AttributeNode>
+              <AttributeName>DOM_USAGE_FG</AttributeName>
+              <AttributeValue>Y</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>MEX_USAGE_FG</AttributeName>
+              <AttributeValue>Y</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>INTL_FLAG</AttributeName>
+              <AttributeValue>Y</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>LOCAL_USG_FG</AttributeName>
+              <AttributeValue>Y</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>CANADIAN_UFG</AttributeName>
+              <AttributeValue>Y</AttributeValue>
+            </AttributeNode>
+            <AttributeNode>
+              <AttributeName>DIR_ASST_FG</AttributeName>
+              <AttributeValue>Y</AttributeValue>
+            </AttributeNode>
+          </AttributeGroup>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "ContactT">
+          <qb:ContactId name = "CONTACT_ID" owner = "OALY" type = "GenericId">56940</qb:ContactId>
+          <ContactType>OLGC</ContactType>
+          <qb:Email>skarri@qwest.com</qb:Email>
+          <ContactName>Qwest - Srini</ContactName>
+          <qb:ContactTN>
+            <qb:NPA>303</qb:NPA>
+            <qb:NXX>624</qb:NXX>
+            <qb:LineNumber>2050</qb:LineNumber>
+          </qb:ContactTN>
+          <ContactAvailability>
+            <TwentyFourBySevenFlag>true</TwentyFourBySevenFlag>
+          </ContactAvailability>
+          <AltContactId>56940</AltContactId>
+          <NodeLocationId name = "LOCATION_ID" owner = "PROD" type = "GenericId">123456</NodeLocationId>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "BuildingAddressT">
+          <qb:StreetAddress>6715 LITTLE RIVER TPKE</qb:StreetAddress>
+          <qb:City>ANNANDALE</qb:City>
+          <StateProvince>VA</StateProvince>
+          <qb:PostalCode>22003</qb:PostalCode>
+          <qb:CountryCode>USA</qb:CountryCode>
+          <BldgAddressId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">72718821</BldgAddressId>
+          <BuildingLeasedFlag>false</BuildingLeasedFlag>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "NodeLocationT">
+          <NodeLocationId name = "LOCATION_ID" owner = "PROD" type = "GenericId">123456</NodeLocationId>
+          <qb:CLLI>
+            <qb:CLLI8>ALXNVAAD</qb:CLLI8>
+            <qb:DetailCode>DS0</qb:DetailCode>
+          </qb:CLLI>
+          <Floor>Main</Floor>
+          <Building>Main</Building>
+          <Room>Main</Room>
+          <BldgAddressId name = "PRODUCT_ACCOUNT_ID" owner = "OALY" type = "GenericId">72718821</BldgAddressId>
+          <LocationDesc>VOIP DUMMY LOCATION</LocationDesc>
+          <qb:NodeLocationType>Customer Premise</qb:NodeLocationType>
+          <ContactId name = "CONTACT_ID" owner = "OALY" type = "GenericId">56940</ContactId>
+          <MultiplexingFlag>false</MultiplexingFlag>
+          <QuoteLocationId>72718821</QuoteLocationId>
+          <PricingSWC>ANNNVA02</PricingSWC>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "ContactT">
+          <qb:ContactId name = "CONTACT_ID" owner = "OALY" type = "GenericId">56909</qb:ContactId>
+          <ContactType>MAIN</ContactType>
+          <qb:Email>skarri@qwest.com</qb:Email>
+          <ContactName>Qwest Srini</ContactName>
+          <qb:ContactTN>
+            <qb:NPA>303</qb:NPA>
+            <qb:NXX>303</qb:NXX>
+            <qb:LineNumber>3033</qb:LineNumber>
+            <qb:TNExtension>123</qb:TNExtension>
+          </qb:ContactTN>
+          <ContactAvailability>
+            <TwentyFourBySevenFlag>true</TwentyFourBySevenFlag>
+          </ContactAvailability>
+          <AltContactId>56909</AltContactId>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "ContactT">
+          <qb:ContactId name = "CONTACT_ID" owner = "OALY" type = "GenericId">56910</qb:ContactId>
+          <ContactType>TECH</ContactType>
+          <qb:Email>skarri@qwest.com</qb:Email>
+          <ContactName>Qwest Srini</ContactName>
+          <qb:ContactTN>
+            <qb:NPA>303</qb:NPA>
+            <qb:NXX>624</qb:NXX>
+            <qb:LineNumber>2050</qb:LineNumber>
+            <qb:TNExtension>123</qb:TNExtension>
+          </qb:ContactTN>
+          <ContactAvailability>
+            <TwentyFourBySevenFlag>true</TwentyFourBySevenFlag>
+          </ContactAvailability>
+          <AltContactId>56910</AltContactId>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "ContactT">
+          <qb:ContactId name = "CONTACT_ID" owner = "OALY" type = "GenericId">56911</qb:ContactId>
+          <ContactType>AHC</ContactType>
+          <qb:Email>FNAME5@qwest.com</qb:Email>
+          <qb:ContactTN>
+            <qb:NPA>303</qb:NPA>
+            <qb:NXX>624</qb:NXX>
+            <qb:LineNumber>1111</qb:LineNumber>
+          </qb:ContactTN>
+          <ContactAvailability>
+            <TwentyFourBySevenFlag>true</TwentyFourBySevenFlag>
+          </ContactAvailability>
+          <AltContactId>56911</AltContactId>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "SalesOrderCommentT">
+          <CustomerProductId name = "PRD_ACCT_SERVICE_CAT_SEQ" owner = "PROD" type = "GenericId">9603259</CustomerProductId>
+          <SalesOrderId name = "SALES_ORDER_ID" owner = "OALY" type = "GenericId">960325917</SalesOrderId>
+          <UserId>jxmar33</UserId>
+          <CommentText>SOURCE FOR THIS COD IS MANUALLY CREATED VOIP TRUNK OA XML</CommentText>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+      <OrderItem>
+        <qb:CustomerAccountId name = "CUSTOMER_ACCT_ID" owner = "PROD" type = "GenericId">98003259</qb:CustomerAccountId>
+        <ActionCode>A</ActionCode>
+        <Quantity>0</Quantity>
+        <BusinessObject previousFlag = "false" xsi:type = "SalesOrderRepT">
+          <CustomerProductId name = "PRD_ACCT_SERVICE_CAT_SEQ" owner = "PROD" type = "GenericId">9603259</CustomerProductId>
+          <SalesOrderId name = "SALES_ORDER_ID" owner = "OALY" type = "GenericId">960325917</SalesOrderId>
+          <RepList>
+            <RepCode>WEBOE_AS</RepCode>
+            <CurrentOrderManagerFlag>true</CurrentOrderManagerFlag>
+          </RepList>
+        </BusinessObject>
+        <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+      </OrderItem>
+    </OrderCustomerAccount>
+  </OrderCustomer>
+  <ValidationRuleSetNameList>
+    <ValidationRuleSetName>NONRQ</ValidationRuleSetName>
+  </ValidationRuleSetNameList>
+  </CustomerOrder>
+</CustomerOrderResponse>

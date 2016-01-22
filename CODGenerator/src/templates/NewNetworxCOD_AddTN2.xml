@@ -1,0 +1,1166 @@
+<CustomerOrderResponse xmlns="http://www.qwest.com/XMLSchema" xmlns:qb="http://www.qwest.com/XMLSchema/BIM" xsi:schemaLocation="http://www.qwest.com/XMLSchema http://oeservicesitv2.dev.qintra.com/03.25/XMLCanon/ProjectSpecific/COD/Production/CustomerOrderResponse_v02_02.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <qb:TargetSchemaVersionUsed>
+        <qb:TargetXSDName>http://oeservicesitv2.dev.qintra.com/03.25/XMLCanon/ProjectSpecific/COD/Production/CustomerOrderResponse_v02_02.xsd</qb:TargetXSDName>
+        <qb:MajorVersionNumber>0</qb:MajorVersionNumber>
+        <qb:MinorVersionNumber>0</qb:MinorVersionNumber>
+    </qb:TargetSchemaVersionUsed>
+    <qb:MessageStatus>
+        <qb:ErrorStatus>OK</qb:ErrorStatus>
+    </qb:MessageStatus>
+    <CustomerOrder>
+        <qb:ServiceOrderId owner="PROD" type="GenericId" name="ORDER_ID">973131555</qb:ServiceOrderId>
+        <OrderStatus>PRO</OrderStatus>
+        <OrderCreateDate>2008-05-27T00:00:00-05:00</OrderCreateDate>
+        <OrderTakenDate>2008-05-27T00:00:00-05:00</OrderTakenDate>
+        <OrderReceivedDate>2008-05-27T00:00:00-05:00</OrderReceivedDate>
+        <OrderSourceSystemName>OANW</OrderSourceSystemName>
+        <OrderSourceSystemVersion>1.0</OrderSourceSystemVersion>
+        <TypistId>WEBOE_AS</TypistId>
+        <PartnerOrderFlag>false</PartnerOrderFlag>
+        <OrderCustomer>
+            <OrderCustomerAccount>
+                <qb:CustomerAccountId owner="PROD" type="GenericId" name="CUSTOMER_ACCT_ID">976131503</qb:CustomerAccountId>
+                <UserDefinedAccountName>CUST_ACCT_NM</UserDefinedAccountName>
+                <OrderItem>
+                    <OrderItemId>24268</OrderItemId>
+                    <qb:CustomerAccountId owner="PROD" type="GenericId" name="CUSTOMER_ACCT_ID">976131503</qb:CustomerAccountId>
+                    <ActionCode>A</ActionCode>
+                    <DesiredDueDate>2008-05-29T12:00:00-05:00</DesiredDueDate>
+                    <EarlyInstallationFlag>false</EarlyInstallationFlag>
+                    <CommitmentDate>2008-07-26T04:52:41-05:00</CommitmentDate>
+                    <Quantity>0</Quantity>
+                    <BusinessObject xsi:type="CustomerProductT" previousFlag="false">
+                        <CustomerProductId owner="PROD" type="GenericId" name="PRD_ACCT_SERVICE_CAT_SEQ">6413554</CustomerProductId>
+                        <CustomerBrandId owner="PROD" type="GenericId" name="PRODUCT_ACCOUNT_ID">89002141517</CustomerBrandId>
+                        <ProductTemplateId>IPTELS</ProductTemplateId>
+                        <qb:CustomerAccountId owner="PROD" type="GenericId" name="CUSTOMER_ACCT_ID">976131503</qb:CustomerAccountId>
+                        <CustomerAssignedName>IPTELS</CustomerAssignedName>
+                        <QuoteValue>1.00</QuoteValue>
+                        <ServiceTypeCode>NETWORX</ServiceTypeCode>
+                        <CustomerPON>81128</CustomerPON>
+                        <ExpediteFlag>false</ExpediteFlag>
+                        <CustomerChargedForExpediteFlag>false</CustomerChargedForExpediteFlag>
+                        <SalesOrderId owner="PROD" type="CompositeKey" name="SALES_ORDER_ID">973131555</SalesOrderId>
+                        <NetworxInventoryCode>DNVRCO26U71</NetworxInventoryCode>
+                        <CustomerRequestNumber>IPTelS IPS</CustomerRequestNumber>
+                        <NRCQuoteValue>1.00</NRCQuoteValue>
+                        <ServiceOrderNumber>81128-2-0</ServiceOrderNumber>
+                        <TransitionFlag>false</TransitionFlag>
+                    </BusinessObject>
+                    <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+                    <CoreActionCode>INS</CoreActionCode>
+                    <CoreCategoryCode>ADD</CoreCategoryCode>
+                    <VersionNumber>0</VersionNumber>
+                </OrderItem>
+                <OrderItem>
+                    <OrderItemId>24319</OrderItemId>
+                    <qb:CustomerAccountId owner="PROD" type="GenericId" name="CUSTOMER_ACCT_ID">976131503</qb:CustomerAccountId>
+                    <ActionCode>A</ActionCode>
+                    <Quantity>0</Quantity>
+                    <BusinessObject xsi:type="SingleLocationComponentT" previousFlag="false">
+                        <CustomerProductComponentId owner="PROD" type="CompositeKey" name="PRODUCT_ACCOUNT_ID|OCCURRENCE_NUMBER|COMPONENT_GROUP_CD|COMPONENT_GRP_VAL|SERVICE_ELEMENT_ID">136423255|171353566|NO|13809370|7973462</CustomerProductComponentId>
+                        <CustomerProductComponentName>NETWORX NON PRICEABLE CG</CustomerProductComponentName>
+                        <CustomerProductId owner="PROD" type="GenericId" name="PRD_ACCT_SERVICE_CAT_SEQ">6413554</CustomerProductId>
+                        <AccessMethodCode>ALL</AccessMethodCode>
+                        <ApplicationCode>ALL</ApplicationCode>
+                        <NodeLocationId owner="PROD" type="GenericId" name="LOCATION_ID">18779104</NodeLocationId>
+                        <OriginationInfo>
+                            <qb:NPA>303</qb:NPA>
+                            <qb:NXX>787</qb:NXX>
+                            <InternationalFlag>false</InternationalFlag>
+                        </OriginationInfo>
+                        <TerminationInfo>
+                            <InternationalFlag>true</InternationalFlag>
+                        </TerminationInfo>
+                        <IntraInterFlag>true</IntraInterFlag>
+                    </BusinessObject>
+                    <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+                    <VersionNumber>0</VersionNumber>
+                </OrderItem>
+                <OrderItem>
+                    <qb:CustomerAccountId owner="PROD" type="GenericId" name="CUSTOMER_ACCT_ID">976131503</qb:CustomerAccountId>
+                    <ActionCode>A</ActionCode>
+                    <Quantity>0</Quantity>
+                    <BusinessObject xsi:type="CustomerProductComponentPriceT" previousFlag="false">
+                        <CustomerProductComponentPriceId owner="PROD" type="CompositeKey" name="PRODUCT_ACCOUNT_ID|OCCURRENCE_NUMBER|PRCMP_CODE">136423255|171353566|NONPRICG</CustomerProductComponentPriceId>
+                        <StandardPrice>0.00</StandardPrice>
+                        <CustomerProductComponentId owner="PROD" type="CompositeKey" name="PRODUCT_ACCOUNT_ID|OCCURRENCE_NUMBER|COMPONENT_GROUP_CD|COMPONENT_GRP_VAL|SERVICE_ELEMENT_ID">136423255|171353566|NO|13809370|7973462</CustomerProductComponentId>
+                        <BillingProductComponentID owner="PROD" type="GenericId" name="PRCMP_CODE">NONPRICG</BillingProductComponentID>
+                        <CustomerProductComponentAttributeId owner="PROD" type="CompositeKey" name="PRODUCT_ACCOUNT_ID|OCCURRENCE_NUMBER|ATTRIBUTE_ID|ATTRIBUTE_NO">136423255|171353566|3757|3</CustomerProductComponentAttributeId>
+                        <CustomerProductComponentAttributeId owner="PROD" type="CompositeKey" name="PRODUCT_ACCOUNT_ID|OCCURRENCE_NUMBER|ATTRIBUTE_ID|ATTRIBUTE_NO">136423255|171353566|3913|2</CustomerProductComponentAttributeId>
+                        <CustomerProductComponentAttributeId owner="PROD" type="CompositeKey" name="PRODUCT_ACCOUNT_ID|OCCURRENCE_NUMBER|ATTRIBUTE_ID|ATTRIBUTE_NO">136423255|171353566|3914|1</CustomerProductComponentAttributeId>
+                        <PkgFlag>false</PkgFlag>
+                    </BusinessObject>
+                    <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+                    <VersionNumber>0</VersionNumber>
+                </OrderItem>
+                <OrderItem>
+                    <qb:CustomerAccountId owner="PROD" type="GenericId" name="CUSTOMER_ACCT_ID">976131503</qb:CustomerAccountId>
+                    <ActionCode>A</ActionCode>
+                    <Quantity>0</Quantity>
+                    <BusinessObject xsi:type="CustomerProductComponentAttributeT" previousFlag="false">
+                        <CustomerProductComponentAttributeId owner="PROD" type="CompositeKey" name="PRODUCT_ACCOUNT_ID|OCCURRENCE_NUMBER|ATTRIBUTE_ID|ATTRIBUTE_NO">136423255|171353566|3757|3</CustomerProductComponentAttributeId>
+                        <CustomerProductComponentId owner="PROD" type="CompositeKey" name="PRODUCT_ACCOUNT_ID|OCCURRENCE_NUMBER|COMPONENT_GROUP_CD|COMPONENT_GRP_VAL|SERVICE_ELEMENT_ID">136423255|171353566|NO|13809370|7973462</CustomerProductComponentId>
+                        <AttributeName>A_NIC</AttributeName>
+                        <AttributeValue>DNVRCO26U71</AttributeValue>
+                    </BusinessObject>
+                    <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+                    <VersionNumber>0</VersionNumber>
+                </OrderItem>
+                <OrderItem>
+                    <qb:CustomerAccountId owner="PROD" type="GenericId" name="CUSTOMER_ACCT_ID">976131503</qb:CustomerAccountId>
+                    <ActionCode>A</ActionCode>
+                    <Quantity>0</Quantity>
+                    <BusinessObject xsi:type="CustomerProductComponentAttributeT" previousFlag="false">
+                        <CustomerProductComponentAttributeId owner="PROD" type="CompositeKey" name="PRODUCT_ACCOUNT_ID|OCCURRENCE_NUMBER|ATTRIBUTE_ID|ATTRIBUTE_NO">136423255|171353566|3913|2</CustomerProductComponentAttributeId>
+                        <CustomerProductComponentId owner="PROD" type="CompositeKey" name="PRODUCT_ACCOUNT_ID|OCCURRENCE_NUMBER|COMPONENT_GROUP_CD|COMPONENT_GRP_VAL|SERVICE_ELEMENT_ID">136423255|171353566|NO|13809370|7973462</CustomerProductComponentId>
+                        <AttributeName>NODE_LOCR_ID</AttributeName>
+                        <AttributeValue>18779104</AttributeValue>
+                    </BusinessObject>
+                    <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+                    <VersionNumber>0</VersionNumber>
+                </OrderItem>
+                <OrderItem>
+                    <qb:CustomerAccountId owner="PROD" type="GenericId" name="CUSTOMER_ACCT_ID">976131503</qb:CustomerAccountId>
+                    <ActionCode>A</ActionCode>
+                    <Quantity>0</Quantity>
+                    <BusinessObject xsi:type="CustomerProductComponentAttributeT" previousFlag="false">
+                        <CustomerProductComponentAttributeId owner="PROD" type="CompositeKey" name="PRODUCT_ACCOUNT_ID|OCCURRENCE_NUMBER|ATTRIBUTE_ID|ATTRIBUTE_NO">136423255|171353566|3914|1</CustomerProductComponentAttributeId>
+                        <CustomerProductComponentId owner="PROD" type="CompositeKey" name="PRODUCT_ACCOUNT_ID|OCCURRENCE_NUMBER|COMPONENT_GROUP_CD|COMPONENT_GRP_VAL|SERVICE_ELEMENT_ID">136423255|171353566|NO|13809370|7973462</CustomerProductComponentId>
+                        <AttributeName>REC_LOC_ID</AttributeName>
+                        <AttributeValue>57180</AttributeValue>
+                    </BusinessObject>
+                    <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+                    <VersionNumber>0</VersionNumber>
+                </OrderItem>
+                <OrderItem>
+                    <OrderItemId>24316</OrderItemId>
+                    <qb:CustomerAccountId owner="PROD" type="GenericId" name="CUSTOMER_ACCT_ID">976131503</qb:CustomerAccountId>
+                    <ActionCode>A</ActionCode>
+                    <Quantity>0</Quantity>
+                    <BusinessObject xsi:type="SwitchedServiceT" previousFlag="false">
+                        <CustomerProductComponentId owner="PROD" type="CompositeKey" name="PRODUCT_ACCOUNT_ID|OCCURRENCE_NUMBER|COMPONENT_GROUP_CD|COMPONENT_GRP_VAL|SERVICE_ELEMENT_ID">136423255|171353565|VN|3039549924|7973461</CustomerProductComponentId>
+                        <CustomerProductComponentName>VOIP TN</CustomerProductComponentName>
+                        <CustomerProductId owner="PROD" type="GenericId" name="PRD_ACCT_SERVICE_CAT_SEQ">6413554</CustomerProductId>
+                        <AccessMethodCode>FGD</AccessMethodCode>
+                        <ApplicationCode>IPTELS</ApplicationCode>
+                        <NodeLocationId owner="PROD" type="GenericId" name="LOCATION_ID">18779104</NodeLocationId>
+                        <qb:WTN>
+                            <qb:NPA>303</qb:NPA>
+                            <qb:NXX>954</qb:NXX>
+                            <qb:LineNumber>9924</qb:LineNumber>
+                        </qb:WTN>
+                    </BusinessObject>
+                    <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+                    <VersionNumber>0</VersionNumber>
+                </OrderItem>
+                <OrderItem>
+                    <qb:CustomerAccountId owner="PROD" type="GenericId" name="CUSTOMER_ACCT_ID">976131503</qb:CustomerAccountId>
+                    <ActionCode>A</ActionCode>
+                    <Quantity>0</Quantity>
+                    <BusinessObject xsi:type="CustomerProductComponentPriceT" previousFlag="false">
+                        <CustomerProductComponentPriceId owner="PROD" type="CompositeKey" name="PRODUCT_ACCOUNT_ID|OCCURRENCE_NUMBER|PRCMP_CODE">136423255|171353565|FMFMRI</CustomerProductComponentPriceId>
+                        <StandardPrice>0.00</StandardPrice>
+                        <CustomerProductComponentId owner="PROD" type="CompositeKey" name="PRODUCT_ACCOUNT_ID|OCCURRENCE_NUMBER|COMPONENT_GROUP_CD|COMPONENT_GRP_VAL|SERVICE_ELEMENT_ID">136423255|171353565|VN|3039549924|7973461</CustomerProductComponentId>
+                        <BillingProductComponentID owner="PROD" type="GenericId" name="PRCMP_CODE">FMFMRI</BillingProductComponentID>
+                        <PkgFlag>false</PkgFlag>
+                        <ClinId>0804101</ClinId>
+                    </BusinessObject>
+                    <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+                    <VersionNumber>0</VersionNumber>
+                </OrderItem>
+                <OrderItem>
+                    <qb:CustomerAccountId owner="PROD" type="GenericId" name="CUSTOMER_ACCT_ID">976131503</qb:CustomerAccountId>
+                    <ActionCode>A</ActionCode>
+                    <Quantity>0</Quantity>
+                    <BusinessObject xsi:type="CustomerProductComponentPriceT" previousFlag="false">
+                        <CustomerProductComponentPriceId owner="PROD" type="CompositeKey" name="PRODUCT_ACCOUNT_ID|OCCURRENCE_NUMBER|PRCMP_CODE">136423255|171353565|USAGE</CustomerProductComponentPriceId>
+                        <StandardPrice>0.00</StandardPrice>
+                        <CustomerProductComponentId owner="PROD" type="CompositeKey" name="PRODUCT_ACCOUNT_ID|OCCURRENCE_NUMBER|COMPONENT_GROUP_CD|COMPONENT_GRP_VAL|SERVICE_ELEMENT_ID">136423255|171353565|VN|3039549924|7973461</CustomerProductComponentId>
+                        <BillingProductComponentID owner="PROD" type="GenericId" name="PRCMP_CODE">USAGE</BillingProductComponentID>
+                        <PkgFlag>false</PkgFlag>
+                    </BusinessObject>
+                    <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+                    <VersionNumber>0</VersionNumber>
+                </OrderItem>
+                <OrderItem>
+                    <qb:CustomerAccountId owner="PROD" type="GenericId" name="CUSTOMER_ACCT_ID">976131503</qb:CustomerAccountId>
+                    <ActionCode>A</ActionCode>
+                    <Quantity>0</Quantity>
+                    <BusinessObject xsi:type="CustomerProductComponentPriceT" previousFlag="false">
+                        <CustomerProductComponentPriceId owner="PROD" type="CompositeKey" name="PRODUCT_ACCOUNT_ID|OCCURRENCE_NUMBER|PRCMP_CODE">136423255|171353565|VMB</CustomerProductComponentPriceId>
+                        <StandardPrice>0.00</StandardPrice>
+                        <CustomerProductComponentId owner="PROD" type="CompositeKey" name="PRODUCT_ACCOUNT_ID|OCCURRENCE_NUMBER|COMPONENT_GROUP_CD|COMPONENT_GRP_VAL|SERVICE_ELEMENT_ID">136423255|171353565|VN|3039549924|7973461</CustomerProductComponentId>
+                        <BillingProductComponentID owner="PROD" type="GenericId" name="PRCMP_CODE">VMB</BillingProductComponentID>
+                        <PkgFlag>false</PkgFlag>
+                        <ClinId>0804204</ClinId>
+                    </BusinessObject>
+                    <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+                    <VersionNumber>0</VersionNumber>
+                </OrderItem>
+                <OrderItem>
+                    <qb:CustomerAccountId owner="PROD" type="GenericId" name="CUSTOMER_ACCT_ID">976131503</qb:CustomerAccountId>
+                    <ActionCode>A</ActionCode>
+                    <Quantity>0</Quantity>
+                    <BusinessObject xsi:type="CustomerProductComponentPriceT" previousFlag="false">
+                        <CustomerProductComponentPriceId owner="PROD" type="CompositeKey" name="PRODUCT_ACCOUNT_ID|OCCURRENCE_NUMBER|PRCMP_CODE">136423255|171353565|IPTM ADM</CustomerProductComponentPriceId>
+                        <StandardPrice>0.00</StandardPrice>
+                        <CustomerProductComponentId owner="PROD" type="CompositeKey" name="PRODUCT_ACCOUNT_ID|OCCURRENCE_NUMBER|COMPONENT_GROUP_CD|COMPONENT_GRP_VAL|SERVICE_ELEMENT_ID">136423255|171353565|VN|3039549924|7973461</CustomerProductComponentId>
+                        <BillingProductComponentID owner="PROD" type="GenericId" name="PRCMP_CODE">IPTM ADM</BillingProductComponentID>
+                        <PkgFlag>false</PkgFlag>
+                        <ClinId>0804203</ClinId>
+                    </BusinessObject>
+                    <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+                    <VersionNumber>0</VersionNumber>
+                </OrderItem>
+                <OrderItem>
+                    <qb:CustomerAccountId owner="PROD" type="GenericId" name="CUSTOMER_ACCT_ID">976131503</qb:CustomerAccountId>
+                    <ActionCode>A</ActionCode>
+                    <Quantity>0</Quantity>
+                    <BusinessObject xsi:type="CustomerProductComponentPriceT" previousFlag="false">
+                        <CustomerProductComponentPriceId owner="PROD" type="CompositeKey" name="PRODUCT_ACCOUNT_ID|OCCURRENCE_NUMBER|PRCMP_CODE">136423255|171353565|IPTM ADM INS</CustomerProductComponentPriceId>
+                        <StandardPrice>0.00</StandardPrice>
+                        <CustomerProductComponentId owner="PROD" type="CompositeKey" name="PRODUCT_ACCOUNT_ID|OCCURRENCE_NUMBER|COMPONENT_GROUP_CD|COMPONENT_GRP_VAL|SERVICE_ELEMENT_ID">136423255|171353565|VN|3039549924|7973461</CustomerProductComponentId>
+                        <BillingProductComponentID owner="PROD" type="GenericId" name="PRCMP_CODE">IPTM ADM INS</BillingProductComponentID>
+                        <PkgFlag>false</PkgFlag>
+                        <ClinId>0804103</ClinId>
+                    </BusinessObject>
+                    <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+                    <VersionNumber>0</VersionNumber>
+                </OrderItem>
+                <OrderItem>
+                    <qb:CustomerAccountId owner="PROD" type="GenericId" name="CUSTOMER_ACCT_ID">976131503</qb:CustomerAccountId>
+                    <ActionCode>A</ActionCode>
+                    <Quantity>0</Quantity>
+                    <BusinessObject xsi:type="CustomerProductComponentPriceT" previousFlag="false">
+                        <CustomerProductComponentPriceId owner="PROD" type="CompositeKey" name="PRODUCT_ACCOUNT_ID|OCCURRENCE_NUMBER|PRCMP_CODE">136423255|171353565|TN FEE</CustomerProductComponentPriceId>
+                        <StandardPrice>0.00</StandardPrice>
+                        <CustomerProductComponentId owner="PROD" type="CompositeKey" name="PRODUCT_ACCOUNT_ID|OCCURRENCE_NUMBER|COMPONENT_GROUP_CD|COMPONENT_GRP_VAL|SERVICE_ELEMENT_ID">136423255|171353565|VN|3039549924|7973461</CustomerProductComponentId>
+                        <BillingProductComponentID owner="PROD" type="GenericId" name="PRCMP_CODE">TN FEE</BillingProductComponentID>
+                        <CustomerProductComponentAttributeId owner="PROD" type="CompositeKey" name="PRODUCT_ACCOUNT_ID|OCCURRENCE_NUMBER|ATTRIBUTE_ID|ATTRIBUTE_NO">136423255|171353565|2982|1</CustomerProductComponentAttributeId>
+                        <PkgFlag>false</PkgFlag>
+                        <ClinId>0802201</ClinId>
+                    </BusinessObject>
+                    <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+                    <VersionNumber>0</VersionNumber>
+                </OrderItem>
+                <OrderItem>
+                    <qb:CustomerAccountId owner="PROD" type="GenericId" name="CUSTOMER_ACCT_ID">976131503</qb:CustomerAccountId>
+                    <ActionCode>A</ActionCode>
+                    <Quantity>0</Quantity>
+                    <BusinessObject xsi:type="CustomerProductComponentAttributeT" previousFlag="false">
+                        <CustomerProductComponentAttributeId owner="PROD" type="CompositeKey" name="PRODUCT_ACCOUNT_ID|OCCURRENCE_NUMBER|ATTRIBUTE_ID|ATTRIBUTE_NO">136423255|171353565|2982|1</CustomerProductComponentAttributeId>
+                        <CustomerProductComponentId owner="PROD" type="CompositeKey" name="PRODUCT_ACCOUNT_ID|OCCURRENCE_NUMBER|COMPONENT_GROUP_CD|COMPONENT_GRP_VAL|SERVICE_ELEMENT_ID">136423255|171353565|VN|3039549924|7973461</CustomerProductComponentId>
+                        <AttributeName>VN_CGV</AttributeName>
+                        <AttributeValue>3039549924</AttributeValue>
+                    </BusinessObject>
+                    <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+                    <VersionNumber>0</VersionNumber>
+                </OrderItem>
+                <OrderItem>
+                    <qb:CustomerAccountId owner="PROD" type="GenericId" name="CUSTOMER_ACCT_ID">976131503</qb:CustomerAccountId>
+                    <ActionCode>A</ActionCode>
+                    <Quantity>0</Quantity>
+                    <BusinessObject xsi:type="CustomerProductComponentPriceT" previousFlag="false">
+                        <CustomerProductComponentPriceId owner="PROD" type="CompositeKey" name="PRODUCT_ACCOUNT_ID|OCCURRENCE_NUMBER|PRCMP_CODE">136423255|171353565|VMBI</CustomerProductComponentPriceId>
+                        <StandardPrice>0.00</StandardPrice>
+                        <CustomerProductComponentId owner="PROD" type="CompositeKey" name="PRODUCT_ACCOUNT_ID|OCCURRENCE_NUMBER|COMPONENT_GROUP_CD|COMPONENT_GRP_VAL|SERVICE_ELEMENT_ID">136423255|171353565|VN|3039549924|7973461</CustomerProductComponentId>
+                        <BillingProductComponentID owner="PROD" type="GenericId" name="PRCMP_CODE">VMBI</BillingProductComponentID>
+                        <PkgFlag>false</PkgFlag>
+                        <ClinId>0804104</ClinId>
+                    </BusinessObject>
+                    <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+                    <VersionNumber>0</VersionNumber>
+                </OrderItem>
+                <OrderItem>
+                    <qb:CustomerAccountId owner="PROD" type="GenericId" name="CUSTOMER_ACCT_ID">976131503</qb:CustomerAccountId>
+                    <ActionCode>A</ActionCode>
+                    <Quantity>0</Quantity>
+                    <BusinessObject xsi:type="CustomerProductComponentPriceT" previousFlag="false">
+                        <CustomerProductComponentPriceId owner="PROD" type="CompositeKey" name="PRODUCT_ACCOUNT_ID|OCCURRENCE_NUMBER|PRCMP_CODE">136423255|171353565|FMFMR</CustomerProductComponentPriceId>
+                        <StandardPrice>0.00</StandardPrice>
+                        <CustomerProductComponentId owner="PROD" type="CompositeKey" name="PRODUCT_ACCOUNT_ID|OCCURRENCE_NUMBER|COMPONENT_GROUP_CD|COMPONENT_GRP_VAL|SERVICE_ELEMENT_ID">136423255|171353565|VN|3039549924|7973461</CustomerProductComponentId>
+                        <BillingProductComponentID owner="PROD" type="GenericId" name="PRCMP_CODE">FMFMR</BillingProductComponentID>
+                        <PkgFlag>false</PkgFlag>
+                        <ClinId>0804201</ClinId>
+                    </BusinessObject>
+                    <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+                    <VersionNumber>0</VersionNumber>
+                </OrderItem>
+                <OrderItem>
+                    <qb:CustomerAccountId owner="PROD" type="GenericId" name="CUSTOMER_ACCT_ID">976131503</qb:CustomerAccountId>
+                    <ActionCode>A</ActionCode>
+                    <Quantity>0</Quantity>
+                    <BusinessObject xsi:type="CustomerProductComponentPriceT" previousFlag="false">
+                        <CustomerProductComponentPriceId owner="PROD" type="CompositeKey" name="PRODUCT_ACCOUNT_ID|OCCURRENCE_NUMBER|PRCMP_CODE">136423255|171353565|TN FEE SET</CustomerProductComponentPriceId>
+                        <StandardPrice>0.00</StandardPrice>
+                        <CustomerProductComponentId owner="PROD" type="CompositeKey" name="PRODUCT_ACCOUNT_ID|OCCURRENCE_NUMBER|COMPONENT_GROUP_CD|COMPONENT_GRP_VAL|SERVICE_ELEMENT_ID">136423255|171353565|VN|3039549924|7973461</CustomerProductComponentId>
+                        <BillingProductComponentID owner="PROD" type="GenericId" name="PRCMP_CODE">TN FEE SET</BillingProductComponentID>
+                        <PkgFlag>false</PkgFlag>
+                        <ClinId>0802101</ClinId>
+                    </BusinessObject>
+                    <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+                    <VersionNumber>0</VersionNumber>
+                </OrderItem>
+                <OrderItem>
+                    <qb:CustomerAccountId owner="PROD" type="GenericId" name="CUSTOMER_ACCT_ID">976131503</qb:CustomerAccountId>
+                    <ActionCode>A</ActionCode>
+                    <Quantity>0</Quantity>
+                    <BusinessObject xsi:type="CustomerProductComponentPriceT" previousFlag="false">
+                        <CustomerProductComponentPriceId owner="PROD" type="CompositeKey" name="PRODUCT_ACCOUNT_ID|OCCURRENCE_NUMBER|PRCMP_CODE">136423255|171353565|IPTM SUB INS</CustomerProductComponentPriceId>
+                        <StandardPrice>0.00</StandardPrice>
+                        <CustomerProductComponentId owner="PROD" type="CompositeKey" name="PRODUCT_ACCOUNT_ID|OCCURRENCE_NUMBER|COMPONENT_GROUP_CD|COMPONENT_GRP_VAL|SERVICE_ELEMENT_ID">136423255|171353565|VN|3039549924|7973461</CustomerProductComponentId>
+                        <BillingProductComponentID owner="PROD" type="GenericId" name="PRCMP_CODE">IPTM SUB INS</BillingProductComponentID>
+                        <PkgFlag>false</PkgFlag>
+                        <ClinId>0804102</ClinId>
+                    </BusinessObject>
+                    <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+                    <VersionNumber>0</VersionNumber>
+                </OrderItem>
+                <OrderItem>
+                    <qb:CustomerAccountId owner="PROD" type="GenericId" name="CUSTOMER_ACCT_ID">976131503</qb:CustomerAccountId>
+                    <ActionCode>A</ActionCode>
+                    <Quantity>0</Quantity>
+                    <BusinessObject xsi:type="CustomerProductComponentPriceT" previousFlag="false">
+                        <CustomerProductComponentPriceId owner="PROD" type="CompositeKey" name="PRODUCT_ACCOUNT_ID|OCCURRENCE_NUMBER|PRCMP_CODE">136423255|171353565|IPTM SUB</CustomerProductComponentPriceId>
+                        <StandardPrice>0.00</StandardPrice>
+                        <CustomerProductComponentId owner="PROD" type="CompositeKey" name="PRODUCT_ACCOUNT_ID|OCCURRENCE_NUMBER|COMPONENT_GROUP_CD|COMPONENT_GRP_VAL|SERVICE_ELEMENT_ID">136423255|171353565|VN|3039549924|7973461</CustomerProductComponentId>
+                        <BillingProductComponentID owner="PROD" type="GenericId" name="PRCMP_CODE">IPTM SUB</BillingProductComponentID>
+                        <PkgFlag>false</PkgFlag>
+                        <ClinId>0804202</ClinId>
+                    </BusinessObject>
+                    <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+                    <VersionNumber>0</VersionNumber>
+                </OrderItem>
+                <OrderItem>
+                    <OrderItemId>24250</OrderItemId>
+                    <qb:CustomerAccountId owner="PROD" type="GenericId" name="CUSTOMER_ACCT_ID">976131503</qb:CustomerAccountId>
+                    <ActionCode>A</ActionCode>
+                    <Quantity>0</Quantity>
+                    <BusinessObject xsi:type="ProvisioningElementT" previousFlag="false" subClass="Hosted VOIP Service">
+                        <ProvisioningSvcElementId owner="PROD" type="GenericId" name="SERVICE_ELEMENT_ID">80931179</ProvisioningSvcElementId>
+                        <CustomerProductComponentId owner="PROD" type="CompositeKey" name="PRODUCT_ACCOUNT_ID|OCCURRENCE_NUMBER|COMPONENT_GROUP_CD|COMPONENT_GRP_VAL|SERVICE_ELEMENT_ID">136423255|171353566|NO|13809370|7973462</CustomerProductComponentId>
+                        <BillingSvcElementId owner="PROD" type="GenericId" name="SERVICE_ELEMENT_ID">7973462</BillingSvcElementId>
+                        <AttributeGroup>
+                            <AttributeNode IsEncrypted="false">
+                                <AttributeName>SERV_TYPE</AttributeName>
+                                <AttributeValue>IPTELS</AttributeValue>
+                                <AttributeValueDesc/>
+                            </AttributeNode>
+                            <AttributeNode IsEncrypted="false">
+                                <AttributeName>TENANT_STAT</AttributeName>
+                                <AttributeValue>NEW</AttributeValue>
+                                <AttributeValueDesc/>
+                            </AttributeNode>
+                            <AttributeNode IsEncrypted="false">
+                                <AttributeName>TRIGGER_PT</AttributeName>
+                                <AttributeValue>YES</AttributeValue>
+                                <AttributeValueDesc/>
+                            </AttributeNode>
+                            <AttributeNode IsEncrypted="false">
+                                <AttributeName>VOIP_SIG_PRO</AttributeName>
+                                <AttributeValue>SIP</AttributeValue>
+                                <AttributeValueDesc/>
+                            </AttributeNode>
+                            <AttributeNode IsEncrypted="false">
+                                <AttributeName>QWEST_TRANFG</AttributeName>
+                                <AttributeValue>Y</AttributeValue>
+                                <AttributeValueDesc/>
+                            </AttributeNode>
+                            <AttributeNode fk_to="Tenant" IsEncrypted="false">
+                                <AttributeName>TENANT_SEID</AttributeName>
+                                <AttributeValue>7013557876</AttributeValue>
+                                <AttributeValueDesc/>
+                            </AttributeNode>
+                            <AttributeNode IsEncrypted="false">
+                                <AttributeName>LTG_CHG_FLAG</AttributeName>
+                                <AttributeValue>N</AttributeValue>
+                                <AttributeValueDesc/>
+                            </AttributeNode>
+                            <AttributeNode IsEncrypted="false">
+                                <AttributeName>NWK_NODE_ST</AttributeName>
+                                <AttributeValue>EXISTING</AttributeValue>
+                                <AttributeValueDesc/>
+                            </AttributeNode>
+                        </AttributeGroup>
+                    </BusinessObject>
+                    <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+                    <VersionNumber>0</VersionNumber>
+                </OrderItem>
+                <OrderItem>
+                    <OrderItemId>24244</OrderItemId>
+                    <qb:CustomerAccountId owner="PROD" type="GenericId" name="CUSTOMER_ACCT_ID">976131503</qb:CustomerAccountId>
+                    <ActionCode>A</ActionCode>
+                    <Quantity>0</Quantity>
+                    <BusinessObject xsi:type="ProvisioningElementT" previousFlag="false" subClass="911 Location">
+                        <ProvisioningSvcElementId owner="PROD" type="GenericId" name="SERVICE_ELEMENT_ID">80931179</ProvisioningSvcElementId>
+                        <CustomerProductComponentId owner="PROD" type="CompositeKey" name="PRODUCT_ACCOUNT_ID|OCCURRENCE_NUMBER|COMPONENT_GROUP_CD|COMPONENT_GRP_VAL|SERVICE_ELEMENT_ID">136423255|171353566|NO|13809370|7973462</CustomerProductComponentId>
+                        <BillingSvcElementId owner="PROD" type="GenericId" name="SERVICE_ELEMENT_ID">7973462</BillingSvcElementId>
+                        <AttributeGroup>
+                            <AttributeNode IsEncrypted="false">
+                                <AttributeName>CITY</AttributeName>
+                                <AttributeValue>Denver</AttributeValue>
+                                <AttributeValueDesc/>
+                            </AttributeNode>
+                            <AttributeNode IsEncrypted="false">
+                                <AttributeName>COUNTRY</AttributeName>
+                                <AttributeValue>UNITED STATES</AttributeValue>
+                                <AttributeValueDesc/>
+                            </AttributeNode>
+                            <AttributeNode IsEncrypted="false">
+                                <AttributeName>ADDR_LINE1</AttributeName>
+                                <AttributeValue>930 15th St</AttributeValue>
+                                <AttributeValueDesc/>
+                            </AttributeNode>
+                            <AttributeNode IsEncrypted="false">
+                                <AttributeName>STATE</AttributeName>
+                                <AttributeValue>CO</AttributeValue>
+                                <AttributeValueDesc/>
+                            </AttributeNode>
+                            <AttributeNode IsEncrypted="false">
+                                <AttributeName>ZIPCODE</AttributeName>
+                                <AttributeValue>80202</AttributeValue>
+                                <AttributeValueDesc/>
+                            </AttributeNode>
+                        </AttributeGroup>
+                    </BusinessObject>
+                    <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+                    <VersionNumber>0</VersionNumber>
+                </OrderItem>
+                <OrderItem>
+                    <OrderItemId>24258</OrderItemId>
+                    <qb:CustomerAccountId owner="PROD" type="GenericId" name="CUSTOMER_ACCT_ID">976131503</qb:CustomerAccountId>
+                    <ActionCode>A</ActionCode>
+                    <Quantity>0</Quantity>
+                    <BusinessObject xsi:type="ProvisioningElementT" previousFlag="false" subClass="Qwest VOIP Entrance">
+                        <ProvisioningSvcElementId owner="PROD" type="GenericId" name="SERVICE_ELEMENT_ID">80931179</ProvisioningSvcElementId>
+                        <CustomerProductComponentId owner="PROD" type="CompositeKey" name="PRODUCT_ACCOUNT_ID|OCCURRENCE_NUMBER|COMPONENT_GROUP_CD|COMPONENT_GRP_VAL|SERVICE_ELEMENT_ID">136423255|171353566|NO|13809370|7973462</CustomerProductComponentId>
+                        <BillingSvcElementId owner="PROD" type="GenericId" name="SERVICE_ELEMENT_ID">7973462</BillingSvcElementId>
+                        <AttributeGroup>
+                            <AttributeNode fk_to="Hosted VOIP Service" IsEncrypted="false">
+                                <AttributeName>VOIPSER_SEID</AttributeName>
+                                <AttributeValue>80931179</AttributeValue>
+                                <AttributeValueDesc/>
+                            </AttributeNode>
+                            <AttributeNode fk_to="IP Port" IsEncrypted="false">
+                                <AttributeName>NNODE_SEID</AttributeName>
+                                <AttributeValue>90911734</AttributeValue>
+                                <AttributeValueDesc/>
+                            </AttributeNode>
+                            <AttributeNode IsEncrypted="false">
+                                <AttributeName>SCOPE</AttributeName>
+                                <AttributeValue>CURR REQUEST</AttributeValue>
+                                <AttributeValueDesc/>
+                            </AttributeNode>
+                        </AttributeGroup>
+                    </BusinessObject>
+                    <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+                    <VersionNumber>0</VersionNumber>
+                </OrderItem>
+                <OrderItem>
+                    <OrderItemId>24232</OrderItemId>
+                    <qb:CustomerAccountId owner="PROD" type="GenericId" name="CUSTOMER_ACCT_ID">976131503</qb:CustomerAccountId>
+                    <ActionCode>A</ActionCode>
+                    <Quantity>0</Quantity>
+                    <BusinessObject xsi:type="ProvisioningElementT" previousFlag="false" subClass="VOIP Seat">
+                        <ProvisioningSvcElementId owner="PROD" type="GenericId" name="SERVICE_ELEMENT_ID">79731181</ProvisioningSvcElementId>
+                        <CustomerProductComponentId owner="PROD" type="CompositeKey" name="PRODUCT_ACCOUNT_ID|OCCURRENCE_NUMBER|COMPONENT_GROUP_CD|COMPONENT_GRP_VAL|SERVICE_ELEMENT_ID">136423255|171353566|NO|13809370|7973462</CustomerProductComponentId>
+                        <BillingSvcElementId owner="PROD" type="GenericId" name="SERVICE_ELEMENT_ID">7973462</BillingSvcElementId>
+                        <AttributeGroup>
+                            <AttributeNode IsEncrypted="false">
+                                <AttributeName>VOIP_ST_TEMP</AttributeName>
+                                <AttributeValue>OFFICE ENHANCED</AttributeValue>
+                                <AttributeValueDesc/>
+                            </AttributeNode>
+                            <AttributeNode IsEncrypted="false">
+                                <AttributeName>VOIP_ST_QTY</AttributeName>
+                                <AttributeValue>5</AttributeValue>
+                                <AttributeValueDesc/>
+                            </AttributeNode>
+                            <AttributeNode fk_to="Hosted VOIP Service" IsEncrypted="false">
+                                <AttributeName>HOSTDVS_SEID</AttributeName>
+                                <AttributeValue>80931179</AttributeValue>
+                                <AttributeValueDesc/>
+                            </AttributeNode>
+                        </AttributeGroup>
+                    </BusinessObject>
+                    <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+                    <VersionNumber>0</VersionNumber>
+                </OrderItem>
+                <OrderItem>
+                    <OrderItemId>24257</OrderItemId>
+                    <qb:CustomerAccountId owner="PROD" type="GenericId" name="CUSTOMER_ACCT_ID">976131503</qb:CustomerAccountId>
+                    <ActionCode>A</ActionCode>
+                    <Quantity>0</Quantity>
+                    <BusinessObject xsi:type="ProvisioningElementT" previousFlag="false" subClass="Tenant">
+                        <ProvisioningSvcElementId owner="PROD" type="GenericId" name="SERVICE_ELEMENT_ID">7013557876</ProvisioningSvcElementId>
+                        <CustomerProductComponentId owner="PROD" type="CompositeKey" name="PRODUCT_ACCOUNT_ID|OCCURRENCE_NUMBER|COMPONENT_GROUP_CD|COMPONENT_GRP_VAL|SERVICE_ELEMENT_ID">136423255|171353566|NO|13809370|7973462</CustomerProductComponentId>
+                        <BillingSvcElementId owner="PROD" type="GenericId" name="SERVICE_ELEMENT_ID">7973462</BillingSvcElementId>
+                        <AttributeGroup>
+                            <AttributeNode IsEncrypted="false">
+                                <AttributeName>TENANT_NAME</AttributeName>
+                                <AttributeValue>Praveen</AttributeValue>
+                                <AttributeValueDesc/>
+                            </AttributeNode>
+                            <AttributeNode IsEncrypted="false">
+                                <AttributeName>DIAL_PLAN</AttributeName>
+                                <AttributeValue>IPTELS</AttributeValue>
+                                <AttributeValueDesc/>
+                            </AttributeNode>
+                            <AttributeNode IsEncrypted="false">
+                                <AttributeName>VM_RET_NUM</AttributeName>
+                                <AttributeValue>3039323214</AttributeValue>
+                                <AttributeValueDesc/>
+                            </AttributeNode>
+                            <AttributeNode IsEncrypted="false">
+                                <AttributeName>PRI_VOIP_TN</AttributeName>
+                                <AttributeValue>1000213555</AttributeValue>
+                                <AttributeValueDesc/>
+                            </AttributeNode>
+                            <AttributeNode IsEncrypted="false">
+                                <AttributeName>TENANT_ID</AttributeName>
+                                <AttributeValue>7013557876</AttributeValue>
+                                <AttributeValueDesc/>
+                            </AttributeNode>
+                            <AttributeNode IsEncrypted="false">
+                                <AttributeName>8XX_RET_NUM</AttributeName>
+                                <AttributeValue>8662522842</AttributeValue>
+                                <AttributeValueDesc/>
+                            </AttributeNode>
+                        </AttributeGroup>
+                    </BusinessObject>
+                    <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+                    <VersionNumber>0</VersionNumber>
+                </OrderItem>
+                <OrderItem>
+                    <OrderItemId>24241</OrderItemId>
+                    <qb:CustomerAccountId owner="PROD" type="GenericId" name="CUSTOMER_ACCT_ID">976131503</qb:CustomerAccountId>
+                    <ActionCode>A</ActionCode>
+                    <Quantity>0</Quantity>
+                    <BusinessObject xsi:type="ProvisioningElementT" previousFlag="false" subClass="VOIP Seat">
+                        <ProvisioningSvcElementId owner="PROD" type="GenericId" name="SERVICE_ELEMENT_ID">7973183</ProvisioningSvcElementId>
+                        <CustomerProductComponentId owner="PROD" type="CompositeKey" name="PRODUCT_ACCOUNT_ID|OCCURRENCE_NUMBER|COMPONENT_GROUP_CD|COMPONENT_GRP_VAL|SERVICE_ELEMENT_ID">136423255|171353566|NO|13809370|7973462</CustomerProductComponentId>
+                        <BillingSvcElementId owner="PROD" type="GenericId" name="SERVICE_ELEMENT_ID">7973462</BillingSvcElementId>
+                        <AttributeGroup>
+                            <AttributeNode IsEncrypted="false">
+                                <AttributeName>VOIP_ST_TEMP</AttributeName>
+                                <AttributeValue>BASIC</AttributeValue>
+                                <AttributeValueDesc/>
+                            </AttributeNode>
+                            <AttributeNode IsEncrypted="false">
+                                <AttributeName>VOIP_ST_QTY</AttributeName>
+                                <AttributeValue>5</AttributeValue>
+                                <AttributeValueDesc/>
+                            </AttributeNode>
+                            <AttributeNode fk_to="Hosted VOIP Service" IsEncrypted="false">
+                                <AttributeName>HOSTDVS_SEID</AttributeName>
+                                <AttributeValue>80931179</AttributeValue>
+                                <AttributeValueDesc/>
+                            </AttributeNode>
+                        </AttributeGroup>
+                    </BusinessObject>
+                    <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+                    <VersionNumber>0</VersionNumber>
+                </OrderItem>
+                <OrderItem>
+                    <OrderItemId>24219</OrderItemId>
+                    <qb:CustomerAccountId owner="PROD" type="GenericId" name="CUSTOMER_ACCT_ID">976131503</qb:CustomerAccountId>
+                    <ActionCode>A</ActionCode>
+                    <Quantity>0</Quantity>
+                    <BusinessObject xsi:type="ProvisioningElementT" previousFlag="false" subClass="VOIP Seat">
+                        <ProvisioningSvcElementId owner="PROD" type="GenericId" name="SERVICE_ELEMENT_ID">7973184</ProvisioningSvcElementId>
+                        <CustomerProductComponentId owner="PROD" type="CompositeKey" name="PRODUCT_ACCOUNT_ID|OCCURRENCE_NUMBER|COMPONENT_GROUP_CD|COMPONENT_GRP_VAL|SERVICE_ELEMENT_ID">136423255|171353566|NO|13809370|7973462</CustomerProductComponentId>
+                        <BillingSvcElementId owner="PROD" type="GenericId" name="SERVICE_ELEMENT_ID">7973462</BillingSvcElementId>
+                        <AttributeGroup>
+                            <AttributeNode IsEncrypted="false">
+                                <AttributeName>VOIP_ST_TEMP</AttributeName>
+                                <AttributeValue>OFFICE</AttributeValue>
+                                <AttributeValueDesc/>
+                            </AttributeNode>
+                            <AttributeNode IsEncrypted="false">
+                                <AttributeName>VOIP_ST_QTY</AttributeName>
+                                <AttributeValue>2</AttributeValue>
+                                <AttributeValueDesc/>
+                            </AttributeNode>
+                            <AttributeNode fk_to="Hosted VOIP Service" IsEncrypted="false">
+                                <AttributeName>HOSTDVS_SEID</AttributeName>
+                                <AttributeValue>80931179</AttributeValue>
+                                <AttributeValueDesc/>
+                            </AttributeNode>
+                        </AttributeGroup>
+                    </BusinessObject>
+                    <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+                    <VersionNumber>0</VersionNumber>
+                </OrderItem>
+                <OrderItem>
+                    <OrderItemId>24221</OrderItemId>
+                    <qb:CustomerAccountId owner="PROD" type="GenericId" name="CUSTOMER_ACCT_ID">976131503</qb:CustomerAccountId>
+                    <ActionCode>A</ActionCode>
+                    <Quantity>0</Quantity>
+                    <BusinessObject xsi:type="ProvisioningElementT" previousFlag="false" subClass="User Telephone Number">
+                        <ProvisioningSvcElementId owner="PROD" type="GenericId" name="SERVICE_ELEMENT_ID">7973187</ProvisioningSvcElementId>
+                        <CustomerProductComponentId owner="PROD" type="CompositeKey" name="PRODUCT_ACCOUNT_ID|OCCURRENCE_NUMBER|COMPONENT_GROUP_CD|COMPONENT_GRP_VAL|SERVICE_ELEMENT_ID">136423255|171353565|VN|3039549924|7973461</CustomerProductComponentId>
+                        <BillingSvcElementId owner="PROD" type="GenericId" name="SERVICE_ELEMENT_ID">7973461</BillingSvcElementId>
+                        <AttributeGroup>
+                            <AttributeNode IsEncrypted="false">
+                                <AttributeName>TELEPHONE_NO</AttributeName>
+                                <AttributeValue>8110324710</AttributeValue>
+                                <AttributeValueDesc/>
+                            </AttributeNode>
+                            <AttributeNode IsEncrypted="false">
+                                <AttributeName>PORTED_TN_FG</AttributeName>
+                                <AttributeValue>Y</AttributeValue>
+                                <AttributeValueDesc/>
+                            </AttributeNode>
+                            <AttributeNode IsEncrypted="false">
+                                <AttributeName>PRIMARY_NMFG</AttributeName>
+                                <AttributeValue>Y</AttributeValue>
+                                <AttributeValueDesc/>
+                            </AttributeNode>
+                            <AttributeNode IsEncrypted="false">
+                                <AttributeName>VOIP_CMP_COM</AttributeName>
+                                <AttributeValue>G729AB</AttributeValue>
+                                <AttributeValueDesc/>
+                            </AttributeNode>
+                            <AttributeNode fk_to="Hosted VOIP Service" IsEncrypted="false">
+                                <AttributeName>FTB_VS_SEID</AttributeName>
+                                <AttributeValue>80931179</AttributeValue>
+                                <AttributeValueDesc/>
+                            </AttributeNode>
+                            <AttributeNode IsEncrypted="false">
+                                <AttributeName>TRIGGER_PT</AttributeName>
+                                <AttributeValue>YES</AttributeValue>
+                                <AttributeValueDesc/>
+                            </AttributeNode>
+                        </AttributeGroup>
+                    </BusinessObject>
+                    <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+                    <VersionNumber>0</VersionNumber>
+                </OrderItem>
+                <OrderItem>
+                    <OrderItemId>24283</OrderItemId>
+                    <qb:CustomerAccountId owner="PROD" type="GenericId" name="CUSTOMER_ACCT_ID">976131503</qb:CustomerAccountId>
+                    <ActionCode>A</ActionCode>
+                    <Quantity>0</Quantity>
+                    <BusinessObject xsi:type="ProvisioningElementT" previousFlag="false" subClass="Usage Parameters">
+                        <ProvisioningSvcElementId owner="PROD" type="GenericId" name="SERVICE_ELEMENT_ID">7973188</ProvisioningSvcElementId>
+                        <CustomerProductComponentId owner="PROD" type="CompositeKey" name="PRODUCT_ACCOUNT_ID|OCCURRENCE_NUMBER|COMPONENT_GROUP_CD|COMPONENT_GRP_VAL|SERVICE_ELEMENT_ID">136423255|171353565|VN|3039549924|7973461</CustomerProductComponentId>
+                        <BillingSvcElementId owner="PROD" type="GenericId" name="SERVICE_ELEMENT_ID">7973461</BillingSvcElementId>
+                        <AttributeGroup>
+                            <AttributeNode IsEncrypted="false">
+                                <AttributeName>DIR_ASST_FG</AttributeName>
+                                <AttributeValue>N</AttributeValue>
+                                <AttributeValueDesc/>
+                            </AttributeNode>
+                            <AttributeNode fk_to="User Telephone Number" IsEncrypted="false">
+                                <AttributeName>VOIP_TN_SEID</AttributeName>
+                                <AttributeValue>7973187</AttributeValue>
+                                <AttributeValueDesc/>
+                            </AttributeNode>
+                            <AttributeNode IsEncrypted="false">
+                                <AttributeName>DOM_USAGE_FG</AttributeName>
+                                <AttributeValue>N</AttributeValue>
+                                <AttributeValueDesc/>
+                            </AttributeNode>
+                            <AttributeNode IsEncrypted="false">
+                                <AttributeName>MEX_USAGE_FG</AttributeName>
+                                <AttributeValue>N</AttributeValue>
+                                <AttributeValueDesc/>
+                            </AttributeNode>
+                            <AttributeNode IsEncrypted="false">
+                                <AttributeName>INTL_FLAG</AttributeName>
+                                <AttributeValue>N</AttributeValue>
+                                <AttributeValueDesc/>
+                            </AttributeNode>
+                            <AttributeNode IsEncrypted="false">
+                                <AttributeName>LOCAL_USG_FG</AttributeName>
+                                <AttributeValue>N</AttributeValue>
+                                <AttributeValueDesc/>
+                            </AttributeNode>
+                            <AttributeNode IsEncrypted="false">
+                                <AttributeName>CANADIAN_UFG</AttributeName>
+                                <AttributeValue>N</AttributeValue>
+                                <AttributeValueDesc/>
+                            </AttributeNode>
+                        </AttributeGroup>
+                    </BusinessObject>
+                    <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+                    <VersionNumber>0</VersionNumber>
+                </OrderItem>
+               
+                <OrderItem>
+		                    <OrderItemId>24222</OrderItemId>
+		                    <qb:CustomerAccountId owner="PROD" type="GenericId" name="CUSTOMER_ACCT_ID">976131503</qb:CustomerAccountId>
+		                    <ActionCode>A</ActionCode>
+		                    <Quantity>0</Quantity>
+		                    <BusinessObject xsi:type="ProvisioningElementT" previousFlag="false" subClass="User Telephone Number">
+		                        <ProvisioningSvcElementId owner="PROD" type="GenericId" name="SERVICE_ELEMENT_ID">7973177</ProvisioningSvcElementId>
+		                        <CustomerProductComponentId owner="PROD" type="CompositeKey" name="PRODUCT_ACCOUNT_ID|OCCURRENCE_NUMBER|COMPONENT_GROUP_CD|COMPONENT_GRP_VAL|SERVICE_ELEMENT_ID">136423255|171353565|VN|3039549924|7973461</CustomerProductComponentId>
+		                        <BillingSvcElementId owner="PROD" type="GenericId" name="SERVICE_ELEMENT_ID">7973461</BillingSvcElementId>
+		                        <AttributeGroup>
+		                            <AttributeNode IsEncrypted="false">
+		                                <AttributeName>TELEPHONE_NO</AttributeName>
+		                                <AttributeValue>9019324710</AttributeValue>
+		                                <AttributeValueDesc/>
+		                            </AttributeNode>
+		                            <AttributeNode IsEncrypted="false">
+		                                <AttributeName>PORTED_TN_FG</AttributeName>
+		                                <AttributeValue>Y</AttributeValue>
+		                                <AttributeValueDesc/>
+		                            </AttributeNode>
+		                            <AttributeNode IsEncrypted="false">
+		                                <AttributeName>PRIMARY_NMFG</AttributeName>
+		                                <AttributeValue>Y</AttributeValue>
+		                                <AttributeValueDesc/>
+		                            </AttributeNode>
+		                            <AttributeNode IsEncrypted="false">
+		                                <AttributeName>VOIP_CMP_COM</AttributeName>
+		                                <AttributeValue>G729AB</AttributeValue>
+		                                <AttributeValueDesc/>
+		                            </AttributeNode>
+		                            <AttributeNode fk_to="Hosted VOIP Service" IsEncrypted="false">
+		                                <AttributeName>FTB_VS_SEID</AttributeName>
+		                                <AttributeValue>80931179</AttributeValue>
+		                                <AttributeValueDesc/>
+		                            </AttributeNode>
+		                            <AttributeNode IsEncrypted="false">
+		                                <AttributeName>TRIGGER_PT</AttributeName>
+		                                <AttributeValue>YES</AttributeValue>
+		                                <AttributeValueDesc/>
+		                            </AttributeNode>
+		                        </AttributeGroup>
+		                    </BusinessObject>
+		                    <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+		                    <VersionNumber>0</VersionNumber>
+		                </OrderItem>
+		                <OrderItem>
+		                    <OrderItemId>24253</OrderItemId>
+		                    <qb:CustomerAccountId owner="PROD" type="GenericId" name="CUSTOMER_ACCT_ID">976131503</qb:CustomerAccountId>
+		                    <ActionCode>A</ActionCode>
+		                    <Quantity>0</Quantity>
+		                    <BusinessObject xsi:type="ProvisioningElementT" previousFlag="false" subClass="Usage Parameters">
+		                        <ProvisioningSvcElementId owner="PROD" type="GenericId" name="SERVICE_ELEMENT_ID">7973188</ProvisioningSvcElementId>
+		                        <CustomerProductComponentId owner="PROD" type="CompositeKey" name="PRODUCT_ACCOUNT_ID|OCCURRENCE_NUMBER|COMPONENT_GROUP_CD|COMPONENT_GRP_VAL|SERVICE_ELEMENT_ID">136423255|171353565|VN|3039549924|7973461</CustomerProductComponentId>
+		                        <BillingSvcElementId owner="PROD" type="GenericId" name="SERVICE_ELEMENT_ID">7973461</BillingSvcElementId>
+		                        <AttributeGroup>
+		                            <AttributeNode IsEncrypted="false">
+		                                <AttributeName>DIR_ASST_FG</AttributeName>
+		                                <AttributeValue>N</AttributeValue>
+		                                <AttributeValueDesc/>
+		                            </AttributeNode>
+		                            <AttributeNode fk_to="User Telephone Number" IsEncrypted="false">
+		                                <AttributeName>VOIP_TN_SEID</AttributeName>
+		                                <AttributeValue>7973177</AttributeValue>
+		                                <AttributeValueDesc/>
+		                            </AttributeNode>
+		                            <AttributeNode IsEncrypted="false">
+		                                <AttributeName>DOM_USAGE_FG</AttributeName>
+		                                <AttributeValue>N</AttributeValue>
+		                                <AttributeValueDesc/>
+		                            </AttributeNode>
+		                            <AttributeNode IsEncrypted="false">
+		                                <AttributeName>MEX_USAGE_FG</AttributeName>
+		                                <AttributeValue>N</AttributeValue>
+		                                <AttributeValueDesc/>
+		                            </AttributeNode>
+		                            <AttributeNode IsEncrypted="false">
+		                                <AttributeName>INTL_FLAG</AttributeName>
+		                                <AttributeValue>N</AttributeValue>
+		                                <AttributeValueDesc/>
+		                            </AttributeNode>
+		                            <AttributeNode IsEncrypted="false">
+		                                <AttributeName>LOCAL_USG_FG</AttributeName>
+		                                <AttributeValue>N</AttributeValue>
+		                                <AttributeValueDesc/>
+		                            </AttributeNode>
+		                            <AttributeNode IsEncrypted="false">
+		                                <AttributeName>CANADIAN_UFG</AttributeName>
+		                                <AttributeValue>N</AttributeValue>
+		                                <AttributeValueDesc/>
+		                            </AttributeNode>
+		                        </AttributeGroup>
+		                    </BusinessObject>
+		                    <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+		                    <VersionNumber>0</VersionNumber>
+		                </OrderItem>
+                <OrderItem>
+                    <OrderItemId>15855</OrderItemId>
+                    <qb:CustomerAccountId owner="PROD" type="GenericId" name="CUSTOMER_ACCT_ID">976131503</qb:CustomerAccountId>
+                    <ActionCode>A</ActionCode>
+                    <Quantity>0</Quantity>
+                    <BusinessObject xsi:type="ProvisioningElementT" previousFlag="false" subClass="User Telephone Number">
+                        <ProvisioningSvcElementId owner="PROD" type="GenericId" name="SERVICE_ELEMENT_ID">7727147</ProvisioningSvcElementId>
+                        <CustomerProductComponentId owner="PROD" type="CompositeKey" name="PRODUCT_ACCOUNT_ID|OCCURRENCE_NUMBER|COMPONENT_GROUP_CD|COMPONENT_GRP_VAL|SERVICE_ELEMENT_ID">136238637|168702647|VN|3039533258|7727292</CustomerProductComponentId>
+                        <BillingSvcElementId owner="PROD" type="GenericId" name="SERVICE_ELEMENT_ID">7727292</BillingSvcElementId>
+                        <AttributeGroup>
+                            <AttributeNode IsEncrypted="false">
+                                <AttributeName>TELEPHONE_NO</AttributeName>
+                                <AttributeValue>1229324719</AttributeValue>
+                                <AttributeValueDesc/>
+                            </AttributeNode>
+                            <AttributeNode IsEncrypted="false">
+                                <AttributeName>PORTED_TN_FG</AttributeName>
+                                <AttributeValue>Y</AttributeValue>
+                                <AttributeValueDesc/>
+                            </AttributeNode>
+                            <AttributeNode IsEncrypted="false">
+                                <AttributeName>PRIMARY_NMFG</AttributeName>
+                                <AttributeValue>N</AttributeValue>
+                                <AttributeValueDesc/>
+                            </AttributeNode>
+                            <AttributeNode IsEncrypted="false">
+                                <AttributeName>VOIP_CMP_COM</AttributeName>
+                                <AttributeValue>G729AB</AttributeValue>
+                                <AttributeValueDesc/>
+                            </AttributeNode>
+                            <AttributeNode fk_to="Hosted VOIP Service" IsEncrypted="false">
+                                <AttributeName>FTB_VS_SEID</AttributeName>
+                                <AttributeValue>7727008</AttributeValue>
+                                <AttributeValueDesc/>
+                            </AttributeNode>
+                            <AttributeNode IsEncrypted="false">
+                                <AttributeName>PRVDR_TO_QCC</AttributeName>
+                                <AttributeValue>QC</AttributeValue>
+                                <AttributeValueDesc/>
+                            </AttributeNode>
+                            <AttributeNode IsEncrypted="false">
+                                <AttributeName>TRIGGER_PT</AttributeName>
+                                <AttributeValue>YES</AttributeValue>
+                                <AttributeValueDesc/>
+                            </AttributeNode>
+                        </AttributeGroup>
+                    </BusinessObject>
+                    <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+                    <VersionNumber>0</VersionNumber>
+                </OrderItem>
+                <OrderItem>
+                    <OrderItemId>15856</OrderItemId>
+                    <qb:CustomerAccountId owner="PROD" type="GenericId" name="CUSTOMER_ACCT_ID">976131503</qb:CustomerAccountId>
+                    <ActionCode>A</ActionCode>
+                    <Quantity>0</Quantity>
+                    <BusinessObject xsi:type="ProvisioningElementT" previousFlag="false" subClass="Usage Parameters">
+                        <ProvisioningSvcElementId owner="PROD" type="GenericId" name="SERVICE_ELEMENT_ID">7727148</ProvisioningSvcElementId>
+                        <CustomerProductComponentId owner="PROD" type="CompositeKey" name="PRODUCT_ACCOUNT_ID|OCCURRENCE_NUMBER|COMPONENT_GROUP_CD|COMPONENT_GRP_VAL|SERVICE_ELEMENT_ID">136238637|168702647|VN|3039533258|7727292</CustomerProductComponentId>
+                        <BillingSvcElementId owner="PROD" type="GenericId" name="SERVICE_ELEMENT_ID">7727292</BillingSvcElementId>
+                        <AttributeGroup>
+                            <AttributeNode IsEncrypted="false">
+                                <AttributeName>DIR_ASST_FG</AttributeName>
+                                <AttributeValue>N</AttributeValue>
+                                <AttributeValueDesc/>
+                            </AttributeNode>
+                            <AttributeNode fk_to="User Telephone Number" IsEncrypted="false">
+                                <AttributeName>VOIP_TN_SEID</AttributeName>
+                                <AttributeValue>7727147</AttributeValue>
+                                <AttributeValueDesc/>
+                            </AttributeNode>
+                            <AttributeNode IsEncrypted="false">
+                                <AttributeName>DOM_USAGE_FG</AttributeName>
+                                <AttributeValue>N</AttributeValue>
+                                <AttributeValueDesc/>
+                            </AttributeNode>
+                            <AttributeNode IsEncrypted="false">
+                                <AttributeName>MEX_USAGE_FG</AttributeName>
+                                <AttributeValue>N</AttributeValue>
+                                <AttributeValueDesc/>
+                            </AttributeNode>
+                            <AttributeNode IsEncrypted="false">
+                                <AttributeName>INTL_FLAG</AttributeName>
+                                <AttributeValue>N</AttributeValue>
+                                <AttributeValueDesc/>
+                            </AttributeNode>
+                            <AttributeNode IsEncrypted="false">
+                                <AttributeName>LOCAL_USG_FG</AttributeName>
+                                <AttributeValue>N</AttributeValue>
+                                <AttributeValueDesc/>
+                            </AttributeNode>
+                            <AttributeNode IsEncrypted="false">
+                                <AttributeName>CANADIAN_UFG</AttributeName>
+                                <AttributeValue>N</AttributeValue>
+                                <AttributeValueDesc/>
+                            </AttributeNode>
+                        </AttributeGroup>
+                    </BusinessObject>
+                    <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+                    <VersionNumber>0</VersionNumber>
+                </OrderItem>
+                
+                     <OrderItem>
+                    <OrderItemId>15857</OrderItemId>
+                    <qb:CustomerAccountId owner="PROD" type="GenericId" name="CUSTOMER_ACCT_ID">976131503</qb:CustomerAccountId>
+                    <ActionCode>A</ActionCode>
+                    <Quantity>0</Quantity>
+                    <BusinessObject xsi:type="ProvisioningElementT" previousFlag="false" subClass="User Telephone Number">
+                        <ProvisioningSvcElementId owner="PROD" type="GenericId" name="SERVICE_ELEMENT_ID">7007147</ProvisioningSvcElementId>
+                        <CustomerProductComponentId owner="PROD" type="CompositeKey" name="PRODUCT_ACCOUNT_ID|OCCURRENCE_NUMBER|COMPONENT_GROUP_CD|COMPONENT_GRP_VAL|SERVICE_ELEMENT_ID">136238637|168702647|VN|3039533258|7727292</CustomerProductComponentId>
+                        <BillingSvcElementId owner="PROD" type="GenericId" name="SERVICE_ELEMENT_ID">7727292</BillingSvcElementId>
+                        <AttributeGroup>
+                            <AttributeNode IsEncrypted="false">
+                                <AttributeName>TELEPHONE_NO</AttributeName>
+                                <AttributeValue>9550027800</AttributeValue>
+                                <AttributeValueDesc/>
+                            </AttributeNode>
+                            <AttributeNode IsEncrypted="false">
+                                <AttributeName>PORTED_TN_FG</AttributeName>
+                                <AttributeValue>Y</AttributeValue>
+                                <AttributeValueDesc/>
+                            </AttributeNode>
+                            <AttributeNode IsEncrypted="false">
+                                <AttributeName>PRIMARY_NMFG</AttributeName>
+                                <AttributeValue>N</AttributeValue>
+                                <AttributeValueDesc/>
+                            </AttributeNode>
+                            <AttributeNode IsEncrypted="false">
+                                <AttributeName>VOIP_CMP_COM</AttributeName>
+                                <AttributeValue>G729AB</AttributeValue>
+                                <AttributeValueDesc/>
+                            </AttributeNode>
+                            <AttributeNode fk_to="Hosted VOIP Service" IsEncrypted="false">
+                                <AttributeName>FTB_VS_SEID</AttributeName>
+                                <AttributeValue>7727008</AttributeValue>
+                                <AttributeValueDesc/>
+                            </AttributeNode>
+                            <AttributeNode IsEncrypted="false">
+                                <AttributeName>PRVDR_TO_QCC</AttributeName>
+                                <AttributeValue>QC</AttributeValue>
+                                <AttributeValueDesc/>
+                            </AttributeNode>
+                            <AttributeNode IsEncrypted="false">
+                                <AttributeName>TRIGGER_PT</AttributeName>
+                                <AttributeValue>YES</AttributeValue>
+                                <AttributeValueDesc/>
+                            </AttributeNode>
+                        </AttributeGroup>
+                    </BusinessObject>
+                    <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+                    <VersionNumber>0</VersionNumber>
+                </OrderItem>
+               
+                       
+                <OrderItem>
+                    <qb:CustomerAccountId owner="PROD" type="GenericId" name="CUSTOMER_ACCT_ID">976131503</qb:CustomerAccountId>
+                    <ActionCode>A</ActionCode>
+                    <Quantity>0</Quantity>
+                    <BusinessObject xsi:type="ContactT" previousFlag="false">
+                        <qb:ContactId owner="OALY" type="GenericId" name="CONTACT_ID">148599</qb:ContactId>
+                        <ContactType>PNCO</ContactType>
+                        <qb:Email>bxrama2@qwest.com</qb:Email>
+                        <ContactName>networx test</ContactName>
+                        <qb:ContactTN>
+                            <qb:NPA>303</qb:NPA>
+                            <qb:NXX>607</qb:NXX>
+                            <qb:LineNumber>6125</qb:LineNumber>
+                        </qb:ContactTN>
+                        <ContactAvailability>
+                            <TwentyFourBySevenFlag>true</TwentyFourBySevenFlag>
+                        </ContactAvailability>
+                        <AltContactId>148599</AltContactId>
+                        <NodeLocationId owner="PROD" type="GenericId" name="LOCATION_ID">18779104</NodeLocationId>
+                    </BusinessObject>
+                    <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+                    <VersionNumber>0</VersionNumber>
+                </OrderItem>
+                <OrderItem>
+                    <qb:CustomerAccountId owner="PROD" type="GenericId" name="CUSTOMER_ACCT_ID">976131503</qb:CustomerAccountId>
+                    <ActionCode>A</ActionCode>
+                    <Quantity>0</Quantity>
+                    <BusinessObject xsi:type="ContactT" previousFlag="false">
+                        <qb:ContactId owner="OALY" type="GenericId" name="CONTACT_ID">148598</qb:ContactId>
+                        <ContactType>OLGC</ContactType>
+                        <qb:Email>bxrama2@qwest.com</qb:Email>
+                        <ContactName>networx test</ContactName>
+                        <qb:ContactTN>
+                            <qb:NPA>303</qb:NPA>
+                            <qb:NXX>607</qb:NXX>
+                            <qb:LineNumber>6125</qb:LineNumber>
+                        </qb:ContactTN>
+                        <ContactAvailability>
+                            <TwentyFourBySevenFlag>true</TwentyFourBySevenFlag>
+                        </ContactAvailability>
+                        <AltContactId>148598</AltContactId>
+                        <NodeLocationId owner="PROD" type="GenericId" name="LOCATION_ID">18779104</NodeLocationId>
+                    </BusinessObject>
+                    <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+                    <VersionNumber>0</VersionNumber>
+                </OrderItem>
+                <OrderItem>
+                    <qb:CustomerAccountId owner="PROD" type="GenericId" name="CUSTOMER_ACCT_ID">976131503</qb:CustomerAccountId>
+                    <ActionCode>A</ActionCode>
+                    <Quantity>0</Quantity>
+                    <BusinessObject xsi:type="BuildingAddressT" previousFlag="false">
+                        <qb:StreetAddress>930 15th St</qb:StreetAddress>
+                        <qb:City>DENVER</qb:City>
+                        <StateProvince>CO</StateProvince>
+                        <qb:PostalCode>80202</qb:PostalCode>
+                        <qb:CountryCode>USA</qb:CountryCode>
+                        <BldgAddressId owner="PROD" type="CompositeKey" name="FE_CUSTOMER_NO|FE_CUST_LOC_NO">976131503|80</BldgAddressId>
+                        <HoursOfOperation>08:00-17:00</HoursOfOperation>
+                        <BuildingLeasedFlag>false</BuildingLeasedFlag>
+                        <NetworkSiteCode>DNVRCO26</NetworkSiteCode>
+                    </BusinessObject>
+                    <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+                    <VersionNumber>0</VersionNumber>
+                </OrderItem>
+                <OrderItem>
+                    <qb:CustomerAccountId owner="PROD" type="GenericId" name="CUSTOMER_ACCT_ID">976131503</qb:CustomerAccountId>
+                    <ActionCode>A</ActionCode>
+                    <Quantity>0</Quantity>
+                    <BusinessObject xsi:type="NodeLocationT" previousFlag="false">
+                        <NodeLocationId owner="PROD" type="GenericId" name="LOCATION_ID">18779104</NodeLocationId>
+                        <qb:NPA>303</qb:NPA>
+                        <qb:NXX>787</qb:NXX>
+                        <qb:CLLI>
+                            <qb:CLLI8>DNVRCOMA</qb:CLLI8>
+                        </qb:CLLI>
+                        <Floor>Main</Floor>
+                        <Building>Main</Building>
+                        <Room>Main</Room>
+                        <BldgAddressId owner="PROD" type="CompositeKey" name="FE_CUSTOMER_NO|FE_CUST_LOC_NO">976131503|80</BldgAddressId>
+                        <LocationDesc>DNVRCO26</LocationDesc>
+                        <qb:NodeLocationType>Customer Premise</qb:NodeLocationType>
+                        <ContactId owner="OALY" type="GenericId" name="CONTACT_ID">148599</ContactId>
+                        <ContactId owner="OALY" type="GenericId" name="CONTACT_ID">148598</ContactId>
+                        <NewConstructionFlag>false</NewConstructionFlag>
+                        <PowerOnSiteFlag>false</PowerOnSiteFlag>
+                        <MultiplexingFlag>false</MultiplexingFlag>
+                        <QuoteLocationId>57180</QuoteLocationId>
+                        <NetworxInventoryCode>DNVRCO26U71</NetworxInventoryCode>
+                        <PricingSWC>DNVRCOMA</PricingSWC>
+                    </BusinessObject>
+                    <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+                    <VersionNumber>0</VersionNumber>
+                </OrderItem>
+                <OrderItem>
+                    <qb:CustomerAccountId owner="PROD" type="GenericId" name="CUSTOMER_ACCT_ID">976131503</qb:CustomerAccountId>
+                    <ActionCode>A</ActionCode>
+                    <Quantity>0</Quantity>
+                    <BusinessObject xsi:type="ContactT" previousFlag="false">
+                        <qb:ContactId owner="OALY" type="GenericId" name="CONTACT_ID">148308</qb:ContactId>
+                        <ContactType>MAIN</ContactType>
+                        <qb:Email>bxrama2@qwest.com</qb:Email>
+                        <ContactName>networx test</ContactName>
+                        <qb:ContactTN>
+                            <qb:NPA>303</qb:NPA>
+                            <qb:NXX>607</qb:NXX>
+                            <qb:LineNumber>6125</qb:LineNumber>
+                        </qb:ContactTN>
+                        <ContactAvailability>
+                            <TwentyFourBySevenFlag>true</TwentyFourBySevenFlag>
+                        </ContactAvailability>
+                        <AltContactId>148308</AltContactId>
+                    </BusinessObject>
+                    <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+                    <VersionNumber>0</VersionNumber>
+                </OrderItem>
+                <OrderItem>
+                    <qb:CustomerAccountId owner="PROD" type="GenericId" name="CUSTOMER_ACCT_ID">976131503</qb:CustomerAccountId>
+                    <ActionCode>A</ActionCode>
+                    <Quantity>0</Quantity>
+                    <BusinessObject xsi:type="ContactT" previousFlag="false">
+                        <qb:ContactId owner="OALY" type="GenericId" name="CONTACT_ID">148309</qb:ContactId>
+                        <ContactType>ORDR</ContactType>
+                        <qb:Email>bxrama2@qwest.com</qb:Email>
+                        <ContactName>networx test</ContactName>
+                        <qb:ContactTN>
+                            <qb:NPA>303</qb:NPA>
+                            <qb:NXX>607</qb:NXX>
+                            <qb:LineNumber>6125</qb:LineNumber>
+                        </qb:ContactTN>
+                        <ContactAvailability>
+                            <TwentyFourBySevenFlag>true</TwentyFourBySevenFlag>
+                        </ContactAvailability>
+                        <AltContactId>148309</AltContactId>
+                    </BusinessObject>
+                    <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+                    <VersionNumber>0</VersionNumber>
+                </OrderItem>
+                <OrderItem>
+                    <qb:CustomerAccountId owner="PROD" type="GenericId" name="CUSTOMER_ACCT_ID">976131503</qb:CustomerAccountId>
+                    <ActionCode>A</ActionCode>
+                    <Quantity>0</Quantity>
+                    <BusinessObject xsi:type="ContactT" previousFlag="false">
+                        <qb:ContactId owner="OALY" type="GenericId" name="CONTACT_ID">0</qb:ContactId>
+                        <ContactType>AHC</ContactType>
+                        <qb:Email>bxrama2@qwest.com</qb:Email>
+                        <ContactName>KAREN BENTALL</ContactName>
+                        <qb:ContactTN>
+                            <qb:NPA>312</qb:NPA>
+                            <qb:NXX>751</qb:NXX>
+                            <qb:LineNumber>4526</qb:LineNumber>
+                        </qb:ContactTN>
+                        <ContactAvailability>
+                            <TwentyFourBySevenFlag>true</TwentyFourBySevenFlag>
+                        </ContactAvailability>
+                    </BusinessObject>
+                    <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+                    <VersionNumber>0</VersionNumber>
+                </OrderItem>
+                <OrderItem>
+                    <qb:CustomerAccountId owner="PROD" type="GenericId" name="CUSTOMER_ACCT_ID">976131503</qb:CustomerAccountId>
+                    <ActionCode>A</ActionCode>
+                    <Quantity>0</Quantity>
+                    <BusinessObject xsi:type="ContactT" previousFlag="false">
+                        <qb:ContactId owner="OALY" type="GenericId" name="CONTACT_ID">148597</qb:ContactId>
+                        <ContactType>TECH</ContactType>
+                        <qb:Email>bxrama2@qwest.com</qb:Email>
+                        <ContactName>networx test</ContactName>
+                        <qb:ContactTN>
+                            <qb:NPA>303</qb:NPA>
+                            <qb:NXX>607</qb:NXX>
+                            <qb:LineNumber>6125</qb:LineNumber>
+                        </qb:ContactTN>
+                        <ContactAvailability>
+                            <TwentyFourBySevenFlag>true</TwentyFourBySevenFlag>
+                        </ContactAvailability>
+                        <AltContactId>148597</AltContactId>
+                    </BusinessObject>
+                    <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+                    <VersionNumber>0</VersionNumber>
+                </OrderItem>
+                <OrderItem>
+                    <qb:CustomerAccountId owner="PROD" type="GenericId" name="CUSTOMER_ACCT_ID">976131503</qb:CustomerAccountId>
+                    <ActionCode>A</ActionCode>
+                    <Quantity>0</Quantity>
+                    <BusinessObject xsi:type="ContactT" previousFlag="false">
+                        <qb:ContactId owner="OALY" type="GenericId" name="CONTACT_ID">148596</qb:ContactId>
+                        <ContactType>NOTI</ContactType>
+                        <qb:Email>bxrama2@qwest.com</qb:Email>
+                        <ContactName>networx test</ContactName>
+                        <qb:ContactTN>
+                            <qb:NPA>303</qb:NPA>
+                            <qb:NXX>607</qb:NXX>
+                            <qb:LineNumber>6125</qb:LineNumber>
+                        </qb:ContactTN>
+                        <ContactAvailability>
+                            <TwentyFourBySevenFlag>true</TwentyFourBySevenFlag>
+                        </ContactAvailability>
+                        <AltContactId>148596</AltContactId>
+                    </BusinessObject>
+                    <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+                    <VersionNumber>0</VersionNumber>
+                </OrderItem>
+                <OrderItem>
+                    <qb:CustomerAccountId owner="PROD" type="GenericId" name="CUSTOMER_ACCT_ID">976131503</qb:CustomerAccountId>
+                    <ActionCode>A</ActionCode>
+                    <Quantity>0</Quantity>
+                    <BusinessObject xsi:type="SalesOrderRepT" previousFlag="false">
+                        <CustomerProductId owner="PROD" type="GenericId" name="PRD_ACCT_SERVICE_CAT_SEQ">6413554</CustomerProductId>
+                        <SalesOrderId owner="PROD" type="CompositeKey" name="SALES_ORDER_ID">973131555</SalesOrderId>
+                        <RepList>
+                            <RepCode>WEBOE_AS</RepCode>
+                            <RepName/>
+                            <RepTypeCode/>
+                            <CurrentOrderManagerFlag>true</CurrentOrderManagerFlag>
+                        </RepList>
+                    </BusinessObject>
+                    <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+                    <VersionNumber>0</VersionNumber>
+                </OrderItem>
+            </OrderCustomerAccount>
+        </OrderCustomer>
+        <TouchAmericaUnrestrictFlag>false</TouchAmericaUnrestrictFlag>
+        <VersionNumber>0</VersionNumber>
+        <ValidationRuleSetNameList>
+            <ValidationRuleSetName>NONRQ</ValidationRuleSetName>
+        </ValidationRuleSetNameList>
+    </CustomerOrder>
+</CustomerOrderResponse>

@@ -1,0 +1,563 @@
+<CustomerOrderResponse xmlns="http://www.qwest.com/XMLSchema" xmlns:qb="http://www.qwest.com/XMLSchema/BIM" xsi:schemaLocation="http://www.qwest.com/XMLSchema http://oeservicese2e.dev.qintra.com/03.25/XMLCanon/ProjectSpecific/COD/Production/CustomerOrderResponse_v02_02.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <qb:TargetSchemaVersionUsed>
+    <qb:TargetXSDName>http://oeservicese2e.dev.qintra.com/03.25/XMLCanon/ProjectSpecific/COD/Production/CustomerOrderResponse_v02_02.xsd</qb:TargetXSDName>
+    <qb:MajorVersionNumber>0</qb:MajorVersionNumber>
+    <qb:MinorVersionNumber>0</qb:MinorVersionNumber>
+  </qb:TargetSchemaVersionUsed>
+  <qb:MessageStatus>
+    <qb:ErrorStatus>OK</qb:ErrorStatus>
+  </qb:MessageStatus>
+  <CustomerOrder>
+   <qb:ServiceOrderId owner="PROD" type="GenericId" name="ORDER_ID">81294082</qb:ServiceOrderId>
+   <OrderStatus>PRO</OrderStatus>
+   <OrderCreateDate>2008-05-22T23:00:00-05:00</OrderCreateDate>
+   <OrderTakenDate>2008-05-22T23:00:00-05:00</OrderTakenDate>
+   <OrderReceivedDate>2008-05-22T23:00:00-05:00</OrderReceivedDate>
+   <OrderSourceSystemName>OANW</OrderSourceSystemName>
+   <OrderSourceSystemVersion>1.0</OrderSourceSystemVersion>
+   <TypistId>WEBOE_AS</TypistId>
+   <PartnerOrderFlag>false</PartnerOrderFlag>
+   <OrderCustomer>
+      <OrderCustomerAccount>
+         <qb:CustomerAccountId owner="PROD" type="GenericId" name="CUSTOMER_ACCT_ID">5045403</qb:CustomerAccountId>
+         <UserDefinedAccountName>CUST_ACCT_NM</UserDefinedAccountName>
+         <OrderItem>
+            <OrderItemId>64067</OrderItemId>
+            <qb:CustomerAccountId owner="PROD" type="GenericId" name="CUSTOMER_ACCT_ID">5045403</qb:CustomerAccountId>
+            <ActionCode>N</ActionCode>
+            <DesiredDueDate>2008-07-22T11:00:00-05:00</DesiredDueDate>
+            <EarlyInstallationFlag>false</EarlyInstallationFlag>
+            <CommitmentDate>2008-07-26T17:15:44-05:00</CommitmentDate>
+            <Quantity>0</Quantity>
+            <BusinessObject xsi:type="CustomerProductT" previousFlag="false">
+               <CustomerProductId owner="PROD" type="GenericId" name="PRD_ACCT_SERVICE_CAT_SEQ">3050121409</CustomerProductId>
+               <CustomerBrandId owner="PROD" type="GenericId" name="PRODUCT_ACCOUNT_ID">30501403</CustomerBrandId>
+               <ProductTemplateId>IPTELS</ProductTemplateId>
+               <qb:CustomerAccountId owner="PROD" type="GenericId" name="CUSTOMER_ACCT_ID">5045403</qb:CustomerAccountId>
+               <CustomerAssignedName>IPTELS</CustomerAssignedName>
+               <QuoteValue>1.00</QuoteValue>
+               <ServiceTypeCode>EOCC</ServiceTypeCode>
+               <CustomerPON>47940</CustomerPON>
+               <ExpediteFlag>false</ExpediteFlag>
+               <CustomerChargedForExpediteFlag>false</CustomerChargedForExpediteFlag>
+               <SalesOrderId owner="PROD" type="CompositeKey" name="SALES_ORDER_ID">81331722</SalesOrderId>
+               <NetworxInventoryCode>LSVMKYUPU71</NetworxInventoryCode>
+               <NRCQuoteValue>1.00</NRCQuoteValue>
+               <ServiceOrderNumber>47940-1</ServiceOrderNumber>
+               <RelatedSalesOrderData>
+                     <RelatedSalesOrderId>56651001</RelatedSalesOrderId>
+                     <RelationType>RELATEDORDERTYPE</RelationType>
+               </RelatedSalesOrderData>
+               <TransitionFlag>true</TransitionFlag>
+               <TransitionProjectId>RRB IPTELS LOUISVILLE</TransitionProjectId>
+            </BusinessObject>
+            <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+            <CoreActionCode>INS</CoreActionCode>
+            <CoreCategoryCode>ADD</CoreCategoryCode>
+            <VersionNumber>0</VersionNumber>
+       </OrderItem>   
+         
+       <OrderItem>
+            <OrderItemId>64106</OrderItemId>
+            <qb:CustomerAccountId owner="PROD" type="GenericId" name="CUSTOMER_ACCT_ID">5045403</qb:CustomerAccountId>
+            <ActionCode>N</ActionCode>
+            <Quantity>0</Quantity>
+            <BusinessObject xsi:type="ProvisioningElementT" previousFlag="false" subClass="Analog VOIP Service">
+               <ProvisioningSvcElementId owner="PROD" type="GenericId" name="SERVICE_ELEMENT_ID">564315457</ProvisioningSvcElementId>
+               <CustomerProductComponentId owner="PROD" type="CompositeKey" name="PRODUCT_ACCOUNT_ID|OCCURRENCE_NUMBER|COMPONENT_GROUP_CD|COMPONENT_GRP_VAL|SERVICE_ELEMENT_ID">136428703|178258086|NO|14663220|8372433</CustomerProductComponentId>
+               <BillingSvcElementId owner="PROD" type="GenericId" name="SERVICE_ELEMENT_ID">8372433</BillingSvcElementId>
+               <AttributeGroup>
+                  <AttributeNode IsEncrypted="false">
+                     <AttributeName>LTG_CHG_FLAG</AttributeName>
+                     <AttributeValue>N</AttributeValue>
+                     <AttributeValueDesc />
+                  </AttributeNode>
+                  <AttributeNode IsEncrypted="false">
+	       	      <AttributeName>NWK_NODE_ST</AttributeName>
+	       	      <AttributeValue>EXISTING</AttributeValue>
+	       	      <AttributeValueDesc />
+                  </AttributeNode>
+                  <AttributeNode IsEncrypted="false">
+                     <AttributeName>TENANT_STAT</AttributeName>
+                     <AttributeValue>EXISTING</AttributeValue>
+                     <AttributeValueDesc />
+                  </AttributeNode>
+                  <AttributeNode IsEncrypted="false">
+                     <AttributeName>VOIP_SP</AttributeName>
+                     <AttributeValue>SIP</AttributeValue>
+                     <AttributeValueDesc />
+                  </AttributeNode>
+                  <AttributeNode fk_to="Tenant" IsEncrypted="false">
+                     <AttributeName>TENANT_SEID</AttributeName>
+                     <AttributeValue>505403</AttributeValue>
+                     <AttributeValueDesc />
+                  </AttributeNode>
+                  <AttributeNode IsEncrypted="false">
+                     <AttributeName>QWEST_TRANFG</AttributeName>
+                     <AttributeValue>Y</AttributeValue>
+                     <AttributeValueDesc />
+                  </AttributeNode>
+                  <AttributeNode IsEncrypted="false">
+                     <AttributeName>DAP_APPROVAL_NUM</AttributeName>
+                     <AttributeValue>76373134</AttributeValue>
+                     <AttributeValueDesc />
+                  </AttributeNode>
+                  <AttributeNode IsEncrypted="false">
+                     <AttributeName>TTY_QTY</AttributeName>
+                     <AttributeValue>5</AttributeValue>
+                     <AttributeValueDesc />
+                  </AttributeNode>
+               </AttributeGroup>
+            </BusinessObject>
+            <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+            <VersionNumber>0</VersionNumber>
+         </OrderItem>
+         
+         <OrderItem>
+            <OrderItemId>64107</OrderItemId>
+            <qb:CustomerAccountId owner="PROD" type="GenericId" name="CUSTOMER_ACCT_ID">5045403</qb:CustomerAccountId>
+            <ActionCode>N</ActionCode>
+            <Quantity>0</Quantity>
+            <BusinessObject xsi:type="ProvisioningElementT" previousFlag="false" subClass="Qwest VOIP Entrance">
+               <ProvisioningSvcElementId owner="PROD" type="GenericId" name="SERVICE_ELEMENT_ID">7323411</ProvisioningSvcElementId>
+               <CustomerProductComponentId owner="PROD" type="CompositeKey" name="PRODUCT_ACCOUNT_ID|OCCURRENCE_NUMBER|COMPONENT_GROUP_CD|COMPONENT_GRP_VAL|SERVICE_ELEMENT_ID">136428703|178258086|NO|14663220|8372433</CustomerProductComponentId>
+               <BillingSvcElementId owner="PROD" type="GenericId" name="SERVICE_ELEMENT_ID">8372433</BillingSvcElementId>
+               <AttributeGroup>
+                  <AttributeNode fk_to="Analog VOIP Service" IsEncrypted="false">
+                     <AttributeName>VOIPSER_SEID</AttributeName>
+                     <AttributeValue>564315457</AttributeValue>
+                     <AttributeValueDesc />
+                  </AttributeNode>
+                  <AttributeNode IsEncrypted="false">
+                     <AttributeName>BANDWIDTH</AttributeName>
+                     <AttributeValue>566484</AttributeValue>
+                     <AttributeValueDesc />
+                  </AttributeNode>
+                 <AttributeNode IsEncrypted="false">
+		      <AttributeName>SERV_TYPE</AttributeName>
+		      <AttributeValue>Analog</AttributeValue>
+		      <AttributeValueDesc />
+                  </AttributeNode>
+                  <AttributeNode fk_to="Networkable Node" IsEncrypted="false">
+                     <AttributeName>NNODE_SEID</AttributeName>
+                     <AttributeValue>5018104</AttributeValue>
+                     <AttributeValueDesc />
+                  </AttributeNode>
+               </AttributeGroup>
+            </BusinessObject>
+            <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+            <VersionNumber>0</VersionNumber>
+         </OrderItem>
+
+ 
+         <OrderItem>
+	             <OrderItemId>64110</OrderItemId>
+	             <qb:CustomerAccountId owner="PROD" type="GenericId" name="CUSTOMER_ACCT_ID">5045403</qb:CustomerAccountId>
+	             <ActionCode>S</ActionCode>
+	             <Quantity>0</Quantity>
+	             <BusinessObject xsi:type="ProvisioningElementT" previousFlag="true" subClass="User Telephone Number">
+	                <ProvisioningSvcElementId owner="PROD" type="GenericId" name="SERVICE_ELEMENT_ID">7323373</ProvisioningSvcElementId>
+	                <CustomerProductComponentId owner="PROD" type="CompositeKey" name="PRODUCT_ACCOUNT_ID|OCCURRENCE_NUMBER|COMPONENT_GROUP_CD|COMPONENT_GRP_VAL|SERVICE_ELEMENT_ID">136428703|178258087|VN|5024100884|8372433</CustomerProductComponentId>
+	                <BillingSvcElementId owner="PROD" type="GenericId" name="SERVICE_ELEMENT_ID">8372433</BillingSvcElementId>
+	                <AttributeGroup>
+	                   <AttributeNode IsEncrypted="false">
+	                      <AttributeName>PRIMARY_NMFG</AttributeName>
+	                      <AttributeValue>N</AttributeValue>
+	                      <AttributeValueDesc />
+	                   </AttributeNode>
+	                   <AttributeNode IsEncrypted="false">
+	                      <AttributeName>PORTED_TN_FG</AttributeName>
+	                      <AttributeValue>Y</AttributeValue>
+	                      <AttributeValueDesc />
+	                   </AttributeNode>
+	                   <AttributeNode IsEncrypted="false">
+	                      <AttributeName>TELEPHONE_NO</AttributeName>
+	                      <AttributeValue>3035886108</AttributeValue>
+	                      <AttributeValueDesc />
+	                   </AttributeNode>
+	                   <AttributeNode IsEncrypted="false">
+	                      <AttributeName>VOIP_CMP_COM</AttributeName>
+	                      <AttributeValue>G729AB</AttributeValue>
+	                      <AttributeValueDesc />
+	                   </AttributeNode>
+	                   <AttributeNode fk_to="Analog VOIP Service" IsEncrypted="false">
+	                      <AttributeName>FTB_VS_SEID</AttributeName>
+	                      <AttributeValue>8323340</AttributeValue>
+	                      <AttributeValueDesc />
+	                   </AttributeNode>
+	                   <AttributeNode fk_to="911 and PPU Location" IsEncrypted="false">
+			      <AttributeName>911PPUL_SEID</AttributeName>
+			      <AttributeValue>13255104</AttributeValue>
+			      <AttributeValueDesc />
+	                   </AttributeNode>
+	                   <AttributeNode IsEncrypted="false">
+			      <AttributeName>Provider to QCC</AttributeName>
+			      <AttributeValue>ANALOGE</AttributeValue>
+			      <AttributeValueDesc />
+			   </AttributeNode>
+			   <AttributeNode IsEncrypted="false">
+			      <AttributeName>White Page Listing QTY</AttributeName>
+			      <AttributeValue>ANALOGE</AttributeValue>
+			      <AttributeValueDesc />
+			   </AttributeNode>
+			   <AttributeNode IsEncrypted="false">
+			      <AttributeName>PAC_CD_SRVC_FLAG</AttributeName>
+			      <AttributeValue>Y</AttributeValue>
+			      <AttributeValueDesc />
+			   </AttributeNode>
+			   <AttributeNode IsEncrypted="false">
+			      <AttributeName>PAC_CD_SRVC_TYPE</AttributeName>
+			      <AttributeValue>Analoge</AttributeValue>
+			      <AttributeValueDesc />
+			   </AttributeNode>
+			   <AttributeNode IsEncrypted="false">
+			       <AttributeName>VOICE_MBIND</AttributeName>
+			       <AttributeValue>NO</AttributeValue>
+			       <AttributeValueDesc />
+	                   </AttributeNode>
+				<AttributeNode IsEncrypted="false">
+					<AttributeName>NUM_MGT_ID</AttributeName>
+					<AttributeValue>R2324438</AttributeValue>
+					<AttributeValueDesc/>
+				</AttributeNode>	                   
+	                </AttributeGroup>
+	             </BusinessObject>	     
+				 
+	             <BusinessObject xsi:type="ProvisioningElementT" previousFlag="false" subClass="User Telephone Number">
+	                <ProvisioningSvcElementId owner="PROD" type="GenericId" name="SERVICE_ELEMENT_ID">7323373</ProvisioningSvcElementId>
+	                <CustomerProductComponentId owner="PROD" type="CompositeKey" name="PRODUCT_ACCOUNT_ID|OCCURRENCE_NUMBER|COMPONENT_GROUP_CD|COMPONENT_GRP_VAL|SERVICE_ELEMENT_ID">136428703|178258087|VN|5024100884|8372433</CustomerProductComponentId>
+	                <BillingSvcElementId owner="PROD" type="GenericId" name="SERVICE_ELEMENT_ID">8372433</BillingSvcElementId>
+	                <AttributeGroup>
+	                   <AttributeNode IsEncrypted="false">
+	                      <AttributeName>PRIMARY_NMFG</AttributeName>
+	                      <AttributeValue>N</AttributeValue>
+	                      <AttributeValueDesc />
+	                   </AttributeNode>
+	                   <AttributeNode IsEncrypted="false">
+	                      <AttributeName>PORTED_TN_FG</AttributeName>
+	                      <AttributeValue>Y</AttributeValue>
+	                      <AttributeValueDesc />
+	                   </AttributeNode>
+	                   <AttributeNode IsEncrypted="false">
+	                      <AttributeName>TELEPHONE_NO</AttributeName>
+	                      <AttributeValue>3035886108</AttributeValue>
+	                      <AttributeValueDesc />
+	                   </AttributeNode>
+	                   <AttributeNode IsEncrypted="false">
+	                      <AttributeName>VOIP_CMP_COM</AttributeName>
+	                      <AttributeValue>G711AB</AttributeValue>
+	                      <AttributeValueDesc />
+	                   </AttributeNode>
+	                   <AttributeNode fk_to="Analog VOIP Service" IsEncrypted="false">
+	                      <AttributeName>FTB_VS_SEID</AttributeName>
+	                      <AttributeValue>8323340</AttributeValue>
+	                      <AttributeValueDesc />
+	                   </AttributeNode>
+	                   <AttributeNode fk_to="911 and PPU Location" IsEncrypted="false">
+			      <AttributeName>911PPUL_SEID</AttributeName>
+			      <AttributeValue>13255104</AttributeValue>
+			      <AttributeValueDesc />
+	                   </AttributeNode>
+	                   <AttributeNode IsEncrypted="false">
+			      <AttributeName>Provider to QCC</AttributeName>
+			      <AttributeValue>ANALOGE</AttributeValue>
+			      <AttributeValueDesc />
+			   </AttributeNode>
+			   <AttributeNode IsEncrypted="false">
+			      <AttributeName>White Page Listing QTY</AttributeName>
+			      <AttributeValue>ANALOGE</AttributeValue>
+			      <AttributeValueDesc />
+			   </AttributeNode>
+			   <AttributeNode IsEncrypted="false">
+			      <AttributeName>PAC_CD_SRVC_FLAG</AttributeName>
+			      <AttributeValue>Y</AttributeValue>
+			      <AttributeValueDesc />
+			   </AttributeNode>
+			   <AttributeNode IsEncrypted="false">
+			      <AttributeName>PAC_CD_SRVC_TYPE</AttributeName>
+			      <AttributeValue>Analoge</AttributeValue>
+			      <AttributeValueDesc />
+			   </AttributeNode>
+			   <AttributeNode IsEncrypted="false">
+			       <AttributeName>VOICE_MBIND</AttributeName>
+			       <AttributeValue>NO</AttributeValue>
+			       <AttributeValueDesc />
+	                   </AttributeNode>
+				<AttributeNode IsEncrypted="false">
+					<AttributeName>NUM_MGT_ID</AttributeName>
+					<AttributeValue>R2324438</AttributeValue>
+					<AttributeValueDesc/>
+				</AttributeNode>	                   
+	                </AttributeGroup>
+	             </BusinessObject>	  
+	             <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+	             <VersionNumber>0</VersionNumber>
+         </OrderItem>
+
+
+
+
+         <OrderItem>
+	             <OrderItemId>64105</OrderItemId>
+	             <qb:CustomerAccountId owner="PROD" type="GenericId" name="CUSTOMER_ACCT_ID">5045403</qb:CustomerAccountId>
+	             <ActionCode>N</ActionCode>
+	             <Quantity>0</Quantity>
+	             <BusinessObject xsi:type="ProvisioningElementT" previousFlag="false" subClass="911 and PPU Location">
+	                <ProvisioningSvcElementId owner="PROD" type="GenericId" name="SERVICE_ELEMENT_ID">43255108</ProvisioningSvcElementId>
+	                <CustomerProductComponentId owner="PROD" type="CompositeKey" name="PRODUCT_ACCOUNT_ID|OCCURRENCE_NUMBER|COMPONENT_GROUP_CD|COMPONENT_GRP_VAL|SERVICE_ELEMENT_ID">136428703|178258086|NO|14663220|8372433</CustomerProductComponentId>
+	                <BillingSvcElementId owner="PROD" type="GenericId" name="SERVICE_ELEMENT_ID">8372433</BillingSvcElementId>
+	                <AttributeGroup>
+	                   <AttributeNode fk_to="Analog VOIP Service" IsEncrypted="false">
+	                      <AttributeName>VOIPSER_SEID</AttributeName>
+	                      <AttributeValue>56435133</AttributeValue>
+	                      <AttributeValueDesc />
+	                   </AttributeNode>
+	                   <AttributeNode IsEncrypted="false">
+	                      <AttributeName>CITY</AttributeName>
+	                      <AttributeValue>DENVER</AttributeValue>
+	                      <AttributeValueDesc />
+	                   </AttributeNode>
+	                   <AttributeNode IsEncrypted="false">
+	                      <AttributeName>ZIPCODE</AttributeName>
+	                      <AttributeValue>80202</AttributeValue>
+	                      <AttributeValueDesc />
+	                   </AttributeNode>
+	                   <AttributeNode IsEncrypted="false">
+	                      <AttributeName>ADDR_LINE1</AttributeName>
+	                      <AttributeValue>930 15th St</AttributeValue>
+	                      <AttributeValueDesc />
+	                   </AttributeNode>
+	                   <AttributeNode IsEncrypted="false">
+	                      <AttributeName>STATE</AttributeName>
+	                      <AttributeValue>CO</AttributeValue>
+	                      <AttributeValueDesc />
+	                   </AttributeNode>
+	                   <AttributeNode IsEncrypted="false">
+	                      <AttributeName>ADDR_LINE2</AttributeName>
+	                      <AttributeValue>Suite 301</AttributeValue>
+	                      <AttributeValueDesc />
+	                   </AttributeNode>
+	                </AttributeGroup>
+	             </BusinessObject>
+	             <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+	             <VersionNumber>0</VersionNumber>
+         </OrderItem>
+         
+         <OrderItem>
+	     <OrderItemId>64105</OrderItemId>
+	     <qb:CustomerAccountId owner="PROD" type="GenericId" name="CUSTOMER_ACCT_ID">5045403</qb:CustomerAccountId>
+	     <ActionCode>N</ActionCode>
+	     <Quantity>0</Quantity>
+	     <BusinessObject xsi:type="ProvisioningElementT" previousFlag="false" subClass="VOIP Lines">
+		<ProvisioningSvcElementId owner="PROD" type="GenericId" name="SERVICE_ELEMENT_ID">8323309</ProvisioningSvcElementId>
+		<CustomerProductComponentId owner="PROD" type="CompositeKey" name="PRODUCT_ACCOUNT_ID|OCCURRENCE_NUMBER|COMPONENT_GROUP_CD|COMPONENT_GRP_VAL|SERVICE_ELEMENT_ID">136428703|178258086|NO|14663220|8372433</CustomerProductComponentId>
+		<BillingSvcElementId owner="PROD" type="GenericId" name="SERVICE_ELEMENT_ID">8372433</BillingSvcElementId>
+		<AttributeGroup>
+		   <AttributeNode fk_to="Analog VOIP Service" IsEncrypted="false">
+		      <AttributeName>VOIPSER_SEID</AttributeName>
+		      <AttributeValue>56435133</AttributeValue>
+		      <AttributeValueDesc />
+		   </AttributeNode>
+		   <AttributeNode IsEncrypted="false">
+		      <AttributeName>VOIP_LN_QTY</AttributeName>
+		      <AttributeValue>53</AttributeValue>
+		      <AttributeValueDesc />
+		   </AttributeNode>
+		</AttributeGroup>
+	     </BusinessObject>
+	     <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+	     <VersionNumber>0</VersionNumber>
+         </OrderItem>
+
+
+
+         <OrderItem>
+            <OrderItemId>33620</OrderItemId>
+            <qb:CustomerAccountId owner="PROD" type="GenericId" name="CUSTOMER_ACCT_ID">75480188</qb:CustomerAccountId>
+            <ActionCode>N</ActionCode>
+            <Quantity>0</Quantity>
+            <BusinessObject xsi:type="ProvisioningElementT" previousFlag="false" subClass="Usage Parameters">
+              <ProvisioningSvcElementId owner="PROD" type="GenericId" name="SERVICE_ELEMENT_ID">385286551</ProvisioningSvcElementId>
+              <CustomerProductComponentId owner="PROD" type="CompositeKey" name="PRODUCT_ACCOUNT_ID|OCCURRENCE_NUMBER|COMPONENT_GROUP_CD|COMPONENT_GRP_VAL|SERVICE_ELEMENT_ID">136243809|169732622|VN|3039316430|8528783</CustomerProductComponentId>
+              <BillingSvcElementId owner="PROD" type="GenericId" name="SERVICE_ELEMENT_ID">8528783</BillingSvcElementId>
+              <AttributeGroup>
+                <AttributeNode IsEncrypted="false">
+                  <AttributeName>MEX_USAGE_FG</AttributeName>
+                  <AttributeValue>Y</AttributeValue>
+                  <AttributeValueDesc/>
+                </AttributeNode>
+		<AttributeNode fk_to="Analog VOIP Service" IsEncrypted="false">
+		   <AttributeName>VOIPSER_SEID</AttributeName>
+		   <AttributeValue>8323885</AttributeValue>
+		   <AttributeValueDesc />
+	        </AttributeNode>
+                <AttributeNode IsEncrypted="false">
+                  <AttributeName>DIR_ASST_FG</AttributeName>
+                  <AttributeValue>Y</AttributeValue>
+                  <AttributeValueDesc/>
+                </AttributeNode>
+                <AttributeNode IsEncrypted="false">
+                  <AttributeName>DOM_USAGE_FG</AttributeName>
+                  <AttributeValue>Y</AttributeValue>
+                  <AttributeValueDesc/>
+                </AttributeNode>
+                <AttributeNode IsEncrypted="false">
+                  <AttributeName>DEPENDEESEID</AttributeName>
+                  <AttributeValue>8528614</AttributeValue>
+                  <AttributeValueDesc/>
+                </AttributeNode>
+                <AttributeNode IsEncrypted="false">
+                  <AttributeName>INTL_FLAG</AttributeName>
+                  <AttributeValue>Y</AttributeValue>
+                  <AttributeValueDesc/>
+                </AttributeNode>
+                <AttributeNode IsEncrypted="false">
+                  <AttributeName>LOCAL_USG_FG</AttributeName>
+                  <AttributeValue>Y</AttributeValue>
+                  <AttributeValueDesc/>
+                </AttributeNode>
+                <AttributeNode IsEncrypted="false">
+                  <AttributeName>CANADIAN_UFG</AttributeName>
+                  <AttributeValue>Y</AttributeValue>
+                  <AttributeValueDesc/>
+                </AttributeNode>
+                <AttributeNode fk_to="User Telephone Number" IsEncrypted="false">
+		   <AttributeName>VOIP_TN_SEID</AttributeName>
+		   <AttributeValue>7323373</AttributeValue>
+		   <AttributeValueDesc />
+	        </AttributeNode>
+              </AttributeGroup>
+            </BusinessObject>
+            <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+            <VersionNumber>0</VersionNumber>
+        </OrderItem>
+
+         <OrderItem>
+            <OrderItemId>33620</OrderItemId>
+            <qb:CustomerAccountId owner="PROD" type="GenericId" name="CUSTOMER_ACCT_ID">75480188</qb:CustomerAccountId>
+            <ActionCode>N</ActionCode>
+            <Quantity>0</Quantity>
+            <BusinessObject xsi:type="ProvisioningElementT" previousFlag="false" subClass="Usage Parameters">
+              <ProvisioningSvcElementId owner="PROD" type="GenericId" name="SERVICE_ELEMENT_ID">385286551</ProvisioningSvcElementId>
+              <CustomerProductComponentId owner="PROD" type="CompositeKey" name="PRODUCT_ACCOUNT_ID|OCCURRENCE_NUMBER|COMPONENT_GROUP_CD|COMPONENT_GRP_VAL|SERVICE_ELEMENT_ID">136243809|169732622|VN|3039316430|8528783</CustomerProductComponentId>
+              <BillingSvcElementId owner="PROD" type="GenericId" name="SERVICE_ELEMENT_ID">8528783</BillingSvcElementId>
+              <AttributeGroup>
+                <AttributeNode IsEncrypted="false">
+                  <AttributeName>MEX_USAGE_FG</AttributeName>
+                  <AttributeValue>Y</AttributeValue>
+                  <AttributeValueDesc/>
+                </AttributeNode>
+		<AttributeNode fk_to="Analog VOIP Service" IsEncrypted="false">
+		   <AttributeName>VOIPSER_SEID</AttributeName>
+		   <AttributeValue>8323885</AttributeValue>
+		   <AttributeValueDesc />
+	        </AttributeNode>
+                <AttributeNode IsEncrypted="false">
+                  <AttributeName>DIR_ASST_FG</AttributeName>
+                  <AttributeValue>Y</AttributeValue>
+                  <AttributeValueDesc/>
+                </AttributeNode>
+                <AttributeNode IsEncrypted="false">
+                  <AttributeName>DOM_USAGE_FG</AttributeName>
+                  <AttributeValue>Y</AttributeValue>
+                  <AttributeValueDesc/>
+                </AttributeNode>
+                <AttributeNode IsEncrypted="false">
+                  <AttributeName>DEPENDEESEID</AttributeName>
+                  <AttributeValue>8528614</AttributeValue>
+                  <AttributeValueDesc/>
+                </AttributeNode>
+                <AttributeNode IsEncrypted="false">
+                  <AttributeName>INTL_FLAG</AttributeName>
+                  <AttributeValue>Y</AttributeValue>
+                  <AttributeValueDesc/>
+                </AttributeNode>
+                <AttributeNode IsEncrypted="false">
+                  <AttributeName>LOCAL_USG_FG</AttributeName>
+                  <AttributeValue>Y</AttributeValue>
+                  <AttributeValueDesc/>
+                </AttributeNode>
+                <AttributeNode IsEncrypted="false">
+                  <AttributeName>CANADIAN_UFG</AttributeName>
+                  <AttributeValue>Y</AttributeValue>
+                  <AttributeValueDesc/>
+                </AttributeNode>
+                <AttributeNode fk_to="User Telephone Number" IsEncrypted="false">
+		   <AttributeName>VOIP_TN_SEID</AttributeName>
+		   <AttributeValue>7323374</AttributeValue>
+		   <AttributeValueDesc />
+	        </AttributeNode>
+              </AttributeGroup>
+            </BusinessObject>
+            <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+            <VersionNumber>0</VersionNumber>
+        </OrderItem>
+
+
+        <OrderItem>
+          <qb:CustomerAccountId owner="PROD" type="GenericId" name="CUSTOMER_ACCT_ID">75480188</qb:CustomerAccountId>
+          <ActionCode>N</ActionCode>
+          <Quantity>0</Quantity>
+          <BusinessObject xsi:type="ContactT" previousFlag="false">
+            <qb:ContactId owner="OALY" type="GenericId" name="CONTACT_ID">3188720</qb:ContactId>
+            <ContactType>ORDR</ContactType>
+            <qb:Email>Edward.Walker2@qwest.com</qb:Email>
+            <ContactName>Edward Walker</ContactName>
+            <qb:ContactTN>
+              <qb:NPA>303</qb:NPA>
+              <qb:NXX>607</qb:NXX>
+              <qb:LineNumber>6645</qb:LineNumber>
+            </qb:ContactTN>
+            <qb:Fax>
+              <qb:NPA>303</qb:NPA>
+              <qb:NXX>296</qb:NXX>
+              <qb:LineNumber>2916</qb:LineNumber>
+            </qb:Fax>
+            <CellPhoneTN>
+              <qb:NPA>720</qb:NPA>
+              <qb:NXX>984</qb:NXX>
+              <qb:LineNumber>4310</qb:LineNumber>
+            </CellPhoneTN>
+            <AltContactId>3188720</AltContactId>
+          </BusinessObject>
+          <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+          <VersionNumber>0</VersionNumber>
+        </OrderItem>
+        <OrderItem>
+          <qb:CustomerAccountId owner="PROD" type="GenericId" name="CUSTOMER_ACCT_ID">75480188</qb:CustomerAccountId>
+          <ActionCode>N</ActionCode>
+          <Quantity>0</Quantity>
+          <BusinessObject xsi:type="ContactT" previousFlag="false">
+            <qb:ContactId owner="OALY" type="GenericId" name="CONTACT_ID">3188720</qb:ContactId>
+            <ContactType>MAIN</ContactType>
+            <qb:Email>Edward.Walker2@qwest.com</qb:Email>
+            <ContactName>Edward Walker</ContactName>
+            <qb:ContactTN>
+              <qb:NPA>303</qb:NPA>
+              <qb:NXX>607</qb:NXX>
+              <qb:LineNumber>6645</qb:LineNumber>
+            </qb:ContactTN>
+            <qb:Fax>
+              <qb:NPA>303</qb:NPA>
+              <qb:NXX>296</qb:NXX>
+              <qb:LineNumber>2916</qb:LineNumber>
+            </qb:Fax>
+            <CellPhoneTN>
+              <qb:NPA>720</qb:NPA>
+              <qb:NXX>984</qb:NXX>
+              <qb:LineNumber>4310</qb:LineNumber>
+            </CellPhoneTN>
+            <AltContactId>3188720</AltContactId>
+          </BusinessObject>
+          <TopLevelOrderItemFlag>false</TopLevelOrderItemFlag>
+          <VersionNumber>0</VersionNumber>
+        </OrderItem>        
+        </OrderCustomerAccount>
+	   </OrderCustomer>
+	   <TouchAmericaUnrestrictFlag>false</TouchAmericaUnrestrictFlag>
+	   <VersionNumber>0</VersionNumber>
+	   <ValidationRuleSetNameList>
+	      <ValidationRuleSetName>NONRQ</ValidationRuleSetName>
+	   </ValidationRuleSetNameList>
+</CustomerOrder>
+</CustomerOrderResponse>
