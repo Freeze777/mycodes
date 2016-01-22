@@ -1,0 +1,46 @@
+package hacker.rank;
+
+import java.util.Scanner;
+
+public class BrickGame {
+
+	class Profit {
+		long first;
+		long second;
+	}
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int tst = sc.nextInt();
+		while (tst > 0) {
+			int n = sc.nextInt();
+			int A[] = new int[n];
+			Profit dp[][] = new Profit[n][n];
+
+			for (int i = 0; i < n; i++) {
+				dp[i][i].first = A[i];
+				dp[i][i].second = 0;
+				if (i + 1 < n) {
+					dp[i][i + 1].first = A[i] + A[i + 1];
+					dp[i][i + 1].second = 0;
+				}
+				if (i + 2 < n) {
+					dp[i][i + 2].first = A[i] + A[i + 1] + A[i + 2];
+					dp[i][i + 2].second = 0;
+				}
+				if (i + 3 < n) {// 4 consecutive elements
+					dp[i][i + 3].first = A[i] + A[i + 1] + A[i + 2];
+					dp[i][i + 3].second = A[i + 3];
+				}
+			}
+			for (int i = 0; i < n; i++) {
+				for (int j = 0; j < n; j++) {
+					
+				}
+			}
+			
+			tst--;
+		}
+
+	}
+}

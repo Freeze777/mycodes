@@ -1,0 +1,20 @@
+import java.util.Arrays;
+
+// you can also use imports, for example:
+// import java.util.*;
+
+// you can write to stdout for debugging purposes, e.g.
+// System.out.println("this is a debug message");
+
+class Sol{
+	int count=0;
+    public int solution(int[] A) {
+        // write your code in Java SE 8
+    	
+    	Arrays.sort(A);
+    	int[] B=new int[A.length-1];
+    	//int max=A[A.length-1];
+    	
+    	return count;
+    }
+}

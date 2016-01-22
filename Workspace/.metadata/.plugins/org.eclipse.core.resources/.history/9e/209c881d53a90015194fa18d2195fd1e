@@ -1,0 +1,49 @@
+package algo.trees;
+
+public class DiameterOfATree {
+	// static int diameter=0;
+	public static void main(String[] args) {
+		Node root = new Node(5);
+
+	/*	root.left = new Node(10);
+		root.left.left = new Node(1);
+		root.left.right = new Node(17);
+		root.left.left.left = new Node(1);
+		root.left.left.right = new Node(2);
+
+		root.right = new Node(7);
+		root.right.left = new Node(8);
+		root.right.right = new Node(1);
+		root.right.left.left = new Node(3);
+		root.right.left.right = new Node(-10);*/
+		DoublePointer<Integer> dia=new DoublePointer<Integer>(0);
+		System.out.println(modifiedHeight(null,dia));
+		System.out.println(dia.getValue());
+		}
+		
+		//O(n^2) algorithm
+	public static int diameter(Node root) {
+		if(root==null)
+			return 0;
+		
+		int leftHeight=TreeUtility.height(root.left);
+		int rightHeight=TreeUtility.height(root.right);
+		
+		
+		return (Math.max(1+leftHeight+rightHeight,Math.max(diameter(root.right),diameter(root.left))));
+	}
+	//O(n) algorithm
+	public static int modifiedHeight(Node root, DoublePointer<Integer> dia) {
+		if(root==null)
+			return 0;
+		
+		int leftHeight=modifiedHeight(root.left,dia);
+		int rightHeight=modifiedHeight(root.right,dia);
+		int d=leftHeight+rightHeight+1;
+		if(d>dia.getValue())dia.setValue(d);
+		
+		return (1+Math.max(leftHeight,rightHeight));
+	}
+
+
+}

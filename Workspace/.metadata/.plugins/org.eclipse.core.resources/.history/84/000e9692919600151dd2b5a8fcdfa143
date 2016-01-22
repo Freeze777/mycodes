@@ -1,0 +1,17 @@
+package hacker.rank;
+
+import java.util.Scanner;
+
+public class BrickGame {
+public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+	int tst=sc.nextInt();
+while(tst>0){
+	int n=sc.nextInt();
+	int A[]=new int[n+1];
+	long dp[]=new long[n+1];
+	tst--;
+}
+
+}
+}
