@@ -1,0 +1,76 @@
+#include "curves.h"
+
+
+Point getBezierCurvePoints(Point PT[], double t) {
+    Point P;
+    P.x = 0; P.y = 0;
+    for (int i = 0; i<clicks; i++)
+    {
+        P.x = P.x + binomial_coff((float)(clicks - 1), (float)i) * pow(t, (double)i) * pow((1 - t), (clicks - 1 - i)) * PT[i].x;
+        P.y = P.y + binomial_coff((float)(clicks - 1), (float)i) * pow(t, (double)i) * pow((1 - t), (clicks - 1 - i)) * PT[i].y;
+    }
+
+    return P;
+}
+void displayBezierCurve(Point points[], int count)
+{
+    glColor3f(0.2,1.0,0.0);
+    // Drawing the control lines
+    for(int k=0;k<count-1;k++)
+        drawLine(points[k], points[k+1]);
+    glColor3f(0.0,0.0,0.0);
+    Point prev = points[0];
+    /* Draw each segment of the curve.Make t increment in smaller amounts for a more detailed curve.*/
+    int i=1;
+    bezier[0]=points[0];
+    for(double t = 0.0;t <= 1.0; t += 0.02)
+    {
+        Point p2 = getBezierCurvePoints(points,t);
+        bezier[i++]=p2;
+        drawLine(prev, p2);
+        prev = p2;
+    }
+
+
+
+}
+
+void displayLagrangeCurve()
+{
+    glColor3f(0.2,1.0,0.1);
+
+    for(int k=0;k<count-1;k++)
+    drawLine(points[k], points[k+1]);
+
+    glColor3f(1.0,0.0,0.0);
+    float stepSize=(points[clicks-1].x-points[0].x)/50.0;
+    Point prev=points[0];
+    lagrange[0]=points[0];
+    int i=1;
+    for(float x=points[0].x;x<=points[clicks-1].x;x+=stepSize)
+    {
+
+        float y=0;
+        for(int j=0;j<clicks;j++)
+        {
+            float l=1;
+            for(int m=0;m<clicks;m++)
+            {
+                if(m!=j)
+                {
+                    l*=(x-points[m].x)/(points[j].x -points[m].x);
+                }
+
+            }
+            y+=l*points[j].y;
+        }
+        Point p;
+        p.x=x;
+        p.y=y;
+        lagrange[i++]=p;
+        drawLine(prev,p);
+        prev=p;
+    }
+
+}
+
