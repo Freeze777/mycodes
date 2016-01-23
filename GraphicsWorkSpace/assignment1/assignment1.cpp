@@ -6,7 +6,7 @@
 #include "transformations.h"
 using namespace std;
 
-Point points[20],shift[2],bezier[51], lagrange[51];
+Point points[50],shift[2],bezier[51], lagrange[51];
 int cnt=0,clicks = 0,SCREEN_WIDTH = 1000,SCREEN_HEIGHT = 650;
 
 /* 0-get user points*/
@@ -88,7 +88,7 @@ void myKeyBoard(unsigned char key,int x, int y){
         zoom(0.5,points[0]);
         break;
 
-    case 114:
+     case 114:
         MODE=1;
         glClear(GL_COLOR_BUFFER_BIT);
         glMatrixMode(GL_PROJECTION);
