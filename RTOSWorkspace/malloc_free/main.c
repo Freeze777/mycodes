@@ -51,6 +51,7 @@ int main()
     my_free(c);
     print_memory_contents();
     printf("\n");
+
     my_free(t);
     print_memory_contents();
     printf("\n");
@@ -58,22 +59,59 @@ int main()
     my_free(b);
     print_memory_contents();
     printf("\n");
+
     int * e=(int *)my_malloc(348);
     print_memory_contents();
     printf("\n");
+
     int * d=(int *)my_malloc(400);
     print_memory_contents();
     printf("\n");
+
     my_free(d);
     print_memory_contents();
     printf("\n");
+
     my_free(e);
     print_memory_contents();
     printf("\n");
 
-   int * g= my_calloc(5,100);
+    int * g= my_calloc(5,100);
     print_memory_contents();
     printf("\n");
 
-    return 0;
+    g= my_realloc(g,1000);
+    print_memory_contents();
+    printf("\n");
+
+    g= my_realloc(g,200);
+    print_memory_contents();
+    printf("\n");
+
+    g= my_realloc(g,300);
+    print_memory_contents();
+    printf("\n");
+
+
+   int*y= my_malloc(500);
+    print_memory_contents();
+    printf("\n");
+
+    y= my_realloc(y,600);
+    print_memory_contents();
+    printf("\n");
+
+   int *z= my_calloc(5,100);
+   print_memory_contents();
+   printf("\n");
+
+   y= my_realloc(y,200);
+   print_memory_contents();
+   printf("\n");
+
+   my_free(y);
+   print_memory_contents();
+   printf("\n");
+
+   return 0;
 }

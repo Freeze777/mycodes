@@ -1,0 +1,9 @@
+public class Sol{
+	
+	
+	public static void main(String[] args) {
+		int[] a=new int[(int)Math.pow(10,7)];
+	}
+	
+	
+}

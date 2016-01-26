@@ -11,6 +11,7 @@ static void split(metadata * ptr,size_t size);
 
 void * my_malloc(size_t size)
 {
+   printf("malloc for %lu\n",size);
     if(size==0)
         return NULL;
     metadata * block=NULL;
@@ -21,7 +22,7 @@ void * my_malloc(size_t size)
         if(block==NULL)
         {
             block=sbrk(size+sizeof(metadata));
-            // printf("%d %d %d\n",size,block,last->size);
+            // printf("%lu %lu %lu\n",size,block,last->size);
             last->next=block;
             last=block;
             block->next=NULL;
@@ -52,6 +53,7 @@ void * my_malloc(size_t size)
 
 }
 void * my_calloc(size_t n,size_t size){
+    printf("calloc for %lu\n",n*size);
     size_t total=n*size;
     char * temp=(char *)my_malloc(total);
 
@@ -62,20 +64,23 @@ void * my_calloc(size_t n,size_t size){
 }
 
 void my_free(void *ptr)
-{   if(ptr==NULL)
+{
+
+    if(ptr==NULL)
         return;
 
     metadata * to_free=(metadata *)ptr - 1;
+     printf("free for %lu \n",to_free->size);
     to_free->free=1;
     fuse(to_free);
 }
 
 void * my_realloc(void *ptr,size_t size){
 
+
     if(ptr==NULL)
-    {
-        return my_malloc(size);
-    }
+         return my_malloc(size);
+
     if(size==0)
     {
         my_free(ptr);
@@ -83,12 +88,19 @@ void * my_realloc(void *ptr,size_t size){
     }
 
     metadata * block=(metadata *)ptr -1;
+printf("realloc from blocksize: %lu  to size: %lu\n",block->size,size);
+
     if(block->size < size)
     {
-        if(block->next->free && block->next->size >= ( size - block->size -sizeof(metadata)))
+        if(block->next->free==1 && block->next->size >= ( size - block->size -sizeof(metadata)))
         {
             block->size+=sizeof(metadata)+block->next->size;
+
+            if(block->next->next==NULL)
+            last=block;
+
             block->next=block->next->next;
+//print_memory_contents();
 
             if(block->size >= size+THRESHOLD)
                 split(block,size);
@@ -96,17 +108,25 @@ void * my_realloc(void *ptr,size_t size){
             return block+1;
 
         }
-
         char * chunk=(char *)my_malloc(size);
         memcpy(chunk,block+1,block->size);
         my_free(block+1);
 
         return chunk;
 
-    }else if(block->size > size)
+    }else if (block->size > size)
     {
+        if(block->size >= size+THRESHOLD)
+        {
+            split(block,size);
+            return block+1;
+        }
 
+        char * chunk=(char *)my_malloc(size);
+        memcpy(chunk,block+1,block->size);
+        my_free(block+1);
 
+        return chunk;
 
     }
 
@@ -123,8 +143,11 @@ static metadata * search_freespace(size_t size){
     return temp;
 }
 static void fuse(metadata * ptr){
+
+
     while((ptr->next!=NULL) && ptr->next->free==1)
     {
+        printf("fusing %lu & %lu\n",ptr->size,ptr->next->size);
         ptr->size+=ptr->next->size+sizeof(metadata);
         ptr->next=ptr->next->next;
 
@@ -149,6 +172,11 @@ static void split(metadata *ptr,size_t size)
     chunk->size=(ptr->size)-(size+sizeof(metadata));
 
     ptr->size=size;
+
+    if(chunk->next==NULL)
+    {
+        last=chunk;
+    }
 
 }
 void print_memory_contents(void){
