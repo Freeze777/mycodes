@@ -4,33 +4,76 @@ int main()
 {
 
 
-   int* arr=(int *)my_malloc(5*sizeof(int));
-   for (int var = 0; var < 5; ++var) {
-       arr[var]=var*10;
-   }
-   for (int var = 0; var < 5; ++var) {
-       printf("%d ",arr[var]);
-   }
-printf("\n");
-    int* num=(int *)my_malloc(2*sizeof(int));
+    int* arr=(int *)my_malloc(10*sizeof(int));
+    print_memory_contents();
+    printf("\n");
+
+    int* num=(int *)my_malloc(5*sizeof(int));
+    print_memory_contents();
+    printf("\n");
+
+    my_free(arr);
+    print_memory_contents();
+    printf("\n");
+
     char* ch=(char *)my_malloc(10*sizeof(char));
-    for (int var = 0; var < 10; ++var) {
-        ch[var]=65+var;
-    }
+    print_memory_contents();
+    printf("\n");
 
-   my_free(arr);
+    int* t=(int *)my_malloc(4*sizeof(int));
+    print_memory_contents();
+    printf("\n");
 
-   int* a=(int *)my_malloc(2*sizeof(int));
-   a[0]=1000;
-   a[1]=200;
+    my_free(num);
+    print_memory_contents();
+    printf("\n");
 
+    my_free(ch);
+    print_memory_contents();
+    printf("\n");
 
-for (int var = 0; var < 10; ++var) {
-    printf("%d ",arr[var]);
-}
-printf("\n");
-for (int var = 0; var < 10; ++var) {
-    printf("%c ",ch[var]);
-}
-   return 0;
+    int* a=(int *)my_malloc(50*sizeof(int));
+    print_memory_contents();
+    printf("\n");
+
+    int* b=(int *)my_malloc(10*sizeof(int));
+    print_memory_contents();
+    printf("\n");
+
+    my_free(a);
+    print_memory_contents();
+    printf("\n");
+
+    int* c=(int *)my_malloc(10*sizeof(int));
+    print_memory_contents();
+    printf("\n");
+
+    my_free(c);
+    print_memory_contents();
+    printf("\n");
+    my_free(t);
+    print_memory_contents();
+    printf("\n");
+
+    my_free(b);
+    print_memory_contents();
+    printf("\n");
+    int * e=(int *)my_malloc(348);
+    print_memory_contents();
+    printf("\n");
+    int * d=(int *)my_malloc(400);
+    print_memory_contents();
+    printf("\n");
+    my_free(d);
+    print_memory_contents();
+    printf("\n");
+    my_free(e);
+    print_memory_contents();
+    printf("\n");
+
+   int * g= my_calloc(5,100);
+    print_memory_contents();
+    printf("\n");
+
+    return 0;
 }
