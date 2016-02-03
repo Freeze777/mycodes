@@ -1,0 +1,16 @@
+CC=g++
+CFLAGS=-c -Wall
+
+all: test.out
+
+test.out: test.o print.o
+	$(CC) test.o print.o -o test.out -lGL -lGLU -lglut
+
+test.o: test.cpp
+	$(CC) $(CFLAGS) test.cpp
+
+print.o: print.c
+	$(CC) $(CFLAGS) print.c
+
+clean:
+	rm -rf *.o assgn

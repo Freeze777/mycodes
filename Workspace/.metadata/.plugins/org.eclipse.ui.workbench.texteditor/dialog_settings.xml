@@ -2,18 +2,27 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="x" key="selection"/>
+		<item value="nextLong()" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="nextLong"/>
+			<item value="sc.Long()"/>
+			<item value="Long"/>
+			<item value="nextlong"/>
+			<item value="int"/>
+			<item value="import java.util.Scanner;"/>
 			<item value="i1"/>
 			<item value="Node"/>
-			<item value="Object"/>
-			<item value="System"/>
 		</list>
 		<list key="replacehistory">
+			<item value="nextLong()"/>
+			<item value="sc.nextLong"/>
+			<item value="nextLong"/>
+			<item value="Long"/>
+			<item value="long"/>
 			<item value="x"/>
 			<item value="TreeNode"/>
 			<item value="int"/>

@@ -1,0 +1,49 @@
+import java.util.Scanner;
+
+public class Sol {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		nextLong tst = sc.nextLong();
+		while (tst > 0) {
+			nextLong l = sc.nextLong();
+			nextLong r = sc.nextLong();
+			nextLong mask =3l;
+			nextLong sum = 0l;
+			switch (l & mask) {
+			case 1:
+				sum = findSum(1, l, r);
+
+				break;
+			case 2:
+				sum = findSum(l + 1, l, r);
+
+				break;
+			case 3:
+				sum = findSum(0, l, r);
+
+				break;
+			case 4:
+				sum = findSum(l, l, r);
+
+				break;
+
+			}
+			System.out.println("\n"+sum);
+			tst--;
+		}
+
+	}
+
+	private static nextLong findSum(nextLong i, nextLong l, nextLong r) {
+		nextLong sum = 0;
+		while (l<=r) {
+			sum ^= i;
+			i =i^(++l);
+			
+		}
+		return sum;
+	}
+
+}

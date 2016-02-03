@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class Sol {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		int tst = sc.nextInt();
+		while (tst > 0) {
+			int l = sc.nextInt();
+			int r = sc.nextInt();
+			int mask = 3;
+			switch (l) {
+			case 1:
+				findSum(1, r);
+
+				break;
+
+			default:
+				break;
+			}
+			tst--;
+		}
+
+	}
+
+	private static void findSum(int i, int r) {
+		int sum
+		while (r >= 0) {
+				
+			r--;
+		}
+	}
+
+}
