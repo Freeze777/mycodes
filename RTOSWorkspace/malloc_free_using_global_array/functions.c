@@ -6,6 +6,7 @@ static metadata * last=NULL;
 static metadata * search_freespace(size_t size);
 static void fuse(metadata * ptr);
 static void split(metadata * ptr,size_t size);
+static int verifyBlockAddress(metadata * to_free,metadata ** prev);
 static size_t freespace=BUFF_SIZE;
 static int first=1;
 
@@ -80,11 +81,49 @@ void my_free(void *ptr)
         return;
 
     metadata * to_free=(metadata *)ptr - 1;
-    printf("free for %lu \n",to_free->size);
-    to_free->free=1;
-    freespace+=to_free->size;
-    fuse(to_free);
+    metadata * prev=NULL;
+
+    if(to_free>=heap_base && to_free <=last){
+        if(verifyBlockAddress(to_free ,&prev))
+        {
+        printf("free for %lu \n",to_free->size);
+
+        to_free->free=1;
+        freespace+=to_free->size;
+        fuse(to_free);
+
+        if((prev!=NULL)&&prev->free==1)
+        fuse(prev);
+        }
+        else
+        {
+           printf("Invalid address.. !!\n");
+        }
+    }else
+    {
+        printf("Invalid address.. !!\n");
+    }
+
+
+    deframent_my_heap();
 }
+
+static int verifyBlockAddress(metadata * to_free,metadata ** prev){
+    metadata * temp=heap_base;
+
+    while(temp!=NULL)
+    {
+        if(to_free==temp)
+            return 1;
+
+        *prev=temp;
+        temp=temp->next;
+    }
+    return 0;
+
+
+}
+
 
 void * my_realloc(void *ptr,size_t size){
 
@@ -193,6 +232,17 @@ static void split(metadata *ptr,size_t size)
 
 }
 
+void deframent_my_heap(void){
+
+    printf("defragmenting memory :\n");
+    metadata * temp=heap_base;
+    while(temp!=NULL)
+    {
+        if(temp->next!=NULL && temp->free && temp->next->free)
+         fuse(temp);
+        temp=temp->next;
+    }
+}
 
 size_t free_space_in_my_heap(void){
 
@@ -208,5 +258,5 @@ void print_memory_contents(void){
         printf("%lu %d\n",temp->size,temp->free);
         temp=temp->next;
     }
-
+printf("free space:%lu B\n",free_space_in_my_heap());
 }

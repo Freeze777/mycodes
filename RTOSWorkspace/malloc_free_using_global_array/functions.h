@@ -7,6 +7,7 @@
 void * my_calloc(size_t n,size_t size);
 void * my_malloc(size_t size);
 void * my_realloc(void *ptr,size_t size);
+void deframent_my_heap (void);
 void  my_free(void *ptr);
 size_t free_space_in_my_heap (void);
 void print_memory_contents(void);

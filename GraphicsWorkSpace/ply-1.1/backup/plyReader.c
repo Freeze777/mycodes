@@ -6,32 +6,25 @@
 #include <math.h>
 #include <string.h>
 #include "ply.h"
-void readPlyFile(void);
+void read_test(void);
 void drawBunny(void);
 void drawBoundingBox(void);
-void originTest(void);
 void myReshape(int w, int h);
-void drawAxis(void);
-void myKeyBoard(unsigned char key,int x, int y);
-void myMouse(int button, int state, int x, int y);
 void myDisplay(void);
-int th = 0;   /* azimuth of view angle */
-int ph = 0;   /* elevation of view angle */
-int fov = 55; /* field of view for perspective */
-int asp = 1;  /* aspect ratio */
+void windowKey(unsigned char key, int x, int y);
 typedef struct Vertex {
-    float x,y,z;
+    float x,y,z;             /* the usual 3-space position of a vertex */
 } Vertex;
 
 typedef struct Face {
-    unsigned char intensity;
+    unsigned char intensity; /* this user attaches intensity to faces */
     unsigned char nverts;    /* number of vertex indices in list */
     int *verts;              /* vertex index list */
 } Face;
 
-char *elem_names[] = {
-    "vertex", "face"
-};
+char *elem_names[] = { /* list of the kinds of elements in the user's object */
+                       "vertex", "face"
+                     };
 
 PlyProperty vert_props[] = { /* list of property information for a vertex */
                              {"x", PLY_FLOAT, PLY_FLOAT, offsetof(Vertex,x), 0, 0, 0, 0},
@@ -46,9 +39,7 @@ PlyProperty face_props[] = { /* list of property information for a vertex */
                            };
 
 float SCREEN_WIDTH = 1000,SCREEN_HEIGHT = 650;
-GLfloat origin[3] = {0.0, 0.0, 0.0};
-GLfloat centroid[3]={0.01,-0.08,0.0};
-
+GLfloat origin[3] = {1.0, 0.0, 0.0};
 int vertexCount=0;
 int faceCount=0;
 PlyFile *ply;
@@ -76,39 +67,36 @@ void myDisplay() {
 
     glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
     /*  Enable Z-buffering in OpenGL */
-    //  glEnable(GL_DEPTH_TEST);
+    glEnable(GL_DEPTH_TEST);
 
 
     drawBoundingBox();
     drawBunny();
-    drawAxis();
-    originTest();
     glFlush();
+    glutSwapBuffers();
 }
 
 
 void myInit() {
-    glEnable(GL_DEPTH_TEST);
     glViewport(0,0, SCREEN_WIDTH,SCREEN_HEIGHT);
 
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
-    gluPerspective( /* field of view in degree */ 45.0,/* aspect ratio */ SCREEN_WIDTH/SCREEN_HEIGHT,/* Z near */ -1.0, /* Z far */ 1.0);
+    gluPerspective( /* field of view in degree */ 60.0,/* aspect ratio */ SCREEN_WIDTH/SCREEN_HEIGHT,/* Z near */ -0.5, /* Z far */ 1.0);
 
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
-    gluLookAt(1,1,1,0,0,0,0,1,0);
+    gluLookAt(0,0,1.5,0,0,0,0,1,0);
 
 }
 void drawBoundingBox(void){
     glMatrixMode(GL_MODELVIEW);
     glPushMatrix();
     glLoadIdentity();
-
     glColor3f(1.0,1.0,1.0);
-
-    gluLookAt(0.0, 0.0, 5.0,0.0, 0.0, 0.0,0.0, 1.0, 0.);
-
+    gluLookAt(0.0, 0.0, 5.0,  /* eye is at (0,0,5) */
+              0.0, 0.0, 0.0,      /* center is at (0,0,0) */
+              0.0, 1.0, 0.);
     glTranslatef(0.0, 0.0, -1.0);
     glRotatef(60, 1.0, 0.0, 0.0);
     glRotatef(-20, 0.0, 0.0, 1.0);
@@ -136,14 +124,6 @@ void drawBoundingBox(void){
 }
 void drawBunny(void)
 {
-
-
-    glMatrixMode(GL_MODELVIEW);
-    glPushMatrix();
-
-
-    glTranslatef(centroid[0],centroid[1],centroid[2]);
-
     glColor3f(0.0,1.0,1.0);
     for (int var = 0; var < faceCount; var++) {
         glBegin(GL_TRIANGLES);
@@ -156,12 +136,10 @@ void drawBunny(void)
 
         glEnd();
     }
+    glRasterPos3fv(origin);
+    glutBitmapCharacter(GLUT_BITMAP_HELVETICA_18,'B');
 
-
-
-    glPopMatrix();
     glFlush();
-
 }
 
 
@@ -174,30 +152,26 @@ int main(int argc, char *argv[]) {
     v[0][2] = v[3][2] = v[4][2] = v[7][2] = 1;
     v[1][2] = v[2][2] = v[5][2] = v[6][2] = -1;
 
-    readPlyFile();
+    read_test();
     glutInit(&argc, argv);
-    //myInit();
-
+    myInit();
     glutInitDisplayMode(GLUT_SINGLE|GLUT_RGB);//use single buffer and RGB color schemes
     glutInitWindowSize(SCREEN_WIDTH,SCREEN_HEIGHT);
     glutInitWindowPosition(0,0);
     glutCreateWindow("Curves");
     glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
     glColor3f(0.0,1.0,1.0);
-
     //register callbacks
     glutDisplayFunc(myDisplay);
     glutReshapeFunc(myReshape);
-    glutKeyboardFunc(myKeyBoard);
-    glutMouseFunc(myMouse);
+    glutKeyboardFunc(windowKey);
 
-    myInit();
     glutMainLoop();
 
     return 0;
 }
 
-void readPlyFile(void)
+void read_test(void)
 {
     int i,j;
 
@@ -271,85 +245,18 @@ void readPlyFile(void)
     ply_close (ply);
 }
 
-void myKeyBoard(unsigned char key,int x,int y)
+void windowKey(unsigned char key,int x,int y)
 {
     /*  Exit on ESC */
     if (key == 27) exit(0);
-}
-void myMouse(int button, int state, int x, int y) {
-
-
-    if(state==GLUT_DOWN && button==GLUT_LEFT)
-    {
-        printf("\n screen cordinates: (%d,%d)",x,y);
-        GLdouble viewMatrix[16];
-        GLdouble projMatrix[16];
-        GLint viewport[4];
-
-        glGetDoublev (GL_MODELVIEW_MATRIX, viewMatrix);
-        glGetDoublev (GL_PROJECTION_MATRIX, projMatrix);
-        glGetIntegerv(GL_VIEWPORT, viewport);
-        // glReadPixels( x, int(winY), 1, 1, GL_DEPTH_COMPONENT, GL_FLOAT, &winZ );
-        double ox,oy,oz;
-        gluUnProject((double)x,(double)(SCREEN_HEIGHT-y),0.0,viewMatrix,projMatrix,viewport,&ox,&oy,&oz);
-        printf("\n screen cordinates: (%f,%f,%f)",ox,oy,oz);
-    }
-
-
 }
 
 void myReshape(int w,int h)
 {
     SCREEN_WIDTH=w;
     SCREEN_HEIGHT=h;
-
-    glMatrixMode(GL_PROJECTION);
-    glLoadIdentity();
-    gluPerspective( /* field of view in degree */ 45.0,/* aspect ratio */ SCREEN_WIDTH/SCREEN_HEIGHT,/* Z near */ -0.5, /* Z far */ 1.0);
-
     glViewport(0,0, SCREEN_WIDTH,SCREEN_HEIGHT);
+    myInit();
 
 
-
-}
-void originTest(){
-    glColor3f(1.0,0.0,0.0);
-    glRasterPos3fv(origin);
-    glutBitmapCharacter(GLUT_BITMAP_HELVETICA_18,'O');
-}
-
-void drawAxis(void)
-{
-    glMatrixMode(GL_PROJECTION);
-    glPushMatrix();
-    glLoadIdentity();
-
-    glMatrixMode(GL_MODELVIEW);
-    glPushMatrix();
-    glLoadIdentity();
-
-    glBegin(GL_LINES);
-    // draw line for x axis
-    glColor3f(1.0, 0.0, 0.0);
-    glVertex3f(1.0,0.0, 0.0);
-    glVertex3f(-1.0,0.0, 0.0);
-    // draw line for y axis
-    glColor3f(0.0,1.0, 0.0);
-    glVertex3f(0.0,1.0, 0.0);
-    glVertex3f(0.0,-1.0, 0.0);
-
-    // draw line for z axis
-    glColor3f(0.0,0.0,1.0);
-    glVertex3f(0.0,0.0, 1.0);
-    glVertex3f(0.0,0.0, -1.0);
-
-    glEnd();
-
-    glPopMatrix();
-
-    glMatrixMode(GL_PROJECTION);
-    glPopMatrix();
-    glFlush();
-
-    glColor3f(0.0,0.0,0.0);
 }

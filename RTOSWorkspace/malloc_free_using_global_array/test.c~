@@ -1,7 +1,0 @@
-#include <stdio.h>
-#include "functions.h"
-int main()
-{
-printf("%d\n",sizeof(metadata *));
-return 0;
-}
