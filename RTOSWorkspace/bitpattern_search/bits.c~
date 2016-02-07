@@ -12,10 +12,10 @@ void process_pattern(unsigned char pattern,int plength)
     unsigned long i=0;
     unsigned long bit_mask=0x00000000000000ff;
 
-    for (int var = 1; var < BYTE_SIZE; ++var)
+    for (int var = 1; var <= BYTE_SIZE; ++var)
         i=(i|pattern)<<length;
 
-    i=i|pattern;  //byte_size*length bits of repeated pattern
+    i=i>>length;  //byte_size*length bits of repeated pattern
 
     for (int var = 0; var < length; ++var) {
         shifted_patterns[length-1-var]=(i & bit_mask);//last 8 bits stored in unsigned char

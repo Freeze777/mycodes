@@ -15,9 +15,11 @@ void drawAxis(void);
 void myKeyBoard(unsigned char key,int x, int y);
 void myMouse(int button, int state, int x, int y);
 void myDisplay(void);
+
+double dim=2.0;
 int th = 0;   /* azimuth of view angle */
 int ph = 0;   /* elevation of view angle */
-int fov = 55; /* field of view for perspective */
+int fov = 45; /* field of view for perspective */
 int asp = 1;  /* aspect ratio */
 typedef struct Vertex {
     float x,y,z;
@@ -69,7 +71,58 @@ char **obj_info;
 
 GLfloat v[8][3];
 
+void windowSpecial(int key,int x,int y)
+{
+  /*  Right arrow key - increase azimuth by 5 degrees */
+  if (key == GLUT_KEY_RIGHT) th += 5;
+  /*  Left arrow key - decrease azimuth by 5 degrees */
+  else if (key == GLUT_KEY_LEFT) th -= 5;
+  /*  Up arrow key - increase elevation by 5 degrees */
+  else if (key == GLUT_KEY_UP) ph += 5;
+  /*  Down arrow key - decrease elevation by 5 degrees */
+  else if (key == GLUT_KEY_DOWN) ph -= 5;
 
+  /*  Keep angles to +/-360 degrees */
+  th %= 360;
+  ph %= 360;
+
+  glutPostRedisplay();
+}
+
+void myKeyBoard(unsigned char key,int x,int y)
+{
+    /*  Exit on ESC */
+    if (key == 27) exit(0);
+   /*  Change field of view angle */
+    else if (key == '-' && key>1) fov--;
+    else if (key == '+' && key<179) fov++;
+    /*  Change dimensions */
+    else if (key == 'D') dim += 0.1;
+    else if (key == 'd' && dim>1) dim -= 0.1;
+      glutPostRedisplay();
+
+}
+void myMouse(int button, int state, int x, int y) {
+
+
+    if(state==GLUT_DOWN && button==GLUT_LEFT)
+    {
+        printf("\n screen cordinates: (%d,%d)",x,y);
+        GLdouble viewMatrix[16];
+        GLdouble projMatrix[16];
+        GLint viewport[4];
+
+        glGetDoublev (GL_MODELVIEW_MATRIX, viewMatrix);
+        glGetDoublev (GL_PROJECTION_MATRIX, projMatrix);
+        glGetIntegerv(GL_VIEWPORT, viewport);
+        // glReadPixels( x, int(winY), 1, 1, GL_DEPTH_COMPONENT, GL_FLOAT, &winZ );
+        double ox,oy,oz;
+        gluUnProject((double)x,(double)(SCREEN_HEIGHT-y),0.0,viewMatrix,projMatrix,viewport,&ox,&oy,&oz);
+        printf("\n screen cordinates: (%f,%f,%f)",ox,oy,oz);
+    }
+
+
+}
 void myDisplay() {
 
 
@@ -97,7 +150,7 @@ void myInit() {
 
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
-    gluLookAt(1,1,1,0,0,0,0,1,0);
+    gluLookAt(0,0,1,0,0,0,0,1,0);
 
 }
 void drawBoundingBox(void){
@@ -190,6 +243,7 @@ int main(int argc, char *argv[]) {
     glutReshapeFunc(myReshape);
     glutKeyboardFunc(myKeyBoard);
     glutMouseFunc(myMouse);
+    glutSpecialFunc(windowSpecial);
 
     myInit();
     glutMainLoop();
@@ -271,32 +325,6 @@ void readPlyFile(void)
     ply_close (ply);
 }
 
-void myKeyBoard(unsigned char key,int x,int y)
-{
-    /*  Exit on ESC */
-    if (key == 27) exit(0);
-}
-void myMouse(int button, int state, int x, int y) {
-
-
-    if(state==GLUT_DOWN && button==GLUT_LEFT)
-    {
-        printf("\n screen cordinates: (%d,%d)",x,y);
-        GLdouble viewMatrix[16];
-        GLdouble projMatrix[16];
-        GLint viewport[4];
-
-        glGetDoublev (GL_MODELVIEW_MATRIX, viewMatrix);
-        glGetDoublev (GL_PROJECTION_MATRIX, projMatrix);
-        glGetIntegerv(GL_VIEWPORT, viewport);
-        // glReadPixels( x, int(winY), 1, 1, GL_DEPTH_COMPONENT, GL_FLOAT, &winZ );
-        double ox,oy,oz;
-        gluUnProject((double)x,(double)(SCREEN_HEIGHT-y),0.0,viewMatrix,projMatrix,viewport,&ox,&oy,&oz);
-        printf("\n screen cordinates: (%f,%f,%f)",ox,oy,oz);
-    }
-
-
-}
 
 void myReshape(int w,int h)
 {

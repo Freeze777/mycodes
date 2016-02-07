@@ -3,6 +3,7 @@
 /*  Poor man's approximation of PI */
 #define PI 3.1415926535898
 /*  Macro for sin & cos in degrees */
+
 #define Cos(th) cos(PI/180*(th))
 #define Sin(th) sin(PI/180*(th))
 
@@ -15,11 +16,11 @@ int windowHeight=450;
 /*  Various global state */
 int toggleAxes = 0;   /* toggle axes on and off */
 int toggleValues = 1; /* toggle values on and off */
-int toggleMode = 0; /* projection mode */
+int toggleMode = 1; /* projection mode */
 int th = 0;   /* azimuth of view angle */
 int ph = 0;   /* elevation of view angle */
-int fov = 55; /* field of view for perspective */
-int asp = 1;  /* aspect ratio */
+int fov = 45; /* field of view for perspective */
+double asp = 1.11;  /* aspect ratio */
 
 
 

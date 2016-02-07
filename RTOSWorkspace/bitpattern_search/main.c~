@@ -26,7 +26,7 @@ for (int var = 0; var < 9; ++var)
     printf("%d ",A[var]);
 
 
-fill_pattern(&A[0],&A[8]);
+fill_pattern(&A[4],&A[6]);
 
 printf("\n");
 

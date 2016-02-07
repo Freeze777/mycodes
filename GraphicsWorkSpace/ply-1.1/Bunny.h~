@@ -1,0 +1,16 @@
+
+#ifndef plymodel_h
+#define plymodel_h
+#include "PlyUtility.h"
+
+class PlyModel{
+
+private:
+   
+public:
+
+    void draw(PlyUtility ply);
+
+};
+
+#endif

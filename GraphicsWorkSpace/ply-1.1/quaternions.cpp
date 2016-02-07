@@ -6,7 +6,7 @@
 #include <stdlib.h>
 
 class Quaternion {
-    double mData[4];
+    double mData[4];//0-x 1-y 2-z 3-w
    static const double PI=3.1415926535898;
 
 public:

@@ -1,0 +1,37 @@
+
+void Bunny::draw(PlyUtility ply)
+{
+
+
+    glMatrixMode(GL_MODELVIEW);
+    glPushMatrix();
+
+    glScalef(10,10,10);
+    glTranslatef(centroid[0],centroid[1],centroid[2]);
+
+    glColor3f(0.75,0.68,0.204);
+
+    int fcount=ply.getFaceCount();
+    PlyUtility::Face ** flist=ply.getFaceList();
+    PlyUtility::Vertex ** vlist=ply.getVertexList();
+    for (int var = 0; var < fcount ; var++) {
+        glBegin(GL_TRIANGLES);
+
+        for (int t = 0; t < flist[var]->nverts; t++)
+        {
+            int vIndex=flist[var]->verts[t];
+            glVertex3f(vlist[vIndex]->x,vlist[vIndex]->y,vlist[vIndex]->z);
+        }
+
+        glEnd();
+    }
+
+
+
+   glPopMatrix();
+
+
+
+}
+
+

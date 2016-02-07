@@ -3,13 +3,19 @@ CFLAGS=-c -Wall
 
 all: test.out
 
-test.out: plyReader.o plyfile.o
-	$(CC) plyReader.o plyfile.o -o test.out -lGL -lGLU -lglut
+test.out: main.o plyfile.o View.o PlyUtility.o 
+	$(CC) main.o plyfile.o View.o PlyUtility.o -o test.out -lGL -lGLU -lglut
 
-plyReader.o: plyReader.c
-	$(CC) $(CFLAGS) plyReader.c
+main.o: main.cpp
+	$(CC) $(CFLAGS) main.cpp
 
 plyfile.o: plyfile.c
 	gcc $(CFLAGS) plyfile.c
+
+View.o: View.cpp
+	$(CC) $(CFLAGS) View.cpp
+
+PlyUtility.o: PlyUtility.cpp
+	$(CC) $(CFLAGS) PlyUtility.cpp
 clean:
 	rm -rf *.o assgn
