@@ -1,7 +1,6 @@
 #include "functions.h"
 
 static char buffer[BUFF_SIZE]={0};
-
 static  metadata * heap_base=(metadata *)buffer;
 static metadata * last=NULL;
 static metadata * search_freespace(size_t size);

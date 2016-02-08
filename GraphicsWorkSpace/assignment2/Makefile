@@ -1,22 +1,34 @@
 CC=g++
 CFLAGS=-c -Wall
 
-all: assgn
+all: test.out
 
-assgn: assignment2.o display_utility.o curves.o transformations.o rply.o
-	$(CC) assignment2.o display_utility.o curves.o transformations.o rply.o -o assgn -lGL -lGLU -lglut
+test.out: main.o plyfile.o View.o PlyUtility.o PlyModel.o BoundingBox.o Quaternions.o Vector.o
+	$(CC) main.o plyfile.o View.o PlyUtility.o PlyModel.o BoundingBox.o Quaternions.o Vector.o -o test.out -lGL -lGLU -lglut
 
-assignment2.o: assignment2.cpp
-	$(CC) $(CFLAGS) assignment2.cpp
+main.o: main.cpp
+	$(CC) $(CFLAGS) main.cpp
 
-display_utility.o: display_utility.cpp
-	$(CC) $(CFLAGS) display_utility.cpp
+plyfile.o: plyfile.c
+	gcc $(CFLAGS) plyfile.c
 
-curves.o: curves.cpp
-	$(CC) $(CFLAGS) curves.cpp
+View.o: View.cpp
+	$(CC) $(CFLAGS) View.cpp
 
-transformations.o: transformations.cpp
-	$(CC) $(CFLAGS) transformations.cpp
+PlyUtility.o: PlyUtility.cpp
+	$(CC) $(CFLAGS) PlyUtility.cpp
+
+PlyModel.o: PlyModel.cpp
+	$(CC) $(CFLAGS) PlyModel.cpp
+
+BoundingBox.o: BoundingBox.cpp
+	$(CC) $(CFLAGS) BoundingBox.cpp
+
+Quaternions.o: Quaternions.cpp
+	$(CC) $(CFLAGS) Quaternions.cpp
+
+Vector.o: Vector.cpp
+	$(CC) $(CFLAGS) Vector.cpp
 
 clean:
 	rm -rf *.o assgn

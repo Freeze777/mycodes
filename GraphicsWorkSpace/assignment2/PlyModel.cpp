@@ -13,8 +13,8 @@ void PlyModel::draw(PlyUtility ply)
     glColor3f(0.75,0.68,0.204);
 
     int fcount=ply.getFaceCount();
-    Face ** fl=ply.getFaceList();
-    Vertex ** vl=ply.getVertexList();
+   PlyUtility::Face ** fl=ply.getFaceList();
+    PlyUtility::Vertex ** vl=ply.getVertexList();
     for (int var = 0; var < fcount ; var++) {
         glBegin(GL_TRIANGLES);
 
