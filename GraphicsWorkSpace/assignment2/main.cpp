@@ -49,18 +49,6 @@ void myMouse(int button, int state, int x, int y) {
 
     if(state==GLUT_DOWN && button==GLUT_LEFT)
     {
-        printf("\n screen cordinates: (%d,%d)",x,y);
-        /* GLdouble viewMatrix[16];
-        GLdouble projMatrix[16];
-        GLint viewport[4];
-
-        glGetDoublev (GL_MODELVIEW_MATRIX, viewMatrix);
-        glGetDoublev (GL_PROJECTION_MATRIX, projMatrix);
-        glGetIntegerv(GL_VIEWPORT, viewport);
-        // glReadPixels( x, int(winY), 1, 1, GL_DEPTH_COMPONENT, GL_FLOAT, &winZ );
-
-        printf("\n screen cordinates: (%f,%f,%f)",ox,oy,oz);*/
-
         arcball_on = true;
         last_mx = cur_mx = x;
         last_my = cur_my = y;
@@ -79,10 +67,13 @@ void rotateModelvthMouse(void){
         double angle = (180.0 / PI )*acos(min(1.0, dot(va, vb)));//in degrees
         Vector axis_in_camera_coord = cross(va, vb);
 
-        GLdouble viewMatrix[16];
-        GLdouble projMatrix[16];
-        GLint viewport[4];
+        double viewMatrix[16];
+        double projMatrix[16];
+        int viewport[4];
+        double * rotMatrix;
+
         glGetDoublev (GL_MODELVIEW_MATRIX, viewMatrix);
+
         glGetDoublev (GL_PROJECTION_MATRIX, projMatrix);
         glGetIntegerv(GL_VIEWPORT, viewport);
        // double axis_in_object_coord[3];
@@ -92,8 +83,9 @@ void rotateModelvthMouse(void){
            //        viewMatrix,projMatrix,viewport,&axis_in_object_coord[0],&axis_in_object_coord[1],&axis_in_object_coord[2]);
         Quaternion quat(angle,axis_in_object_coord);
         glMatrixMode(GL_MODELVIEW);
-        glMultMatrixd(quat.rotationMatrix());
-
+        rotMatrix=quat.rotationMatrix();
+        glMultMatrixd(rotMatrix);
+        free(rotMatrix);
         quat.~Quaternion();
         last_mx = cur_mx;
         last_my = cur_my;
@@ -145,12 +137,6 @@ void myDisplay() {
     glLoadIdentity();
     gluPerspective(fov, SCREEN_WIDTH/SCREEN_HEIGHT, dim,4*dim);
 
-    gluLookAt(0,0,5, 0,0,0 , 0,1,0);
-
-    /*  double axis[]={1.0,1.0,1.0};
-    Quaternion quat(180,axis);
-    const GLdouble *matrix=quat.rotationMatrix();
-    glMultMatrixd(matrix);*/
     rotateModelvthMouse();
     box.draw(dim);
     plymodel.draw(ply);
@@ -169,7 +155,7 @@ void myInit() {
     gluPerspective(fov,SCREEN_WIDTH/SCREEN_HEIGHT,dim,4*dim);
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
-
+    gluLookAt(0,0,2.5*dim, 0,0,0 , 0,1,0);
 }
 
 

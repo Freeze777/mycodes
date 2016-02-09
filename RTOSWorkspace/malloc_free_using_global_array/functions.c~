@@ -1,13 +1,71 @@
+
+/** @file functions.c
+ *  @brief Function definitions for dynamic memory management.
+ *
+ *  This contains the function definitons for the dynamic memory 
+ *  allocations and deallocations including utility functions.
+ *
+ *  @author Freeze Francis
+ *  @bug No known bugs.
+ */
+
+
+
 #include "functions.h"
 
+/** @brief The buffer array used for memory allocation.
+ * 
+ */
 static char buffer[BUFF_SIZE]={0};
+
+/** @brief Points to the base address of the array
+ * 
+ */
 static  metadata * heap_base=(metadata *)buffer;
+
+/** @brief Keeps tracks of the tail pointer of the linked list of allocated block
+ * 
+ */
 static metadata * last=NULL;
+/** 
+ *  @brief The function which searches in the list of memory blocks which fits the requested size.
+ *  Used during a malloc() or calloc() calls to get the first fit.
+ *  @param size The requested size
+ *  @return pointer to the free block which fits the size
+ */
 static metadata * search_freespace(size_t size);
+
+/** 
+ *  @brief The function which fuses two adjacent free blocks into single free block.
+ *  Used during a call to free() 
+ *  @param ptr pointer to the first free block
+ *  @return void
+ */
 static void fuse(metadata * ptr);
+/** 
+ *  @brief The function which splits a large memory block into two smaller block based on the threshold value.
+ *  Used during a call to malloc() and calloc(). 
+ *  @param ptr pointer to the block to be split
+ *  @return void
+ */
+
 static void split(metadata * ptr,size_t size);
+
+/** 
+ *  @brief The function which checks the validity of the block starting address.
+ *  Used during a call to free() and thus avoids memory corruption.
+ *  @param to_free pointer to the block to be freed
+ *  @return validity (0-invalid 1-valid)
+ */
 static int verifyBlockAddress(metadata * to_free,metadata ** prev);
+
+
+/** 
+ *  @brief The variable keep track of freespace in the array
+ *  
+  */
 static size_t freespace=BUFF_SIZE;
+
 static int first=1;
 
 
