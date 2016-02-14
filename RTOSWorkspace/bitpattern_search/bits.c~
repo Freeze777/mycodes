@@ -25,7 +25,7 @@ static int length;
 
 
 void process_pattern(unsigned char pattern,int plength)
-{	
+{   printf("processing pattern\n");	
     length=plength;
     shifted_patterns=(unsigned char *)malloc(length*sizeof(char));
     unsigned long i=0;
@@ -43,6 +43,7 @@ void process_pattern(unsigned char pattern,int plength)
  
 }
 unsigned char * check_bit_pattern(unsigned char * start_addr){
+printf("\ncheck_bit_pattern called\n");
     unsigned int count=0;
     unsigned char flag=1;
     while(flag)
@@ -56,6 +57,7 @@ unsigned char * check_bit_pattern(unsigned char * start_addr){
 
 }
 void fill_pattern(unsigned char *start_addr, unsigned char *end_addr){
+printf("\nfill_pattern called\n");
     unsigned int count=0;
     while(start_addr<=end_addr)
     {
@@ -67,7 +69,7 @@ void fill_pattern(unsigned char *start_addr, unsigned char *end_addr){
 
 }
 void init_zero (unsigned char * start_addr,unsigned char* end_addr){
-
+printf("\ninit_zero called\n");
 	while(start_addr<=end_addr)
 	{
    		 *start_addr=0;

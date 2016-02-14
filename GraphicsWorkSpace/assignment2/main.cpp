@@ -1,170 +1,116 @@
-#include <stdio.h>
-#include <iostream>
-#include <math.h>
-#include <string.h>
-#include "PlyUtility.h"
-#include "View.h"
-#include "PlyModel.h"
-#include "BoundingBox.h"
-#include "Quaternions.h"
-#include "Vector.h"
+#include "Controller.h"
+
 using namespace std;
 
 #define PI 3.1415926535898
 #define COS(th) cos(PI/180*(th))
 #define SIN(th) sin(PI/180*(th))
 
+
+
+void myInit(void);
 void myReshape(int w, int h);
 void myKeyBoard(unsigned char key,int x, int y);
 void myMouse(int button, int state, int x, int y);
 void myDisplay(void);
-void myInit(void);
 void windowSpecial(int key,int x,int y);
 void myMouseMotion(int x, int y) ;
-Vector get_arcball_vector(int x, int y) ;
-void rotateModelvthMouse(void);
 
-View view;
+Controller *controller;
 PlyUtility ply;
 PlyModel plymodel;
-BoundingBox box;
-
-int last_mx = 0, last_my = 0, cur_mx = 0, cur_my = 0;
-int arcball_on = false;
-
-double dim=2.0;
-int th = 0;   /* azimuth of view angle */
-int ph = 0;   /* elevation of view angle */
-int fov = 45; /* field of view for perspective */
-int asp = 1;  /* aspect ratio */
-
-float SCREEN_WIDTH = 1000,SCREEN_HEIGHT = 650;
-
-
-
+float SCREEN_WIDTH;
+float SCREEN_HEIGHT;
 
 
 void myMouse(int button, int state, int x, int y) {
 
-
-    if(state==GLUT_DOWN && button==GLUT_LEFT)
-    {
-        arcball_on = true;
-        last_mx = cur_mx = x;
-        last_my = cur_my = y;
-
-    }else {
-        arcball_on = false;
-    }
+    controller->mouse_callback(button,state,x,y);
 
 }
-
-void rotateModelvthMouse(void){
-
-    if (cur_mx != last_mx || cur_my != last_my) {
-        Vector va = get_arcball_vector(last_mx, last_my);
-        Vector vb = get_arcball_vector( cur_mx,  cur_my);
-        double angle = (180.0 / PI )*acos(min(1.0, dot(va, vb)));//in degrees
-        Vector axis_in_camera_coord = cross(va, vb);
-
-        double viewMatrix[16];
-        double projMatrix[16];
-        int viewport[4];
-        double * rotMatrix;
-
-        glGetDoublev (GL_MODELVIEW_MATRIX, viewMatrix);
-
-        glGetDoublev (GL_PROJECTION_MATRIX, projMatrix);
-        glGetIntegerv(GL_VIEWPORT, viewport);
-       // double axis_in_object_coord[3];
-       double axis_in_object_coord[3]={-axis_in_camera_coord.x(),-axis_in_camera_coord.y(),-axis_in_camera_coord.z()};
-
-       //gluUnProject(-axis_in_camera_coord.x(),-axis_in_camera_coord.y(),-axis_in_camera_coord.z(),
-           //        viewMatrix,projMatrix,viewport,&axis_in_object_coord[0],&axis_in_object_coord[1],&axis_in_object_coord[2]);
-        Quaternion quat(angle,axis_in_object_coord);
-        glMatrixMode(GL_MODELVIEW);
-        rotMatrix=quat.rotationMatrix();
-        glMultMatrixd(rotMatrix);
-        free(rotMatrix);
-        quat.~Quaternion();
-        last_mx = cur_mx;
-        last_my = cur_my;
-
-    }
-}
-
 void myMouseMotion(int x, int y) {
 
-
-    if (arcball_on) {  // if left button is pressed
-        cur_mx = x;
-        cur_my = y;
-    }
- glutPostRedisplay();
-
+    controller->mouse_motion_callback(x,y);
 
 }
 
-Vector get_arcball_vector(int x, int y) {
-    Vector P = Vector(1.0*x/SCREEN_WIDTH*2 - 1.0,
-                      1.0*y/SCREEN_HEIGHT*2 - 1.0,
-                      0);
-    P.y(- P.y());
-
-    float OP_squared = P.x() * P.x() + P.y() * P.y();
-    if (OP_squared <= 1*1)
-        P.z(sqrt(1*1 - OP_squared));  // Pythagore
-    else
-        P.normalize();  // nearest point
-
-    return P;
-}
 void myDisplay() {
 
-    /*init called first and then reshape gets called*/
+    controller->display_callback();
 
-    glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
-
- /*  myInit();//sets up proj matrix and set modelview matrix to identity
-
-  //  double Ex = -2*dim*SIN(th)*COS(ph);
-  //  double Ey = +2*dim        *SIN(ph);
-  //  double Ez = +2*dim*COS(th)*COS(ph);
-   camera/eye position, aim of camera lens, up-vector */
-
-
-    glMatrixMode(GL_PROJECTION);
-    glLoadIdentity();
-    gluPerspective(fov, SCREEN_WIDTH/SCREEN_HEIGHT, dim,4*dim);
-
-    rotateModelvthMouse();
-    box.draw(dim);
-    plymodel.draw(ply);
-    view.drawAxis(dim);
-    view.originTest();
-    glFlush();
 }
 
+void myReshape(int w,int h)
+{
+
+    SCREEN_WIDTH=w;
+    SCREEN_HEIGHT=h;
+    controller->reshape_callback(w,h);
+}
+
+void windowSpecial(int key,int x,int y)
+{
+
+    controller->keyboard_special_callback(key,x,y);
+
+}
+
+void myKeyBoard(unsigned char key,int x,int y)
+{
+    controller->keyboard_callback(key,x,y);
+
+}
 
 void myInit() {
-    glEnable(GL_DEPTH_TEST);
-    glViewport(0,0, SCREEN_WIDTH,SCREEN_HEIGHT);
+
+
+    glViewport(0,0,SCREEN_WIDTH,SCREEN_HEIGHT);
+
 
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
-    gluPerspective(fov,SCREEN_WIDTH/SCREEN_HEIGHT,dim,4*dim);
+    gluPerspective(controller->fov,SCREEN_WIDTH/SCREEN_HEIGHT,controller->dim,4*controller->dim);
+
+
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
-    gluLookAt(0,0,2.5*dim, 0,0,0 , 0,1,0);
+    gluLookAt(0,0,2.5*controller->dim, 0,0,0 , 0,1,0);
+
+    GLfloat light_position[] = { 0.0,0.0,10.0, 0.0 };
+
+    GLfloat light_diffuse[] = {0.75,0.68,0.5,0.0};
+
+    glClearColor(0.0,0.0,0.0,0.0);
+    glEnable(GL_NORMALIZE);
+    glShadeModel (GL_SMOOTH);
+    glLightfv(GL_LIGHT0, GL_DIFFUSE, light_diffuse);
+    glLightfv(GL_LIGHT0, GL_POSITION, light_position);
+
+    GLfloat mat_ambient[] = { 1.0, 1.0, 1.0, 0.0 };
+    GLfloat mat_shininess[] = { 100.0 };
+    glMaterialfv(GL_FRONT, GL_AMBIENT, mat_ambient);
+    glMaterialfv(GL_FRONT, GL_SHININESS, mat_shininess);
+
+
+
+
+
+    glEnable(GL_LIGHTING);
+    glEnable(GL_LIGHT0);
+    glEnable(GL_DEPTH_TEST);
 }
 
 
 int main(int argc, char *argv[]) {
-
+    controller=new Controller(&ply,&plymodel);
+    SCREEN_HEIGHT=controller->SCREEN_HEIGHT;
+    SCREEN_WIDTH=controller->SCREEN_WIDTH;
     ply.readPlyFile("bunny");
+    plymodel.computeNormal(&ply);
+    plymodel.computeCentroid(&ply);
     glutInit(&argc, argv);
 
-    glutInitDisplayMode(GLUT_SINGLE|GLUT_RGB);//use single buffer and RGB color schemes
+    glutInitDisplayMode(GLUT_SINGLE|GLUT_RGB|GLUT_DEPTH);//use single buffer and RGB color schemes
     glutInitWindowSize(SCREEN_WIDTH,SCREEN_HEIGHT);
     glutInitWindowPosition(0,0);
     glutCreateWindow("3D MADNESS");
@@ -178,6 +124,8 @@ int main(int argc, char *argv[]) {
     glutMouseFunc(myMouse);
     glutSpecialFunc(windowSpecial);
     glutMotionFunc(myMouseMotion);
+
+
     myInit();
     glutMainLoop();
 
@@ -186,52 +134,6 @@ int main(int argc, char *argv[]) {
 
 
 
-void myReshape(int w,int h)
-{
 
-    SCREEN_WIDTH=w;
-    SCREEN_HEIGHT=h;
-
-    glMatrixMode(GL_PROJECTION);
-    glLoadIdentity();
-    //  gluPerspective( /* field of view in degree */ fov,/* aspect ratio */ SCREEN_WIDTH/SCREEN_HEIGHT,/* Z near */ -dim/2, /* Z far */ dim/2);
-    gluPerspective( /* field of view in degree */ fov,/* aspect ratio */ SCREEN_WIDTH/SCREEN_HEIGHT,/* Z near */ dim, /* Z far */ 4*dim);
-    glViewport(0,0, SCREEN_WIDTH,SCREEN_HEIGHT);
-
-
-
-}
-
-void windowSpecial(int key,int x,int y)
-{
-    /*  Right arrow key - increase azimuth by 5 degrees */
-    if (key == GLUT_KEY_RIGHT) th += 5;
-    /*  Left arrow key - decrease azimuth by 5 degrees */
-    else if (key == GLUT_KEY_LEFT) th -= 5;
-    /*  Up arrow key - increase elevation by 5 degrees */
-    else if (key == GLUT_KEY_UP) ph += 5;
-    /*  Down arrow key - decrease elevation by 5 degrees */
-    else if (key == GLUT_KEY_DOWN) ph -= 5;
-
-    /*  Keep angles to +/-360 degrees */
-    th %= 360;
-    ph %= 360;
-
-    glutPostRedisplay();
-}
-
-void myKeyBoard(unsigned char key,int x,int y)
-{
-    /*  Exit on ESC */
-    if (key == 27) exit(0);
-    /*  Change field of view angle */
-    else if (key == '-' && key>1) fov++;
-    else if (key == '+' && key<179) fov--;
-    /*  Change dimensions */
-    else if (key == 'D') dim += 0.1;
-    else if (key == 'd' && dim>1) dim -= 0.1;
-    glutPostRedisplay();
-
-}
 
 

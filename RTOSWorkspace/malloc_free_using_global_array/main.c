@@ -1,60 +1,17 @@
+/** @file main.c
+ *  @brief Driver program for dynamic memory allocations functions.
+ *  A mixture of calls to function are made
+ *  and after each call the memory layout is printed in the format Block-size v/s free-status(0-not free 1-free) 
+ *  The amount of free space left is also printed
+ *  @author Freeze Francis
+ *  
+ */
 #include "functions.h"
-#include <stdio.h>
+
 int main()
 {
-    int choice;
-    int size,n,temp;
-    metadata * ptrs[50];
-    int i=1;
-    do
-
-    {
-
-        printf("1 -malloc");
-        printf("\n2 -calloc");
-        printf("\n3 -realloc");
-        printf("\n4 -free");
-        printf("\n5 -print_memory_contents");
-        printf("\n6 -Quit");
-
-        printf("\nEnter your choice: ");
-
-        scanf("%d", &choice);
-        switch(choice)
-        {
-        case 1: printf("\nEnter size: ");
-            scanf("%d", &size);
-            ptrs[i++]=my_malloc(size);
-            break;
-
-        case 2: printf("\nEnter block_size and #blocks: ");
-            scanf("%d %d", &size,&n);
-            ptrs[i++]=my_calloc(size,n);
-            break;
-
-
-        case 3: printf("\nEnter  previous_choice_number  and new_size: ");
-            scanf("%d %d",&temp,&size);
-            ptrs[temp]=my_realloc(ptrs[temp],size);
-            break;
-
-        case 4: printf("\nEnter  previous_choice_number to be freed : ");
-            scanf("%d",&temp);
-            my_free(ptrs[temp]);
-            break;
-
-        case 5:
-            print_memory_contents();
-            break;
-
-        case 6:
-            exit(0);
-            break;
-
-        }
-
-    } while (1);
-   /* int* arr=(int *)my_malloc(10*sizeof(int));
+   
+    int* arr=(int *)my_malloc(10*sizeof(int));
     print_memory_contents();
     printf("free space:%lu\n",free_space_in_my_heap());
 
@@ -163,7 +120,66 @@ int main()
     print_memory_contents();
     printf("free space:%lu\n",free_space_in_my_heap());
 
-    my_free(9859);*/
+    my_free(9859);
+    print_memory_contents();
+    printf("free space:%lu\n",free_space_in_my_heap());
 
     return 0;
 }
+
+/*
+//MENU DRIVEN 
+ int choice;
+    int size,n,temp;
+    metadata * ptrs[50];
+    int i=1;
+    do
+
+    {
+
+        printf("1 -malloc");
+        printf("\n2 -calloc");
+        printf("\n3 -realloc");
+        printf("\n4 -free");
+        printf("\n5 -print_memory_contents");
+        printf("\n6 -Quit");
+
+        printf("\nEnter your choice: ");
+
+        scanf("%d", &choice);
+        switch(choice)
+        {
+        case 1: printf("\nEnter size: ");
+            scanf("%d", &size);
+            ptrs[i++]=my_malloc(size);
+            break;
+
+        case 2: printf("\nEnter block_size and #blocks: ");
+            scanf("%d %d", &size,&n);
+            ptrs[i++]=my_calloc(size,n);
+            break;
+
+
+        case 3: printf("\nEnter  previous_choice_number  and new_size: ");
+            scanf("%d %d",&temp,&size);
+            ptrs[temp]=my_realloc(ptrs[temp],size);
+            break;
+
+        case 4: printf("\nEnter  previous_choice_number to be freed : ");
+            scanf("%d",&temp);
+            my_free(ptrs[temp]);
+            break;
+
+        case 5:
+            print_memory_contents();
+            break;
+
+        case 6:
+            exit(0);
+            break;
+
+        }
+
+    } while (1);
+
+*/

@@ -3,8 +3,8 @@ CFLAGS=-c -Wall
 
 all: test.out
 
-test.out: main.o plyfile.o View.o PlyUtility.o PlyModel.o BoundingBox.o Quaternions.o Vector.o
-	$(CC) main.o plyfile.o View.o PlyUtility.o PlyModel.o BoundingBox.o Quaternions.o Vector.o -o test.out -lGL -lGLU -lglut
+test.out: main.o plyfile.o View.o PlyUtility.o PlyModel.o BoundingBox.o Quaternion.o Vector.o Arcball.o Controller.o
+	$(CC) main.o plyfile.o View.o PlyUtility.o PlyModel.o BoundingBox.o Quaternion.o Vector.o Arcball.o Controller.o -o test.out -lGL -lGLU -lglut
 
 main.o: main.cpp
 	$(CC) $(CFLAGS) main.cpp
@@ -24,11 +24,14 @@ PlyModel.o: PlyModel.cpp
 BoundingBox.o: BoundingBox.cpp
 	$(CC) $(CFLAGS) BoundingBox.cpp
 
-Quaternions.o: Quaternions.cpp
-	$(CC) $(CFLAGS) Quaternions.cpp
+Quaternion.o: Quaternion.cpp
+	$(CC) $(CFLAGS) Quaternion.cpp
 
 Vector.o: Vector.cpp
-	$(CC) $(CFLAGS)Vector.cpp
+	$(CC) $(CFLAGS) Vector.cpp
+
+Arcball.o: Arcball.cpp
+	$(CC) $(CFLAGS) Arcball.cpp
 
 clean:
 	rm -rf *.o assgn

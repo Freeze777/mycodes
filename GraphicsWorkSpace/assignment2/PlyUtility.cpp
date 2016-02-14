@@ -1,14 +1,14 @@
 #include "PlyUtility.h"
 
 int PlyUtility::getFaceCount(void){
-	return faceCount;
+    return faceCount;
 }
 PlyUtility::Face ** PlyUtility::getFaceList(void){
-	return flist;
+    return flist;
 }
 
 PlyUtility::Vertex ** PlyUtility::getVertexList(void){
-	return vlist;
+    return vlist;
 }
 void PlyUtility::readPlyFile(char *filename)
 {
@@ -45,6 +45,14 @@ void PlyUtility::readPlyFile(char *filename)
                 /* grab and element from the file */
                 vlist[j] = (Vertex *) malloc (sizeof (Vertex));
                 ply_get_element (ply, (void *) vlist[j]);
+                if(vx_max<vlist[j]->x)vx_max=vlist[j]->x;
+                if(vy_max<vlist[j]->y)vy_max=vlist[j]->y;
+                if(vz_max<vlist[j]->z)vz_max=vlist[j]->z;
+
+                if(vx_min>vlist[j]->x)vx_min=vlist[j]->x;
+                if(vy_min>vlist[j]->y)vy_min=vlist[j]->y;
+                if(vz_min>vlist[j]->z)vz_min=vlist[j]->z;
+
 
 
             }
@@ -83,3 +91,5 @@ void PlyUtility::readPlyFile(char *filename)
     /* close the PLY file */
     ply_close (ply);
 }
+
+

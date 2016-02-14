@@ -1,44 +1,66 @@
-#include "bits.h"
+/** @file main.c
+ *  @brief Driver program for bit pattern search and fill functionalities
+ *  An char array of size 20 is used and a mixture of calls to function are made
+ *  and output is printed in the format address v/s value 
+ *  @author Freeze Francis
+ *  
+ */
 
+
+
+#include "bits.h"
+void print_array_contents(unsigned char*, unsigned char*);
 
 int main()
 {
-unsigned char A[50];
+unsigned char A[20];
+int length=20;
 
-A[0]=0b11011110;
-A[1]=0b11110111;
-A[2]=0b10111101;
-A[3]=0b11101111;
-A[4]=0b01111011;
-A[5]=0b11011110;
-A[6]=0b11110111;
-A[7]=0b10111101;
-A[8]=0x00;
+unsigned char pattern=0b00011011;
+int pattern_lenght=5;
 
-unsigned char pattern=0b00111011;
-process_pattern(pattern,6);
-printf("%p \n",&A[0]);
-unsigned char * ptr=check_bit_pattern(&A[0]);
-printf("%p \n",ptr);
+process_pattern(pattern,pattern_lenght);
+unsigned char * ptr=NULL;
+printf("Array base address:%p \n",&A[0]);
+
+init_zero(A,A+(length-1));
+print_array_contents(A,A+(length-1));
+
+ptr=check_bit_pattern(A);
+printf("Bit pattern check failed at:%p \n",ptr);
 
 
-for (int var = 0; var < 9; ++var)
-    printf("%d ",A[var]);
+fill_pattern(A,A+(length/2));
+print_array_contents(A,A+(length-1));
 
 
-fill_pattern(&A[0],&A[8]);
+ptr=check_bit_pattern(A);
+printf("Bit pattern check failed at:%p \n",ptr);
 
-printf("\n");
+init_zero(A,A+4);
+print_array_contents(A,A+(length-1));
 
-for (int var = 0; var < 9; ++var)
-    printf("%d ",A[var]);
+ptr=check_bit_pattern(A+5);
+printf("Bit pattern check failed at:%p \n",ptr);
 
-printf("\n");
-init_zero(&A[2],&A[6]);
+fill_pattern(A,A+(length-2));
+print_array_contents(A,A+(length-1));
 
-
-for (int var = 0; var < 9; ++var)
-    printf("%d ",A[var]);
+ptr=check_bit_pattern(A);
+printf("Bit pattern check failed at:%p \n",ptr);
 
     return 0;
+}
+
+
+void print_array_contents(unsigned char* start, unsigned char* end){
+
+
+while(start<=end)
+{printf("%p	:%d \n",start,*start);
+start++;
+}
+
+printf("\n");
+
 }

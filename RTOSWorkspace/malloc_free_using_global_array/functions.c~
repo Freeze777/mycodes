@@ -6,7 +6,7 @@
  *  allocations and deallocations including utility functions.
  *
  *  @author Freeze Francis
- *  @bug No known bugs.
+ * 
  */
 
 
@@ -73,7 +73,7 @@ static int first=1;
 
 void * my_malloc(size_t size)
 {
-    printf("malloc for %lu\n",size);
+    printf("\nmalloc for %lu\n",size);
     if(size==0)
         return NULL;
 
@@ -122,7 +122,7 @@ void * my_malloc(size_t size)
 
 }
 void * my_calloc(size_t n,size_t size){
-    printf("calloc for %lu\n",n*size);
+    printf("\ncalloc for %lu\n",n*size);
     size_t total=n*size;
     char * temp=(char *)my_malloc(total);
 
@@ -144,7 +144,7 @@ void my_free(void *ptr)
     if(to_free>=heap_base && to_free <=last){
         if(verifyBlockAddress(to_free ,&prev))
         {
-        printf("free for %lu \n",to_free->size);
+        printf("\nfree for %lu \n",to_free->size);
 
         to_free->free=1;
         freespace+=to_free->size;
@@ -155,11 +155,11 @@ void my_free(void *ptr)
         }
         else
         {
-           printf("Invalid address.. !!\n");
+           printf("\nInvalid address.. !!\n");
         }
     }else
     {
-        printf("Invalid address.. !!\n");
+        printf("\nInvalid address.. !!\n");
     }
 
 
@@ -196,7 +196,7 @@ void * my_realloc(void *ptr,size_t size){
     }
 
     metadata * block=(metadata *)ptr -1;
-    printf("realloc from blocksize: %lu  to size: %lu\n",block->size,size);
+    printf("\nrealloc from blocksize: %lu  to size: %lu\n",block->size,size);
 
     if(block->size < size)//expand
     {
@@ -258,7 +258,7 @@ static void fuse(metadata * ptr){
 
     while((ptr->next!=NULL) && ptr->next->free==1)
     {
-        printf("fusing %lu & %lu\n",ptr->size,ptr->next->size);
+        printf("\nfusing %lu & %lu\n",ptr->size,ptr->next->size);
         ptr->size+=ptr->next->size+sizeof(metadata);
         ptr->next=ptr->next->next;
         freespace+=sizeof(metadata);
@@ -292,7 +292,7 @@ static void split(metadata *ptr,size_t size)
 
 void deframent_my_heap(void){
 
-    printf("defragmenting memory :\n");
+    printf("\ndefragmenting memory\n");
     metadata * temp=heap_base;
     while(temp!=NULL)
     {
@@ -309,12 +309,12 @@ size_t free_space_in_my_heap(void){
 }
 
 void print_memory_contents(void){
-
+	printf("\n");
     metadata * temp=heap_base;
     while(temp!=NULL)
     {
         printf("%lu %d\n",temp->size,temp->free);
         temp=temp->next;
     }
-printf("free space:%lu B\n",free_space_in_my_heap());
+printf("\nfree space:%lu B\n",free_space_in_my_heap());
 }

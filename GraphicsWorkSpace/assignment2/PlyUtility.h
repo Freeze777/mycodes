@@ -4,6 +4,8 @@
 #include <string.h>
 #include <stdlib.h>
 #include "ply.h"
+#include <limits.h>
+
 
 
 
@@ -40,9 +42,16 @@ int getFaceCount(void);
 Face ** getFaceList(void);
 Vertex ** getVertexList(void);
 
+float vx_max=INT_MIN,vy_max=INT_MIN,vz_max=INT_MIN;
+float vx_min=INT_MAX,vy_min=INT_MAX,vz_min=INT_MAX;
+
+
 private:
+
+
 int vertexCount=0;
 int faceCount=0;
+
 PlyFile *ply;
 int nelems;
 char **elist;

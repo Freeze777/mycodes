@@ -20,6 +20,11 @@ public:
     double*  rotationMatrix();
     Quaternion  product(const Quaternion& rhs);
 
+	~Quaternion(void)
+	{
+	   
+	}
+
     double x() const { return mData[0]; }
     double y() const { return mData[1]; }
     double z() const { return mData[2]; }

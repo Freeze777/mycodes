@@ -9,11 +9,12 @@ class View{
 
 private:
     GLfloat origin[3] = {0.0, 0.0, 0.0};
+    	
 
 public:
 
     void drawAxis(float dim);
-    void originTest(void);
+    void markPoints(float dim);
     View(){
 
     }

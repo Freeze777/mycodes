@@ -7,9 +7,10 @@
 
 class Quaternion {
     double mData[4];//0-x 1-y 2-z 3-w
-    static const double PI=3.1415926535898;
+    
 
 public:
+    static const double PI=3.1415926535898;
     Quaternion();
     Quaternion(const double* array) ;
     Quaternion(double angle, double axisv[]);
