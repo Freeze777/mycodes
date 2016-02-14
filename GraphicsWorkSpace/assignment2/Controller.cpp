@@ -33,13 +33,7 @@ void  Controller::display_callback() {
     /*init called first and then reshape gets called*/
 
     glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
-
-
-    box.draw(dim);
-    plymodel->draw(ply);
-    view.drawAxis(dim);
-    view.markPoints(dim);
-
+    model->drawScene(dim);
 
     glFlush();
 }
@@ -57,13 +51,14 @@ void  Controller::reshape_callback(int w,int h)
     glViewport(0,0, SCREEN_WIDTH,SCREEN_HEIGHT);
 
     arcball->set_width_height(SCREEN_WIDTH,SCREEN_HEIGHT);
-
+    view->set_width_height(SCREEN_WIDTH,SCREEN_HEIGHT);
 
 
 }
 
 void  Controller::keyboard_special_callback(int key,int x,int y)
 {
+
     if (key == GLUT_KEY_RIGHT) {th =0.1;ph=0.0;}
     else if (key == GLUT_KEY_LEFT) {th =-0.1;ph=0.0;}
     else if (key == GLUT_KEY_UP) {th=0.0;ph =0.1;}

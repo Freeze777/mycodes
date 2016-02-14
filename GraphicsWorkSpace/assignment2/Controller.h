@@ -11,37 +11,35 @@
 #include "Quaternion.h"
 #include "Vector.h"
 #include "Arcball.h"
+#include "Model.h"
 
 class Controller
 {
     Arcball *arcball;
-    View view;
-    PlyUtility *ply;
-    PlyModel *plymodel;
-    BoundingBox box;
+    View *view;
+    Model *model;
+  
 
 public:
 
     float rollspeed=1.5;
     float zoomfactor=1.0;
-    //int last_mx = 0, last_my = 0, cur_mx = 0, cur_my = 0;
-    float Eye[3]={0,0,5.0};
     float th = 0;
     float ph = 0;
     int arcball_on=false;
     float asp = 1;
     
-    float SCREEN_WIDTH=1000,SCREEN_HEIGHT=650;
+    float SCREEN_WIDTH,SCREEN_HEIGHT;
     double dim=2.0;
     int fov =45;
     
 
 
 
-    Controller(PlyUtility *plyutils,PlyModel *plymdl) {
+    Controller(View *v,Model *m) {
         arcball=new Arcball(SCREEN_WIDTH,SCREEN_HEIGHT,1.5);
-	ply=plyutils;
-	plymodel=plymdl;
+        view=v;
+        model=m;
    }
 
     ~Controller(){

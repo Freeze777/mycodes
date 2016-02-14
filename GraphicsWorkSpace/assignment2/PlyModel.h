@@ -11,12 +11,18 @@ class PlyModel{
 private:
 //GLfloat centroid[3]={0.02,-0.09 ,-0.015};
 GLfloat centroid[3]={0.0,0.0 ,0.0};
+PlyUtility *ply;
 Vector *normals;
    
 public:
-    void draw(PlyUtility *ply);
-    void computeNormal(PlyUtility *ply);
-    void computeCentroid(PlyUtility *ply);
+    void draw();
+    void computeNormal();
+    void computeCentroid();
+
+    PlyModel(PlyUtility *p){
+        ply=p;
+
+    }
 
 };
 

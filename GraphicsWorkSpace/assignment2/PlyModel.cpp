@@ -1,6 +1,6 @@
 #include "PlyModel.h"
 
-void PlyModel::draw(PlyUtility *ply)
+void PlyModel::draw()
 {
 
 
@@ -43,7 +43,7 @@ void PlyModel::draw(PlyUtility *ply)
 }
 
 
-void PlyModel::computeNormal(PlyUtility *ply){
+void PlyModel::computeNormal(){
 
 
     int fcount=ply->getFaceCount();
@@ -65,7 +65,7 @@ void PlyModel::computeNormal(PlyUtility *ply){
 
     }
 }
-void PlyModel::computeCentroid(PlyUtility *ply){
+void PlyModel::computeCentroid(){
 
 centroid[0]=(ply->vx_max+ply->vx_min)/2.0;
 centroid[1]=(ply->vy_max+ply->vy_min)/2.0;

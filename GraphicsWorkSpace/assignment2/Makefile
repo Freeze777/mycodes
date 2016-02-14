@@ -1,10 +1,11 @@
 CC=g++
-CFLAGS=-c -Wall
+#CFLAGS=-c -Wall
+CFLAGS=-c -w
 
 all: test.out
 
-test.out: main.o plyfile.o View.o PlyUtility.o PlyModel.o BoundingBox.o Quaternion.o Vector.o Arcball.o Controller.o
-	$(CC) main.o plyfile.o View.o PlyUtility.o PlyModel.o BoundingBox.o Quaternion.o Vector.o Arcball.o Controller.o -o test.out -lGL -lGLU -lglut
+test.out: main.o plyfile.o View.o PlyUtility.o PlyModel.o BoundingBox.o Quaternion.o Vector.o Arcball.o Controller.o Model.o
+	$(CC) main.o plyfile.o View.o PlyUtility.o PlyModel.o BoundingBox.o Quaternion.o Vector.o Arcball.o Controller.o Model.o -o test.out -lGL -lGLU -lglut
 
 main.o: main.cpp
 	$(CC) $(CFLAGS) main.cpp
@@ -35,5 +36,8 @@ Arcball.o: Arcball.cpp
 
 Controller.o: Controller.cpp
 	$(CC) $(CFLAGS) Controller.cpp
+
+Model.o: Model.cpp
+	$(CC) $(CFLAGS) Model.cpp
 clean:
 	rm -rf *.o assgn
