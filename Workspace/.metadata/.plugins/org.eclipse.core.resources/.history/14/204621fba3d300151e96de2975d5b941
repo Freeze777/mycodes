@@ -1,0 +1,33 @@
+package project.elective;
+
+import gurobi.*;
+
+public class myTSP {
+
+	public static void main(String args[]) {
+
+		try {
+			int distance[][] = { { Integer.MAX_VALUE, 10, 8, 9, 7 },
+					{ 10, Integer.MAX_VALUE, 10, 5, 6 },
+					{ 8, 10, Integer.MAX_VALUE, 8, 9 },
+					{ 9, 5, 8, Integer.MAX_VALUE, 6 },
+					{ 7, 6, 9, 6, Integer.MAX_VALUE } };
+			int nCities = distance.length;
+
+			GRBEnv env = new GRBEnv();
+			GRBModel model = new GRBModel(env);
+			model.set(GRB.StringAttr.ModelName, "5-city TSP");
+			
+			int nVariables=nCities*nCities;
+			GRBVar[][] xij = new GRBVar[nCities][nCities];
+		      for (int j = 0; j < nFoods; ++j) {
+		        buy[j] =
+		            model.addVar(0, GRB.INFINITY, cost[j], GRB.CONTINUOUS, Foods[j]);
+		      }
+			
+		} catch (GRBException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}

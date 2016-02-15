@@ -1,0 +1,37 @@
+Minimize
+  2.147483647e+09 x00 + 10 x01 + 8 x02 + 9 x03 + 7 x04 + 10 x10
+   + 2.147483647e+09 x11 + 10 x12 + 5 x13 + 6 x14 + 8 x20 + 10 x21
+   + 2.147483647e+09 x22 + 8 x23 + 9 x24 + 9 x30 + 5 x31 + 8 x32
+   + 2.147483647e+09 x33 + 6 x34 + 7 x40 + 6 x41 + 9 x42 + 6 x43
+   + 2.147483647e+09 x44
+Subject To
+ outgoing_city0: x01 + x02 + x03 + x04 = 1
+ incoming_city0: x10 + x20 + x30 + x40 = 1
+ outgoing_city1: x10 + x12 + x13 + x14 = 1
+ incoming_city1: x01 + x21 + x31 + x41 = 1
+ outgoing_city2: x20 + x21 + x23 + x24 = 1
+ incoming_city2: x02 + x12 + x32 + x42 = 1
+ outgoing_city3: x30 + x31 + x32 + x34 = 1
+ incoming_city3: x03 + x13 + x23 + x43 = 1
+ outgoing_city4: x40 + x41 + x42 + x43 = 1
+ incoming_city4: x04 + x14 + x24 + x34 = 1
+ subtour_elim01: 5 x01 + u0 - u1 <= 4
+ subtour_elim02: 5 x02 + u0 - u2 <= 4
+ subtour_elim03: 5 x03 + u0 - u3 <= 4
+ subtour_elim04: 5 x04 + u0 - u4 <= 4
+ subtour_elim12: 5 x12 + u1 - u2 <= 4
+ subtour_elim13: 5 x13 + u1 - u3 <= 4
+ subtour_elim14: 5 x14 + u1 - u4 <= 4
+ subtour_elim21: 5 x21 - u1 + u2 <= 4
+ subtour_elim23: 5 x23 + u2 - u3 <= 4
+ subtour_elim24: 5 x24 + u2 - u4 <= 4
+ subtour_elim31: 5 x31 - u1 + u3 <= 4
+ subtour_elim32: 5 x32 - u2 + u3 <= 4
+ subtour_elim34: 5 x34 + u3 - u4 <= 4
+Bounds
+Binaries
+ x00 x01 x02 x03 x04 x10 x11 x12 x13 x14 x20 x21 x22 x23 x24 x30 x31 x32
+ x33 x34 x40 x41 x42 x43 x44
+Generals
+ u0 u1 u2 u3 u4
+End

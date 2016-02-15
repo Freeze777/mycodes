@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="22" version="2.0">
+<workbench progressCount="15" version="2.0">
 <workbenchAdvisor/>
 <window height="744" maximized="true" width="1024" x="65" y="24">
 <fastViewData fastViewLocation="1024"/>
@@ -35,6 +35,7 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
+<part id="2"/>
 </presentation>
 </folder>
 </info>
@@ -43,9 +44,13 @@
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/algo/trie/Trie.java"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="1213"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Sol.java" partName="Sol.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/Sol.java" title="Sol.java" tooltip="MyProj/src/Sol.java" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Sol.java" partName="Sol.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/Sol.java" title="Sol.java" tooltip="MyProj/src/Sol.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/Sol.java"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="340" selectionTopPixel="140"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="myTSP.java" partName="myTSP.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/project/elective/myTSP.java" title="myTSP.java" tooltip="MyProj/src/project/elective/myTSP.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/project/elective/myTSP.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2066" selectionTopPixel="9"/>
 </editor>
 </editors>
 <views>
@@ -85,10 +90,6 @@
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<expanded>
-<category IMemento.internal.id="Errors"/>
-<category IMemento.internal.id="Warnings"/>
-</expanded>
 <columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="261" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -297,6 +298,7 @@
 <editors>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/trie/Trie.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/Sol.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/project/elective/myTSP.java"/>
 </editors>
 <item historyLabel="Trie.java" index="0">
 <position info="not_deleted" x="0" y="0"/>
@@ -355,8 +357,14 @@
 <item historyLabel="Sol.java" index="1">
 <position info="not_deleted" x="648" y="0"/>
 </item>
-<item active="true" historyLabel="Sol.java" index="1">
+<item historyLabel="Sol.java" index="1">
 <position info="not_deleted" x="676" y="0"/>
+</item>
+<item historyLabel="myTSP.java" index="2">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item active="true" historyLabel="myTSP.java" index="2">
+<position info="not_deleted" x="1159" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -375,6 +383,9 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="myTSP.java" tooltip="MyProj/src/project/elective/myTSP.java">
+<persistable path="/MyProj/src/project/elective/myTSP.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Sol.java" tooltip="MyProj/src/Sol.java">
 <persistable path="/MyProj/src/Sol.java"/>
 </file>
@@ -416,9 +427,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="VerticalSum.java" tooltip="MyProj/src/algo/trees/VerticalSum.java">
 <persistable path="/MyProj/src/algo/trees/VerticalSum.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TreeUtility.java" tooltip="MyProj/src/algo/trees/TreeUtility.java">
-<persistable path="/MyProj/src/algo/trees/TreeUtility.java"/>
 </file>
 </mruList>
 </workbench>

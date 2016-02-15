@@ -3,13 +3,7 @@
 
 using namespace std;
 
-#define PI 3.1415926535898
-#define COS(th) cos(PI/180*(th))
-#define SIN(th) sin(PI/180*(th))
 
-
-
-void myInit(void);
 void myReshape(int w, int h);
 void myKeyBoard(unsigned char key,int x, int y);
 void myMouse(int button, int state, int x, int y);
@@ -65,9 +59,10 @@ void myKeyBoard(unsigned char key,int x,int y)
 
 int main(int argc, char *argv[]) {
     model=new Model();
-    model->readModelFromFile("bunny");
+    model->readModelFromFile("plyfiles/bunny");
 
     view=new View(SCREEN_WIDTH,SCREEN_HEIGHT);
+
     controller=new Controller(view,model);
 
     controller->SCREEN_HEIGHT=SCREEN_HEIGHT;
