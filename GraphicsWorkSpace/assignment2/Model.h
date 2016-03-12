@@ -7,11 +7,11 @@
 
 class Model{
 BoundingBox box;
+GLfloat origin[3] = {0.0, 0.0, 0.0};
+
+public:
 PlyModel *plymodel;
 PlyUtility *ply;
-GLfloat origin[3] = {0.0, 0.0, 0.0};
-public:
-
 
 Model();
 ~Model();
@@ -20,7 +20,7 @@ void readModelFromFile(char *filename);
 void drawScene(float dim);
 void drawAxis(float dim);
 void markPoints(float dim);
-   
+void setScaleFactor(float dim); 
 
 };
 

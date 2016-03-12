@@ -1,0 +1,30 @@
+#ifndef model_h
+#define model_h
+
+#include "PlyUtility.h"
+#include "PlyModel.h"
+#include "BoundingBox.h"
+
+class Model{
+BoundingBox box;
+GLfloat origin[3] = {0.0, 0.0, 0.0};
+public:
+
+
+PlyModel *plymodel;
+PlyUtility *ply;
+
+Model();
+~Model();
+
+void readModelFromFile(char *filename);
+void drawScene(float dim);
+void drawAxis(float dim);
+void markPoints(float dim);
+void setScaleFactor(float dim); 
+
+};
+
+
+
+#endif

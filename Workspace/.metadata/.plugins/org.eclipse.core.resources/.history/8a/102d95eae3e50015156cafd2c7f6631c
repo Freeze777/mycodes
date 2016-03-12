@@ -1,0 +1,19 @@
+
+public class Flower {
+public String whats_Your_Name() {
+	return "I have many names and types";
+	
+}
+}
+class Jasmine extends Flower{
+	@Override
+	public String whats_Your_Name() {
+		return "Jasmine";
+	}
+}
+class Lily extends Flower{
+	@Override
+	public String whats_Your_Name() {
+		return "Lily";
+	}
+}

@@ -22,6 +22,11 @@ void Model::readModelFromFile(char *filename){
 
 
 }
+
+void Model::setScaleFactor(float dim){
+plymodel->computeScaleFactor(dim);
+
+}
 void Model::drawScene(float dim){
 	drawAxis(dim);
 	markPoints(dim);
@@ -71,3 +76,6 @@ void Model::markPoints(float dim){
 
         glColor3f(1.0,1.0,1.0);
 }
+
+
+

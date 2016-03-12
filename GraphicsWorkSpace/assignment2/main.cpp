@@ -8,7 +8,7 @@ void myReshape(int w, int h);
 void myKeyBoard(unsigned char key,int x, int y);
 void myMouse(int button, int state, int x, int y);
 void myDisplay(void);
-void windowSpecial(int key,int x,int y);
+void specialKeys(int key,int x,int y);
 void myMouseMotion(int x, int y) ;
 
 Controller *controller;
@@ -43,7 +43,7 @@ void myReshape(int w,int h)
     controller->reshape_callback(w,h);
 }
 
-void windowSpecial(int key,int x,int y)
+void specialKeys(int key,int x,int y)
 {
 
     controller->keyboard_special_callback(key,x,y);
@@ -59,7 +59,12 @@ void myKeyBoard(unsigned char key,int x,int y)
 
 int main(int argc, char *argv[]) {
     model=new Model();
-    model->readModelFromFile("plyfiles/bunny");
+    if(argc!=2)
+    {
+        printf("Insufficient arguments..!!\n");
+        exit(0);
+    }
+    model->readModelFromFile(argv[1]);
 
     view=new View(SCREEN_WIDTH,SCREEN_HEIGHT);
 
@@ -76,9 +81,11 @@ int main(int argc, char *argv[]) {
     //register callbacks
     glutDisplayFunc(myDisplay);
     glutReshapeFunc(myReshape);
+
     glutKeyboardFunc(myKeyBoard);
+    glutSpecialFunc(specialKeys);
+
     glutMouseFunc(myMouse);
-    glutSpecialFunc(windowSpecial);
     glutMotionFunc(myMouseMotion);
 
 

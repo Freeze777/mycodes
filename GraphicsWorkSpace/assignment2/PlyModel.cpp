@@ -7,7 +7,7 @@ void PlyModel::draw()
     glMatrixMode(GL_MODELVIEW);
     glPushMatrix();
 
-    glScalef(10,10,10);
+    glScalef(scale_factor,scale_factor,scale_factor);
     glTranslatef(-centroid[0],-centroid[1],-centroid[2]);
 
     //glColor3f(0.75,0.68,0.204);
@@ -56,10 +56,21 @@ void PlyModel::computeNormal(){
         PlyUtility:: Vertex v1=*vl[fl[var]->verts[0]];
         PlyUtility::Vertex v2=*vl[fl[var]->verts[1]];//automatic storage i.e stack..! since new() is not used
         PlyUtility:: Vertex v3=*vl[fl[var]->verts[2]];
+        PlyUtility:: Vertex v4;
+        if(fl[var]->nverts==4)
+        v4=*vl[fl[var]->verts[3]];
 
         Vector vec21(v2.x-v1.x,v2.y-v1.y,v2.z-v1.z);
-        Vector vec31(v3.x-v2.x,v3.y-v2.y,v3.z-v2.z);
-        Vector normv=cross(vec31,vec21);
+        Vector normv;
+        if(fl[var]->nverts==3){
+        Vector vec32(v3.x-v2.x,v3.y-v2.y,v3.z-v2.z);
+       // normv=cross(vec32,vec21);
+         normv=cross(vec21,vec32);
+        }else if(fl[var]->nverts==4){
+        Vector vec41(v4.x-v1.x,v4.y-v1.y,v4.z-v1.z);
+        normv=cross(vec21,vec41);
+        }
+
         normv.normalize();
         normals[var]=normv;
 
@@ -71,6 +82,29 @@ centroid[0]=(ply->vx_max+ply->vx_min)/2.0;
 centroid[1]=(ply->vy_max+ply->vy_min)/2.0;
 centroid[2]=(ply->vz_max+ply->vz_min)/2.0;
 
+
+}
+void PlyModel::computeScaleFactor(float dim){
+float maxDiff=0.0;
+float dx=ply->vx_max-ply->vx_min;
+float dy=ply->vy_max-ply->vy_min;
+float dz=ply->vz_max-ply->vz_min;
+if(dx>dy)
+{
+if(dx>dz)
+maxDiff=dx;
+else
+maxDiff=dz;
+
+}else{
+if(dy>dz)
+maxDiff=dy;
+else
+maxDiff=dz;
+
+}
+
+scale_factor=dim/maxDiff;
 
 }
 

@@ -1,0 +1,68 @@
+Warning: variables 48 and 418 have the same name "x110"
+Warning: constraints 85 and 436 have the same name "subtour_elim111"
+Warning: to let Gurobi read it back, use rlp format
+Optimize a model with 1408 rows, 1482 columns and 6808 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 4e+01]
+  Objective range [5e+00, 9e+18]
+  Bounds range    [1e+00, 4e+01]
+  RHS range       [1e+00, 4e+01]
+Warning: Model contains large objective coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 0 rows and 39 columns
+Presolve time: 0.01s
+Presolved: 1408 rows, 1443 columns, 6808 nonzeros
+Variable types: 0 continuous, 1443 integer (1406 binary)
+Found heuristic solution: objective 17078.000000
+
+Root relaxation: objective 4.985027e+03, 151 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 4985.02703    0   63 17078.0000 4985.02703  70.8%     -    0s
+H    0     0                    11595.000000 4985.02703  57.0%     -    0s
+     0     0 6049.50000    0   90 11595.0000 6049.50000  47.8%     -    0s
+     0     0 6147.50000    0   95 11595.0000 6147.50000  47.0%     -    0s
+     0     0 6147.50000    0  103 11595.0000 6147.50000  47.0%     -    0s
+     0     0 6207.65766    0  110 11595.0000 6207.65766  46.5%     -    0s
+     0     0 6213.39450    0  112 11595.0000 6213.39450  46.4%     -    0s
+     0     0 6215.57895    0   98 11595.0000 6215.57895  46.4%     -    0s
+     0     0 6215.57895    0  109 11595.0000 6215.57895  46.4%     -    0s
+     0     0 6215.57895    0  111 11595.0000 6215.57895  46.4%     -    0s
+     0     0 6215.57895    0  109 11595.0000 6215.57895  46.4%     -    0s
+     0     0 6215.57895    0  111 11595.0000 6215.57895  46.4%     -    0s
+     0     0 6215.57895    0  109 11595.0000 6215.57895  46.4%     -    0s
+     0     0 6215.57895    0   86 11595.0000 6215.57895  46.4%     -    0s
+H    0     2                    10113.000000 6215.57895  38.5%     -    0s
+     0     2 6215.57895    0   64 10113.0000 6215.57895  38.5%     -    0s
+H  288   251                    9476.0000000 6220.50000  34.4%   7.6    0s
+H  739   627                    9119.0000000 6248.97297  31.5%   8.0    1s
+H  739   595                    8976.0000000 6248.97297  30.4%   8.0    1s
+H  748   571                    7361.0000000 6365.00000  13.5%   7.9    3s
+   755   575 7361.00000   70  102 7361.00000 6370.28009  13.5%   7.9    5s
+   792   601 6394.50000    7   25 7361.00000 6394.50000  13.1%  11.0   10s
+H  845   598                    6734.0000000 6408.92254  4.83%  13.9   12s
+*  922   574              49    6730.0000000 6416.90123  4.65%  15.0   12s
+*  950   552              51    6640.0000000 6417.50000  3.35%  15.5   12s
+  1941   732     cutoff   53      6640.00000 6421.00000  3.30%  16.2   15s
+  4410  1589     cutoff   43      6640.00000 6441.22222  2.99%  17.3   20s
+  7104  2284 6619.79983   41   83 6640.00000 6462.44148  2.67%  17.4   25s
+  9422  2562     cutoff   62      6640.00000 6465.00000  2.64%  17.4   30s
+ 12755  1664 6479.00000   47    6 6640.00000 6479.00000  2.42%  18.8   35s
+
+Cutting planes:
+  Learned: 19
+  Gomory: 24
+  Implied bound: 7
+  MIR: 5
+  Flow cover: 31
+  Zero half: 19
+
+Explored 15210 nodes (284353 simplex iterations) in 38.17 seconds
+Thread count was 4 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 6.640000000000e+03, best bound 6.640000000000e+03, gap 0.0%
+

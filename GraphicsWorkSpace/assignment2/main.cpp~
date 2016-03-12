@@ -1,0 +1,102 @@
+#include "Controller.h"
+#include "Model.h"
+
+using namespace std;
+
+
+void myReshape(int w, int h);
+void myKeyBoard(unsigned char key,int x, int y);
+void myMouse(int button, int state, int x, int y);
+void myDisplay(void);
+void windowSpecial(int key,int x,int y);
+void myMouseMotion(int x, int y) ;
+
+Controller *controller;
+Model *model;
+View *view;
+float SCREEN_WIDTH=1000;
+float SCREEN_HEIGHT=650;
+
+
+void myMouse(int button, int state, int x, int y) {
+
+    controller->mouse_callback(button,state,x,y);
+
+}
+void myMouseMotion(int x, int y) {
+
+    controller->mouse_motion_callback(x,y);
+
+}
+
+void myDisplay() {
+
+    controller->display_callback();
+
+}
+
+void myReshape(int w,int h)
+{
+
+    SCREEN_WIDTH=w;
+    SCREEN_HEIGHT=h;
+    controller->reshape_callback(w,h);
+}
+
+void windowSpecial(int key,int x,int y)
+{
+
+    controller->keyboard_special_callback(key,x,y);
+
+}
+
+void myKeyBoard(unsigned char key,int x,int y)
+{
+    controller->keyboard_callback(key,x,y);
+
+}
+
+
+int main(int argc, char *argv[]) {
+    model=new Model();
+    if(argc!=2)
+    {
+        printf("Insufficient arguments..!!\n");
+        exit(0);
+    }
+    model->readModelFromFile(argv[1]);
+
+    view=new View(SCREEN_WIDTH,SCREEN_HEIGHT);
+
+    controller=new Controller(view,model);
+
+    controller->SCREEN_HEIGHT=SCREEN_HEIGHT;
+    controller->SCREEN_WIDTH=SCREEN_WIDTH;
+
+
+    glutInit(&argc, argv);
+    view->createWindow("3D Rendering");
+
+
+    //register callbacks
+    glutDisplayFunc(myDisplay);
+    glutReshapeFunc(myReshape);
+
+    glutKeyboardFunc(myKeyBoard);
+    glutSpecialFunc(windowSpecial);
+
+    glutMouseFunc(myMouse);
+    glutMotionFunc(myMouseMotion);
+
+
+    view->initialize(controller->dim,controller->fov);
+    glutMainLoop();
+
+    return 0;
+}
+
+
+
+
+
+

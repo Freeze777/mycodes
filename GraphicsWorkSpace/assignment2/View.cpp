@@ -35,14 +35,14 @@ void  View::initialize(double dim,int fov){
 
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
-    gluPerspective(fov,screenWidth/screenHeight,dim,4*dim);
+    gluPerspective(fov,screenWidth/screenHeight,dim,5*dim);
 
 
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
     gluLookAt(0,0,2.5*dim, 0,0,0 , 0,1,0);
 
-    GLfloat light_position[] = { 0.0,0.0,10.0, 0.0 };
+    GLfloat light_position[] = { 0.0,0.0,100.0, 0.0 };
 
     GLfloat light_diffuse[] = {0.75,0.68,0.5,0.0};
 
@@ -52,7 +52,7 @@ void  View::initialize(double dim,int fov){
     glLightfv(GL_LIGHT0, GL_DIFFUSE, light_diffuse);
     glLightfv(GL_LIGHT0, GL_POSITION, light_position);
 
-    GLfloat mat_ambient[] = { 1.0, 1.0, 1.0, 0.0 };
+    GLfloat mat_ambient[] = { 0.75,0.68,0.5,1.0,0.0 };
     GLfloat mat_shininess[] = { 100.0 };
     glMaterialfv(GL_FRONT, GL_AMBIENT, mat_ambient);
     glMaterialfv(GL_FRONT, GL_SHININESS, mat_shininess);

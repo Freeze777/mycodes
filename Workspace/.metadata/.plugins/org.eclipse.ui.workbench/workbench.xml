@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="15" version="2.0">
+<workbench progressCount="22" version="2.0">
 <workbenchAdvisor/>
-<window height="744" maximized="true" width="1024" x="65" y="24">
+<window height="715" maximized="true" width="555" x="65" y="24">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -34,23 +34,13 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
-<part id="1"/>
-<part id="2"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Trie.java" partName="Trie.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/algo/trie/Trie.java" title="Trie.java" tooltip="MyProj/src/algo/trie/Trie.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/algo/trie/Trie.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="1213"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Sol.java" partName="Sol.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/Sol.java" title="Sol.java" tooltip="MyProj/src/Sol.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/Sol.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="340" selectionTopPixel="140"/>
-</editor>
 <editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="myTSP.java" partName="myTSP.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/project/elective/myTSP.java" title="myTSP.java" tooltip="MyProj/src/project/elective/myTSP.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/project/elective/myTSP.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2066" selectionTopPixel="9"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3237" selectionTopPixel="1398"/>
 </editor>
 </editors>
 <views>
@@ -90,6 +80,10 @@
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
+<expanded>
+<category IMemento.internal.id="Errors"/>
+<category IMemento.internal.id="Warnings (58 items)"/>
+</expanded>
 <columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="261" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -263,7 +257,7 @@
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.18294574" ratioLeft="236" ratioRight="1054" relationship="2" relative="left"/>
-<info folder="true" part="bottom" ratio="0.5810811" ratioLeft="387" ratioRight="279" relationship="4" relative="org.eclipse.ui.editorss">
+<info folder="true" part="bottom" ratio="0.6621622" ratioLeft="441" ratioRight="225" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
@@ -296,75 +290,161 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/trie/Trie.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/Sol.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/project/elective/myTSP.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/project/elective/GurobiTSP.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/GlobalUtils.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/GlobalUtils.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/project/elective/GurobiTSP.java"/>
 </editors>
-<item historyLabel="Trie.java" index="0">
+<item historyLabel="myTSP.java" index="0">
+<position info="not_deleted" x="4056" y="0"/>
+</item>
+<item historyLabel="myTSP.java" index="0">
+<position info="not_deleted" x="4678" y="0"/>
+</item>
+<item historyLabel="myTSP.java" index="0">
+<position info="not_deleted" x="5029" y="0"/>
+</item>
+<item historyLabel="myTSP.java" index="0">
+<position info="not_deleted" x="5088" y="0"/>
+</item>
+<item historyLabel="myTSP.java" index="0">
+<position info="not_deleted" x="5062" y="0"/>
+</item>
+<item historyLabel="myTSP.java" index="0">
+<position info="not_deleted" x="5061" y="0"/>
+</item>
+<item historyLabel="myTSP.java" index="0">
+<position info="not_deleted" x="5108" y="0"/>
+</item>
+<item historyLabel="GurobiTSP.java" index="1">
+<position info="not_deleted" x="3224" y="0"/>
+</item>
+<item historyLabel="myTSP.java" index="0">
+<position info="not_deleted" x="5108" y="0"/>
+</item>
+<item historyLabel="GlobalUtils.java" index="2">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="Sol.java" index="1">
-<position info="not_deleted" x="118" y="0"/>
+<item historyLabel="GlobalUtils.java" index="2">
+<position info="not_deleted" x="60" y="0"/>
 </item>
-<item historyLabel="Sol.java" index="1">
-<position info="not_deleted" x="107" y="0"/>
+<item historyLabel="GlobalUtils.java" index="2">
+<position info="not_deleted" x="70" y="0"/>
 </item>
-<item historyLabel="Sol.java" index="1">
+<item historyLabel="GlobalUtils.java" index="2">
+<position info="not_deleted" x="60" y="0"/>
+</item>
+<item historyLabel="GlobalUtils.java" index="2">
+<position info="not_deleted" x="70" y="0"/>
+</item>
+<item historyLabel="GlobalUtils.java" index="2">
+<position info="not_deleted" x="65" y="0"/>
+</item>
+<item historyLabel="GlobalUtils.java" index="2">
+<position info="not_deleted" x="286" y="0"/>
+</item>
+<item historyLabel="myTSP.java" index="0">
+<position info="not_deleted" x="2959" y="0"/>
+</item>
+<item historyLabel="GlobalUtils.java" index="2">
+<position info="not_deleted" x="13" y="0"/>
+</item>
+<item historyLabel="GlobalUtils.java" index="2">
+<position info="not_deleted" x="465" y="0"/>
+</item>
+<item historyLabel="myTSP.java" index="0">
+<position info="not_deleted" x="2959" y="0"/>
+</item>
+<item historyLabel="myTSP.java" index="0">
+<position info="not_deleted" x="2573" y="0"/>
+</item>
+<item historyLabel="myTSP.java" index="0">
+<position info="not_deleted" x="2991" y="0"/>
+</item>
+<item historyLabel="GlobalUtils.java" index="2">
+<position info="not_deleted" x="27" y="11"/>
+</item>
+<item historyLabel="myTSP.java" index="0">
+<position info="not_deleted" x="2573" y="0"/>
+</item>
+<item historyLabel="GlobalUtils.java" index="2">
+<position info="not_deleted" x="27" y="11"/>
+</item>
+<item historyLabel="GlobalUtils.java" index="2">
+<position info="not_deleted" x="13" y="0"/>
+</item>
+<item historyLabel="GlobalUtils.java" index="2">
+<position info="not_deleted" x="8" y="4"/>
+</item>
+<item historyLabel="GlobalUtils.java" index="3">
+<position info="not_deleted" x="8" y="4"/>
+</item>
+<item historyLabel="myTSP.java" index="0">
+<position info="not_deleted" x="2573" y="0"/>
+</item>
+<item historyLabel="GlobalUtils.java" index="3">
+<position info="not_deleted" x="527" y="0"/>
+</item>
+<item historyLabel="myTSP.java" index="0">
+<position info="not_deleted" x="2573" y="0"/>
+</item>
+<item historyLabel="myTSP.java" index="0">
+<position info="not_deleted" x="2590" y="0"/>
+</item>
+<item historyLabel="myTSP.java" index="0">
 <position/>
 </item>
-<item historyLabel="Sol.java" index="1">
-<position/>
+<item historyLabel="myTSP.java" index="0">
+<position info="not_deleted" x="2838" y="0"/>
 </item>
-<item historyLabel="Sol.java" index="1">
-<position/>
+<item historyLabel="myTSP.java" index="0">
+<position info="not_deleted" x="2851" y="0"/>
 </item>
-<item historyLabel="Sol.java" index="1">
-<position/>
+<item historyLabel="myTSP.java" index="0">
+<position info="not_deleted" x="2808" y="0"/>
 </item>
-<item historyLabel="Sol.java" index="1">
-<position/>
+<item historyLabel="GurobiTSP.java" index="4">
+<position info="not_deleted" x="3041" y="0"/>
 </item>
-<item historyLabel="Sol.java" index="1">
-<position/>
+<item historyLabel="myTSP.java" index="0">
+<position info="not_deleted" x="853" y="0"/>
 </item>
-<item historyLabel="Sol.java" index="1">
-<position info="not_deleted" x="222" y="0"/>
+<item historyLabel="GurobiTSP.java" index="4">
+<position info="not_deleted" x="3041" y="0"/>
 </item>
-<item historyLabel="Sol.java" index="1">
-<position/>
+<item historyLabel="myTSP.java" index="0">
+<position info="not_deleted" x="853" y="0"/>
 </item>
-<item historyLabel="Sol.java" index="1">
-<position/>
+<item historyLabel="GurobiTSP.java" index="4">
+<position info="not_deleted" x="3041" y="0"/>
 </item>
-<item historyLabel="Sol.java" index="1">
-<position info="not_deleted" x="125" y="0"/>
+<item historyLabel="myTSP.java" index="0">
+<position info="not_deleted" x="2953" y="0"/>
 </item>
-<item historyLabel="Sol.java" index="1">
-<position info="not_deleted" x="173" y="0"/>
+<item historyLabel="GurobiTSP.java" index="4">
+<position info="not_deleted" x="3216" y="0"/>
 </item>
-<item historyLabel="Sol.java" index="1">
-<position/>
+<item historyLabel="myTSP.java" index="0">
+<position info="not_deleted" x="2046" y="0"/>
 </item>
-<item historyLabel="Sol.java" index="1">
-<position info="not_deleted" x="260" y="0"/>
+<item historyLabel="GurobiTSP.java" index="4">
+<position info="not_deleted" x="3216" y="0"/>
 </item>
-<item historyLabel="Sol.java" index="1">
-<position info="not_deleted" x="333" y="0"/>
+<item historyLabel="myTSP.java" index="0">
+<position info="not_deleted" x="3237" y="0"/>
 </item>
-<item historyLabel="Sol.java" index="1">
-<position info="not_deleted" x="318" y="7"/>
+<item historyLabel="GurobiTSP.java" index="4">
+<position info="not_deleted" x="3216" y="0"/>
 </item>
-<item historyLabel="Sol.java" index="1">
-<position info="not_deleted" x="648" y="0"/>
+<item historyLabel="myTSP.java" index="0">
+<position info="not_deleted" x="3237" y="0"/>
 </item>
-<item historyLabel="Sol.java" index="1">
-<position info="not_deleted" x="676" y="0"/>
+<item historyLabel="GurobiTSP.java" index="4">
+<position info="not_deleted" x="3216" y="0"/>
 </item>
-<item historyLabel="myTSP.java" index="2">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item active="true" historyLabel="myTSP.java" index="2">
-<position info="not_deleted" x="1159" y="0"/>
+<item active="true" historyLabel="myTSP.java" index="0">
+<position info="not_deleted" x="3237" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -383,50 +463,50 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GlobalUtils.java" tooltip="MyProj/src/GlobalUtils.java">
+<persistable path="/MyProj/src/GlobalUtils.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="gurobiTSP.java" tooltip="MyProj/src/project/elective/gurobiTSP.java">
+<persistable path="/MyProj/src/project/elective/gurobiTSP.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="tsp_western_sahara.txt" tooltip="MyProj/tsp_western_sahara.txt">
+<persistable path="/MyProj/tsp_western_sahara.txt"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="tsp_dijbouti.txt" tooltip="MyProj/tsp_dijbouti.txt">
+<persistable path="/MyProj/tsp_dijbouti.txt"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="tsp_qatar.txt" tooltip="MyProj/tsp_qatar.txt">
+<persistable path="/MyProj/tsp_qatar.txt"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="output.txt" tooltip="MyProj/output.txt">
+<persistable path="/MyProj/output.txt"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="tsp_test_dataset.txt" tooltip="MyProj/tsp_test_dataset.txt">
+<persistable path="/MyProj/tsp_test_dataset.txt"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="myTSP.java" tooltip="MyProj/src/project/elective/myTSP.java">
 <persistable path="/MyProj/src/project/elective/myTSP.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Sol.java" tooltip="MyProj/src/Sol.java">
-<persistable path="/MyProj/src/Sol.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CopyOfmyTSP.java" tooltip="MyProj/src/project/elective/CopyOfmyTSP.java">
+<persistable path="/MyProj/src/project/elective/CopyOfmyTSP.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Trie.java" tooltip="MyProj/src/algo/trie/Trie.java">
-<persistable path="/MyProj/src/algo/trie/Trie.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SegmentTreeRMinQ.java" tooltip="MyProj/src/algo/trees/SegmentTreeRMinQ.java">
+<persistable path="/MyProj/src/algo/trees/SegmentTreeRMinQ.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MegaClient.java" tooltip="MyProj/src/networks/sockets/MegaClient.java">
-<persistable path="/MyProj/src/networks/sockets/MegaClient.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SegmentTreeRMaxQ.java" tooltip="MyProj/src/algo/trees/SegmentTreeRMaxQ.java">
+<persistable path="/MyProj/src/algo/trees/SegmentTreeRMaxQ.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MegaServer.java" tooltip="MyProj/src/networks/sockets/MegaServer.java">
-<persistable path="/MyProj/src/networks/sockets/MegaServer.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Knapsack.java" tooltip="MyProj/src/Knapsack.java">
+<persistable path="/MyProj/src/Knapsack.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RBT.java" tooltip="MyProj/src/algo/RBT.java">
-<persistable path="/MyProj/src/algo/RBT.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Coolguy.java" tooltip="MyProj/src/hacker/rank/Coolguy.java">
+<persistable path="/MyProj/src/hacker/rank/Coolguy.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" tooltip="MyProj/src/Main.java">
-<persistable path="/MyProj/src/Main.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Solu.java" tooltip="MyProj/src/Solu.java">
+<persistable path="/MyProj/src/Solu.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="OnlineMedianUsingTwoHeaps.java" tooltip="MyProj/src/algo/OnlineMedianUsingTwoHeaps.java">
-<persistable path="/MyProj/src/algo/OnlineMedianUsingTwoHeaps.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SortArrayWith3Distincts.java" tooltip="MyProj/src/algo/trees/SortArrayWith3Distincts.java">
-<persistable path="/MyProj/src/algo/trees/SortArrayWith3Distincts.java"/>
-</file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="TreeMap.class" tooltip="java.util.TreeMap">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=MyProj/\/usr\/lib\/jvm\/java-8-openjdk-amd64\/jre\/lib\/rt.jar&lt;java.util(TreeMap.class"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PruneTree.java" tooltip="MyProj/src/algo/trees/PruneTree.java">
-<persistable path="/MyProj/src/algo/trees/PruneTree.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SumOfLeftLeaves.java" tooltip="MyProj/src/algo/trees/SumOfLeftLeaves.java">
-<persistable path="/MyProj/src/algo/trees/SumOfLeftLeaves.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PrintLeftLeaves.java" tooltip="MyProj/src/algo/tree/PrintLeftLeaves.java">
-<persistable path="/MyProj/src/algo/tree/PrintLeftLeaves.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ZigZagTraversal.java" tooltip="MyProj/src/algo/trees/ZigZagTraversal.java">
-<persistable path="/MyProj/src/algo/trees/ZigZagTraversal.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="VerticalSum.java" tooltip="MyProj/src/algo/trees/VerticalSum.java">
-<persistable path="/MyProj/src/algo/trees/VerticalSum.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Flower.java" tooltip="MyProj/src/Flower.java">
+<persistable path="/MyProj/src/Flower.java"/>
 </file>
 </mruList>
 </workbench>

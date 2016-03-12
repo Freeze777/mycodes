@@ -1,0 +1,14 @@
+1.Make the "assignment2" folder as the present working directory in the terminal.
+2.Run "make all" command.
+3.Run the executable "./test.out".
+
+Instructions to use:
+i) Use "LEFT ARROW","RIGHT ARROW","UP ARROW" and "DOWN ARROW" keys to TRANSLATE the model left,right,up and down respectively.	
+
+ii) Use "+/-" keys to SCALE the model (default scaling: 1.1 and 0.9).
+
+iii) While viewing the model, use the "LEFT MOUSE BUTTON" to rotate.
+   The model will be rotated about the centroid and by an amount defined by the arc between the two clicked points.  
+iv) Default window size is 1000 x 650. Resize to fullscreen for convenience.	
+  
+ 
