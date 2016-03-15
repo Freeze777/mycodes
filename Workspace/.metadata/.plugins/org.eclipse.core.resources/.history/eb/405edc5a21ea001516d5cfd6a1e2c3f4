@@ -1,0 +1,28 @@
+import java.io.*;
+import java.util.*;
+
+public class ManasaAndStones {
+
+    public static void main(String[] args) {
+    	Scanner sc=new Scanner(System.in);
+    	
+    	int tst=sc.nextInt();
+    	while(tst>0){
+    		
+    		int n=sc.nextInt();
+    		int a=sc.nextInt();
+    		int b=sc.nextInt();
+    		Set<Integer> set=new HashSet<Integer>();
+    		int curr=0;
+    		computeLastNum(n,a,b,set,curr);
+    		tst--;
+    	}
+    
+    }
+
+	private static void computeLastNum(int n, int a, int b, Set<Integer> set) {
+		if(n==0)
+			set.
+		
+	}
+}

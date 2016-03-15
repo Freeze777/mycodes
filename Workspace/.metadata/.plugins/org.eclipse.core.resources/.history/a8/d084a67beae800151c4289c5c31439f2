@@ -1,0 +1,45 @@
+import java.io.*;
+import java.util.*;
+
+public class Soln {
+	public static double GetCubicRoot(double n, double low, double high) {
+	    double cbrt = (low + high) / 2;
+	    if (cbrt*cbrt*cbrt > n)
+	        return GetCubicRoot(n, low, cbrt);
+	    if (cbrt*cbrt*cbrt < n)
+	        return GetCubicRoot(n, cbrt, high);
+	    return cbrt;
+	}
+	public static double Cbrt(double n) {
+	    return GetCubicRoot(n, 0, n);
+	}
+
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Prlong output to STDOUT. Your class should be named Solution. */
+    Scanner sc=new Scanner(System.in);
+    
+    long a=sc.nextLong();
+    long b=sc.nextLong();
+    
+    long min=Math.min(a,b);
+    long max=Math.max(a, b);
+    
+    a=(long)Math.ceil(Cbrt(min));
+    b=(long)Math.floor(Cbrt(max));
+    
+    long sum1=(a*(a+1))/2;
+    sum1*=sum1;
+    long sum2=(b*(b+1))/2;
+    sum2*=sum2;
+    
+    long sum=Math.abs(sum1-sum2)+(a*a*a);
+    double ans=(double)sum/Math.abs(b-a+1);
+    System.out.printf("%.2f", ans);
+
+    
+    
+    
+    
+    }
+}

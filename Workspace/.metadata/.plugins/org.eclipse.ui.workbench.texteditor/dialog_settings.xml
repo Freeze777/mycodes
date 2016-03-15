@@ -2,36 +2,36 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="Invalid Input" key="selection"/>
+		<item value="char" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="Invalid Input"/>
+			<item value="var"/>
+			<item value="Long"/>
 			<item value="int"/>
+			<item value="Invalid Input"/>
 			<item value="import java.math.BigInteger;"/>
 			<item value="/**"/>
 			<item value="long"/>
 			<item value="nextlong"/>
-			<item value="nextLong"/>
-			<item value="sc.Long()"/>
 		</list>
 		<list key="replacehistory">
+			<item value="char"/>
 			<item value="long"/>
+			<item value="Long"/>
 			<item value="int"/>
 			<item value="nextLong"/>
 			<item value="nextLong()"/>
 			<item value="sc.nextLong"/>
-			<item value="Long"/>
 			<item value="x"/>
-			<item value="TreeNode"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="310" key="DIALOG_WIDTH"/>
 		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
-		<item value="464" key="DIALOG_HEIGHT"/>
+		<item value="520" key="DIALOG_HEIGHT"/>
 		<item value="791" key="DIALOG_X_ORIGIN"/>
 		<item value="76" key="DIALOG_Y_ORIGIN"/>
 	</section>

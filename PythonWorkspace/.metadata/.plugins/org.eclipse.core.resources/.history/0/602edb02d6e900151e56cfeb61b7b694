@@ -1,0 +1,17 @@
+import json
+import re
+
+data = []
+with open("training.json") as f:
+    for line in f:
+        #line = re.sub("[^a-zA-Z]"," ",line)
+        #print line
+        #print type(line)
+        obj=json.loads(line.lower())
+        print obj['topic']
+        tmp=str(object['topic'])
+        obj['topic']=re.sub("[^a-zA-Z]"," ",)
+        data.append(obj)
+        
+
+  

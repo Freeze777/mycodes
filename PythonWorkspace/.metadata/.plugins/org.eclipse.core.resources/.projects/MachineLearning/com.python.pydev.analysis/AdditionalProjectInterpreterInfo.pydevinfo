@@ -1,0 +1,33 @@
+-- VERSION_4
+-- START DISKCACHE_2
+/home/qwerty/Desktop/mycodes/PythonWorkspace/.metadata/.plugins/org.eclipse.core.resources/.projects/MachineLearning/com.python.pydev.analysis/v2_indexcache
+battery_charge_prediction|1457948351556390000|/home/qwerty/Desktop/mycodes/PythonWorkspace/MachineLearning/battery_charge_prediction.py
+ques_classifier|1457983252803936000|/home/qwerty/Desktop/mycodes/PythonWorkspace/MachineLearning/ques_classifier.py
+-- END DISKCACHE
+-- START DICTIONARY
+2
+1=battery_charge_prediction
+2=ques_classifier
+-- END DICTIONARY
+-- START TREE 1
+16
+cha|2|charge_time1!11@charge_time2!11@
+dat|1|data!19@
+fea|0|
+id|1|id!19@
+inp|0|
+lif|2|life_time1!11@life_time2!11@
+lin|2|lin2!11@lin1!11@
+log|1|log!11@
+nam|0|
+obj|1|obj!19@
+q|0|
+tmp|1|tmp!11@
+val|1|val!11@
+x|0|
+x_m|0|
+y_m|0|
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

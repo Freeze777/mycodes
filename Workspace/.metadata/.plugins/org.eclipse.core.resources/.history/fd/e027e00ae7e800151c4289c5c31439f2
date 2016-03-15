@@ -1,0 +1,32 @@
+import java.io.*;
+import java.util.*;
+
+public class Soln {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    Scanner sc=new Scanner(System.in);
+    
+    int a=sc.nextInt();
+    int b=sc.nextInt();
+    
+    int min=Math.min(a,b);
+    int max=Math.max(a, b);
+    
+    a=(int)Math.ceil(Math.cbrt(min));
+    b=(int)Math.floor(Math.cbrt(max));
+    
+    long sum1=(a*(a+1))/2;
+    sum1*=sum1;
+    long sum2=(b*(b+1))/2;
+    sum2*=sum2;
+    
+    long sum=Math.abs(sum1-sum2)+(min*min*min);
+    double ans=(double)sum/Math.abs(b-a+1);
+    System.out.println(ans);
+    
+    
+    
+    
+    }
+}

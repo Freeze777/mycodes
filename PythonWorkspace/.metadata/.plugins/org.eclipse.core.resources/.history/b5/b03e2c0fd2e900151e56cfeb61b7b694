@@ -1,0 +1,10 @@
+import json
+import re
+
+data = []
+with open("training.json") as f:
+    for line in f:
+	    line = re.sub("[^a-zA-Z]"," ",line)
+        data.append(json.loads(line))
+
+  

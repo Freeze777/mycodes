@@ -1,0 +1,82 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+import java.util.Queue;
+import java.util.Scanner;
+
+import algo.graph.GraphUtility;
+
+class GNode {
+
+	int pno;
+	int h;
+}
+
+public class BFS {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int m = n - 1;
+		int q = sc.nextInt();
+		GNode[] platform = new GNode[n];
+		for (int i = 0; i < platform.length; i++) {
+			platform[i] = new GNode();
+			platform[i].pno = i;
+			platform[i].h = sc.nextInt();
+		}
+
+		Map<GNode, List<GNode>> adjList = new HashMap<GNode, List<GNode>>();
+		for (int i = 0; i < m; i++) {
+			int x = sc.nextInt();
+			int y = sc.nextInt();
+
+			if (adjList.containsKey(platform[x - 1])) {
+				adjList.get(platform[x - 1]).add(platform[y - 1]);
+			} else {
+				ArrayList<GNode> xList = new ArrayList<GNode>();
+				xList.add(platform[y - 1]);
+				adjList.put(platform[x - 1], xList);
+			}
+
+		}
+		for (int i = 0; i < q; i++) {
+			int cap = sc.nextInt();
+			GNode curr = platform[0];
+			int max=Integer.MIN_VALUE;
+			dfs(adjList,curr,cap);
+			while (true) {
+				GNode prev = curr;
+				List<GNode> xList = adjList.get(curr);
+				if (xList != null) {
+					for (GNode gNode : xList) {
+						if (gNode.h <= cap)
+							curr = gNode;
+					}
+				
+				}
+				if (prev == curr)
+					break;
+			}
+			System.out.println(curr.pno);
+		}
+
+	}
+
+	private static void dfs(Map<GNode, List<GNode>> adjList, GNode curr, int cap) {
+		
+		List<GNode> xList = adjList.get(curr);
+		if (xList != null) {
+			for (GNode gNode : xList) {
+				if (gNode.h <= cap)
+					dfs(adjList, curr, cap);
+			}
+		
+		}
+		
+	}
+
+}

@@ -1,9 +1,0 @@
-import java.math.BigInteger;
-import java.util.Scanner;
-
-
-public class Soln {
-	 Scanner in = new Scanner(System.in);
-     BigInteger n = in.nextBigInteger();
-     in.close();
-}

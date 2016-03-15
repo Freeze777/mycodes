@@ -41,24 +41,50 @@ void  View::initialize(double dim,int fov){
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
     gluLookAt(0,0,2.5*dim, 0,0,0 , 0,1,0);
-
-    GLfloat light_position[] = { 0.0,0.0,100.0, 0.0 };
-
-    GLfloat light_diffuse[] = {0.75,0.68,0.5,0.0};
-
+    
     glClearColor(0.0,0.0,0.0,0.0);
-    glEnable(GL_NORMALIZE);
-    glShadeModel (GL_SMOOTH);
-    glLightfv(GL_LIGHT0, GL_DIFFUSE, light_diffuse);
-    glLightfv(GL_LIGHT0, GL_POSITION, light_position);
-
-    GLfloat mat_ambient[] = { 0.75,0.68,0.5,1.0,0.0 };
-    GLfloat mat_shininess[] = { 100.0 };
-    glMaterialfv(GL_FRONT, GL_AMBIENT, mat_ambient);
-    glMaterialfv(GL_FRONT, GL_SHININESS, mat_shininess);
-
-    glEnable(GL_LIGHTING);
-    glEnable(GL_LIGHT0);
     glEnable(GL_DEPTH_TEST);
+    
+    glEnable(GL_LIGHTING);
+    glEnable(GL_LIGHT0); 
+    glEnable(GL_LIGHT1); 
+    glEnable(GL_LIGHT2);
+    glEnable(GL_NORMALIZE);
+
+    GLfloat ambientColor[] = {0.2f, 0.2f, 0.2f, 1.0f}; //Color (0.2, 0.2, 0.2)
+    glLightModelfv(GL_LIGHT_MODEL_AMBIENT, ambientColor);
+    
+    //Add positioned light
+    GLfloat diffuseLightColor0[] = {1.0f, 1.0f, 1.0f, 1.0f}; 
+    GLfloat specularLightColor0[] = {1.0f, 1.0f, 1.0f, 1.0f}; 
+    GLfloat lightPos0[] = {1.0f, 1.0f, 0.0f, 1.0f};
+    //glLightfv(GL_LIGHT0, GL_DIFFUSE, diffuseLightColor0);
+    glLightfv(GL_LIGHT0, GL_SPECULAR, specularLightColor0);
+    glLightfv(GL_LIGHT0, GL_POSITION, lightPos0);
+    
+    //Add directed light
+    GLfloat lightColor1[] = {0.5f, 0.2f, 0.2f, 1.0f}; //Color (0.5, 0.2, 0.2)
+    //Coming from the direction (-1, 0.5, 0.5)
+    GLfloat lightPos1[] = {-1.0f, 0.5f, 0.5f, 0.0f};
+    glLightfv(GL_LIGHT1, GL_DIFFUSE, lightColor1);
+    glLightfv(GL_LIGHT1, GL_POSITION, lightPos1);
+
+
+    // Light values and coordinates
+    GLfloat  lightPos2[] = { 0.0f, 0.0f, 10.0f, 1.0f };
+    GLfloat  specular2[] = { 1.0f, 1.0f, 1.0f, 1.0f};
+    GLfloat  specref2[] =  { 1.0f, 1.0f, 1.0f, 1.0f };
+    GLfloat  ambientLight2[] = { 0.0f, 0.5f, 0.5f, 1.0f};
+  GLfloat spotDir2[3]={0.0f,0.0f,-1.0f};
+    glLightfv(GL_LIGHT2,GL_DIFFUSE,ambientLight2);
+    glLightfv(GL_LIGHT2,GL_SPECULAR,specular2);
+    glLightfv(GL_LIGHT2,GL_POSITION,lightPos2);
+glLightfv(GL_LIGHT2,GL_SPOT_DIRECTION,spotDir2);
+
+     // Specific spot effects
+    // Cut off angle is 60 degrees
+    glLightf(GL_LIGHT2,GL_SPOT_CUTOFF,60.0f);
+    // Fairly shiny spot
+    glLightf(GL_LIGHT2,GL_SPOT_EXPONENT,100.0f);
 
 }

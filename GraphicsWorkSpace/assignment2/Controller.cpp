@@ -30,9 +30,13 @@ void  Controller::mouse_motion_callback(int x, int y) {
 
 void  Controller::display_callback() {
 
-    /*init called first and then reshape gets called*/
+  
+  
+
+    
 
     glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
+    glLightfv(GL_LIGHT2,GL_SPOT_DIRECTION,spotDir2);
     model->setScaleFactor(dim);
     model->drawScene(dim);
 
@@ -71,12 +75,19 @@ void  Controller::keyboard_special_callback(int key,int x,int y)
 }
 
 void  Controller::keyboard_callback(unsigned char key,int x,int y)
-{    if (key == 27) exit(0);
+{   	
+	 if (key == 27) exit(0);
     else if (key == '-' && key>1) zoomfactor=0.9;
     else if (key == '+' && key<179) zoomfactor=1.1;
+    else if (key == 'a'||key == 'A') toggle1=!toggle1;
+    else if (key == 's'||key == 'S') toggle2=!toggle2;
+    else if (key == 'd'||key == 'D') toggle3=!toggle3;
     else return;
-
+    (toggle1)?glDisable(GL_LIGHT0):glEnable(GL_LIGHT0);
+    (toggle2)?glDisable(GL_LIGHT1):glEnable(GL_LIGHT1);
+    (toggle3)?glDisable(GL_LIGHT2):glEnable(GL_LIGHT2);
     glScalef(zoomfactor,zoomfactor,zoomfactor);
+    zoomfactor=1.0;
     glutPostRedisplay();
 
 }

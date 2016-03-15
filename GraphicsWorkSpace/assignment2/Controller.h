@@ -28,7 +28,10 @@ public:
     float ph = 0;
     int arcball_on=false;
     float asp = 1;
-    
+    bool toggle1=false;
+    bool toggle2=false;
+    	bool toggle3=false;
+   GLfloat spotDir2[3]={0.0f,0.0f,-1.0f};
     float SCREEN_WIDTH,SCREEN_HEIGHT;
     double dim=2.0;
     int fov =45;
