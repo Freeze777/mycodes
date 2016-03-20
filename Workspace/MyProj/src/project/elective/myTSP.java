@@ -8,14 +8,9 @@ import gurobi.GRBModel;
 import gurobi.GRBVar;
 
 import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.PrintStream;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
-
-import algo.GlobalUtils;
 
 /*
  * @author: Freeze Francis

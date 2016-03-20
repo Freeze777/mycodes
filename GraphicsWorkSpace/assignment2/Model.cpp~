@@ -23,9 +23,8 @@ void Model::readModelFromFile(char *filename){
 
 }
 
-void setScaleFactor(float dim){
-//plymodel->computeScaleFactor(dim);
-
+void Model::setScaleFactor(float dim){
+plymodel->computeScaleFactor(dim);
 
 }
 void Model::drawScene(float dim){

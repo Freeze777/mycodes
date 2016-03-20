@@ -1,0 +1,10 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+n = int(raw_input())
+L = []
+while n > 0:
+        inp = raw_input().split()
+        if inp[0] == "insert":
+            L.insert(int(inp[1], inp[2]))
+        elif inp[0] == "delete":
+            L.delete(int(inp[1])
+                    n -= 1

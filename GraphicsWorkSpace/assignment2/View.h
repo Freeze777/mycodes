@@ -16,7 +16,7 @@ private:
 
 public:
     
-     View(float width,float height);
+    View(float width,float height);
     void createWindow(char *windowName);
     void initialize(double dim,int fov);
     void set_width_height(float width,float height);

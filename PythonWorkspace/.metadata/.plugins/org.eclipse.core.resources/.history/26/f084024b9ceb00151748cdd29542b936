@@ -1,0 +1,6 @@
+import scipy.stats as st
+
+nrm=st.norm(30, 4)
+print round(nrm.cdf(40),3)
+print round(1.0-nrm.cdf(21),3)
+print round(nrm.cdf(35)-nrm.cdf(30),3)

@@ -55,35 +55,36 @@ void  View::initialize(double dim,int fov){
     glLightModelfv(GL_LIGHT_MODEL_AMBIENT, ambientColor);
     
     //Add positioned light
-    GLfloat diffuseLightColor0[] = {1.0f, 1.0f, 1.0f, 1.0f}; 
-    GLfloat specularLightColor0[] = {1.0f, 1.0f, 1.0f, 1.0f}; 
-    GLfloat lightPos0[] = {1.0f, 1.0f, 0.0f, 1.0f};
+    //GLfloat diffuseLightColor0[] = {1.0f, 1.0f, 1.0f, 1.0f};
+    GLfloat specularLightColor0[] = {1.0f, 1.0f, 1.0f, 1.0f};
+    //GLfloat lightPos0[] = {1.0f, 1.0f, 0.0f, 1.0f};
+    GLfloat lightPos0[] = {0.0,0.0,0.0, 1.0f};
     //glLightfv(GL_LIGHT0, GL_DIFFUSE, diffuseLightColor0);
     glLightfv(GL_LIGHT0, GL_SPECULAR, specularLightColor0);
     glLightfv(GL_LIGHT0, GL_POSITION, lightPos0);
-    
+
     //Add directed light
     GLfloat lightColor1[] = {0.5f, 0.2f, 0.2f, 1.0f}; //Color (0.5, 0.2, 0.2)
     //Coming from the direction (-1, 0.5, 0.5)
-    GLfloat lightPos1[] = {-1.0f, 0.5f, 0.5f, 0.0f};
+    //GLfloat lightPos1[] = {-1.0f, 0.5f, 0.5f, 0.0f};
+    GLfloat lightPos1[] = {dim,dim,0.0, 0.0f};
     glLightfv(GL_LIGHT1, GL_DIFFUSE, lightColor1);
     glLightfv(GL_LIGHT1, GL_POSITION, lightPos1);
 
 
     // Light values and coordinates
-    GLfloat  lightPos2[] = { 0.0f, 0.0f, 10.0f, 1.0f };
-    GLfloat  specular2[] = { 1.0f, 1.0f, 1.0f, 1.0f};
-    GLfloat  specref2[] =  { 1.0f, 1.0f, 1.0f, 1.0f };
-    GLfloat  ambientLight2[] = { 0.0f, 0.5f, 0.5f, 1.0f};
-  GLfloat spotDir2[3]={0.0f,0.0f,-1.0f};
+    GLfloat  lightPos2[] = {0.0f,0.0f, 2*dim, 1.0f };
+    GLfloat  specular2[] = { 1.0f, 0.0f, 0.0f, 1.0f};
+    GLfloat  ambientLight2[] = { 1.0f, 0.0f, 0.0f, 1.0f};
+    GLfloat spotDir2[3]={0.0f,0.0f,-1.0f};
     glLightfv(GL_LIGHT2,GL_DIFFUSE,ambientLight2);
     glLightfv(GL_LIGHT2,GL_SPECULAR,specular2);
     glLightfv(GL_LIGHT2,GL_POSITION,lightPos2);
-glLightfv(GL_LIGHT2,GL_SPOT_DIRECTION,spotDir2);
+    glLightfv(GL_LIGHT2,GL_SPOT_DIRECTION,spotDir2);
 
      // Specific spot effects
     // Cut off angle is 60 degrees
-    glLightf(GL_LIGHT2,GL_SPOT_CUTOFF,60.0f);
+    glLightf(GL_LIGHT2,GL_SPOT_CUTOFF,5.0f);
     // Fairly shiny spot
     glLightf(GL_LIGHT2,GL_SPOT_EXPONENT,100.0f);
 

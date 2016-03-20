@@ -35,13 +35,18 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
+<part id="1"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GridChallenge.java" partName="GridChallenge.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/GridChallenge.java" title="GridChallenge.java" tooltip="MyProj/src/GridChallenge.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/GridChallenge.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="532" selectionTopPixel="205"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GurobiTSP.java" partName="GurobiTSP.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/project/elective/GurobiTSP.java" title="GurobiTSP.java" tooltip="MyProj/src/project/elective/GurobiTSP.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/project/elective/GurobiTSP.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3218" selectionTopPixel="1614"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="myTSP.java" partName="myTSP.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/project/elective/myTSP.java" title="myTSP.java" tooltip="MyProj/src/project/elective/myTSP.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/project/elective/myTSP.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="650" selectionTopPixel="517"/>
 </editor>
 </editors>
 <views>
@@ -82,9 +87,7 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Errors"/>
 <category IMemento.internal.id="Warnings"/>
-<category IMemento.internal.id="Warnings (66 items)"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="261" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -296,6 +299,8 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/Main.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/ManasaAndStones.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/GridChallenge.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/project/elective/GurobiTSP.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/project/elective/myTSP.java"/>
 </editors>
 <item historyLabel="Solution.java" index="0">
 <position info="not_deleted" x="842" y="0"/>
@@ -381,8 +386,14 @@
 <item historyLabel="GridChallenge.java" index="3">
 <position/>
 </item>
-<item active="true" historyLabel="GridChallenge.java" index="3">
-<position info="not_deleted" x="182" y="0"/>
+<item historyLabel="GridChallenge.java" index="3">
+<position info="not_deleted" x="532" y="0"/>
+</item>
+<item historyLabel="GurobiTSP.java" index="4">
+<position info="not_deleted" x="3218" y="0"/>
+</item>
+<item active="true" historyLabel="myTSP.java" index="5">
+<position info="not_deleted" x="0" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -401,6 +412,12 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="myTSP.java" tooltip="MyProj/src/project/elective/myTSP.java">
+<persistable path="/MyProj/src/project/elective/myTSP.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GurobiTSP.java" tooltip="MyProj/src/project/elective/GurobiTSP.java">
+<persistable path="/MyProj/src/project/elective/GurobiTSP.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GridChallenge.java" tooltip="MyProj/src/GridChallenge.java">
 <persistable path="/MyProj/src/GridChallenge.java"/>
 </file>
@@ -439,12 +456,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="gurobiTSP.java" tooltip="MyProj/src/project/elective/gurobiTSP.java">
 <persistable path="/MyProj/src/project/elective/gurobiTSP.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="tsp_western_sahara.txt" tooltip="MyProj/tsp_western_sahara.txt">
-<persistable path="/MyProj/tsp_western_sahara.txt"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="tsp_dijbouti.txt" tooltip="MyProj/tsp_dijbouti.txt">
-<persistable path="/MyProj/tsp_dijbouti.txt"/>
 </file>
 </mruList>
 </workbench>

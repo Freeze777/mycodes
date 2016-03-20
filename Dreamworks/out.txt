@@ -1,0 +1,26 @@
+boundx = 200
+
+boundy = 200
+
+class = level set
+end_radius = 15.0
+
+endx = 170
+
+endy = 170
+
+file_bbox_max = [184, 188, 21]
+file_bbox_min = [10, 21, -21]
+file_mem_bytes = 4281148
+file_voxel_count = 522286
+is_local_space = false
+is_saved_as_half_float = false
+name = SDF
+start_radius = 15.0
+
+startx = 30
+
+starty = 30
+
+value_type = float
+vector_type = invariant

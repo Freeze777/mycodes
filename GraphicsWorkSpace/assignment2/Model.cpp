@@ -66,7 +66,6 @@ void Model::markPoints(float dim){
 
         glRasterPos3fv(origin);
         glutBitmapCharacter(GLUT_BITMAP_HELVETICA_18,'O');
-
         glRasterPos3f(dim/2.0,0.0,0.0);
         glutBitmapCharacter(GLUT_BITMAP_HELVETICA_18,'X');
         glRasterPos3f(0.0,dim/2.0,0.0);

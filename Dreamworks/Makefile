@@ -1,0 +1,6 @@
+all:
+	g++ -g display.cpp Boid.cpp Flocking.cpp Simulation.cpp PathFinder.cpp MapLoader.cpp -std=c++0x -D__LINUX_COMPILE -lprotobuf -o flock-solve -lopenvdb -lHalf -ltbb -lGL -lglut -lGLU -pthread
+
+buffer:
+	protoc fish-sim.proto --cpp_out=. --python_out=tubing/
+
