@@ -3898,7 +3898,7 @@ samba.tests.dns|/usr/lib/python2.7/dist-packages/samba/tests/dns.py
 samba.tests.docs|/usr/lib/python2.7/dist-packages/samba/tests/docs.py
 samba.tests.dsdb|/usr/lib/python2.7/dist-packages/samba/tests/dsdb.py
 samba.tests.gensec|/usr/lib/python2.7/dist-packages/samba/tests/gensec.py
-samba.tests.getopt|/usr/lib/python2.7/dist-packages/samba/tests/getopt.py
+samba.tests.get_opt|/usr/lib/python2.7/dist-packages/samba/tests/get_opt.py
 samba.tests.hostconfig|/usr/lib/python2.7/dist-packages/samba/tests/hostconfig.py
 samba.tests.libsmb_samba_internal|/usr/lib/python2.7/dist-packages/samba/tests/libsmb_samba_internal.py
 samba.tests.messaging|/usr/lib/python2.7/dist-packages/samba/tests/messaging.py

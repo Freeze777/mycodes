@@ -1,47 +1,57 @@
 -- VERSION_4
 -- START DISKCACHE_2
 /home/qwerty/Desktop/mycodes/PythonWorkspace/.metadata/.plugins/org.eclipse.core.resources/.projects/MachineLearning/com.python.pydev.analysis/v2_indexcache
-battery_charge_prediction|1457948351556390000|/home/qwerty/Desktop/mycodes/PythonWorkspace/MachineLearning/battery_charge_prediction.py
+battery_charge_prediction|1458623658993768000|/home/qwerty/Desktop/mycodes/PythonWorkspace/MachineLearning/battery_charge_prediction.py
 stat|1458149807912274000|/home/qwerty/Desktop/mycodes/PythonWorkspace/MachineLearning/stat.py
 ques_classifier|1457983252803936000|/home/qwerty/Desktop/mycodes/PythonWorkspace/MachineLearning/ques_classifier.py
+office_price_prediction|1458623924443985000|/home/qwerty/Desktop/mycodes/PythonWorkspace/MachineLearning/office_price_prediction.py
+second_largest_number_set_list|1458243448675862000|/home/qwerty/Desktop/mycodes/PythonWorkspace/MachineLearning/second_largest_number_set_list.py
 housing_price_predictor|1458052690129914000|/home/qwerty/Desktop/mycodes/PythonWorkspace/MachineLearning/housing_price_predictor.py
+power_of_2_game|1458583862338386000|/home/qwerty/Desktop/mycodes/PythonWorkspace/MachineLearning/power_of_2_game.py
 sample|1458065436080978000|/home/qwerty/Desktop/mycodes/PythonWorkspace/MachineLearning/sample.py
-list_basics|1458241643830457000|/home/qwerty/Desktop/mycodes/PythonWorkspace/MachineLearning/list_basics.py
+list_basics|1458242092259066000|/home/qwerty/Desktop/mycodes/PythonWorkspace/MachineLearning/list_basics.py
 statistics|1458149531327767000|/home/qwerty/Desktop/mycodes/PythonWorkspace/MachineLearning/statistics.py
 -- END DISKCACHE
 -- START DICTIONARY
-6
+8
 3=battery_charge_prediction
 4=ques_classifier
-5=housing_price_predictor
+5=office_price_prediction
+6=housing_price_predictor
+7=power_of_2_game
 2=sample
 1=list_basics
-6=statistics
+8=statistics
 -- END DICTIONARY
 -- START TREE 1
-22
+27
 L|1|L!11@
 ans|1|ans!19@
 cha|2|charge_time1!27@charge_time2!27@
 dat|1|data!35@
 his|3|his2!19@his_sum!19@his!19@
 id|1|id!35@
-inp|2|inp!11@inp!43@
+inp|3|inp!43@inp!11@inp!51@
 lif|2|life_time1!27@life_time2!27@
-lin|3|lin2!27@lin1!27@lin!43@
+lin|4|lin2!27@lin1!27@lin!51@lin!43@
 log|1|log!27@
 n|1|n!11@
-nrm|1|nrm!51@
+n_b|1|n_bits!59@
+nrm|1|nrm!67@
+num|1|num!59@
 obj|1|obj!35@
+pol|1|polyFeatures!43@
 py|1|py!19@
 py2|1|py2!19@
 py_|2|py_his_sum!19@py_sum!19@
-q|1|q!43@
-tmp|2|tmp!27@tmp!43@
+q|2|q!43@q!51@
+tmp|3|tmp!27@tmp!43@tmp!51@
+tst|1|tst!59@
 val|1|val!27@
-x|1|x!43@
-x_m|1|x_matrix!43@
-y_m|1|y_matrix!43@
+win|1|winner!59@
+x|2|x!43@x!51@
+x_m|2|x_matrix!51@x_matrix!43@
+y_m|2|y_matrix!51@y_matrix!43@
 -- END TREE
 -- START TREE 2
 0

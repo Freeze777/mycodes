@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="30" version="2.0">
+<workbench progressCount="33" version="2.0">
 <workbenchAdvisor/>
 <window height="743" width="1018" x="65" y="24">
 <fastViewData fastViewLocation="1024"/>
@@ -20,7 +20,7 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="232" y="30"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.python.pydev.editor.PythonEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -32,13 +32,18 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
+<part id="1"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.python.pydev.editor.PythonEditor" name="second_largest_number_set_list.py" partName="second_largest_number_set_list" path="/home/qwerty/Desktop/mycodes/PythonWorkspace/MachineLearning/second_largest_number_set_list.py" title="second_largest_number_set_list" tooltip="MachineLearning/second_largest_number_set_list.py" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MachineLearning/second_largest_number_set_list.py"/>
-<editorState selectionHorizontalPixel="27" selectionLength="0" selectionOffset="267" selectionTopPixel="0"/>
+<editor activePart="true" focus="true" id="org.python.pydev.editor.PythonEditor" name="power_of_2_game.py" partName="power_of_2_game" path="/home/qwerty/Desktop/mycodes/PythonWorkspace/MachineLearning/power_of_2_game.py" title="power_of_2_game" tooltip="MachineLearning/power_of_2_game.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MachineLearning/power_of_2_game.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="146" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.ui.DefaultTextEditor" name="office_price_prediction.txt" partName="office_price_prediction.txt" path="/home/qwerty/Desktop/mycodes/PythonWorkspace/MachineLearning/office_price_prediction.txt" title="office_price_prediction.txt" tooltip="MachineLearning/office_price_prediction.txt" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MachineLearning/office_price_prediction.txt"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1720" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -51,7 +56,7 @@
 <view id="org.python.pydev.navigator.view" partName="PyDev Package Explorer">
 <viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0">
 <expanded IMemento.internal.id="/home/qwerty/Desktop/mycodes/PythonWorkspace/MachineLearning"/>
-<selected IMemento.internal.id="/home/qwerty/Desktop/mycodes/PythonWorkspace/MachineLearning/second_largest_number_set_list.py"/>
+<selected IMemento.internal.id="/home/qwerty/Desktop/mycodes/PythonWorkspace/MachineLearning/office_price_prediction.txt"/>
 </viewState>
 </view>
 <view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
@@ -222,6 +227,15 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/MachineLearning/sample.py"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/MachineLearning/statistics.py"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/MachineLearning/second_largest_number_set_list.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/MachineLearning/power_of_2_game.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/MachineLearning/stat.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/MachineLearning/statistics.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/MachineLearning/ques_classifier.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/MachineLearning/battery_charge_prediction.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/MachineLearning/house_price.txt"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/MachineLearning/house_price_predictor_training.txt"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/MachineLearning/office_price_prediction.txt"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/MachineLearning/power_of_2_game.py"/>
 </editors>
 <item historyLabel="sample" index="0">
 <position info="not_deleted" x="376" y="0"/>
@@ -259,8 +273,56 @@
 <item historyLabel="second_largest_number_set_list" index="6">
 <position info="not_deleted" x="267" y="0"/>
 </item>
-<item active="true" historyLabel="second_largest_number_set_list" index="6">
-<position info="not_deleted" x="70" y="113"/>
+<item historyLabel="second_largest_number_set_list" index="6">
+<position info="not_deleted" x="267" y="0"/>
+</item>
+<item historyLabel="power_of_2_game" index="7">
+<position info="not_deleted" x="348" y="0"/>
+</item>
+<item historyLabel="second_largest_number_set_list" index="6">
+<position info="not_deleted" x="267" y="0"/>
+</item>
+<item historyLabel="power_of_2_game" index="7">
+<position info="not_deleted" x="92" y="0"/>
+</item>
+<item historyLabel="stat" index="8">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="statistics" index="9">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="ques_classifier" index="10">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="power_of_2_game" index="7">
+<position info="not_deleted" x="92" y="0"/>
+</item>
+<item historyLabel="battery_charge_prediction" index="11">
+<position info="not_deleted" x="153" y="0"/>
+</item>
+<item historyLabel="house_price.txt" index="12">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="battery_charge_prediction" index="11">
+<position info="not_deleted" x="153" y="0"/>
+</item>
+<item historyLabel="house_price_predictor_training.txt" index="13">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="office_price_prediction.txt" index="14">
+<position info="not_deleted" x="1720" y="0"/>
+</item>
+<item historyLabel="house_price_predictor_training.txt" index="13">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="office_price_prediction.txt" index="14">
+<position info="not_deleted" x="1720" y="0"/>
+</item>
+<item historyLabel="battery_charge_prediction" index="11">
+<position info="not_deleted" x="153" y="0"/>
+</item>
+<item active="true" historyLabel="power_of_2_game" index="15">
+<position info="not_deleted" x="146" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -279,20 +341,11 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="second_largest_number_set_list.py" tooltip="MachineLearning/second_largest_number_set_list.py">
-<persistable path="/MachineLearning/second_largest_number_set_list.py"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="office_price_prediction.txt" tooltip="MachineLearning/office_price_prediction.txt">
+<persistable path="/MachineLearning/office_price_prediction.txt"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="list_basics.py" tooltip="MachineLearning/list_basics.py">
-<persistable path="/MachineLearning/list_basics.py"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="stat.py" tooltip="MachineLearning/stat.py">
-<persistable path="/MachineLearning/stat.py"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="statistics.py" tooltip="MachineLearning/statistics.py">
-<persistable path="/MachineLearning/statistics.py"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="sample.py" tooltip="MachineLearning/sample.py">
-<persistable path="/MachineLearning/sample.py"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="house_price_predictor_training.txt" tooltip="MachineLearning/house_price_predictor_training.txt">
+<persistable path="/MachineLearning/house_price_predictor_training.txt"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="house_price.txt" tooltip="MachineLearning/house_price.txt">
 <persistable path="/MachineLearning/house_price.txt"/>
@@ -300,11 +353,32 @@
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="battery_charge_prediction.py" tooltip="MachineLearning/battery_charge_prediction.py">
 <persistable path="/MachineLearning/battery_charge_prediction.py"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="housing_price_predictor.py" tooltip="MachineLearning/housing_price_predictor.py">
-<persistable path="/MachineLearning/housing_price_predictor.py"/>
-</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="ques_classifier.py" tooltip="MachineLearning/ques_classifier.py">
 <persistable path="/MachineLearning/ques_classifier.py"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="statistics.py" tooltip="MachineLearning/statistics.py">
+<persistable path="/MachineLearning/statistics.py"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="test.json" tooltip="MachineLearning/test.json">
+<persistable path="/MachineLearning/test.json"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="stat.py" tooltip="MachineLearning/stat.py">
+<persistable path="/MachineLearning/stat.py"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="power_of_2_game.py" tooltip="MachineLearning/power_of_2_game.py">
+<persistable path="/MachineLearning/power_of_2_game.py"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="second_largest_number_set_list.py" tooltip="MachineLearning/second_largest_number_set_list.py">
+<persistable path="/MachineLearning/second_largest_number_set_list.py"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="list_basics.py" tooltip="MachineLearning/list_basics.py">
+<persistable path="/MachineLearning/list_basics.py"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="sample.py" tooltip="MachineLearning/sample.py">
+<persistable path="/MachineLearning/sample.py"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="housing_price_predictor.py" tooltip="MachineLearning/housing_price_predictor.py">
+<persistable path="/MachineLearning/housing_price_predictor.py"/>
 </file>
 </mruList>
 </workbench>

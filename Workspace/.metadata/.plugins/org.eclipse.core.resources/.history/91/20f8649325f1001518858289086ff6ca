@@ -1,0 +1,42 @@
+import java.io.*;
+import java.util.*;
+
+public class MatrixRotation {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		int row = sc.nextInt();
+		int col = sc.nextInt();
+		int k = sc.nextInt();
+		int[][] matrix = new int[row][col];
+		
+		for (int i = 0; i < row; i++)
+			for (int j = 0; j < col; j++)
+				matrix[i][j] = sc.nextInt();
+		int nRings = (Math.min(row, col)) / 2;
+		int maxRingLen=2*(row+col-2);
+		int[][] rings=new int[nRings][maxRingLen];
+		for (int i = 0; i < nRings; i++) {
+			int ringSize = 2 * ((row - i) + (col - i) - 2);
+			int index=0;
+			int top = i, bottom = row - i - 1, left = i, right = col - i - 1;
+			for (int j = left; j <= right; j++)
+				rings[i][j]=matrix[top][j];
+			for (int j = top + 1; j <= bottom; j++)
+				rings[i][j]=matrix[j][right];
+			for (int j = right - 1; j >= left; j--)
+				rings[i][j]=matrix[bottom][j];
+			for (int j = bottom - 1; j >= top + 1; j--)
+				rings[i][j]=matrix[j][left];
+
+			rings.put(i, tmp);
+
+		}
+
+		System.out.println(rings);
+
+		sc.close();
+	}
+
+}
