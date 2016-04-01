@@ -1,0 +1,10 @@
+import numpy as np
+
+ele=0.0
+for i in range(120):
+   ele+=0.01
+   l=[1,2,3];
+   l.append(ele)
+   arr=np.array(l)
+   if (arr.std()-0.815889085599) < 0.01:
+    print ele

@@ -28,7 +28,8 @@ void PlyModel::draw()
     int fcount=ply->getFaceCount();
     PlyUtility::Face ** fl=ply->getFaceList();
     PlyUtility::Vertex ** vl=ply->getVertexList();
-    double cyl_coords[]={0.0,0.0,0.0};
+    //double cyl_coords[]={0.0,0.0,0.0};
+    double uvCoords[]={0.0,0.0};
 
     for (int var = 0; var < fcount ; var++) {
 
@@ -43,12 +44,8 @@ void PlyModel::draw()
         {
             int vIndex=fl[var]->verts[t];
 	          glNormal3d(normals_vertex[vIndex].x(),normals_vertex[vIndex].y(),normals_vertex[vIndex].z());
-            convert2Cylindrical(vl[vIndex]->x,vl[vIndex]->y,vl[vIndex]->z,cyl_coords);
-	          //glTexCoord2f(vl[vIndex]->x/(sc*ply->vx_max),vl[vIndex]->y/(sc*ply->vy_max));
-           // glTexCoord2f(abs(sin(cyl_coords[1])),cyl_coords[2]);
-            //  glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
-              //glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
-              glTexCoord2f(cyl_coords[1],cyl_coords[2]);
+              getUVCoords(vl[vIndex]->x,vl[vIndex]->y,vl[vIndex]->z,uvCoords,0,vIndex);
+              glTexCoord2f(uvCoords[0],uvCoords[1]);
             glVertex3f(vl[vIndex]->x,vl[vIndex]->y,vl[vIndex]->z);
         }
 
@@ -68,20 +65,49 @@ void PlyModel::convert2Cylindrical( double x,double y,double z,double *res)
 
          double rho=sqrt(x*x+y*y);
          double h=z;
-         double phi;
-         if(rho==0)
-             phi=0;
-         else if(x>=0)
-             phi=asin(y/rho);
-         else if (x<0)
-             phi=((-1)*asin(y/rho))+M_PI;
-            
+         double phi=(rho==0)?0:asin(y/rho);
+                   
            
 
          res[0]=rho;
-         res[1]=phi*2*M_PI;
-       res[2]=h/ply->vz_max;
+         res[1]=phi;
+         res[2]=h;
          //  res[2]=h;
+   }
+   void PlyModel::convert2Circular( double x,double y,double z,double *res)
+
+   {
+
+         double r=sqrt(x*x+y*y+z*z);
+         double theta=acos(z/r);
+         double phi=atan2(y,x);
+        
+         res[0]=r;
+         res[1]=theta;
+         res[2]=phi;
+         //  res[2]=h;
+   }
+   void PlyModel::getUVCoords( double x,double y,double z,double *uv,int mode,int vIndex)
+
+   {
+        if(mode==0){ //cylindrical
+            double res[]={0,0,0};
+            convert2Cylindrical(x,y,z,res);
+            uv[0]=0.5-(res[1]/M_PI);
+            uv[1]=res[2]/ply->vz_max;
+          }else if(mode==1){ //sphereical
+            Vector norml(x-centroid[0],y-centroid[1],z-centroid[2]);
+
+            norml.normalize();
+            uv[1]=0.5+(atan2(norml.z(),norml.x())/(2*M_PI));
+              //uv[1]=0.5+(atan2(norml.z(),norml.x())/(2*M_PI));
+             //uv[0]=0.5+(atan(norml.z()/norml.x())/(2*M_PI));
+           uv[0]=0.5-(asin(norml.y())/M_PI);
+               //uv[0]=0.5+(atan2(norml.x(),norml.z())/(2*M_PI));
+           //uv[1]=0.5*norml.y()+0.5;
+             //  uv[1]=norml.y();
+          }
+         
    }
 
 void PlyModel::computeNormal(){

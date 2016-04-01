@@ -45,15 +45,25 @@ Quaternion::Quaternion(double x, double y, double z, double w) {
   double Quaternion::norm() { return sqrt(mData[0]*mData[0]+mData[1]*mData[1]+mData[2]*mData[2]+mData[3]*mData[3]); }
 
 
-    double* Quaternion::rotationMatrix() {
+    double * Quaternion::rotationMatrix(int flag) {
+         double * mat;
+        if(flag==4){
+            mat=(double *)calloc(16,sizeof(double));
 
-        double * mat=(double *)calloc(16,sizeof(double));
+            mat[0]=1-2*y()*y()-2*z()*z();mat[1]= 2*x()*y() - 2*z()*w();mat[2]= 2*x()*z() + 2*y()*w();
+            mat[4]= 2*x()*y() + 2*z()*w();mat[5]=1-2*x()*x()-2*z()*z();mat[6]=2*y()*z() - 2*x()*w();
+            mat[8]= 2*x()*z() - 2*y()*w();mat[9]=2*y()*z() + 2*x()*w();mat[10]= 1-2*x()*x()-2*y()*y();
+            mat[15]=1;
+        }
+        else if(flag==3)
+        {
+            mat=(double *)calloc(9,sizeof(double));
 
-        mat[0]=1-2*y()*y()-2*z()*z();mat[1]= 2*x()*y() - 2*z()*w();mat[2]= 2*x()*z() + 2*y()*w();
-        mat[4]= 2*x()*y() + 2*z()*w();mat[5]=1-2*x()*x()-2*z()*z();mat[6]=2*y()*z() - 2*x()*w();
-        mat[8]= 2*x()*z() - 2*y()*w();mat[9]=2*y()*z() + 2*x()*w();mat[10]= 1-2*x()*x()-2*y()*y();
-        mat[15]=1;
-
+            mat[0]=1-2*y()*y()-2*z()*z();mat[1]= 2*x()*y() - 2*z()*w();mat[2]= 2*x()*z() + 2*y()*w();
+            mat[3]= 2*x()*y() + 2*z()*w();mat[4]=1-2*x()*x()-2*z()*z();mat[5]=2*y()*z() - 2*x()*w();
+            mat[6]= 2*x()*z() - 2*y()*w();mat[7]=2*y()*z() + 2*x()*w();mat[8]= 1-2*x()*x()-2*y()*y();
+        
+        }    
         return mat;
     }
     Quaternion Quaternion::product(const Quaternion& rhs){

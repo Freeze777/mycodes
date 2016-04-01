@@ -21,7 +21,7 @@ class Controller
   
 
 public:
-
+    Vector eye_vector;
     float rollspeed=1.5;
     float zoomfactor=1.0;
     float th = 0;
@@ -43,6 +43,9 @@ public:
         arcball=new Arcball(SCREEN_WIDTH,SCREEN_HEIGHT,1.5);
         view=v;
         model=m;
+        eye_vector.x(0.0);
+        eye_vector.y(0.0);
+        eye_vector.z(5.0);
    }
 
     ~Controller(){

@@ -18,7 +18,7 @@ public:
     Quaternion  conjugate(void);
     Quaternion  inverse(void);
     double  norm();
-    double*  rotationMatrix();
+    double * rotationMatrix(int flag);
     Quaternion  product(const Quaternion& rhs);
 
 	~Quaternion(void)

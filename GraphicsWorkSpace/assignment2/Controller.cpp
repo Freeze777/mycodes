@@ -22,7 +22,8 @@ void  Controller::mouse_motion_callback(int x, int y) {
         arcball->set_current_xy(x,y);
      }
     glMatrixMode(GL_MODELVIEW);
-    arcball->rotateModelvthMouse(dim);
+    //arcball->rotateModelvthMouse(dim);
+    arcball->rotateCameravthMouse(dim,&eye_vector);
     glutPostRedisplay();
 
 
@@ -37,6 +38,9 @@ void  Controller::display_callback() {
 
     glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
     glLightfv(GL_LIGHT2,GL_SPOT_DIRECTION,spotDir2);
+    glMatrixMode(GL_MODELVIEW);
+    glLoadIdentity();
+    gluLookAt(eye_vector.x(),eye_vector.y(),eye_vector.z(), 0,0,0 , 0,1,0);
     model->setScaleFactor(dim);
     model->drawScene(dim);
 

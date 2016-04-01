@@ -30,6 +30,8 @@ public:
     void computeCentroid();
     void setShift(GLfloat *s);
     void convert2Cylindrical( double x,double y,double z,double *res);
+    void convert2Circular( double x,double y,double z,double *res);
+    void getUVCoords( double x,double y,double z,double *uv,int mode,int vIndex);
     void computeScaleFactor(float dim);		
     PlyModel(PlyUtility *p){
         ply=p;
