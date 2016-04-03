@@ -1,2 +1,0 @@
-//compile
-gcc test.c -lGL -lglut -o test

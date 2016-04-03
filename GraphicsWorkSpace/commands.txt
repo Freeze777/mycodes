@@ -1,6 +1,0 @@
-//compile
-gcc test.c -lGL -lglut -o test
-
-
- gcc -o cube cube.c -lGL -lGLU -lglut
-

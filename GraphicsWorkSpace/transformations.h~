@@ -1,5 +1,0 @@
-#include "display_utility.h"
-
-void zoom(float scale,Point pivot);
-void translate(floa distance);
-void rotate(int flag,float angle,Point pivot);
