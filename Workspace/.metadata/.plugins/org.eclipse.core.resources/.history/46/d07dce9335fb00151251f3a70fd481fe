@@ -1,0 +1,10 @@
+
+public class CandidateCode {
+
+	public static int passCount(int n,int m,int l) {
+		
+		
+		return 0;
+		
+	}
+}

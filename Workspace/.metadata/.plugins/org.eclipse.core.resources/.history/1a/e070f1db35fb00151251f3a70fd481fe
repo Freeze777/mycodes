@@ -1,0 +1,21 @@
+import java.util.HashMap;
+import java.util.Map;
+
+
+public class CandidateCode {
+
+	public static int passCount(int n,int m,int l) {
+		Map<Integer,Integer> map=new HashMap<Integer,Integer>();
+		int curr=1;
+		int count=0;
+		while(true)
+		{
+			
+			
+		}
+		
+		
+		return 0;
+		
+	}
+}
