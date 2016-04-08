@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<wls:weblogic-web-app xmlns:wls="http://www.bea.com/ns/weblogic/90" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd http://www.bea.com/ns/weblogic/90 http://www.bea.com/ns/weblogic/920/weblogic-web-app.xsd">
-    <wls:jsp-descriptor>
-        <wls:keepgenerated>true</wls:keepgenerated>
-        <wls:working-dir>C:\Workspace\BVOIPWF_WS\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\base_domain\work\CODGenerator</wls:working-dir>
-        <wls:debug>true</wls:debug>
-    </wls:jsp-descriptor>
-    <wls:context-root>CODGenerator</wls:context-root>
-</wls:weblogic-web-app>
