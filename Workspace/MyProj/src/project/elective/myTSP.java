@@ -70,7 +70,7 @@ public class myTSP {
 			Scanner sc = null;
 			File file;
 			try {
-				file = new File("tsp_sahara.txt");
+				file = new File("tsp_dijbouti.txt");
 				sc = new Scanner(file);
 			} catch (Exception e) {
 				// TODO Auto-generated catch block

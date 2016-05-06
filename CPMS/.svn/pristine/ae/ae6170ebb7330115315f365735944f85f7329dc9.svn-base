@@ -1,7 +1,0 @@
-package com.ctl.cpms.domain;
-
-public enum RouteType {
-
-    ToOffice, FromOffice
-
-}

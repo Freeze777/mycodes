@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="15" version="2.0">
+<workbench progressCount="19" version="2.0">
 <workbenchAdvisor/>
 <window height="715" maximized="true" width="555" x="65" y="24">
 <fastViewData fastViewLocation="1024"/>
@@ -15,10 +15,10 @@
 <coolItem id="org.eclipse.debug.ui.main.toolbar" itemType="typeToolBarContribution" x="40" y="30"/>
 <coolItem id="com.python.pydev.toolbars.evaluateActionSetterToolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="88" y="30"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="88" y="30"/>
-<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="124" y="30"/>
 <coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -33,16 +33,10 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CircularGame.java" partName="CircularGame.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/CircularGame.java" title="CircularGame.java" tooltip="MyProj/src/CircularGame.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/CircularGame.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="12" selectionOffset="63" selectionTopPixel="51"/>
-</editor>
 </editors>
 <views>
 <view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc">
@@ -83,7 +77,8 @@
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
 <category IMemento.internal.id="Errors"/>
-<category IMemento.internal.id="Warnings (68 items)"/>
+<category IMemento.internal.id="Warnings (100 of 114 items)"/>
+<category IMemento.internal.id="Warnings"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="261" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -118,7 +113,7 @@
 <viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="org.eclipse.jdt.ui.PackageExplorer" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.ui.internal.ide.application.ResourcePerspective" id="org.eclipse.ui.resourcePerspective" label="Resource"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -289,42 +284,7 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory>
-<editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/CandidateCode.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/CircularGame.java"/>
-</editors>
-<item historyLabel="CandidateCode.java" index="0">
-<position info="not_deleted" x="49" y="0"/>
-</item>
-<item historyLabel="CandidateCode.java" index="0">
-<position info="not_deleted" x="107" y="0"/>
-</item>
-<item historyLabel="CandidateCode.java" index="0">
-<position info="not_deleted" x="649" y="0"/>
-</item>
-<item historyLabel="CandidateCode.java" index="0">
-<position info="not_deleted" x="248" y="0"/>
-</item>
-<item historyLabel="CandidateCode.java" index="0">
-<position info="not_deleted" x="233" y="0"/>
-</item>
-<item historyLabel="CandidateCode.java" index="0">
-<position info="not_deleted" x="603" y="0"/>
-</item>
-<item historyLabel="CandidateCode.java" index="0">
-<position info="not_deleted" x="562" y="0"/>
-</item>
-<item historyLabel="CandidateCode.java" index="0">
-<position info="not_deleted" x="355" y="0"/>
-</item>
-<item historyLabel="CandidateCode.java" index="0">
-<position info="not_deleted" x="75" y="0"/>
-</item>
-<item active="true" historyLabel="CircularGame.java" index="1">
-<position info="not_deleted" x="63" y="12"/>
-</item>
-</navigationHistory>
+<navigationHistory/>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
@@ -341,38 +301,32 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CandidateCode.java" tooltip="MyProj/src/CandidateCode.java">
-<persistable path="/MyProj/src/CandidateCode.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Triplets.java" tooltip="MyProj/src/Triplets.java">
+<persistable path="/MyProj/src/Triplets.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RotateArrayByk.java" tooltip="MyProj/src/algo/RotateArrayByk.java">
-<persistable path="/MyProj/src/algo/RotateArrayByk.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Multiple3and5.java" tooltip="MyProj/src/Multiple3and5.java">
+<persistable path="/MyProj/src/Multiple3and5.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GlobalUtils.java" tooltip="MyProj/src/algo/GlobalUtils.java">
-<persistable path="/MyProj/src/algo/GlobalUtils.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EvenFibonnaci.java" tooltip="MyProj/src/EvenFibonnaci.java">
+<persistable path="/MyProj/src/EvenFibonnaci.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MatrixRotation.java" tooltip="MyProj/src/MatrixRotation.java">
-<persistable path="/MyProj/src/MatrixRotation.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PythagorianTriplets.java" tooltip="MyProj/src/PythagorianTriplets.java">
+<persistable path="/MyProj/src/PythagorianTriplets.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Coolguy.java" tooltip="MyProj/src/hacker/rank/Coolguy.java">
-<persistable path="/MyProj/src/hacker/rank/Coolguy.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NthPrime.java" tooltip="MyProj/src/NthPrime.java">
+<persistable path="/MyProj/src/NthPrime.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CounterGame.java" tooltip="MyProj/src/CounterGame.java">
-<persistable path="/MyProj/src/CounterGame.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SumOfPrimes.java" tooltip="MyProj/src/SumOfPrimes.java">
+<persistable path="/MyProj/src/SumOfPrimes.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Flower.java" tooltip="MyProj/src/Flower.java">
-<persistable path="/MyProj/src/Flower.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Clouds.java" tooltip="MyProj/src/Clouds.java">
+<persistable path="/MyProj/src/Clouds.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LongestSequenceConsecutives.java" tooltip="MyProj/src/LongestSequenceConsecutives.java">
-<persistable path="/MyProj/src/LongestSequenceConsecutives.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="tsp_dijbouti.txt" tooltip="MyProj/tsp_dijbouti.txt">
+<persistable path="/MyProj/tsp_dijbouti.txt"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GridChallenge.java" tooltip="MyProj/src/GridChallenge.java">
-<persistable path="/MyProj/src/GridChallenge.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ManasaAndStones.java" tooltip="MyProj/src/ManasaAndStones.java">
-<persistable path="/MyProj/src/ManasaAndStones.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SherlockAndAnagrams.java" tooltip="MyProj/src/SherlockAndAnagrams.java">
-<persistable path="/MyProj/src/SherlockAndAnagrams.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="ttt.txt" tooltip="MyProj/src/project/elective/ttt.txt">
+<persistable path="/MyProj/src/project/elective/ttt.txt"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="myTSP.java" tooltip="MyProj/src/project/elective/myTSP.java">
 <persistable path="/MyProj/src/project/elective/myTSP.java"/>
@@ -380,11 +334,17 @@
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GurobiTSP.java" tooltip="MyProj/src/project/elective/GurobiTSP.java">
 <persistable path="/MyProj/src/project/elective/GurobiTSP.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Solution.java" tooltip="MyProj/src/Solution.java">
-<persistable path="/MyProj/src/Solution.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="tsp_sahara.txt" tooltip="MyProj/tsp_sahara.txt">
+<persistable path="/MyProj/tsp_sahara.txt"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DFS_Basic.java" tooltip="MyProj/src/algo/graph/DFS_Basic.java">
-<persistable path="/MyProj/src/algo/graph/DFS_Basic.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="tsp_qatar.txt" tooltip="MyProj/tsp_qatar.txt">
+<persistable path="/MyProj/tsp_qatar.txt"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BirthdayProb.java" tooltip="MyProj/src/BirthdayProb.java">
+<persistable path="/MyProj/src/BirthdayProb.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="nCr.java" tooltip="MyProj/src/nCr.java">
+<persistable path="/MyProj/src/nCr.java"/>
 </file>
 </mruList>
 </workbench>

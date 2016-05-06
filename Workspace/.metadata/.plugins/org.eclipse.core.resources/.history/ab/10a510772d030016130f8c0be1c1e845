@@ -1,0 +1,29 @@
+import java.util.Scanner;
+class Vector{
+	int x,y,z;
+
+	public Vector(int x, int y, int z) {
+		super();
+		this.x = x;
+		this.y = y;
+		this.z = z;
+	}
+	
+}
+
+public class AnglesSpaces {
+	public static void main(String[] args) {
+		
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		
+		while(n>0){
+			
+			
+			n--;
+		}
+		
+		
+	}
+
+}

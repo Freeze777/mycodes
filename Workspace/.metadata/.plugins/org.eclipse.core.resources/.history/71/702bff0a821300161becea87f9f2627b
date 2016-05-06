@@ -1,0 +1,11 @@
+import java.util.Scanner;
+
+public class LatticePaths {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int row=500,col=500;
+		long dp[][]=new long[row][col];
+		
+		
+	}
+}

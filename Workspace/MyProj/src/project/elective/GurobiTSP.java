@@ -115,7 +115,7 @@ public class GurobiTSP extends GRBCallback {
     Scanner sc = null;
 	File file;
 	try {
-		file = new File("tsp_dijbouti.txt");
+		file = new File("tsp_qatar.txt");
 		sc = new Scanner(file);
 	} catch (Exception e) {
 		// TODO Auto-generated catch block

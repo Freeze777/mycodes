@@ -1,2 +1,0 @@
-INDEX VERSION 1.126+/home/qwerty/Desktop/CPMS/.metadata/.plugins/org.eclipse.jdt.core
-3784198681.index

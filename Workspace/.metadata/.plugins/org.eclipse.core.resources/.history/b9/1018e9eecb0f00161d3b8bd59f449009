@@ -1,0 +1,29 @@
+import java.io.*;
+import java.util.*;
+
+public class EvenFibonnaci {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    	
+    	Scanner sc=new Scanner(System.in);
+    	
+    	int tst=sc.nextInt();
+    	
+    	while(tst>0){
+    		long n=sc.nextInt();
+    		long sum=10;
+    		long term1=2;
+    		long term2=8;
+    		while(term2<=n){
+    			
+    			
+    			
+    		}
+    		
+    		
+    		
+    		tst--;
+    	}
+    }
+}
