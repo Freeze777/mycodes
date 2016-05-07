@@ -1,0 +1,11 @@
+import java.io.*;
+public class CandidateCode 
+{ 
+
+    public static String[] amount_value(int input1,String[] input2)
+    {
+        int[][] arr=new int[input1][input1];
+        String[] str_arr=input2.split("#"); 
+    	return null;
+    }
+}

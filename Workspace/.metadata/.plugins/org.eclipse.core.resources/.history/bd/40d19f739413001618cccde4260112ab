@@ -1,0 +1,19 @@
+package hacker.rank.project.euler;
+
+import java.util.Scanner;
+
+public class TraingleGraphMaxSum {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int tst=sc.nextInt();
+		
+		while(tst>0){
+			int n=sc.nextInt();
+			int size=(n*(n+1))/2;
+			int[] tree=new 
+			
+			
+			tst--;
+		}
+	}
+}

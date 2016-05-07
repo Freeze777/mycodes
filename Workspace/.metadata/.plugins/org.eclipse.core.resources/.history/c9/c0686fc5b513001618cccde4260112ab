@@ -1,0 +1,30 @@
+import java.io.*;
+import java.util.*;
+
+public class LargestProductInSeries {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int tst=sc.nextInt();
+        
+        while(tst>0){
+        	int n=sc.nextInt();
+        	int k=sc.nextInt();
+        	long curr=1,max=0;
+        	String str=sc.next().trim();
+        	int[] nums=new int[str.length()];
+        	for (char ch : str.toCharArray()) {
+				
+			}
+        	for (int i = 0; i < num.length-k; i++) {
+				for (int j = i; j < i+k; j++) {
+					
+				}
+			}
+        	
+        	
+        	tst--;
+        }
+        
+    }
+}

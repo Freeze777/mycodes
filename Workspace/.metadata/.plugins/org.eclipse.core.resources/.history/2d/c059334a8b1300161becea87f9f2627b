@@ -1,0 +1,23 @@
+import java.io.*;
+public class CandidateCode 
+{ 
+
+    public static String[] amount_value(int input1,String[] input2)
+    {
+        int[][] arr=new int[input1][input1];
+        int[][] res=new int[input1][input1];
+        for (int i = 0; i < input2.length; i++) {
+        	String[] str_arr=input2[i].split("#");
+        	for (int j = 0; j < str_arr.length; j++) {
+				arr[i][j]=Integer.parseInt(str_arr[j]);
+			}
+			
+		}
+        
+        for (int i = 0; i < arr.length; i++) {
+			
+		}
+        
+    	return null;
+    }
+}

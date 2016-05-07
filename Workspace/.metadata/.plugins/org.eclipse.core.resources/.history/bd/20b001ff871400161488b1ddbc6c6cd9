@@ -1,0 +1,23 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int tst=sc.nextInt();
+        TreeMap<String,Integer> nameScore=new TreeMap<String, Integer>();
+        
+        while(tst>0){
+        	String name=sc.next();
+        	int score=0;
+        	
+        	for (int i = 0; i < name.length(); i++) 
+				score+=(name.charAt(i)-'A'+1);
+        	
+        	nameScore.put(name,score);      	
+        	tst--;
+        }
+        
+    }
+}

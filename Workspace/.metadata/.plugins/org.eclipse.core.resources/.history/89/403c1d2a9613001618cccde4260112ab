@@ -1,0 +1,29 @@
+package hacker.rank.project.euler;
+
+import java.util.Scanner;
+
+public class TraingleGraphMaxSumPath {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int tst=sc.nextInt();
+		
+		while(tst>0){
+			int n=sc.nextInt();
+			int size=(n*(n+1))/2;
+			int[] triangle=new int[size];
+			int[] dp=new int[size];
+			
+			for (int i = 0; i < triangle.length; i++) {
+				triangle[i]=sc.nextInt();
+			}
+			
+			dp[0]=triangle[0];
+			
+			for (int row =2; row <= n; row++) {
+				
+			}
+			
+			tst--;
+		}
+	}
+}

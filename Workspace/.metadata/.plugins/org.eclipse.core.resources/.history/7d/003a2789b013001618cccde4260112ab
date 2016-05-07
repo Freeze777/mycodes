@@ -1,0 +1,34 @@
+import java.io.*;
+import java.util.*;
+
+public class LargestPrimeFactor {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int tst=sc.nextInt();
+        
+        while(tst>0){
+        	long n=sc.nextLong();
+        	long i=2;
+        	List<Long> primes=new ArrayList<Long>();
+        	while(n>1)
+        	{
+        		if(n%i==0){
+        			primes.add(i);
+        			while(n%i==0){
+        				
+        				n=n/i;
+        			}
+        			
+        			
+        		}
+        		
+        	}
+        	
+        	
+        	tst--;
+        }
+        
+        
+    }
+}
