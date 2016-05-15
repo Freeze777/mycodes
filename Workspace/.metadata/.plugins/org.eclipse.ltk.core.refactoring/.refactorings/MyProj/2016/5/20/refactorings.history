@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;MyProj/src/hacker/rank/project/euler/pandigital_multiples&apos; to &apos;pandigital_multiples.py&apos;" description="Rename resource &apos;pandigital_multiples&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/hacker/rank/project/euler/pandigital_multiples" name="pandigital_multiples.py" stamp="1462776212632" updateReferences="true"/>
+</session>

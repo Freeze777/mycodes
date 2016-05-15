@@ -1,0 +1,24 @@
+package hacker.rank;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+
+public class AlmostSorted {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        
+        int n=sc.nextInt();
+        int[] arr=new int[n];
+        
+        for (int i = 0; i < arr.length; i++) {
+			arr[i]=sc.nextInt();
+		}
+        
+        List<Integer> peaks=new ArrayList<Integer>();
+        List<Integer> dips=new ArrayList<Integer>();
+        		
+    }
+}

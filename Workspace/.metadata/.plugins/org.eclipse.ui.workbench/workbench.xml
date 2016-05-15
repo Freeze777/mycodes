@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="19" version="2.0">
+<workbench progressCount="35" version="2.0">
 <workbenchAdvisor/>
 <window height="715" maximized="true" width="555" x="65" y="24">
 <fastViewData fastViewLocation="1024"/>
@@ -13,18 +13,19 @@
 <coolItem id="org.eclipse.debug.ui.launch.toolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="156" y="30"/>
 <coolItem id="org.eclipse.debug.ui.main.toolbar" itemType="typeToolBarContribution" x="40" y="30"/>
-<coolItem id="com.python.pydev.toolbars.evaluateActionSetterToolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="com.python.pydev.toolbars.evaluateActionSetterToolbar" itemType="typeToolBarContribution" x="40" y="30"/>
 <coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="88" y="30"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="88" y="30"/>
-<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="124" y="30"/>
 <coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="232" y="30"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.python.pydev.editor.PythonEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
@@ -40,13 +41,13 @@
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.ui.DefaultTextEditor" name="template.txt" partName="template.txt" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/template.txt" title="template.txt" tooltip="MyProj/src/template.txt" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/template.txt"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="17" selectionTopPixel="0"/>
+<editor id="org.python.pydev.editor.PythonEditor" name="sherlock.py" partName="sherlock" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/sherlock.py" title="sherlock" tooltip="MyProj/src/sherlock.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/sherlock.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="335" selectionTopPixel="0"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TriangularNumbers.java" partName="TriangularNumbers.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/TriangularNumbers.java" title="TriangularNumbers.java" tooltip="MyProj/src/TriangularNumbers.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/TriangularNumbers.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="391" selectionTopPixel="0"/>
+<editor activePart="true" focus="true" id="org.python.pydev.editor.PythonEditor" name="priyanka_toys.py" partName="priyanka_toys" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/priyanka_toys.py" title="priyanka_toys" tooltip="MyProj/src/priyanka_toys.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/priyanka_toys.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="105" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -84,12 +85,13 @@
 </customFilters>
 </viewState>
 </view>
+<view id="org.python.pydev.debug.pyunit.pyUnitView" partName="PyUnit">
+<viewState/>
+</view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Errors"/>
-<category IMemento.internal.id="Warnings (100 of 116 items)"/>
-<category IMemento.internal.id="Warnings"/>
+<category IMemento.internal.id="Warnings (100 of 133 items)"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="261" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -124,7 +126,7 @@
 <viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="org.python.pydev.editor.PythonEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.ui.internal.ide.application.ResourcePerspective" id="org.eclipse.ui.resourcePerspective" label="Resource"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -240,6 +242,7 @@
 <view id="org.eclipse.jdt.ui.JavadocView"/>
 <view id="org.eclipse.jdt.ui.SourceView"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.python.pydev.debug.pyunit.pyUnitView"/>
 <view id="org.eclipse.jdt.ui.PackageExplorer"/>
 <fastViewBars/>
 <layout>
@@ -270,6 +273,7 @@
 <page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
 <page content="org.eclipse.jdt.ui.SourceView" label="Declaration"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="org.python.pydev.debug.pyunit.pyUnitView" label="PyUnit"/>
 <page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
@@ -279,6 +283,7 @@
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
+<part id="4"/>
 </presentation>
 </folder>
 </info>
@@ -297,161 +302,66 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/LargestProductInSeries.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/MyProj/src/template.txt"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/LCMOfGroupOfNumbers.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/Largest6DigitPalidrome.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/TriangularNumbers.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/GridSearch.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/MyProj/src/sherlock.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/MyProj/src/priyanka_toys.py"/>
 </editors>
-<item historyLabel="LargestProductInSeries.java" index="0">
+<item historyLabel="GridSearch.java" index="0">
+<position info="not_deleted" x="1335" y="0"/>
+</item>
+<item historyLabel="GridSearch.java" index="0">
 <position info="not_deleted" x="62" y="0"/>
 </item>
-<item historyLabel="LargestProductInSeries.java" index="0">
-<position info="not_deleted" x="952" y="0"/>
+<item historyLabel="GridSearch.java" index="0">
+<position info="not_deleted" x="297" y="0"/>
 </item>
-<item historyLabel="template.txt" index="1">
-<position info="not_deleted" x="60" y="0"/>
-</item>
-<item historyLabel="LargestProductInSeries.java" index="0">
-<position info="not_deleted" x="952" y="0"/>
-</item>
-<item historyLabel="LargestProductInSeries.java" index="0">
-<position/>
-</item>
-<item historyLabel="LargestProductInSeries.java" index="0">
-<position info="not_deleted" x="343" y="0"/>
-</item>
-<item historyLabel="LargestProductInSeries.java" index="0">
-<position info="not_deleted" x="498" y="0"/>
-</item>
-<item historyLabel="LargestProductInSeries.java" index="0">
-<position/>
-</item>
-<item historyLabel="LargestProductInSeries.java" index="0">
-<position info="not_deleted" x="620" y="0"/>
-</item>
-<item historyLabel="LargestProductInSeries.java" index="0">
-<position info="not_deleted" x="467" y="0"/>
-</item>
-<item historyLabel="LargestProductInSeries.java" index="0">
-<position info="not_deleted" x="527" y="0"/>
-</item>
-<item historyLabel="LargestProductInSeries.java" index="0">
-<position info="not_deleted" x="760" y="0"/>
-</item>
-<item historyLabel="LargestProductInSeries.java" index="0">
-<position info="not_deleted" x="694" y="0"/>
-</item>
-<item historyLabel="LargestProductInSeries.java" index="0">
-<position info="not_deleted" x="243" y="0"/>
-</item>
-<item historyLabel="template.txt" index="1">
-<position info="not_deleted" x="203" y="0"/>
-</item>
-<item historyLabel="LCMOfGroupOfNumbers.java" index="2">
-<position/>
-</item>
-<item historyLabel="template.txt" index="1">
-<position info="not_deleted" x="0" y="276"/>
-</item>
-<item historyLabel="LCMOfGroupOfNumbers.java" index="2">
+<item historyLabel="GridSearch.java" index="0">
 <position info="not_deleted" x="276" y="0"/>
 </item>
-<item historyLabel="LCMOfGroupOfNumbers.java" index="2">
-<position info="not_deleted" x="71" y="0"/>
+<item historyLabel="GridSearch.java" index="0">
+<position info="not_deleted" x="316" y="0"/>
 </item>
-<item historyLabel="LCMOfGroupOfNumbers.java" index="2">
-<position/>
+<item historyLabel="GridSearch.java" index="0">
+<position info="not_deleted" x="407" y="0"/>
 </item>
-<item historyLabel="LCMOfGroupOfNumbers.java" index="2">
-<position info="not_deleted" x="318" y="0"/>
+<item historyLabel="GridSearch.java" index="0">
+<position info="not_deleted" x="465" y="0"/>
 </item>
-<item historyLabel="LCMOfGroupOfNumbers.java" index="2">
-<position info="not_deleted" x="471" y="0"/>
+<item historyLabel="GridSearch.java" index="0">
+<position info="not_deleted" x="672" y="0"/>
 </item>
-<item historyLabel="LCMOfGroupOfNumbers.java" index="2">
-<position info="not_deleted" x="527" y="0"/>
+<item historyLabel="GridSearch.java" index="0">
+<position info="not_deleted" x="901" y="0"/>
 </item>
-<item historyLabel="LCMOfGroupOfNumbers.java" index="2">
-<position info="not_deleted" x="547" y="0"/>
+<item historyLabel="GridSearch.java" index="0">
+<position info="not_deleted" x="759" y="0"/>
 </item>
-<item historyLabel="LCMOfGroupOfNumbers.java" index="2">
-<position info="not_deleted" x="0" y="588"/>
+<item historyLabel="GridSearch.java" index="0">
+<position info="not_deleted" x="1240" y="0"/>
 </item>
-<item historyLabel="template.txt" index="1">
-<position info="not_deleted" x="276" y="0"/>
+<item historyLabel="GridSearch.java" index="0">
+<position info="not_deleted" x="1284" y="0"/>
 </item>
-<item historyLabel="Largest6DigitPalidrome.java" index="3">
-<position info="not_deleted" x="704" y="0"/>
+<item historyLabel="GridSearch.java" index="0">
+<position info="not_deleted" x="918" y="0"/>
 </item>
-<item historyLabel="template.txt" index="1">
-<position info="not_deleted" x="0" y="276"/>
+<item historyLabel="GridSearch.java" index="0">
+<position info="not_deleted" x="988" y="0"/>
 </item>
-<item historyLabel="Largest6DigitPalidrome.java" index="3">
-<position info="not_deleted" x="704" y="0"/>
+<item historyLabel="GridSearch.java" index="0">
+<position info="not_deleted" x="764" y="0"/>
 </item>
-<item historyLabel="Largest6DigitPalidrome.java" index="3">
-<position info="not_deleted" x="88" y="0"/>
+<item historyLabel="GridSearch.java" index="0">
+<position info="not_deleted" x="845" y="0"/>
 </item>
-<item historyLabel="Largest6DigitPalidrome.java" index="3">
-<position info="not_deleted" x="547" y="0"/>
+<item historyLabel="sherlock" index="1">
+<position info="not_deleted" x="469" y="0"/>
 </item>
-<item historyLabel="Largest6DigitPalidrome.java" index="3">
-<position/>
+<item historyLabel="sherlock" index="1">
+<position info="not_deleted" x="291" y="0"/>
 </item>
-<item historyLabel="Largest6DigitPalidrome.java" index="3">
-<position info="not_deleted" x="525" y="0"/>
-</item>
-<item historyLabel="Largest6DigitPalidrome.java" index="3">
-<position info="not_deleted" x="520" y="0"/>
-</item>
-<item historyLabel="Largest6DigitPalidrome.java" index="3">
-<position info="not_deleted" x="419" y="0"/>
-</item>
-<item historyLabel="Largest6DigitPalidrome.java" index="3">
-<position info="not_deleted" x="491" y="0"/>
-</item>
-<item historyLabel="Largest6DigitPalidrome.java" index="3">
-<position info="not_deleted" x="520" y="0"/>
-</item>
-<item historyLabel="Largest6DigitPalidrome.java" index="3">
-<position info="not_deleted" x="525" y="0"/>
-</item>
-<item historyLabel="TriangularNumbers.java" index="4">
-<position info="not_deleted" x="555" y="0"/>
-</item>
-<item historyLabel="template.txt" index="1">
-<position info="not_deleted" x="17" y="0"/>
-</item>
-<item historyLabel="TriangularNumbers.java" index="4">
-<position info="not_deleted" x="555" y="0"/>
-</item>
-<item historyLabel="TriangularNumbers.java" index="4">
-<position info="not_deleted" x="96" y="0"/>
-</item>
-<item historyLabel="Largest6DigitPalidrome.java" index="3">
-<position info="not_deleted" x="525" y="0"/>
-</item>
-<item historyLabel="TriangularNumbers.java" index="4">
-<position info="not_deleted" x="96" y="0"/>
-</item>
-<item historyLabel="template.txt" index="1">
-<position info="not_deleted" x="17" y="0"/>
-</item>
-<item historyLabel="TriangularNumbers.java" index="4">
-<position info="not_deleted" x="96" y="0"/>
-</item>
-<item historyLabel="TriangularNumbers.java" index="4">
-<position info="not_deleted" x="286" y="0"/>
-</item>
-<item historyLabel="TriangularNumbers.java" index="4">
-<position info="not_deleted" x="378" y="0"/>
-</item>
-<item historyLabel="TriangularNumbers.java" index="4">
-<position info="not_deleted" x="403" y="0"/>
-</item>
-<item active="true" historyLabel="TriangularNumbers.java" index="4">
-<position info="not_deleted" x="435" y="0"/>
+<item active="true" historyLabel="priyanka_toys" index="2">
+<position info="not_deleted" x="105" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -470,6 +380,27 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="priyanka_toys.py" tooltip="MyProj/src/priyanka_toys.py">
+<persistable path="/MyProj/src/priyanka_toys.py"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="sherlock.py" tooltip="MyProj/src/sherlock.py">
+<persistable path="/MyProj/src/sherlock.py"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GridSearch.java" tooltip="MyProj/src/GridSearch.java">
+<persistable path="/MyProj/src/GridSearch.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="pandigital_multiples.py" tooltip="MyProj/src/hacker/rank/project/euler/pandigital_multiples.py">
+<persistable path="/MyProj/src/hacker/rank/project/euler/pandigital_multiples.py"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="pandigital_multiples" tooltip="MyProj/src/hacker/rank/project/euler/pandigital_multiples">
+<persistable path="/MyProj/src/hacker/rank/project/euler/pandigital_multiples"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="digit_factorial.py" tooltip="MyProj/src/hacker/rank/project/euler/digit_factorial.py">
+<persistable path="/MyProj/src/hacker/rank/project/euler/digit_factorial.py"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NameScore.java" tooltip="MyProj/src/NameScore.java">
+<persistable path="/MyProj/src/NameScore.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TriangularNumbers.java" tooltip="MyProj/src/TriangularNumbers.java">
 <persistable path="/MyProj/src/TriangularNumbers.java"/>
 </file>
@@ -493,27 +424,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TraingleTreeMaxSum.java" tooltip="MyProj/src/hacker/rank/project/euler/TraingleTreeMaxSum.java">
 <persistable path="/MyProj/src/hacker/rank/project/euler/TraingleTreeMaxSum.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CandidateCode.java" tooltip="MyProj/src/CandidateCode.java">
-<persistable path="/MyProj/src/CandidateCode.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CandidateCode.java" tooltip="MyProj/src/hacker/rank/project/euler/CandidateCode.java">
-<persistable path="/MyProj/src/hacker/rank/project/euler/CandidateCode.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LatticePaths.java" tooltip="MyProj/src/LatticePaths.java">
-<persistable path="/MyProj/src/LatticePaths.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Triplets.java" tooltip="MyProj/src/Triplets.java">
-<persistable path="/MyProj/src/Triplets.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Multiple3and5.java" tooltip="MyProj/src/Multiple3and5.java">
-<persistable path="/MyProj/src/Multiple3and5.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EvenFibonnaci.java" tooltip="MyProj/src/EvenFibonnaci.java">
-<persistable path="/MyProj/src/EvenFibonnaci.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PythagorianTriplets.java" tooltip="MyProj/src/PythagorianTriplets.java">
-<persistable path="/MyProj/src/PythagorianTriplets.java"/>
 </file>
 </mruList>
 </workbench>

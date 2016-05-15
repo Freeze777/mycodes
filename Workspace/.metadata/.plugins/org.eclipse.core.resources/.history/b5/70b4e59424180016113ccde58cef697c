@@ -1,0 +1,11 @@
+from numpy import ndarray
+
+count = ndarray((26,),int)
+count.fill(0)
+s=raw_input()
+
+for c in s:
+    index=ord(c)-ord('a')
+    count[index]+=1;
+
+print count

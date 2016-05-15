@@ -1,0 +1,7 @@
+from numpy import ndarray
+
+count = ndarray((26,),int)
+s=raw_input()
+
+for c in s:
+    print int(c)
