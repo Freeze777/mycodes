@@ -1,7 +1,0 @@
-package hacker.rank.project.euler;
-
-public class TraingleTreeMaxSum {
-public static void main(String[] args) {
-	
-}
-}

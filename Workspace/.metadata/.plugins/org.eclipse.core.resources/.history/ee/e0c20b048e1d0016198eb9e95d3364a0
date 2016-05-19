@@ -1,0 +1,38 @@
+package algo.trees;
+
+public class NthLargestElementInBST {
+	
+	
+	public static void main(String[] args) {
+		TreeNode root = new TreeNode(5);
+
+		root.left = new TreeNode(2);
+		root.left.left = new TreeNode(1);
+		root.left.right = new TreeNode(3);
+		root.left.right.right = new TreeNode(4);
+		
+		root.right = new TreeNode(10);
+		root.right.left = new TreeNode(7);
+		root.right.right = new TreeNode(20);
+		root.right.left.left = new TreeNode(6);
+		root.right.left.right = new TreeNode(8);
+		
+		
+		TreeUtility.printIOT(root);
+		System.out.println();
+		int[] n={1};
+		
+		findNthLargest(root,n);
+	}
+
+	private static void findNthLargest(TreeNode root, int[] n) {
+		if(root==null)
+			return;
+		findNthLargest(root.right,n);
+		n[0]--;
+		if(n[0]==0)
+			System.out.println(root.data);
+		findNthLargest(root.left, n);
+	}
+
+}

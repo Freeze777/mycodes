@@ -18,8 +18,6 @@
 <fullyQualifiedTypeName name="algo.list.ListUtility"/>
 <fullyQualifiedTypeName name="algo.list.ListNode"/>
 <fullyQualifiedTypeName name="java.util.Stack"/>
-<fullyQualifiedTypeName name="algo.trees.TreeNode"/>
-<fullyQualifiedTypeName name="algo.trees.TreeUtility"/>
 <fullyQualifiedTypeName name="java.util.TreeMap"/>
 <fullyQualifiedTypeName name="java.util.Map.Entry"/>
 <fullyQualifiedTypeName name="java.lang.Long"/>
@@ -35,7 +33,6 @@
 <fullyQualifiedTypeName name="Jasmine"/>
 <fullyQualifiedTypeName name="Solu"/>
 <fullyQualifiedTypeName name="java.util.BitSet"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
 <fullyQualifiedTypeName name="java.lang.ArrayStoreException"/>
 <fullyQualifiedTypeName name="SegmentTreeRMaxQ"/>
@@ -47,17 +44,20 @@
 <fullyQualifiedTypeName name="java.util.Set"/>
 <fullyQualifiedTypeName name="java.util.HashSet"/>
 <fullyQualifiedTypeName name="java.lang.Character"/>
-<fullyQualifiedTypeName name="algo.GlobalUtils"/>
 <fullyQualifiedTypeName name="CandidateCode"/>
 <fullyQualifiedTypeName name="MaxValues"/>
 <fullyQualifiedTypeName name="java.math.BigInteger"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="java.util.TreeSet"/>
 <fullyQualifiedTypeName name="java.util.HashMap"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="algo.trees.TreeNode"/>
+<fullyQualifiedTypeName name="algo.trees.TreeUtility"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="algo.GlobalUtils"/>
 </qualifiedTypeNameHistroy>

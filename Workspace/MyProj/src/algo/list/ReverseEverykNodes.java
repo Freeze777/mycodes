@@ -16,7 +16,7 @@ public class ReverseEverykNodes {
 
 	public static ListNode reverseEverykNodes(ListNode head, int k) {
 		if (head==null)
-			return head;
+			return null;
 		ListNode current=head,prev=null,next=null;
 		int count=0;
 		while(current!=null&&count<k)

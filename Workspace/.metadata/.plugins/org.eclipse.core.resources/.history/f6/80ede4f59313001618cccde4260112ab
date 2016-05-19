@@ -1,9 +1,0 @@
-package hacker.rank.project.euler;
-
-import java.util.Scanner;
-
-public class TraingleTreeMaxSum {
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-	}
-}

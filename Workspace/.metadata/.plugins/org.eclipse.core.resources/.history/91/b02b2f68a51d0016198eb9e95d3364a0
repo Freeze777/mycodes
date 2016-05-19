@@ -1,0 +1,12 @@
+package algo;
+/**
+ * https://en.wikipedia.org/wiki/Summed_area_table
+ **/
+public class EfficientSubmatrixComputation {
+	public static void main(String[] args) {
+		
+		int[][] mat=new int[10][10];
+		
+	}
+
+}
