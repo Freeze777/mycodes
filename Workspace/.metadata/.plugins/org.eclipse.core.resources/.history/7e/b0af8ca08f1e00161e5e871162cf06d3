@@ -1,0 +1,29 @@
+package hacker.rank;
+
+import java.util.Scanner;
+
+public class StockMaximise {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		int tst = sc.nextInt();
+		while (tst > 0) {
+			int n = sc.nextInt();
+			int[] stock = new int[n];
+			int profit = 0;
+			for (int i = 0; i < stock.length;) {
+				int tmp = i, sum = 0;
+				while ((tmp<stock.length-1)&&stock[tmp] <= stock[tmp + 1]) {
+					sum += stock[tmp];
+					tmp++;
+				}
+				profit += (((tmp - i) * stock[tmp]) - sum);
+				i=tmp+1;
+
+			}
+
+			tst--;
+		}
+	}
+}

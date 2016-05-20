@@ -1,0 +1,8 @@
+package algo.trees;
+
+public class StockPricesBuySellPairs {
+	public static void main(String[] args) {
+		
+	}
+
+}
