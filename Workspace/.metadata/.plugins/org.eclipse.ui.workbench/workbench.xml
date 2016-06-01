@@ -13,7 +13,7 @@
 <coolItem id="org.eclipse.debug.ui.launch.toolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="156" y="30"/>
 <coolItem id="org.eclipse.debug.ui.main.toolbar" itemType="typeToolBarContribution" x="40" y="30"/>
-<coolItem id="com.python.pydev.toolbars.evaluateActionSetterToolbar" itemType="typeToolBarContribution" x="40" y="30"/>
+<coolItem id="com.python.pydev.toolbars.evaluateActionSetterToolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="88" y="30"/>
@@ -37,17 +37,47 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+<part id="6"/>
+<part id="7"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GlobalUtils.java" partName="GlobalUtils.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/algo/GlobalUtils.java" title="GlobalUtils.java" tooltip="MyProj/src/algo/GlobalUtils.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/algo/GlobalUtils.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="469" selectionTopPixel="204"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SynchronousShopping.java" partName="SynchronousShopping.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/algo/graph/SynchronousShopping.java" title="SynchronousShopping.java" tooltip="MyProj/src/algo/graph/SynchronousShopping.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/algo/graph/SynchronousShopping.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2017" selectionTopPixel="722"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RotateArray90.java" partName="RotateArray90.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/algo/RotateArray90.java" title="RotateArray90.java" tooltip="MyProj/src/algo/RotateArray90.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/algo/RotateArray90.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="446" selectionTopPixel="0"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LargestRectangle.java" partName="LargestRectangle.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/algo/stack/LargestRectangle.java" title="LargestRectangle.java" tooltip="MyProj/src/algo/stack/LargestRectangle.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/algo/stack/LargestRectangle.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="693" selectionTopPixel="200"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BalancedParanthesis.java" partName="BalancedParanthesis.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/algo/stack/BalancedParanthesis.java" title="BalancedParanthesis.java" tooltip="MyProj/src/algo/stack/BalancedParanthesis.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/algo/stack/BalancedParanthesis.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="507" selectionTopPixel="273"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MaximumElementInStack.java" partName="MaximumElementInStack.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/algo/stack/MaximumElementInStack.java" title="MaximumElementInStack.java" tooltip="MyProj/src/algo/stack/MaximumElementInStack.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/algo/stack/MaximumElementInStack.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="627" selectionTopPixel="222"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GridSearch.java" partName="GridSearch.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/GridSearch.java" title="GridSearch.java" tooltip="MyProj/src/GridSearch.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/GridSearch.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="644" selectionTopPixel="207"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PrintNodesAtDistanceK.java" partName="PrintNodesAtDistanceK.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/algo/trees/PrintNodesAtDistanceK.java" title="PrintNodesAtDistanceK.java" tooltip="MyProj/src/algo/trees/PrintNodesAtDistanceK.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/algo/trees/PrintNodesAtDistanceK.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="569"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SortArrayWith3Distincts.java" partName="SortArrayWith3Distincts.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/algo/SortArrayWith3Distincts.java" title="SortArrayWith3Distincts.java" tooltip="MyProj/src/algo/SortArrayWith3Distincts.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/algo/SortArrayWith3Distincts.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="12" selectionTopPixel="0"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NthLargestandSmallestElementInBST.java" partName="NthLargestandSmallestElementInBST.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/algo/trees/NthLargestandSmallestElementInBST.java" title="NthLargestandSmallestElementInBST.java" tooltip="MyProj/src/algo/trees/NthLargestandSmallestElementInBST.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/algo/trees/NthLargestandSmallestElementInBST.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="149" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -90,10 +120,6 @@
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<expanded>
-<category IMemento.internal.id="Errors"/>
-<category IMemento.internal.id="Warnings (56 items)"/>
-</expanded>
 <columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="261" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -267,7 +293,7 @@
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.18294574" ratioLeft="236" ratioRight="1054" relationship="2" relative="left"/>
+<info part="org.eclipse.ui.editorss" ratio="0.2744186" ratioLeft="354" ratioRight="936" relationship="2" relative="left"/>
 <info folder="true" part="bottom" ratio="0.6621622" ratioLeft="441" ratioRight="225" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
@@ -303,164 +329,168 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/trees/PruneTree.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/EfficientSubmatrixComputation.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/GlobalUtils.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/list/ReverseAlternatekNodes.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/list/ReverseAlinkedList.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/list/ReverseEverykNodes.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/RotateArray90.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/EfficientSubmatrixSumComputation.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/graph/LargestRectangle.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/stacks/LargestRectangle.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/stack/LargestRectangle.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/stack/BalancedParanthesis.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/stack/MaximumElementInStack.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/GridSearch.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/trees/PrintNodesAtDistanceK.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/trees/SortArrayWith3Distincts.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/SortArrayWith3Distincts.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/trees/NthLargestandSmallestElementInBST.java"/>
+<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=MyProj/\/usr\/lib\/jvm\/java-8-openjdk-amd64\/jre\/lib\/rt.jar&lt;java.lang(Math.class"/>
+<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=MyProj/\/usr\/lib\/jvm\/java-8-openjdk-amd64\/jre\/lib\/rt.jar&lt;java.lang(StrictMath.class"/>
 </editors>
-<item historyLabel="EfficientSubmatrixComputation.java" index="1">
-<position/>
-</item>
-<item historyLabel="PruneTree.java" index="0">
-<position info="not_deleted" x="189" y="418"/>
-</item>
-<item historyLabel="EfficientSubmatrixComputation.java" index="1">
-<position/>
-</item>
-<item historyLabel="GlobalUtils.java" index="2">
+<item historyLabel="LargestRectangle.java" index="0">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="EfficientSubmatrixComputation.java" index="1">
+<item historyLabel="LargestRectangle.java" index="1">
+<position info="not_deleted" x="18" y="0"/>
+</item>
+<item historyLabel="LargestRectangle.java" index="2">
 <position/>
 </item>
-<item historyLabel="EfficientSubmatrixComputation.java" index="1">
+<item historyLabel="LargestRectangle.java" index="2">
 <position/>
 </item>
-<item historyLabel="EfficientSubmatrixComputation.java" index="1">
-<position info="not_deleted" x="384" y="0"/>
-</item>
-<item historyLabel="EfficientSubmatrixComputation.java" index="1">
-<position info="not_deleted" x="633" y="0"/>
-</item>
-<item historyLabel="EfficientSubmatrixComputation.java" index="1">
-<position info="not_deleted" x="449" y="0"/>
-</item>
-<item historyLabel="EfficientSubmatrixComputation.java" index="1">
-<position info="not_deleted" x="634" y="0"/>
-</item>
-<item historyLabel="EfficientSubmatrixComputation.java" index="1">
-<position info="not_deleted" x="120" y="41"/>
-</item>
-<item historyLabel="EfficientSubmatrixComputation.java" index="1">
-<position info="not_deleted" x="598" y="0"/>
-</item>
-<item historyLabel="EfficientSubmatrixComputation.java" index="1">
-<position info="not_deleted" x="512" y="1"/>
-</item>
-<item historyLabel="EfficientSubmatrixComputation.java" index="1">
-<position info="not_deleted" x="540" y="0"/>
-</item>
-<item historyLabel="EfficientSubmatrixComputation.java" index="1">
+<item historyLabel="LargestRectangle.java" index="2">
 <position/>
 </item>
-<item historyLabel="EfficientSubmatrixComputation.java" index="1">
-<position info="not_deleted" x="763" y="0"/>
-</item>
-<item historyLabel="EfficientSubmatrixComputation.java" index="1">
+<item historyLabel="LargestRectangle.java" index="2">
 <position/>
 </item>
-<item historyLabel="EfficientSubmatrixComputation.java" index="1">
-<position info="not_deleted" x="805" y="0"/>
-</item>
-<item historyLabel="EfficientSubmatrixComputation.java" index="1">
+<item historyLabel="LargestRectangle.java" index="2">
 <position/>
 </item>
-<item historyLabel="EfficientSubmatrixComputation.java" index="1">
-<position info="not_deleted" x="856" y="0"/>
+<item historyLabel="LargestRectangle.java" index="2">
+<position/>
 </item>
-<item historyLabel="EfficientSubmatrixComputation.java" index="1">
-<position info="not_deleted" x="536" y="0"/>
+<item historyLabel="LargestRectangle.java" index="2">
+<position/>
 </item>
-<item historyLabel="ReverseAlternatekNodes.java" index="3">
+<item historyLabel="LargestRectangle.java" index="2">
+<position/>
+</item>
+<item historyLabel="LargestRectangle.java" index="2">
+<position/>
+</item>
+<item historyLabel="LargestRectangle.java" index="2">
+<position/>
+</item>
+<item historyLabel="LargestRectangle.java" index="2">
+<position info="not_deleted" x="434" y="0"/>
+</item>
+<item historyLabel="LargestRectangle.java" index="2">
+<position/>
+</item>
+<item historyLabel="LargestRectangle.java" index="2">
+<position info="not_deleted" x="718" y="0"/>
+</item>
+<item historyLabel="LargestRectangle.java" index="2">
+<position/>
+</item>
+<item historyLabel="BalancedParanthesis.java" index="3">
+<position info="not_deleted" x="738" y="0"/>
+</item>
+<item historyLabel="BalancedParanthesis.java" index="3">
+<position/>
+</item>
+<item historyLabel="BalancedParanthesis.java" index="3">
+<position/>
+</item>
+<item historyLabel="BalancedParanthesis.java" index="3">
+<position/>
+</item>
+<item historyLabel="BalancedParanthesis.java" index="3">
+<position/>
+</item>
+<item historyLabel="BalancedParanthesis.java" index="3">
+<position/>
+</item>
+<item historyLabel="BalancedParanthesis.java" index="3">
+<position/>
+</item>
+<item historyLabel="BalancedParanthesis.java" index="3">
+<position/>
+</item>
+<item historyLabel="BalancedParanthesis.java" index="3">
+<position/>
+</item>
+<item historyLabel="BalancedParanthesis.java" index="3">
+<position info="not_deleted" x="507" y="0"/>
+</item>
+<item historyLabel="MaximumElementInStack.java" index="4">
+<position info="not_deleted" x="642" y="0"/>
+</item>
+<item historyLabel="MaximumElementInStack.java" index="4">
+<position info="not_deleted" x="639" y="0"/>
+</item>
+<item historyLabel="MaximumElementInStack.java" index="4">
+<position info="not_deleted" x="308" y="0"/>
+</item>
+<item historyLabel="MaximumElementInStack.java" index="4">
+<position info="not_deleted" x="636" y="0"/>
+</item>
+<item historyLabel="MaximumElementInStack.java" index="4">
+<position info="not_deleted" x="363" y="0"/>
+</item>
+<item historyLabel="MaximumElementInStack.java" index="4">
+<position info="not_deleted" x="489" y="0"/>
+</item>
+<item historyLabel="MaximumElementInStack.java" index="4">
+<position info="not_deleted" x="462" y="0"/>
+</item>
+<item historyLabel="MaximumElementInStack.java" index="4">
+<position info="not_deleted" x="484" y="0"/>
+</item>
+<item historyLabel="MaximumElementInStack.java" index="4">
+<position info="not_deleted" x="545" y="0"/>
+</item>
+<item historyLabel="GridSearch.java" index="5">
+<position info="not_deleted" x="644" y="0"/>
+</item>
+<item historyLabel="PrintNodesAtDistanceK.java" index="6">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="EfficientSubmatrixComputation.java" index="1">
-<position info="not_deleted" x="60" y="0"/>
-</item>
-<item historyLabel="ReverseAlternatekNodes.java" index="3">
+<item historyLabel="SortArrayWith3Distincts.java" index="7">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="ReverseAlinkedList.java" index="4">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="SortArrayWith3Distincts.java" index="8">
+<position info="not_deleted" x="12" y="0"/>
 </item>
-<item historyLabel="ReverseAlternatekNodes.java" index="3">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="NthLargestandSmallestElementInBST.java" index="9">
+<position info="not_deleted" x="1" y="0"/>
 </item>
-<item historyLabel="ReverseEverykNodes.java" index="5">
-<position info="not_deleted" x="543" y="0"/>
-</item>
-<item historyLabel="RotateArray90.java" index="6">
+<item historyLabel="NthLargestandSmallestElementInBST.java" index="9">
 <position/>
 </item>
-<item historyLabel="ReverseAlternatekNodes.java" index="3">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="Math.class" index="10">
+<position info="not_deleted" x="12146" y="0"/>
 </item>
-<item historyLabel="RotateArray90.java" index="6">
+<item historyLabel="StrictMath.class" index="11">
 <position/>
 </item>
-<item historyLabel="ReverseAlinkedList.java" index="4">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="Math.class" index="10">
+<position info="not_deleted" x="12146" y="0"/>
 </item>
-<item historyLabel="RotateArray90.java" index="6">
+<item historyLabel="Math.class" index="10">
+<position info="not_deleted" x="13021" y="0"/>
+</item>
+<item historyLabel="StrictMath.class" index="11">
+<position info="not_deleted" x="3757" y="10"/>
+</item>
+<item historyLabel="Math.class" index="10">
+<position info="not_deleted" x="13027" y="0"/>
+</item>
+<item historyLabel="StrictMath.class" index="11">
+<position info="not_deleted" x="9965" y="5"/>
+</item>
+<item historyLabel="Math.class" index="10">
+<position info="not_deleted" x="13027" y="0"/>
+</item>
+<item active="true" historyLabel="NthLargestandSmallestElementInBST.java" index="9">
 <position/>
-</item>
-<item historyLabel="ReverseEverykNodes.java" index="5">
-<position info="not_deleted" x="543" y="0"/>
-</item>
-<item historyLabel="RotateArray90.java" index="6">
-<position/>
-</item>
-<item historyLabel="EfficientSubmatrixComputation.java" index="1">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="EfficientSubmatrixSumComputation.java" index="7">
-<position info="not_deleted" x="167" y="222"/>
-</item>
-<item historyLabel="RotateArray90.java" index="6">
-<position info="not_deleted" x="302" y="0"/>
-</item>
-<item historyLabel="GlobalUtils.java" index="2">
-<position info="not_deleted" x="320" y="10"/>
-</item>
-<item historyLabel="RotateArray90.java" index="6">
-<position info="not_deleted" x="302" y="0"/>
-</item>
-<item historyLabel="GlobalUtils.java" index="2">
-<position info="not_deleted" x="469" y="0"/>
-</item>
-<item historyLabel="EfficientSubmatrixSumComputation.java" index="7">
-<position info="not_deleted" x="389" y="0"/>
-</item>
-<item historyLabel="GlobalUtils.java" index="2">
-<position info="not_deleted" x="469" y="0"/>
-</item>
-<item historyLabel="RotateArray90.java" index="6">
-<position info="not_deleted" x="302" y="0"/>
-</item>
-<item historyLabel="RotateArray90.java" index="6">
-<position/>
-</item>
-<item historyLabel="RotateArray90.java" index="6">
-<position info="not_deleted" x="480" y="0"/>
-</item>
-<item historyLabel="RotateArray90.java" index="6">
-<position info="not_deleted" x="520" y="0"/>
-</item>
-<item historyLabel="RotateArray90.java" index="6">
-<position/>
-</item>
-<item historyLabel="RotateArray90.java" index="6">
-<position/>
-</item>
-<item historyLabel="RotateArray90.java" index="6">
-<position info="not_deleted" x="360" y="0"/>
-</item>
-<item active="true" historyLabel="RotateArray90.java" index="6">
-<position info="not_deleted" x="561" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -479,50 +509,50 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EfficientSubmatrixComputation.java" tooltip="MyProj/src/algo/EfficientSubmatrixComputation.java">
-<persistable path="/MyProj/src/algo/EfficientSubmatrixComputation.java"/>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="StrictMath.class" tooltip="java.lang.StrictMath">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=MyProj/\/usr\/lib\/jvm\/java-8-openjdk-amd64\/jre\/lib\/rt.jar&lt;java.lang(StrictMath.class"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RotateArray90.java" tooltip="MyProj/src/algo/RotateArray90.java">
-<persistable path="/MyProj/src/algo/RotateArray90.java"/>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="Math.class" tooltip="java.lang.Math">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=MyProj/\/usr\/lib\/jvm\/java-8-openjdk-amd64\/jre\/lib\/rt.jar&lt;java.lang(Math.class"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ReverseEverykNodes.java" tooltip="MyProj/src/algo/list/ReverseEverykNodes.java">
-<persistable path="/MyProj/src/algo/list/ReverseEverykNodes.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NthLargestandSmallestElementInBST.java" tooltip="MyProj/src/algo/trees/NthLargestandSmallestElementInBST.java">
+<persistable path="/MyProj/src/algo/trees/NthLargestandSmallestElementInBST.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ReverseAlinkedList.java" tooltip="MyProj/src/algo/list/ReverseAlinkedList.java">
-<persistable path="/MyProj/src/algo/list/ReverseAlinkedList.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SortArrayWith3Distincts.java" tooltip="MyProj/src/algo/trees/SortArrayWith3Distincts.java">
+<persistable path="/MyProj/src/algo/trees/SortArrayWith3Distincts.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ReverseAlternatekNodes.java" tooltip="MyProj/src/algo/list/ReverseAlternatekNodes.java">
-<persistable path="/MyProj/src/algo/list/ReverseAlternatekNodes.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PrintNodesAtDistanceK.java" tooltip="MyProj/src/algo/trees/PrintNodesAtDistanceK.java">
+<persistable path="/MyProj/src/algo/trees/PrintNodesAtDistanceK.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GlobalUtils.java" tooltip="MyProj/src/algo/GlobalUtils.java">
-<persistable path="/MyProj/src/algo/GlobalUtils.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GridSearch.java" tooltip="MyProj/src/GridSearch.java">
+<persistable path="/MyProj/src/GridSearch.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DoublePointer.java" tooltip="MyProj/src/algo/trees/DoublePointer.java">
-<persistable path="/MyProj/src/algo/trees/DoublePointer.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MaximumElementInStack.java" tooltip="MyProj/src/algo/stack/MaximumElementInStack.java">
+<persistable path="/MyProj/src/algo/stack/MaximumElementInStack.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BST2DLL.java" tooltip="MyProj/src/algo/trees/BST2DLL.java">
-<persistable path="/MyProj/src/algo/trees/BST2DLL.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BalancedParanthesis.java" tooltip="MyProj/src/algo/stack/BalancedParanthesis.java">
+<persistable path="/MyProj/src/algo/stack/BalancedParanthesis.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LargestRectangle.java" tooltip="MyProj/src/algo/graph/LargestRectangle.java">
+<persistable path="/MyProj/src/algo/graph/LargestRectangle.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SynchronousShopping.java" tooltip="MyProj/src/algo/graph/SynchronousShopping.java">
+<persistable path="/MyProj/src/algo/graph/SynchronousShopping.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Dijkstra.java" tooltip="MyProj/src/algo/graph/Dijkstra.java">
+<persistable path="/MyProj/src/algo/graph/Dijkstra.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SwapNode.java" tooltip="MyProj/src/hacker/rank/SwapNode.java">
+<persistable path="/MyProj/src/hacker/rank/SwapNode.java"/>
+</file>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="LinkedList.class" tooltip="java.util.LinkedList">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=MyProj/\/usr\/lib\/jvm\/java-8-openjdk-amd64\/jre\/lib\/rt.jar&lt;java.util(LinkedList.class"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TreeNode.java" tooltip="MyProj/src/algo/trees/TreeNode.java">
+<persistable path="/MyProj/src/algo/trees/TreeNode.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TreeUtility.java" tooltip="MyProj/src/algo/trees/TreeUtility.java">
 <persistable path="/MyProj/src/algo/trees/TreeUtility.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PruneTree.java" tooltip="MyProj/src/algo/trees/PruneTree.java">
-<persistable path="/MyProj/src/algo/trees/PruneTree.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SortedArrayToBBST.java" tooltip="MyProj/src/algo/trees/SortedArrayToBBST.java">
-<persistable path="/MyProj/src/algo/trees/SortedArrayToBBST.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NthLargestElementInBST.java" tooltip="MyProj/src/algo/NthLargestElementInBST.java">
-<persistable path="/MyProj/src/algo/NthLargestElementInBST.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AlmostSorted.java" tooltip="MyProj/src/algo/AlmostSorted.java">
-<persistable path="/MyProj/src/algo/AlmostSorted.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="priyanka_toys.py" tooltip="MyProj/src/priyanka_toys.py">
-<persistable path="/MyProj/src/priyanka_toys.py"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="sherlock.py" tooltip="MyProj/src/sherlock.py">
-<persistable path="/MyProj/src/sherlock.py"/>
 </file>
 </mruList>
 </workbench>

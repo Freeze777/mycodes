@@ -1,0 +1,8 @@
+package algo.stack;
+
+public class LargestRectangle {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+	}
+
+}

@@ -1,0 +1,23 @@
+package algo.stack;
+
+import java.io.*;
+import java.util.*;
+
+public class MaximumElementInStack {
+
+    public static void main(String[] args) {
+    	Scanner sc=new Scanner(System.in);
+    	int n=sc.nextInt();
+    	Stack<Integer> st=new Stack<Integer>();
+		Stack<Integer> max=new Stack<Integer>();
+    	while(n-->0){
+    		
+    	
+    		
+    		int 
+    		
+    		
+    		
+    	}
+    }
+}

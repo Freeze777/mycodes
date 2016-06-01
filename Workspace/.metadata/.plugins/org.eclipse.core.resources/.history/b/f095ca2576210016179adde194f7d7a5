@@ -1,0 +1,22 @@
+package algo.trees;
+
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class TopView {
+	public static void main(String[] args) {
+		TreeNode root = new TreeNode(1);
+        root.left = new TreeNode(2);
+        root.right = new TreeNode(3);
+        root.left.right = new TreeNode(4);
+        root.left.right.right = new TreeNode(5);
+        root.left.right.right.right = new TreeNode(6);
+        
+        printTopView(root);
+	}
+
+	private static void printTopView(TreeNode root) {
+		Queue<TreeNode> q=new LinkedList<TreeNode>();
+		
+	}
+}

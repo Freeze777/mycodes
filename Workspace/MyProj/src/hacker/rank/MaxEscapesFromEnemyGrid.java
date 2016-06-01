@@ -4,9 +4,8 @@ import java.util.Scanner;
 
 public class MaxEscapesFromEnemyGrid {
 	/* *
-	 * 1 for prisoner
-	 *  0 for enemy 
-	 * prisoner escapes if its at the edge of the grid
+	 * 1 for prisoner 0 for enemy prisoner escapes if its at the edge of the
+	 * grid
 	 */
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

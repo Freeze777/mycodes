@@ -1,0 +1,10 @@
+package algo.stack;
+
+import java.util.Scanner;
+
+public class LargestRectangle {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+	}
+
+}

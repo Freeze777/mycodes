@@ -1,0 +1,14 @@
+package hacker.rank;
+
+import java.io.*;
+import java.util.*;
+
+public class SwapNode {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int[] left=new int[n+1];
+		int[] right=new int[n+1];
+	}
+}
