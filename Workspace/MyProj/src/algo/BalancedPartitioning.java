@@ -1,10 +1,12 @@
 package algo;
 
+import java.util.Stack;
+
 public class BalancedPartitioning {
 	public static void main(String[] args) {
 		int A[] = { 4,5,3,3,3};
 		int sum = 0;
-
+		
 		for (int i = 0; i < A.length; i++)
 			sum += A[i];
 

@@ -3,6 +3,10 @@
 	<section name="SearchDialog.ScopePart">
 		<item value="0" key="scope"/>
 	</section>
+	<section name="">
+		<item value="1000" key="org.eclipse.jdt.search.resultpage.limit"/>
+		<item value="TRUE" key="org.eclipse.jdt.search.resultpage.limit_enabled"/>
+	</section>
 	<section name="Search">
 		<list key="Search.processedPageIds">
 			<item value="org.eclipse.search.internal.ui.text.TextSearchPage"/>
@@ -20,6 +24,10 @@
 			<item value="org.eclipse.cdt.ui.pdomSearchPage"/>
 			<item value="com.python.pydev.analysis.search_index.PySearchIndexPage"/>
 		</list>
+	</section>
+	<section name="org.eclipse.jdt.ui.JavaSearchResultPage">
+		<item value="1000" key="org.eclipse.jdt.search.resultpage.limit"/>
+		<item value="TRUE" key="org.eclipse.jdt.search.resultpage.limit_enabled"/>
 	</section>
 	<section name="DialogBounds_SearchDialog">
 		<item value="718" key="DIALOG_WIDTH"/>

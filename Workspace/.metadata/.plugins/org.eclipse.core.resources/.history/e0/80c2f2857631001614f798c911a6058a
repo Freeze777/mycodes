@@ -1,0 +1,64 @@
+import java.util.*;
+
+class Line {
+	double m;
+	double c;
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		long temp;
+		temp = Double.doubleToLongBits(c);
+		result = prime * result + (int) (temp ^ (temp >>> 32));
+		temp = Double.doubleToLongBits(m);
+		result = prime * result + (int) (temp ^ (temp >>> 32));
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Line other = (Line) obj;
+		if (Double.doubleToLongBits(c) != Double.doubleToLongBits(other.c))
+			return false;
+		if (Double.doubleToLongBits(m) != Double.doubleToLongBits(other.m))
+			return false;
+		return true;
+	}
+
+	public Line(int x0, int y0, int x1, int y1) {
+		if (x1 == x0) {
+			this.m = Double.MAX_VALUE;
+			c = 0;
+		} else {
+			this.m = (double) (y1 - y0) / (x1 - x0);
+			this.c = (double) y0 - (this.m * x0);
+		}
+
+	}
+
+}
+
+public class LazerGun {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		Set<Line> set = new HashSet<Line>();
+		int n = sc.nextInt();
+		int x0 = sc.nextInt();
+		int y0 = sc.nextInt();
+		for (int i = 0; i < n; i++) {
+			int x1 = sc.nextInt();
+			int y1 = sc.nextInt();
+			set.add(new Line(x0, y0, x1, y1));
+		}
+
+	}
+
+}

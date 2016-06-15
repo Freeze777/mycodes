@@ -11,8 +11,10 @@ public class BuildTree {
 		int rootIndex = search(inorder, 0, inorder.length - 1, levelorder[0]);
 		TreeNode root = buildTreeFromLevelOrder(inorder, 0, inorder.length - 1,
 				levelorder, rootIndex, current);
-TreeUtility.printIOT(root);
+		TreeUtility.printIOT(root);
 	}
+
+	
 
 	private static TreeNode buildTreeFromLevelOrder(int[] inorder, int start,
 			int end, int[] levelorder, int rootIndex,
@@ -37,25 +39,16 @@ TreeUtility.printIOT(root);
 		return root;
 	}
 
-	private static TreeNode buildTreeFromPreorder(int[] inorder, int start,
-			int end, int[] preorder, DoublePointer<Integer> current) {
-
-		if (start > end)
+	private static TreeNode buildTreeFromPreorder(int[] inorder,int[] preorder,int preStart,int preEnd,int inStart,
+			int inEnd) {
+		if(inStart>inEnd||preStart>preEnd)
 			return null;
-
-		int pos = current.getValue();
-		if (start == end) {
-			current.setValue(pos + 1);
-			return new TreeNode(preorder[pos]);
-		}
-		TreeNode root = new TreeNode(preorder[pos]);
-		int index = search(inorder, start, end, root.data);
-		current.setValue(pos + 1);
-		root.left = buildTreeFromPreorder(inorder, start, index - 1, preorder,
-				current);
-		root.right = buildTreeFromPreorder(inorder, index + 1, end, preorder,
-				current);
-
+		TreeNode root=new TreeNode(preorder[preStart]);
+		int i=search(inorder, inStart, inEnd, root.data);
+		int leftTotal=i-inStart;
+		int rightTotal=inEnd-i;
+		root.left=buildTreeFromPreorder(inorder, preorder, preStart+1, preStart+leftTotal, inStart, i-1);
+		root.right=buildTreeFromPreorder(inorder, preorder, preEnd-rightTotal-1, preEnd, i+1, inEnd);
 		return root;
 	}
 
@@ -67,5 +60,36 @@ TreeUtility.printIOT(root);
 
 		return -1;
 	}
+	
+	 public TreeNode buildTreeHelper_PostOrder(int[] inorder, int[] postorder,
+				int postStart, int postEnd, int inStart, int inEnd) {
+
+			if (inStart > inEnd||postStart>postEnd)
+				return null;
+
+			int rootVal = postorder[postEnd];
+			TreeNode root = new TreeNode(rootVal);
+			int i;
+			for (i = inStart; i <= inEnd; i++)
+				if (inorder[i] == rootVal)
+					break;
+			int leftTotal = i - inStart;
+			int rightTotal = inEnd - i;
+				
+			root.left = buildTreeHelper_PostOrder(inorder, postorder, postStart, postStart
+					+ leftTotal - 1, inStart, i - 1);
+			root.right = buildTreeHelper_PostOrder(inorder, postorder, postEnd - rightTotal,
+					postEnd - 1, i + 1, inEnd);
+
+			return root;
+
+		}
+
+		public TreeNode buildTree_PostOrder(int[] inorder, int[] postorder) {
+			int[] postIndex = { 0 };
+			return buildTreeHelper_PostOrder(inorder, postorder,0, postorder.length-1, 0,
+					inorder.length - 1);
+
+		}
 
 }

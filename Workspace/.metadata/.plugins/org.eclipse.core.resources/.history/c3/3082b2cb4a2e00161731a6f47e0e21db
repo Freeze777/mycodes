@@ -1,0 +1,25 @@
+package algo.list;
+
+public class ThreeColorSort {
+	public static void swap(int[] arr,int i,int j){
+		
+	}
+	
+	/*Array containing 3 distinct elements ..sort it in O(n) without using count sort*/
+	public static void main(String[] args) {
+		int[] arr={10,30,20,10,10,20,30,10,20,30,20,10,20,30,10,10,20};
+		int low=0,mid=low+1,high=arr.length-1;
+		while(mid<high){
+			
+			if(arr[low]!=10)
+			{
+				if(arr[mid]==10)
+					
+			}
+			
+			
+		}
+		
+	}
+
+}

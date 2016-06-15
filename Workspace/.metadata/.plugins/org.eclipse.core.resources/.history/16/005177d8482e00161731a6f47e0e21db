@@ -1,0 +1,11 @@
+package algo.list;
+
+public class ThreeColorSort {
+	
+	
+	public static void main(String[] args) {
+		int[] arr={10,30,20,10,10,20,30,10,20,30,20,10,20,30,10,10,20};
+		int low=0,mid=0,high=arr.length-1;
+	}
+
+}

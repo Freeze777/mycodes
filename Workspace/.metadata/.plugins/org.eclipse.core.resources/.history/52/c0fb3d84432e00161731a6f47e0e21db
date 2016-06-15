@@ -1,0 +1,6 @@
+public class Test_Strings {
+	public static void main(String[] args) {
+		String s="33";
+
+	}
+}

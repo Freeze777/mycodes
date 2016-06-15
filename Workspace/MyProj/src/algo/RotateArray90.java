@@ -10,14 +10,14 @@ public class RotateArray90 {
 			for (int j = 0; j < mat[0].length; j++)
 				mat[i][j] = (int) (Math.random() * 101);
 
-		GlobalUtils.printArray(mat);
+		Utils.printArray(mat);
 		System.out.println();
 		rotateMatrix90Right(mat);
 		rotateMatrix90Right(mat);
 		rotateMatrix90Right(mat);
 		rotateMatrix90Right(mat);
 
-		GlobalUtils.printArray(mat);
+		Utils.printArray(mat);
 	}
 
 	private static void rotateMatrix90Right(int[][] mat) {

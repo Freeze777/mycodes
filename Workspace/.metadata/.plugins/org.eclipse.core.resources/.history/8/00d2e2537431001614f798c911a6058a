@@ -1,0 +1,35 @@
+class Line{
+	int m;
+	int c;
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + c;
+		result = prime * result + m;
+		return result;
+	}
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Line other = (Line) obj;
+		if (c != other.c)
+			return false;
+		if (m != other.m)
+			return false;
+		return true;
+	}
+	
+}
+public class LazerGun {
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

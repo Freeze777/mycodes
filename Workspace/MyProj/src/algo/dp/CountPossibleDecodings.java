@@ -22,6 +22,7 @@ char[] sequence =s.toCharArray();
 			if (t <= 26)
 				dp[i] += dp[i - 2];
 		}
+		
 		return dp[sequence.length];
 	}
 

@@ -1,0 +1,86 @@
+package algo.trees;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Stack;
+
+public class IterativeTreeTraversals {
+	public List<Integer> inorderTraversal(TreeNode root) {
+
+		List<Integer> l = new ArrayList<Integer>();
+
+		if (root == null)
+			return l;
+		Stack<TreeNode> s = new Stack<TreeNode>();
+
+		while (root != null) {
+			s.push(root);
+			root = root.left;
+		}
+		while (!s.isEmpty()) {
+			root = s.pop();
+			l.add(root.data);
+			if (root.right != null) {
+				root = root.right;
+				while (root != null) {
+					s.push(root);
+					root = root.left;
+				}
+
+			}
+
+		}
+
+		return l;
+	}
+
+	public List<Integer> inorderTraversal_method1(TreeNode root) {
+
+		List<Integer> l = new ArrayList<Integer>();
+
+		if (root == null)
+			return l;
+		Stack<TreeNode> s = new Stack<TreeNode>();
+
+		while (root != null) {
+			s.push(root);
+			root = root.left;
+		}
+		while (!s.isEmpty()) {
+			root = s.pop();
+			l.add(root.data);
+			if (root.right != null) {
+				root = root.right;
+				while (root != null) {
+					s.push(root);
+					root = root.left;
+				}
+
+			}
+
+		}
+
+		return l;
+	}
+
+	public List<Integer> preorderTraversal(TreeNode root) {
+		List<Integer> l = new ArrayList<Integer>();
+		if (root == null)
+			return l;
+		Stack<TreeNode> s = new Stack<TreeNode>();
+		s.push(root);
+		while (!s.isEmpty()) {
+			TreeNode node = s.pop();
+			l.add(node.data);
+
+			if (node.right != null)
+				s.push(node.right);
+
+			if (node.left != null)
+				s.push(node.left);
+
+		}
+		return l;
+	}
+
+}

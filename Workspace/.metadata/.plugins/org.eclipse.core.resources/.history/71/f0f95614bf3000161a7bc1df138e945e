@@ -1,0 +1,25 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class RootToLeafPaths {
+	public void binaryTreePaths(TreeNode root, String s, List<String> l) {
+		if (root == null)
+			return;
+		if (root.left == null && root.right == null) {
+			s.append(root.data);
+			l.add(s.toString());
+		}
+		binaryTreePaths(root.left, s.append(root.data + "->"), l);
+		s.delete(s.length() - 1, s.length());
+		binaryTreePaths(root, s, l);
+		s.delete(s.length() - 1, s.length());
+
+	}
+
+	public List<String> AinaryTreePaths(TreeNode root) {
+		String s = "";
+		List<String> l = new ArrayList<String>();
+		binaryTreePaths(root, s, l);
+		return l;
+	}
+}

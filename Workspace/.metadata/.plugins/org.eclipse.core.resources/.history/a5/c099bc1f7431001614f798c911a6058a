@@ -1,0 +1,11 @@
+class Line{
+	int m;
+	int c;
+}
+public class LazerGun {
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

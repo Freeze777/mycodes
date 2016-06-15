@@ -13,14 +13,14 @@ public class EfficientSubmatrixSumComputation {
 			for (int j = 0; j < mat[0].length; j++)
 				mat[i][j] = (int) (Math.random() * 101);
 
-		GlobalUtils.printArray(mat);
+		Utils.printArray(mat);
 
 		int[][] sat = new int[row][col];
 		preProcessToSAT(mat, sat);
 
 		System.out.println();
 
-		GlobalUtils.printArray(sat);
+		Utils.printArray(sat);
 
 		int x1 = 0, y1 = 1, x2 = 2, y2 = 2;
 		int subMatSum=getSubmatrixSum(sat, x1, y1,x2, y2);

@@ -1,7 +1,26 @@
 package algo.trees;
 
 import java.util.*;
-
+/*
+ * 
+ *    1
+     / \
+    2   3
+   / \
+  4   5
+       \
+        6
+         \
+          7
+ My first logic: keep going left print them in reverse..and keep going right.. print them..
+ Clearly wrong because 7 wont be printed.
+ Second Logic: Print first element who are first seen in each vertical level
+ Clearly wrong because 6 and 3 are in same vertical level.but 6 will be chosen because its visited first.
+ 
+ 
+ Correct Logic: Use level traversal.. keep track of the vertical level of nodes... 
+ A node which is first in the vertical level as we traverse horizontal level by level is the answer.
+ * */
 class QNode {
 	TreeNode tr;
 	int vLevel;
@@ -21,8 +40,8 @@ public class TopView {
 		root.left.right = new TreeNode(4);
 		root.left.right.right = new TreeNode(5);
 		root.left.right.right.right = new TreeNode(6);
-
-		System.out.println(printTopView(root));
+		TreeUtility.printLOT(root);
+		//System.out.println(printTopView(root));
 	}
 
 	private static Map<Integer, Integer> printTopView(TreeNode root) {

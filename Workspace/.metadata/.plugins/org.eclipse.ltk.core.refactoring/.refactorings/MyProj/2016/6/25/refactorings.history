@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;MyProj/src/algo/stack/balanced_paranthesis&apos; to &apos;balanced_paranthesis.py&apos;" description="Rename resource &apos;balanced_paranthesis&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/algo/stack/balanced_paranthesis" name="balanced_paranthesis.py" stamp="1466010995063" updateReferences="true"/>
+</session>

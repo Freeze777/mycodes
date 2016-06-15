@@ -23,7 +23,8 @@ public class LeftAndRightViewOfTree {
 		System.out.println();
 		DoublePointer<Integer> maxLevel = new DoublePointer<Integer>(
 				Integer.MIN_VALUE);
-		printLeftView(root, 0, maxLevel);
+		// printLeftView(root, 0, maxLevel);
+		printLeftAndRightView_levelOrder(root);
 		// TreeUtility.printIOT(root);
 	}
 
@@ -54,26 +55,34 @@ public class LeftAndRightViewOfTree {
 		printRightView(root.left, level + 1, maxLevel);
 	}
 
-	private static void printLeftView_levelOrder(TreeNode root) {
+	private static void printLeftAndRightView_levelOrder(TreeNode root) {
+		StringBuilder leftView = new StringBuilder();
+		StringBuilder rightView = new StringBuilder();
 		Queue<TreeNode> Q = new LinkedList<TreeNode>();
 		Q.add(root);
 		Q.add(null);
-		System.out.println(root.data);
 		while (!Q.isEmpty()) {
 			TreeNode current = Q.remove();
-			if (current == null) {
+			if (current != null) {
+				if (Q.peek() == null)
+					rightView.append(current.data + " ");
+				if (current.left != null)
+					Q.add(current.left);
+				if (current.right != null)
+					Q.add(current.right);
+
+			} else {
+
 				if (Q.isEmpty()) {
+					System.out.println();
 					break;
 				}
-				if(Q.peek()!=null)
-				System.out.println(Q.peek().data);
-				else
+				leftView.append(Q.peek().data + " ");
 				Q.add(null);
-			} else {
-				Q.add(current.right);
-				Q.add(current.left);
-			
+
 			}
 		}
+		System.out.println("Left-View: " + leftView);
+		System.out.println("Right-View: " + rightView);
 	}
 }

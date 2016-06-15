@@ -1,0 +1,77 @@
+package algo.list;
+
+import java.util.*;
+
+public class AddTwoNumbersInLinkedList {
+	public static ListNode reverse(ListNode head) {
+
+		if (head == null)
+			return null;
+		if (head.next == null)
+			return head;
+
+		ListNode revHead = reverse(head.next);
+		head.next.next = head;
+		return revHead;
+	}
+
+	public static ListNode addLists_method1(ListNode num1, ListNode num2) {
+
+		Stack<Integer> s1 = new Stack<Integer>();
+		Stack<Integer> s2 = new Stack<Integer>();
+		while (num1 != null || num2 != null) {
+			if (num1 != null) {
+				s1.push(num1.data);
+				num1 = num1.next;
+			}
+			if (num2 != null) {
+				s2.push(num2.data);
+				num2 = num2.next;
+			}
+		}
+		System.out.println(s1);
+		System.out.println(s2);
+
+		int carry = 0;
+		ListNode res = null, head = null;
+
+		while (!(s1.isEmpty()) || !(s2.isEmpty())) {
+			int n1 = 0, n2 = 0;
+			if (!s1.isEmpty())
+				n1 = s1.pop();
+			if (!s2.isEmpty())
+				n2 = s2.pop();
+
+			int sum = (n1 + n2 + carry);
+			if (sum >= 10) {
+				sum = sum % 10;
+				carry = 1;
+			} else {
+				carry = 0;
+			}
+			System.out.println(sum);
+			if (res == null) {
+				res = new ListNode(sum);
+				head = res;
+			} else {
+				res.next = new ListNode(sum);
+				res = res.next;
+			}
+
+		}
+		return head;
+	}
+
+	public static void main(String[] args) {
+		ListNode num1 = new ListNode(5);
+		num1.next = new ListNode(7);
+		num1.next.next = new ListNode(8);
+		num1.next.next.next = new ListNode(9);
+
+		ListNode num2 = new ListNode(8);
+		num2.next = new ListNode(1);
+		num2.next.next = new ListNode(6);
+
+		ListUtility.printList(addLists_method1(num1, num2));
+	}
+}

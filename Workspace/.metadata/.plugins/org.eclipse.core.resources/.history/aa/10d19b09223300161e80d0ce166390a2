@@ -1,0 +1,48 @@
+package algo;
+
+import java.util.*;
+
+public class GenerateBalancedBracketsN {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		char[] br = new char[n];
+		Set<String> set=new HashSet<String>();
+		if (n % 2 == 0)
+			generate(br, n, 0, 0, n - 1);
+		else
+			System.out.println("no answer");
+	}
+
+	public static void generate(char[] br, int n, int count, int low, int high,Set<String> set) {
+		if (count == n) {
+			//System.out.println(String.valueOf(br));
+			set.add(String.valueOf(br));
+			return;
+
+		}
+		// Correction for a Bug
+		// The output has each repeated twice..!!!
+		// both recursive call would be the same for a window of 2.. so handled
+		// it seperately
+		if ((high - low) + 1 == 2) {
+			br[low] = '{';
+			br[high] = '}';
+			System.out.println(String.valueOf(br));
+			return;
+
+		}
+		br[low] = '{';
+		br[low + 1] = '}';
+		generate(br, n, count + 2, low + 2, high);
+		br[low] = '{';
+		br[high] = '}';
+		generate(br, n, count + 2, low + 1, high - 1);
+		//correction for another bug.. missed the case of (())().. put high and high-1
+		br[high-1] = '{';
+		br[high] = '}';
+		generate(br, n, count + 2, low, high - 2);
+		
+
+	}
+}

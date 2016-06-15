@@ -3,6 +3,8 @@ package algo;
 public class FindSecondMaximum {
 	public static void main(String[] args) {
 		int A[]={3,7,1,9,4,10,24,20,21,24};
+		System.out.println(")())))".substring(0,2).equals("()"));
+		
 		int res=getSecondMaximum(A);
 		System.out.println(res);
 	}

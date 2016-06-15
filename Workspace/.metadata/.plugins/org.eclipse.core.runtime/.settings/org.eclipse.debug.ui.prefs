@@ -3,4 +3,4 @@ org.eclipse.debug.ui.PREF_LAUNCH_PERSPECTIVES=<?xml version\="1.0" encoding\="UT
 org.eclipse.debug.ui.build_before_launch=false
 org.eclipse.debug.ui.cancel_launch_with_compile_errors=always
 org.eclipse.debug.ui.wait_for_build=never
-preferredTargets=default\:default|
+preferredTargets=org.eclipse.cdt.debug.ui.toggleCBreakpointTarget\:org.eclipse.cdt.debug.ui.toggleCBreakpointTarget|default\:default|

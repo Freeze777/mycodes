@@ -1,0 +1,7 @@
+public class Test_Strings {
+	public static void main(String[] args) {
+		int n=33;
+		System.out.println(Integer.toString(n,3));
+
+	}
+}

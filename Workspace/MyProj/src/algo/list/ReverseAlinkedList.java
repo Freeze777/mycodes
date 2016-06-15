@@ -31,7 +31,7 @@ public class ReverseAlinkedList {
 		// at this point head points to the node which is to made the last node
 		// of the currently reversed list
 		head.next.next = head;
-		head.next = null;
+		head.next = null;//very important for null termination of list
 		// head point to last node of the reversed list now
 		return reverse;
 	}
