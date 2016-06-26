@@ -62,7 +62,6 @@ public class RoadsInHackerLand {
 			v[s].weight = 0;
 			queue.remove(v[s]);
 			queue.add(v[s]);
-			Map<Integer, Integer> parent = new HashMap<Integer, Integer>();
 			while (queue.size() != 0) {
 				s = queue.peek().vertex;
 				queue.remove();
@@ -109,6 +108,7 @@ public class RoadsInHackerLand {
 			}
 			
 			queue.clear();
+			parent.clear();
 			for (int i = 0; i < v.length; i++) {
 				v[i].weight = Long.MAX_VALUE;
 				queue.add(v[i]);
