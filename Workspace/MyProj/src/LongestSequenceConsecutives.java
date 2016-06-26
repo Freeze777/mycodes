@@ -26,20 +26,12 @@ public class LongestSequenceConsecutives {
 			while ((i < n - 1) && (A[i] + 1 == A[i + 1])) {
 				count++;
 				i++;
-
 			}
-
-			if (max < count)
-				max = count;
-
-			
-
-				i++;
-
+			max=Math.max(max,count);
+			i++;
 			count = 0;
-
 		}
 
-		System.out.println(max+1);
+		System.out.println(max + 1);
 	}
 }

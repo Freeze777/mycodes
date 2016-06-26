@@ -42,12 +42,12 @@ public class AddTwoNumbersInLinkedList {
 
 			int sum = (n1 + n2 + carry);
 			if (sum >= 10) {
-				sum = sum % 10;
+				sum = sum - 10;
 				carry = 1;
 			} else {
 				carry = 0;
 			}
-			if (res == null) {
+			if (head == null) {
 				res = new ListNode(sum);
 				head = res;
 			} else {
@@ -80,12 +80,12 @@ public class AddTwoNumbersInLinkedList {
 			}
 			sum = n1 + n2 + carry;
 			if (sum >= 10) {
-				sum = sum % 10;
+				sum = sum - 10;
 				carry = 1;
 			} else {
 				carry = 0;
 			}
-			if (res == null) {
+			if (head == null) {
 				res = new ListNode(sum);
 				//couldnt get the need for a head..!
 				head = res;
@@ -100,7 +100,8 @@ public class AddTwoNumbersInLinkedList {
 		//Couldnt get this corner case
 		if(carry!=0)
 			res.next = new ListNode(carry);
-		
+		//reverse(head);
+		//reverse(head);
 		return reverse(head);
 	}
 

@@ -8,21 +8,35 @@ public class CheckForPalidrome {
 		head.next.next.next = new ListNode(6);
 		head.next.next.next.next = new ListNode(6);
 		ListUtility.printList(head);
-		System.out.println(checkForPalindrome(head));
+		//System.out.println(checkForPalindrome(head));
 	}
 
-	private static boolean checkForPalindrome(ListNode head) {
-		ListNode mid = FindMidPoint.findMidPoint(head);
-		ListNode revHead = ReverseAlinkedList.reverseListRecursion(mid);
-		ListNode temp=revHead;
-		boolean flag=true;
-		while(temp!=null)
-		{
-			flag&=(temp.data==head.data);
-			temp=temp.next;
-			head=head.next;
-		}
-		ReverseAlinkedList.reverseListRecursion(revHead);
-		return flag;
-	}
+    public ListNode findMidPoint(ListNode head){
+        ListNode slow=head,fast=head;
+        while(fast!=null && fast.next!=null){
+            slow=slow.next;
+            fast=fast.next.next;
+        }
+        return slow;
+    }
+    public ListNode reverse(ListNode head){
+        if(head==null||head.next==null)
+            return head;
+        ListNode revHead=reverse(head.next);
+        head.next.next=head;
+        head.next=null;
+        return revHead;
+    }
+    public boolean isPalindrome(ListNode head) {
+        ListNode mid=findMidPoint(head);
+        ListNode revHead=reverse(mid);
+        boolean found=true;
+        while(found && head!=null && revHead!=null){
+            found&=(head.data==revHead.data);
+            head=head.next;
+            revHead=revHead.next;
+        }
+       return found; 
+    }
+
 }

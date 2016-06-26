@@ -1,0 +1,98 @@
+import java.io.*;
+import java.util.*;
+class Edge
+    {
+    int destinationV;
+    long weight;
+    Edge(int d,long w)
+     {
+        destinationV=d;
+        weight=w; 
+     }
+}
+class Vertex  implements Comparable<Vertex>
+    {
+    int vertex;
+    ArrayList<Edge> e;
+    long weight;
+    Vertex(int v)
+        {
+        vertex=v;
+        e=new ArrayList<Edge>();
+        weight=Long.MAX_VALUE;
+    }
+     @Override
+    public int compareTo(Vertex v) {
+        return Long.compare(this.weight, v.weight);
+    }
+}
+
+public class RoadsInHackerLand {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+      
+        Scanner in=new Scanner(System.in);
+       
+            int n,m,s,d,w;
+            n=in.nextInt();
+            m=in.nextInt();
+            Map<Integer,Integer> parent=new HashMap<Integer, Integer>();
+            Vertex v[]=new Vertex[n];
+            PriorityQueue<Vertex> queue = new PriorityQueue<Vertex>();
+            for(i=0;i<n;i++)
+                {
+                v[i]=new Vertex(i);
+                queue.add(v[i]);
+            }
+            Edge e;
+            for(i=0;i<m;i++)
+                {
+                s=in.nextInt()-1;
+                d=in.nextInt()-1;
+                w=in.nextInt();
+                e=new Edge(d,w);
+                v[s].e.add(e);
+                e=new Edge(s,w);
+                v[d].e.add(e);
+            }
+            s=0;
+            // Create a queue for BFS
+            v[s].weight=0;
+            queue.remove(v[s]);
+            queue.add(v[s]);
+            while(queue.size() != 0)
+            {
+                s=queue.peek().vertex;
+                queue.remove();
+                //System.out.println(" VERTEX WEIGHT IS "+v[s].weight+"ss"+s);    
+                Iterator<Edge> it = v[s].e.listIterator();
+                while (it.hasNext())
+                {
+                    Edge no = it.next();
+                    if(v[s].weight==Long.MAX_VALUE)
+                        break;
+                    if(v[no.destinationV].weight>v[s].weight+no.weight && v[s].weight!=Long.MAX_VALUE)
+                    {
+                        v[no.destinationV].weight=v[s].weight+no.weight;
+                     
+                        queue.remove(v[no.destinationV]);
+                        queue.add(v[no.destinationV]);
+                        parent.put(no.destinationV,s);
+                    }
+                    
+                }
+            }
+         /*   for(i=0;i<n;i++)
+            {
+                if(v[i].weight!=0 && v[i].weight!=Long.MAX_VALUE)
+                    System.out.print(v[i].weight+" ");
+                else if(v[i].weight==Long.MAX_VALUE)
+                    System.out.print("-1 ");
+            }*/
+            System.out.println(parent);
+            
+        
+            
+    }
+}

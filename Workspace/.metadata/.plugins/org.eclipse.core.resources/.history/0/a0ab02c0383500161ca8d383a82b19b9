@@ -1,0 +1,25 @@
+package algo.dp;
+
+import algo.Utils;
+
+public class MinimumEditDistance {
+	public static void main(String[] args) {
+		String s1 = "abcdef", s2 = "azced";
+		// including empty strings and s1 in the columns and s2 along the rows
+		int[][] dp = new int[s2.length() + 1][s1.length() + 1];
+		// minimum edits to convert a empty string to s1
+		for (int i = 0; i < dp[0].length; i++)
+			dp[0][i] = i;
+		// minimum edits to convert a empty string to s2
+		for (int i = 0; i < dp.length; i++)
+			dp[i][0] = i;
+		Utils.printArray(dp);
+
+		for (int j = 1; j < dp[0].length; j++) {// j traverses s1
+			for (int i = 1; i < dp.length; i++) {// i traverses s2
+				if(s2.charAt(i)==s1.charAt(j))
+			}
+		}
+
+	}
+}

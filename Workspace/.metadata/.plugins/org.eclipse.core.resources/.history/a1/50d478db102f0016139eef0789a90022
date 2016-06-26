@@ -1,6 +1,0 @@
-package algo;
-public class UniquePaths {
-    public int uniquePathsWithObstacles(int[][] obstacleGrid) {
-        int[][] path
-    }
-}
