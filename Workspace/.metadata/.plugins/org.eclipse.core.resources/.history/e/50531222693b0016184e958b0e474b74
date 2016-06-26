@@ -114,9 +114,9 @@ public class RoadsInHackerLand {
 			}
 
 		}
-		for (int i = maxLen; i > 0; i--)
+		for (int i = maxLen; i > 0; i--) {
 			System.out.print(bin[i]);
-		
+		}
 
 	}
 }

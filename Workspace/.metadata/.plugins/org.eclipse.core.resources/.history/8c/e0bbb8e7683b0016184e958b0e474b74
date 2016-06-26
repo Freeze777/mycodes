@@ -42,7 +42,7 @@ public class RoadsInHackerLand {
 		n = in.nextInt();
 		m = in.nextInt();
 		Vertex v[] = new Vertex[n];
-		int maxLen = -1;
+		int maxLen=-1;
 		PriorityQueue<Vertex> queue = new PriorityQueue<Vertex>();
 		for (int i = 0; i < n; i++) {
 			v[i] = new Vertex(i);
@@ -59,6 +59,7 @@ public class RoadsInHackerLand {
 			v[d].e.add(e);
 		}
 		for (int s = 0; s < v.length; s++) {
+			System.out.println(s);
 			// Create a queue for BFS
 			v[s].weight = 0;
 			queue.remove(v[s]);
@@ -84,6 +85,7 @@ public class RoadsInHackerLand {
 
 				}
 			}
+			System.out.println(parent);
 
 			for (int i = 0; i < v.length; i++) {
 				if (i == s)
@@ -92,21 +94,21 @@ public class RoadsInHackerLand {
 				do {
 					int tt = parent.get(t);
 					int index = (int) Math.abs(v[t].weight - v[tt].weight);
-					if (bin[index] == 0) {
+					if (bin[index] == 0){
 						bin[index] = 1;
-						maxLen = Math.max(maxLen, index);
-					} else {
+					maxLen=Math.max(maxLen, index)
+					}
+					else {
 						int k = index;
 						for (; k < bin.length && bin[k] == 1;)
 							bin[k++] = 0;
 						bin[k] = 1;
-						maxLen = Math.max(maxLen, k);
 					}
-					t = tt;
+					t=tt;
 				} while (s != t);
 
 			}
-
+			
 			queue.clear();
 			for (int i = 0; i < v.length; i++) {
 				v[i].weight = Long.MAX_VALUE;
@@ -114,9 +116,9 @@ public class RoadsInHackerLand {
 			}
 
 		}
-		for (int i = maxLen; i > 0; i--)
-			System.out.print(bin[i]);
-		
+		for (int i = 0; i < 100; i++) {
+			System.out.print(bin[i] + " ");
+		}
 
 	}
 }
