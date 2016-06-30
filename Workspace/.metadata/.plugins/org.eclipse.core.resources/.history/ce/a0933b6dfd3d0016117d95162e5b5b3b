@@ -1,0 +1,78 @@
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) { val = x; }
+ * }
+ */
+public class Solution {
+    public ListNode findMidPoint(ListNode head){
+        ListNode slow=head,fast=head;
+        while(fast!=null && fast.next!=null){
+            slow=slow.next;
+            fast=fast.next.next;
+        }
+        return slow;
+    }
+        
+    
+    public ListNode sortList(ListNode head) {
+        if(head==null||head.next==null)
+            return head;
+        ListNode mid=findMidPoint(head);
+        ListNode left=head;
+        ListNode right=mid.next;
+        mid.next=null;
+        sortList(left);
+        sortList(right);
+        ListNode hd=mergeList(left,right);
+        return hd; 
+    }
+    public ListNode mergeList(ListNode l1, ListNode l2) {
+		if (l1 == null && l2 == null)
+			return null;
+		ListNode head = null, t = null;
+		//for setting up the head pointer to the list
+		if (l1 != null && l2 != null) {
+			if (l2.val > l1.val) {
+				head = l1;
+				t = head;
+				l1 = l1.next;
+			} else {
+				head = l2;
+				t = head;
+				l2 = l2.next;
+			}
+		} else if (l1 != null) {
+			head = l1;
+			t = head;
+			l1 = l1.next;
+		} else {
+			head = l2;
+			t = head;
+			l2 = l2.next;
+		}
+		//iterate through both the list
+		while (l1 != null || l2 != null) {
+			if (l2 == null && l1 != null) {
+				t.next = l1;
+				l1 = l1.next;
+			} else if (l1 == null && l2 != null) {
+				t.next = l2;
+				l2 = l2.next;
+			} else {
+				if (l2.val > l1.val) {
+					t.next = l1;
+					l1 = l1.next;
+				} else {
+					t.next = l2;
+					l2 = l2.next;
+				}
+			}
+			t=t.next;//missed this statement and got fucked up..!!silly!!
+		}
+		return head;
+	}
+
+}

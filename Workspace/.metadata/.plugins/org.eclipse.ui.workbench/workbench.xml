@@ -45,25 +45,25 @@
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BuildingBridges.java" partName="BuildingBridges.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/algo/dp/BuildingBridges.java" title="BuildingBridges.java" tooltip="MyProj/src/algo/dp/BuildingBridges.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/algo/dp/BuildingBridges.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="604"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Test_Strings.java" partName="Test_Strings.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/Test_Strings.java" title="Test_Strings.java" tooltip="MyProj/src/Test_Strings.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/Test_Strings.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="79" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LargestSubMatrixOf1s.java" partName="LargestSubMatrixOf1s.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/algo/dp/LargestSubMatrixOf1s.java" title="LargestSubMatrixOf1s.java" tooltip="MyProj/src/algo/dp/LargestSubMatrixOf1s.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/algo/dp/LargestSubMatrixOf1s.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GraphUtility.java" partName="GraphUtility.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/algo/graph/GraphUtility.java" title="GraphUtility.java" tooltip="MyProj/src/algo/graph/GraphUtility.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/algo/graph/GraphUtility.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="1036"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Trie.java" partName="Trie.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/algo/trie/Trie.java" title="Trie.java" tooltip="MyProj/src/algo/trie/Trie.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/algo/trie/Trie.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2251" selectionTopPixel="1327"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TopologicalSort.java" partName="TopologicalSort.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/algo/graph/TopologicalSort.java" title="TopologicalSort.java" tooltip="MyProj/src/algo/graph/TopologicalSort.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/algo/graph/TopologicalSort.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="449" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PrintMatrixSpirally.java" partName="PrintMatrixSpirally.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/algo/PrintMatrixSpirally.java" title="PrintMatrixSpirally.java" tooltip="MyProj/src/algo/PrintMatrixSpirally.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/algo/PrintMatrixSpirally.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="931" selectionTopPixel="29"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BFS.java" partName="BFS.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/algo/graph/BFS.java" title="BFS.java" tooltip="MyProj/src/algo/graph/BFS.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/algo/graph/BFS.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="84" selectionOffset="265" selectionTopPixel="0"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CountNumberOfOccurenceInSortedArray.java" partName="CountNumberOfOccurenceInSortedArray.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/algo/CountNumberOfOccurenceInSortedArray.java" title="CountNumberOfOccurenceInSortedArray.java" tooltip="MyProj/src/algo/CountNumberOfOccurenceInSortedArray.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/algo/CountNumberOfOccurenceInSortedArray.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="749" selectionTopPixel="238"/>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Dijkstra.java" partName="Dijkstra.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/algo/graph/Dijkstra.java" title="Dijkstra.java" tooltip="MyProj/src/algo/graph/Dijkstra.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/algo/graph/Dijkstra.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="1139"/>
 </editor>
 </editors>
 <views>
@@ -104,7 +104,8 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Warnings (100 of 188 items)"/>
+<category IMemento.internal.id="Warnings (100 of 189 items)"/>
+<category IMemento.internal.id="Warnings"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="261" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -139,7 +140,7 @@
 <viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="org.eclipse.jdt.ui.PackageExplorer" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.ui.internal.ide.application.ResourcePerspective" id="org.eclipse.ui.resourcePerspective" label="Resource"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -313,179 +314,169 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/stack/MaximumElementInStack.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/MyProj/src/algo/stack/balanced_paranthesis.py"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/dp/LargestSubMatrixOf1s.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/stack/LargestRectangle.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/FindNextGreatestElement.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/stack/FindNextGreatestElement.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/stack/FindNextGreatestElementOnRight.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/dp/CoinChange.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/MyProj/src/algo/backtracking/keypad_number_to_words.py"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/dp/BuildingBridges.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/dp/LargestSubMatrixOf1s.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/trie/Trie.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/PrintMatrixSpirally.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/PrintMatrixDiagonally.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/MaxNumberOfAUsingNKeyStrokes.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/dp/MaxNumberOfAUsingNKeyStrokes.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/OnlineMedianUsingTwoHeaps.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/heap/OnlineMedianUsingTwoHeaps.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/BalancedPartitioning.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/dp/BalancedPartitioning.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/dp/CoinChange.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/MyProj/src/algo/backtracking/keypad_number_to_words.py"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/dp/BuildingBridges.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/CountNumberOfOccurenceInSortedArray.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/RoadsInHackerLand.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/hacker/rank/MergeSort.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/sort/MergeSort.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/sort/QuickSort.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/FindithOrderStatistics.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/MyProj/src/algo/sort/quick_sort.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/Test_Strings.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/graph/GraphUtility.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/graph/TopologicalSort.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/graph/AdjNode.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/MyProj/src/algo/graph/topo_input.txt"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/graph/BFS.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/graph/Dijkstra.java"/>
 </editors>
-<item historyLabel="LargestRectangle.java" index="3">
-<position/>
-</item>
-<item historyLabel="LargestRectangle.java" index="3">
-<position info="not_deleted" x="1409" y="0"/>
-</item>
-<item historyLabel="LargestRectangle.java" index="3">
-<position info="not_deleted" x="1469" y="0"/>
-</item>
-<item historyLabel="LargestRectangle.java" index="3">
-<position/>
-</item>
-<item historyLabel="LargestRectangle.java" index="3">
-<position info="not_deleted" x="1515" y="0"/>
-</item>
-<item historyLabel="LargestRectangle.java" index="3">
-<position info="not_deleted" x="1694" y="0"/>
-</item>
-<item historyLabel="LargestRectangle.java" index="3">
-<position/>
-</item>
-<item historyLabel="LargestRectangle.java" index="3">
-<position info="not_deleted" x="1616" y="0"/>
-</item>
-<item historyLabel="LargestRectangle.java" index="3">
-<position info="not_deleted" x="1614" y="0"/>
-</item>
-<item historyLabel="LargestRectangle.java" index="3">
-<position info="not_deleted" x="1685" y="0"/>
-</item>
-<item historyLabel="LargestRectangle.java" index="3">
-<position info="not_deleted" x="1753" y="0"/>
-</item>
-<item historyLabel="FindNextGreatestElement.java" index="4">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="FindNextGreatestElement.java" index="5">
-<position info="not_deleted" x="683" y="0"/>
-</item>
-<item historyLabel="LargestRectangle.java" index="3">
-<position info="not_deleted" x="1753" y="0"/>
-</item>
-<item historyLabel="LargestRectangle.java" index="3">
-<position info="not_deleted" x="1875" y="0"/>
-</item>
-<item historyLabel="LargestRectangle.java" index="3">
-<position info="not_deleted" x="2569" y="0"/>
-</item>
-<item historyLabel="FindNextGreatestElement.java" index="5">
-<position info="not_deleted" x="683" y="0"/>
-</item>
-<item historyLabel="FindNextGreatestElementOnRight.java" index="6">
-<position info="not_deleted" x="84" y="0"/>
-</item>
-<item historyLabel="FindNextGreatestElementOnRight.java" index="6">
-<position info="not_deleted" x="826" y="0"/>
-</item>
-<item historyLabel="FindNextGreatestElementOnRight.java" index="6">
-<position info="not_deleted" x="798" y="0"/>
-</item>
-<item historyLabel="FindNextGreatestElementOnRight.java" index="6">
-<position info="not_deleted" x="592" y="0"/>
-</item>
-<item historyLabel="FindNextGreatestElementOnRight.java" index="6">
-<position info="not_deleted" x="779" y="0"/>
-</item>
-<item historyLabel="FindNextGreatestElementOnRight.java" index="6">
-<position info="not_deleted" x="694" y="0"/>
-</item>
-<item historyLabel="FindNextGreatestElementOnRight.java" index="6">
-<position info="not_deleted" x="773" y="0"/>
-</item>
-<item historyLabel="FindNextGreatestElementOnRight.java" index="6">
-<position info="not_deleted" x="771" y="0"/>
-</item>
-<item historyLabel="FindNextGreatestElementOnRight.java" index="6">
-<position info="not_deleted" x="1168" y="0"/>
-</item>
-<item historyLabel="LargestSubMatrixOf1s.java" index="2">
-<position info="not_deleted" x="130" y="0"/>
-</item>
-<item historyLabel="balanced_paranthesis" index="1">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="MaximumElementInStack.java" index="0">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="CoinChange.java" index="7">
-<position info="not_deleted" x="47" y="0"/>
-</item>
-<item historyLabel="keypad_number_to_words" index="8">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="BuildingBridges.java" index="9">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="LargestSubMatrixOf1s.java" index="10">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Trie.java" index="11">
-<position info="not_deleted" x="2251" y="0"/>
-</item>
-<item historyLabel="PrintMatrixSpirally.java" index="12">
+<item historyLabel="PrintMatrixSpirally.java" index="0">
 <position info="not_deleted" x="931" y="0"/>
 </item>
-<item historyLabel="PrintMatrixDiagonally.java" index="13">
-<position info="not_deleted" x="345" y="0"/>
+<item historyLabel="RoadsInHackerLand.java" index="1">
+<position info="not_deleted" x="2630" y="0"/>
 </item>
-<item historyLabel="MaxNumberOfAUsingNKeyStrokes.java" index="14">
+<item historyLabel="RoadsInHackerLand.java" index="1">
+<position info="not_deleted" x="460" y="0"/>
+</item>
+<item historyLabel="RoadsInHackerLand.java" index="1">
+<position info="not_deleted" x="2547" y="0"/>
+</item>
+<item historyLabel="RoadsInHackerLand.java" index="1">
+<position info="not_deleted" x="703" y="0"/>
+</item>
+<item historyLabel="RoadsInHackerLand.java" index="1">
+<position info="not_deleted" x="2043" y="0"/>
+</item>
+<item historyLabel="RoadsInHackerLand.java" index="1">
+<position/>
+</item>
+<item historyLabel="RoadsInHackerLand.java" index="1">
+<position/>
+</item>
+<item historyLabel="RoadsInHackerLand.java" index="1">
+<position/>
+</item>
+<item historyLabel="RoadsInHackerLand.java" index="1">
+<position/>
+</item>
+<item historyLabel="RoadsInHackerLand.java" index="1">
+<position/>
+</item>
+<item historyLabel="RoadsInHackerLand.java" index="1">
+<position/>
+</item>
+<item historyLabel="RoadsInHackerLand.java" index="1">
+<position/>
+</item>
+<item historyLabel="RoadsInHackerLand.java" index="1">
+<position/>
+</item>
+<item historyLabel="RoadsInHackerLand.java" index="1">
+<position/>
+</item>
+<item historyLabel="RoadsInHackerLand.java" index="1">
+<position/>
+</item>
+<item historyLabel="RoadsInHackerLand.java" index="1">
+<position/>
+</item>
+<item historyLabel="RoadsInHackerLand.java" index="1">
+<position info="not_deleted" x="2037" y="0"/>
+</item>
+<item historyLabel="RoadsInHackerLand.java" index="1">
+<position/>
+</item>
+<item historyLabel="RoadsInHackerLand.java" index="1">
+<position info="not_deleted" x="2010" y="0"/>
+</item>
+<item historyLabel="RoadsInHackerLand.java" index="1">
+<position info="not_deleted" x="2425" y="0"/>
+</item>
+<item historyLabel="RoadsInHackerLand.java" index="1">
+<position info="not_deleted" x="2516" y="0"/>
+</item>
+<item historyLabel="RoadsInHackerLand.java" index="1">
+<position info="not_deleted" x="1091" y="17"/>
+</item>
+<item historyLabel="RoadsInHackerLand.java" index="1">
+<position info="not_deleted" x="2221" y="0"/>
+</item>
+<item historyLabel="RoadsInHackerLand.java" index="1">
+<position info="not_deleted" x="1391" y="0"/>
+</item>
+<item historyLabel="MergeSort.java" index="2">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="MaxNumberOfAUsingNKeyStrokes.java" index="15">
-<position info="not_deleted" x="15" y="0"/>
+<item historyLabel="MergeSort.java" index="3">
+<position info="not_deleted" x="8" y="0"/>
 </item>
-<item historyLabel="OnlineMedianUsingTwoHeaps.java" index="16">
+<item historyLabel="QuickSort.java" index="4">
+<position info="not_deleted" x="2100" y="0"/>
+</item>
+<item historyLabel="QuickSort.java" index="4">
+<position info="not_deleted" x="1813" y="0"/>
+</item>
+<item historyLabel="FindithOrderStatistics.java" index="5">
+<position/>
+</item>
+<item historyLabel="QuickSort.java" index="4">
+<position info="not_deleted" x="1390" y="0"/>
+</item>
+<item historyLabel="FindithOrderStatistics.java" index="5">
+<position info="not_deleted" x="1281" y="0"/>
+</item>
+<item historyLabel="QuickSort.java" index="4">
+<position info="not_deleted" x="1390" y="0"/>
+</item>
+<item historyLabel="quick_sort" index="6">
+<position info="not_deleted" x="158" y="0"/>
+</item>
+<item historyLabel="QuickSort.java" index="4">
+<position info="not_deleted" x="1732" y="0"/>
+</item>
+<item historyLabel="FindithOrderStatistics.java" index="5">
+<position info="not_deleted" x="1281" y="0"/>
+</item>
+<item historyLabel="Test_Strings.java" index="7">
+<position info="not_deleted" x="79" y="0"/>
+</item>
+<item historyLabel="GraphUtility.java" index="8">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="OnlineMedianUsingTwoHeaps.java" index="17">
-<position info="not_deleted" x="17" y="0"/>
+<item historyLabel="TopologicalSort.java" index="9">
+<position info="not_deleted" x="459" y="0"/>
 </item>
-<item historyLabel="BalancedPartitioning.java" index="18">
+<item historyLabel="AdjNode.java" index="10">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="BalancedPartitioning.java" index="19">
-<position info="not_deleted" x="15" y="0"/>
+<item historyLabel="TopologicalSort.java" index="9">
+<position info="not_deleted" x="459" y="0"/>
 </item>
-<item historyLabel="OnlineMedianUsingTwoHeaps.java" index="17">
-<position info="not_deleted" x="17" y="0"/>
+<item historyLabel="TopologicalSort.java" index="9">
+<position info="not_deleted" x="243" y="0"/>
 </item>
-<item historyLabel="BalancedPartitioning.java" index="19">
-<position info="not_deleted" x="15" y="0"/>
+<item historyLabel="TopologicalSort.java" index="9">
+<position info="not_deleted" x="293" y="0"/>
 </item>
-<item historyLabel="MaxNumberOfAUsingNKeyStrokes.java" index="15">
-<position info="not_deleted" x="15" y="0"/>
+<item historyLabel="TopologicalSort.java" index="9">
+<position info="not_deleted" x="453" y="0"/>
 </item>
-<item historyLabel="PrintMatrixDiagonally.java" index="13">
-<position info="not_deleted" x="345" y="0"/>
+<item historyLabel="topo_input.txt" index="11">
+<position info="not_deleted" x="35" y="0"/>
 </item>
-<item historyLabel="CoinChange.java" index="20">
-<position info="not_deleted" x="44" y="0"/>
+<item historyLabel="TopologicalSort.java" index="9">
+<position info="not_deleted" x="453" y="0"/>
 </item>
-<item historyLabel="keypad_number_to_words" index="21">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="BFS.java" index="12">
+<position info="not_deleted" x="265" y="84"/>
 </item>
-<item historyLabel="BuildingBridges.java" index="22">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="TopologicalSort.java" index="9">
+<position info="not_deleted" x="453" y="0"/>
 </item>
-<item active="true" historyLabel="CountNumberOfOccurenceInSortedArray.java" index="23">
+<item historyLabel="TopologicalSort.java" index="9">
+<position info="not_deleted" x="449" y="0"/>
+</item>
+<item active="true" historyLabel="Dijkstra.java" index="13">
 <position info="not_deleted" x="0" y="0"/>
 </item>
 </navigationHistory>
@@ -505,6 +496,42 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Dijkstra.java" tooltip="MyProj/src/algo/graph/Dijkstra.java">
+<persistable path="/MyProj/src/algo/graph/Dijkstra.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BFS.java" tooltip="MyProj/src/algo/graph/BFS.java">
+<persistable path="/MyProj/src/algo/graph/BFS.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="topo_input.txt" tooltip="MyProj/src/algo/graph/topo_input.txt">
+<persistable path="/MyProj/src/algo/graph/topo_input.txt"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AdjNode.java" tooltip="MyProj/src/algo/graph/AdjNode.java">
+<persistable path="/MyProj/src/algo/graph/AdjNode.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TopologicalSort.java" tooltip="MyProj/src/algo/graph/TopologicalSort.java">
+<persistable path="/MyProj/src/algo/graph/TopologicalSort.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GraphUtility.java" tooltip="MyProj/src/algo/graph/GraphUtility.java">
+<persistable path="/MyProj/src/algo/graph/GraphUtility.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Test_Strings.java" tooltip="MyProj/src/Test_Strings.java">
+<persistable path="/MyProj/src/Test_Strings.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="quick_sort.py" tooltip="MyProj/src/algo/sort/quick_sort.py">
+<persistable path="/MyProj/src/algo/sort/quick_sort.py"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FindithOrderStatistics.java" tooltip="MyProj/src/algo/FindithOrderStatistics.java">
+<persistable path="/MyProj/src/algo/FindithOrderStatistics.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="QuickSort.java" tooltip="MyProj/src/algo/sort/QuickSort.java">
+<persistable path="/MyProj/src/algo/sort/QuickSort.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MergeSort.java" tooltip="MyProj/src/hacker/rank/MergeSort.java">
+<persistable path="/MyProj/src/hacker/rank/MergeSort.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RoadsInHackerLand.java" tooltip="MyProj/src/RoadsInHackerLand.java">
+<persistable path="/MyProj/src/RoadsInHackerLand.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CountNumberOfOccurenceInSortedArray.java" tooltip="MyProj/src/algo/CountNumberOfOccurenceInSortedArray.java">
 <persistable path="/MyProj/src/algo/CountNumberOfOccurenceInSortedArray.java"/>
 </file>
@@ -513,42 +540,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="OnlineMedianUsingTwoHeaps.java" tooltip="MyProj/src/algo/OnlineMedianUsingTwoHeaps.java">
 <persistable path="/MyProj/src/algo/OnlineMedianUsingTwoHeaps.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MaxNumberOfAUsingNKeyStrokes.java" tooltip="MyProj/src/algo/MaxNumberOfAUsingNKeyStrokes.java">
-<persistable path="/MyProj/src/algo/MaxNumberOfAUsingNKeyStrokes.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PrintMatrixDiagonally.java" tooltip="MyProj/src/algo/PrintMatrixDiagonally.java">
-<persistable path="/MyProj/src/algo/PrintMatrixDiagonally.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PrintMatrixSpirally.java" tooltip="MyProj/src/algo/PrintMatrixSpirally.java">
-<persistable path="/MyProj/src/algo/PrintMatrixSpirally.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Trie.java" tooltip="MyProj/src/algo/trie/Trie.java">
-<persistable path="/MyProj/src/algo/trie/Trie.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LargestSubMatrixOf1s.java" tooltip="MyProj/src/algo/dp/LargestSubMatrixOf1s.java">
-<persistable path="/MyProj/src/algo/dp/LargestSubMatrixOf1s.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BuildingBridges.java" tooltip="MyProj/src/algo/dp/BuildingBridges.java">
-<persistable path="/MyProj/src/algo/dp/BuildingBridges.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="keypad_number_to_words.py" tooltip="MyProj/src/algo/backtracking/keypad_number_to_words.py">
-<persistable path="/MyProj/src/algo/backtracking/keypad_number_to_words.py"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FindNextGreatestElement.java" tooltip="MyProj/src/algo/FindNextGreatestElement.java">
-<persistable path="/MyProj/src/algo/FindNextGreatestElement.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LargestRectangle.java" tooltip="MyProj/src/algo/stack/LargestRectangle.java">
-<persistable path="/MyProj/src/algo/stack/LargestRectangle.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="balanced_paranthesis.py" tooltip="MyProj/src/algo/stack/balanced_paranthesis.py">
-<persistable path="/MyProj/src/algo/stack/balanced_paranthesis.py"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MaximumElementInStack.java" tooltip="MyProj/src/algo/stack/MaximumElementInStack.java">
-<persistable path="/MyProj/src/algo/stack/MaximumElementInStack.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LargestSubSquareMatrix.java" tooltip="MyProj/src/algo/dp/LargestSubSquareMatrix.java">
-<persistable path="/MyProj/src/algo/dp/LargestSubSquareMatrix.java"/>
 </file>
 </mruList>
 </workbench>

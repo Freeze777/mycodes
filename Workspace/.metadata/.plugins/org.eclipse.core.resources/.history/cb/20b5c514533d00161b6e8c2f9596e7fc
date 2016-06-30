@@ -1,0 +1,11 @@
+package algo.graph;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class TopologicalSort {
+	public static void main(String[] args) {
+		Map<Integer, Integer> adjList=new HashMap<Integer, Integer>();
+		
+	}
+}

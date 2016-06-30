@@ -1,9 +1,0 @@
-package algo.dp;
-
-public class MinimumEditDistance {
-	public static void main(String[] args) {
-		String s1="abcdef",s2="azced";
-		int[][] dp=new int[s1.length()+1][s2.length()+1];
-		
-	}
-}

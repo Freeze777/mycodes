@@ -31,7 +31,7 @@
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="330" key="DIALOG_WIDTH"/>
 		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
-		<item value="456" key="DIALOG_HEIGHT"/>
+		<item value="428" key="DIALOG_HEIGHT"/>
 		<item value="964" key="DIALOG_X_ORIGIN"/>
 		<item value="210" key="DIALOG_Y_ORIGIN"/>
 	</section>

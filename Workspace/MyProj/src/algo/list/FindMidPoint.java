@@ -10,10 +10,9 @@ public static void main(String[] args) {
 	ListNode mid=findMidPoint(head);
 
 }
-
+/*Sucks for list size=2*/
 public static ListNode findMidPoint(ListNode head) {
-	ListNode slow=head;
-	ListNode fast=head;
+	ListNode slow=head,fast=head;
 	
 	while(fast!=null && fast.next!=null)
 	{
