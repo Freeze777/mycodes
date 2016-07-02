@@ -1,0 +1,21 @@
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+
+
+class TestClass {
+    public static void main(String args[] ) throws Exception {
+        
+
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String line = br.readLine();
+        StringBuilder s=new StringBuilder();
+        int N = Integer.parseInt(line);
+        for (int i = 0; i < N; i++) {
+            s.append(br.readLine());
+        }
+        
+
+        System.out.println(s);
+    }
+}

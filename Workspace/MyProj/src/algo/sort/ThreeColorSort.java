@@ -27,7 +27,7 @@ public class ThreeColorSort {
 			case 10:
 				swap(arr, mid, low);
 				low++;
-				mid++;
+				mid++;//idk why we need this..!!!
 				break;
 			case 20:
 				mid++;

@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.util.TreeMap"/>
-<fullyQualifiedTypeName name="java.util.Map.Entry"/>
-<fullyQualifiedTypeName name="java.lang.Long"/>
-<fullyQualifiedTypeName name="hacker.rank.Vec"/>
 <fullyQualifiedTypeName name="hacker.rank.Range"/>
 <fullyQualifiedTypeName name="DVD"/>
 <fullyQualifiedTypeName name="Student"/>
@@ -38,7 +34,6 @@
 <fullyQualifiedTypeName name="java.lang.Comparable"/>
 <fullyQualifiedTypeName name="java.util.PriorityQueue"/>
 <fullyQualifiedTypeName name="Taxi"/>
-<fullyQualifiedTypeName name="algo.list.ListNode"/>
 <fullyQualifiedTypeName name="algo.trees.TreeNode"/>
 <fullyQualifiedTypeName name="algo.trees.RootToLeafPaths"/>
 <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
@@ -54,10 +49,15 @@
 <fullyQualifiedTypeName name="algo.dp.Pair"/>
 <fullyQualifiedTypeName name="algo.Utils"/>
 <fullyQualifiedTypeName name="java.util.Stack"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="java.util.Map"/>
-<fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="java.util.HashMap"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="algo.graph.AdjNode"/>
+<fullyQualifiedTypeName name="algo.list.ListNode"/>
+<fullyQualifiedTypeName name="algo.list.ListUtility"/>
+<fullyQualifiedTypeName name="algo.trie.Trie"/>
+<fullyQualifiedTypeName name="algo.trie.TrieUsingMap.Trie"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.lang.StringBuffer"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
 </qualifiedTypeNameHistroy>

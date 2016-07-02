@@ -7,9 +7,14 @@
 		<item value="1000" key="org.eclipse.jdt.search.resultpage.limit"/>
 		<item value="TRUE" key="org.eclipse.jdt.search.resultpage.limit_enabled"/>
 	</section>
-	<section name="">
-		<item value="1000" key="org.eclipse.jdt.search.resultpage.limit"/>
-		<item value="TRUE" key="org.eclipse.jdt.search.resultpage.limit_enabled"/>
+	<section name="TextSearchPage">
+		<item value="0" key="HISTORY_SIZE"/>
+		<item value="false" key="CASE_SENSITIVE"/>
+		<item value="false" key="REG_EX_SEARCH"/>
+		<item value="false" key="SEARCH_DERIVED"/>
+		<section name="EXTENSIONS">
+			<item value="*" key="0"/>
+		</section>
 	</section>
 	<section name="Search">
 		<list key="Search.processedPageIds">
@@ -36,7 +41,7 @@
 	<section name="DialogBounds_SearchDialog">
 		<item value="718" key="DIALOG_WIDTH"/>
 		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
-		<item value="515" key="DIALOG_HEIGHT"/>
+		<item value="487" key="DIALOG_HEIGHT"/>
 		<item value="353" key="DIALOG_X_ORIGIN"/>
 		<item value="43" key="DIALOG_Y_ORIGIN"/>
 	</section>

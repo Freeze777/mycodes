@@ -1,0 +1,5 @@
+package algo.trie;
+
+public class TrieUsingMap {
+
+}

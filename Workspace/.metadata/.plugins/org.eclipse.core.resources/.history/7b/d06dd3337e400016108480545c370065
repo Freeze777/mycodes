@@ -1,0 +1,20 @@
+package hacker.rank.project.euler;
+
+import java.util.Scanner;
+
+public class PrimePattern {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int max = 1000000;
+		boolean isNotPrime[] = new boolean[max + 1];
+		
+		// mark non-primes <=N using Sieve of Eratosthenes
+		for (int i = 2; i * i <= max; i++) {
+
+			// if is a prime,then mark multiples of i as non prime
+			for (int j = i; i * j <= max; j++) {
+				isPrime[i * j] = true;
+			}
+		}
+	}
+}

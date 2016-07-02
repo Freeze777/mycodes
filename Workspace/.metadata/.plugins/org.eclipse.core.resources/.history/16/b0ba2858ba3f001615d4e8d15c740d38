@@ -1,0 +1,41 @@
+import java.util.Scanner;
+public class TestClass {
+	static int max = 1000000;
+	static boolean isPrime[] = new boolean[max + 1];
+	static int pref[] = new int[max + 1];
+
+	public static void sieve() {
+		for (int i = 2; i <= max; i++)
+			isPrime[i] = true;
+
+		for (int i = 2; i * i <= max; i++) {
+
+			for (int j = i; i * j <= max; j++) {
+				isPrime[i * j] = false;
+			}
+		}
+	}
+
+	public static void main(String args[]) throws Exception {
+		sieve();
+		for (int i = 2; i < pref.length; i++) {
+			if (isPrime[i])
+				pref[i] += (1 + pref[i - 1]);
+			else
+				pref[i] = pref[i - 1];
+		}
+
+		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
+		for (int i = 0; i < t; i++) {
+			int l=sc.nextInt();
+			int r=sc.nextInt();
+			int count=0;
+			for (int j = l; j <=r; j++) {
+				if(isPrime[pref[j]])
+					count++;
+			}	
+			System.out.println(count);
+		}
+	}
+}
