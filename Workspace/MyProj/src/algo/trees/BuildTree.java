@@ -1,6 +1,5 @@
 package algo.trees;
 
-import java.util.Arrays;
 
 public class BuildTree {
 

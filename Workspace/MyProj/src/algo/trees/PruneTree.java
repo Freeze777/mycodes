@@ -1,4 +1,7 @@
 package algo.trees;
+
+import java.util.ArrayList;
+
 /*
  * remove TreeNodes in  root to leaf path which doesnt have sum >= k 
  * 
@@ -26,6 +29,7 @@ public class PruneTree {
 		System.out.println();
 		root=pruneTree(root,sum);
 		TreeUtility.printIOT(root);
+		
 	}
 
 	private static TreeNode pruneTree(TreeNode root, int sum) {

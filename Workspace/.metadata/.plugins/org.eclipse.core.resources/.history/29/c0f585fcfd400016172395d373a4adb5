@@ -1,0 +1,11 @@
+package algo.trees;
+
+public class NumberOfBSTOfNkeys {
+	public static int countBST(int n){
+		
+		return 0;
+	}
+	public static void main(String[] args) {
+
+	}
+}

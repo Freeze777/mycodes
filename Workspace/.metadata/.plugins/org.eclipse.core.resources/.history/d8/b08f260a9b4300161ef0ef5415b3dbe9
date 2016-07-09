@@ -1,0 +1,24 @@
+package algo.trees;
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+public class HouseRobber {
+        public int rob(TreeNode root,boolean parentTaken){
+        if(root==null)
+            return 0;
+        int sum1=0,sum2=0;    
+        if(!parentTaken)  
+            sum1=root.data+rob(root.left,true)+rob(root.right,true);
+        sum2=rob(root.left,false)+rob(root.right,false);    
+        return Math.max(sum1,sum2);
+    }
+    public int rob(TreeNode root) {
+        return rob(root,false);   
+    }
+}

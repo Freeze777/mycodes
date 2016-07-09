@@ -18,7 +18,7 @@ public class AddTwoNumbersInLinkedList {
 	}
 
 	public static ListNode addLists_method1(ListNode num1, ListNode num2) {
-
+		
 		Stack<Integer> s1 = new Stack<Integer>();
 		Stack<Integer> s2 = new Stack<Integer>();
 		while (num1 != null) {
@@ -56,9 +56,9 @@ public class AddTwoNumbersInLinkedList {
 			}
 
 		}
-		if(carry!=0)
+		if (carry != 0)
 			res.next = new ListNode(carry);
-		
+
 		return reverse(head);
 	}
 
@@ -87,7 +87,7 @@ public class AddTwoNumbersInLinkedList {
 			}
 			if (head == null) {
 				res = new ListNode(sum);
-				//couldnt get the need for a head..!
+				// couldnt get the need for a head..!
 				head = res;
 			} else {
 				{
@@ -97,11 +97,9 @@ public class AddTwoNumbersInLinkedList {
 
 			}
 		}
-		//Couldnt get this corner case
-		if(carry!=0)
+		// Couldnt get this corner case
+		if (carry != 0)
 			res.next = new ListNode(carry);
-		//reverse(head);
-		//reverse(head);
 		return reverse(head);
 	}
 
