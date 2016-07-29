@@ -1,0 +1,16 @@
+package algo.dp.windowed;
+
+class Matrix {
+	int m, n;
+
+	public Matrix(int m, int n) {
+		this.m = m;
+		this.n = n;
+	}
+}
+
+public class MatrixChainMultiplication {
+	public static void main(String[] args) {
+
+	}
+}

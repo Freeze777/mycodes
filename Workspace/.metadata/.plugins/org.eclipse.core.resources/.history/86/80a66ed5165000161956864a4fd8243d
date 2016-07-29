@@ -1,0 +1,7 @@
+package algo.list;
+
+public class RearrangeList {
+	public static void main(String[] args) {
+		rearrange(head1,head2);
+	}
+}

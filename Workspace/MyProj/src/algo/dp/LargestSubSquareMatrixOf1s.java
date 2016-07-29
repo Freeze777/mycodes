@@ -17,7 +17,7 @@ public class LargestSubSquareMatrixOf1s {
 			for (int j = 1; j < arr[0].length; j++) {
 				/*
 				 * dp[i][j]=n means ..there is a nxn matrix ending at (i,j)
-				 * ignore cells with value 1. if cell value is 1 check whether
+				 * ignore cells with value 0. if cell value is 1 check whether
 				 * the 3 previous cells have nonzero entries take the minimum of
 				 */
 				if (arr[i][j] == 1)

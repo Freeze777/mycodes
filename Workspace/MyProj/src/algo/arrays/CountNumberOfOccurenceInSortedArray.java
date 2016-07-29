@@ -3,7 +3,7 @@ package algo.arrays;
 public class CountNumberOfOccurenceInSortedArray {
 	public static void main(String[] args) {
 		int A[] = { 1, 2, 2, 2, 2, 2, 5, 5, 6, 7, 7, 7, 7, 7, 7, 8, 9, 10, 10,
-				10, 10 };
+				10, 10 };		
 		int key = 2;
 		int first = firstOccurence(A, key, 0, A.length - 1);
 		int last = lastOccurence(A, key, first, A.length - 1);

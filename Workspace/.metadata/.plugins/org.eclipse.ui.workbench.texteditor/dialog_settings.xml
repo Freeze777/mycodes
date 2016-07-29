@@ -2,12 +2,13 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="[0]=root" key="selection"/>
+		<item value="10000" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="10000"/>
 			<item value=".setValue(root)"/>
 			<item value=".getValue()"/>
 			<item value="int"/>
@@ -15,9 +16,9 @@
 			<item value="and"/>
 			<item value="len(s)"/>
 			<item value="Node"/>
-			<item value="log"/>
 		</list>
 		<list key="replacehistory">
+			<item value="n"/>
 			<item value="[0]=root"/>
 			<item value="[0]"/>
 			<item value="long"/>
@@ -25,7 +26,6 @@
 			<item value="&amp;&amp;"/>
 			<item value="s.length"/>
 			<item value="TreeNode"/>
-			<item value="char"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

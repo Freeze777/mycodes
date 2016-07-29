@@ -1,0 +1,7 @@
+package algo.dp.windowed;
+
+public class OptimalBSTStructure {
+public static void main(String[] args) {
+	
+}
+}

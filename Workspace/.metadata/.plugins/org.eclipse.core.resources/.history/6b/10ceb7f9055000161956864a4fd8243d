@@ -1,0 +1,8 @@
+package algo.dp;
+
+public class MinimumCharacterInsertsToMakePalindrome {
+	public static void main(String[] args) {
+		
+	}
+
+}

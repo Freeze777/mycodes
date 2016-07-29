@@ -1,0 +1,7 @@
+package algo.dp;
+
+public class MaxSumNonAdjacentSubsequence {
+	public static void main(String[] args) {
+		int[] arr = { 5, 5, 10, 40, 50, 35 };
+	}
+}

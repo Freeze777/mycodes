@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
-<listEntry value="/MyProj/src/algo/trees/LeftAndRightViewOfTree.java"/>
+<listEntry value="/MyProj/src/algo/tree/LeftAndRightViewOfTree.java"/>
 </listAttribute>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
 <listEntry value="1"/>
 </listAttribute>
-<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="algo.trees.LeftAndRightViewOfTree"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="algo.tree.LeftAndRightViewOfTree"/>
 <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="MyProj"/>
 </launchConfiguration>

@@ -1,0 +1,5 @@
+package algo.dp.windowed;
+
+public class OptimalBSTStructure {
+
+}

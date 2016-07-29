@@ -7,6 +7,7 @@ public class FindingSqrtUsingBinarySearch {
 		int high = key;
 		int low = 0;
 		System.out.println(sqrtBinSearch((long) key, (long) low, (long) high));
+		new String().hashCode();
 	}
 
 	/* Had to change int --> long to avoid overflow errors */

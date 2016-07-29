@@ -1,23 +1,24 @@
 package algo;
 
 import java.util.Arrays;
+import java.util.HashMap;
 
 public class SearchInRotatedArray {
 	public static void main(String[] args) {
 		int A[] = { 20, 24, 27, 30, -3, 2, 7, 9, 10, 12, 15, 19 };
-		int key=30;
+		int key = 30;
 		// int A[]={2,7,9,10,12,15,19,20};
 		int brkpt = findBreakPoint(A, 0, A.length - 1);
 		int min = findMin(A);
-		int index=modifiedBinarySearch(A,brkpt,key);
+		int index = modifiedBinarySearch(A, brkpt, key);
 		System.out.println(index);
 	}
 
 	private static int modifiedBinarySearch(int[] A, int brkpt, int key) {
-		if(key>=A[brkpt+1]&&key<=A[A.length-1])
-		return	Arrays.binarySearch(A, brkpt+1,A.length, key);
+		if (key >= A[brkpt + 1] && key <= A[A.length - 1])
+			return Arrays.binarySearch(A, brkpt + 1, A.length, key);
 		else
-		return	Arrays.binarySearch(A,0,brkpt+1,key);
+			return Arrays.binarySearch(A, 0, brkpt + 1, key);
 	}
 
 	public static int findMin(int[] A) {

@@ -1,6 +1,6 @@
 package algo.list;
 
-import algo.trees.TreeNode;
+import algo.tree.TreeNode;
 
 public class ListUtility {
 	public static void printList(ListNode head) {
