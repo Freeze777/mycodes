@@ -47,9 +47,7 @@ public class IterativeTreeTraversals {
 					break;
 				root=s.pop();
 				l.add(root.data);
-				root=root.right;
-				
-				
+				root=root.right;				
 			}
 
 		}

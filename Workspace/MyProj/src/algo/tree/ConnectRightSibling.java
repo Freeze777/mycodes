@@ -22,7 +22,7 @@ public class ConnectRightSibling {
 		Queue<TreeLinkNode> q = new LinkedList<TreeLinkNode>();
 		q.add(root);
 		q.add(null);
-		while (!q.isEmpty()) {
+		while (true) {
 			TreeLinkNode node = q.remove();
 			if (node != null) {
 				node.next = q.peek();

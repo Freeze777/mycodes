@@ -34,7 +34,7 @@ public class PruneTree {
 
 	private static TreeNode pruneTree(TreeNode root, int sum) {
 		if(root==null)
-			return root;
+			return null;
 		root.left=pruneTree(root.left, sum-root.data);
 		root.right=pruneTree(root.right, sum-root.data);
 		

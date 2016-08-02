@@ -1,0 +1,32 @@
+package algo.dp;
+
+import java.util.Scanner;
+
+public class CoinChangeNumWays {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
+		while (t-- > 0) {
+			int n = sc.nextInt();
+			int[] coins = new int[n];
+			for (int i = 0; i < coins.length; i++) {
+				coins[i] = sc.nextInt();
+			}
+			int amt = sc.nextInt();
+			System.out.println(numWays(coins, amt));
+		}
+	}
+
+	public static char[] numWays(int[] coins, int amt) {
+		int[][] dp=new int[coins.length][amt+1];
+		for (int j = 1; j < dp[0].length; j++) 
+			dp[0][j]=((j%coins[0])==0)?1:0;
+		for (int i = 1; i < dp.length; i++) {
+			for (int j = 1; j < dp[0].length; j++) {
+				dp[i][j]=dp[i-1][j]+((j>=coins[i])?dp[i][j-coins[i]]:0);
+			}
+		}
+		
+		return dp[coins.length-1][amt];
+	}
+}

@@ -21,20 +21,19 @@ public class LeftAndRightViewOfTree {
 
 		TreeUtility.printIOT(root);
 		System.out.println();
-		DoublePointer<Integer> maxLevel = new DoublePointer<Integer>(
-				Integer.MIN_VALUE);
+		int[] maxLevel = {Integer.MIN_VALUE};
 		// printLeftView(root, 0, maxLevel);
 		printLeftAndRightView_levelOrder(root);
 		// TreeUtility.printIOT(root);
 	}
 
 	private static void printLeftView(TreeNode root, int level,
-			DoublePointer<Integer> maxLevel) {
+			int[] maxLevel) {
 		if (root == null)
 			return;
 
-		if (maxLevel.getValue() < level) {
-			maxLevel.setValue(level);
+		if (maxLevel[0] < level) {
+			maxLevel[0]=level;
 			System.out.println(root.data);
 		}
 		printLeftView(root.left, level + 1, maxLevel);
@@ -44,11 +43,11 @@ public class LeftAndRightViewOfTree {
 	}
 
 	private static void printRightView(TreeNode root, int level,
-			DoublePointer<Integer> maxLevel) {
+			int[] maxLevel) {
 		if (root == null)
 			return;
-		if (maxLevel.getValue() < level) {
-			maxLevel.setValue(level);
+		if (maxLevel[0] < level) {
+			maxLevel[0]=level;
 			System.out.println(root.data);
 		}
 		printRightView(root.right, level + 1, maxLevel);

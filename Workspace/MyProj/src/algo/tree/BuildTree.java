@@ -6,15 +6,15 @@ public class BuildTree {
 	public static void main(String[] args) {
 		int[] inorder = { 4, 2, 1, 5, 6, 3 };
 		int[] levelorder = { 1, 2, 3, 4, 5, 6 };
-		DoublePointer<Integer> current = new DoublePointer<Integer>(0);
+		//DoublePointer<Integer> current = new DoublePointer<Integer>(0);
 		int rootIndex = search(inorder, 0, inorder.length - 1, levelorder[0]);
-		TreeNode root = buildTreeFromLevelOrder(inorder, 0, inorder.length - 1,
-				levelorder, rootIndex, current);
-		TreeUtility.printIOT(root);
+		//TreeNode root = buildTreeFromLevelOrder(inorder, 0, inorder.length - 1,
+		//		levelorder, rootIndex, current);
+		//TreeUtility.printIOT(root);
 	}
 
 	
-
+/*
 	private static TreeNode buildTreeFromLevelOrder(int[] inorder, int start,
 			int end, int[] levelorder, int rootIndex,
 			DoublePointer<Integer> current) {
@@ -37,7 +37,7 @@ public class BuildTree {
 					levelorder, nextIndex, current);
 		return root;
 	}
-
+*/
 	private static TreeNode buildTreeFromPreorder(int[] inorder,int[] preorder,int preStart,int preEnd,int inStart,
 			int inEnd) {
 		if(inStart>inEnd||preStart>preEnd)
@@ -46,8 +46,8 @@ public class BuildTree {
 		int i=search(inorder, inStart, inEnd, root.data);
 		int leftTotal=i-inStart;
 		int rightTotal=inEnd-i;
-		root.left=buildTreeFromPreorder(inorder, preorder, preStart+1, preStart+leftTotal, inStart, i-1);
-		root.right=buildTreeFromPreorder(inorder, preorder, preEnd-rightTotal-1, preEnd, i+1, inEnd);
+		root.left=buildTreeFromPreorder(inorder,preorder,preStart+1,preStart+leftTotal,inStart,i-1);
+        root.right=buildTreeFromPreorder(inorder,preorder,preEnd-rightTotal+1,preEnd,i+1,inEnd);
 		return root;
 	}
 
@@ -68,10 +68,7 @@ public class BuildTree {
 
 			int rootVal = postorder[postEnd];
 			TreeNode root = new TreeNode(rootVal);
-			int i;
-			for (i = inStart; i <= inEnd; i++)
-				if (inorder[i] == rootVal)
-					break;
+			int i=search(inorder, inStart, inEnd, root.data);
 			int leftTotal = i - inStart;
 			int rightTotal = inEnd - i;
 				

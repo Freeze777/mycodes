@@ -1,0 +1,15 @@
+package algo.dp;
+
+public class NumUniqueBST {
+	public static int numTrees(int n) {
+		if (n == 0 || n == 1)
+			return 1;
+		int[] dp = new int[n + 1];
+		dp[0] = dp[1] = 1;
+		for (int keys = 2; keys <= n; keys++) {
+			for (int root = 1; root <= keys; root++)
+				dp[keys] += (dp[root - 1] * dp[keys - root]);
+		}
+		return dp[n];
+	}
+}

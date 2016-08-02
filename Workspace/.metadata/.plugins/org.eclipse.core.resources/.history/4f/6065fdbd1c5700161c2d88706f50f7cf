@@ -1,0 +1,34 @@
+package algo.string;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class WordPatternII {
+	public static void main(String[] args) {
+		String pattern="abacb";
+		String s="redblueredgreenblue";
+		Map<String,String> map=new HashMap<String, String>();
+		map.put("red","");
+		map.put("blue","");
+		map.put("green","");
+		boolean ans=true;
+		int offset=0;
+		for (int i = 0; i < pattern.length(); i++) {
+			char c=s.charAt(offset);
+			switch (c) {
+			case 'r':
+				if(map.containsKey("red"))
+					map.put("red",c+"");
+				else
+				break;
+
+			default:
+				break;
+			}
+			
+			
+		}
+		
+	}
+
+}

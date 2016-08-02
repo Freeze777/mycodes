@@ -1,8 +1,0 @@
-package algo.trees;
-
-public class LongestPalindromicSubsequence {
-	public static void main(String[] args) {
-		String s="aghbxcycmsbka";//abccba is the answer
-		int ans=LPS(s);
-	}
-}

@@ -32,7 +32,7 @@ public class SerializationValidation {
 												// to handle duplicates which
 												// will fail if we use map
 		int[] childCount = new int[preorder.length];
-		s.push(0);
+		s.push(0);//index of root
 		int i = 1;
 		while (!s.isEmpty() && i < childCount.length) {
 			childCount[s.peek()]++;

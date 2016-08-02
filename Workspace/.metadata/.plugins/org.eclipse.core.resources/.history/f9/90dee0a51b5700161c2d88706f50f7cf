@@ -1,0 +1,15 @@
+package algo.string;
+
+public class WordPatternII {
+	public static void main(String[] args) {
+		String pattern="abacb";
+		String s="redblueredgreenblue";
+		StringBuilder dec=new StringBuilder();
+		int offset=0;
+		for (int i = 0; i < args.length; i++) {
+			
+		}
+		
+	}
+
+}

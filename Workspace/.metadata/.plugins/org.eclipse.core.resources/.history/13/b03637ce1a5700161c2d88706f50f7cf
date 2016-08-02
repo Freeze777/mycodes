@@ -1,0 +1,8 @@
+package algo.string;
+
+public class WordPatternII {
+	public static void main(String[] args) {
+		String pattern="abab";
+	}
+
+}

@@ -1,0 +1,8 @@
+package algo.string;
+
+public class CreateBigNumberAtmostKSwaps {
+	public static void main(String[] args) {
+		int num=436659;
+		char n=Integer.toString(num).toCharArray();
+	}
+}

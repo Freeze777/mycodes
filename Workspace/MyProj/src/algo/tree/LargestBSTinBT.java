@@ -56,8 +56,5 @@ public class LargestBSTinBT{
 		obj.isBST=false;
 		obj.bstSize=Math.max(rightObj.bstSize,leftObj.bstSize);
 		return obj;
-
-
-
 	}
 }
