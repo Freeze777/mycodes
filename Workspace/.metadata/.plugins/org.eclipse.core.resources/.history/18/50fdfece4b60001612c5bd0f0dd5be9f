@@ -1,0 +1,7 @@
+package algo.dp;
+/*Codechef : HOTEL*/
+public class MinimumRoomsHotel {
+	public static void main(String[] args) {
+
+	}
+}

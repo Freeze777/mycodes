@@ -1,0 +1,7 @@
+package algo;
+
+public class TanksAndObjects {
+	public static void main(String[] args) {
+
+	}
+}

@@ -1,0 +1,36 @@
+package algo;
+
+import java.util.Scanner;
+
+class Point {
+	int x;
+	int y;
+
+	Point(int x, int y) {
+		this.x = x;
+		this.y = y;
+	}
+}
+
+public class TanksAndObjects {
+	public static char getDirection(int i,Point[] t,Point[] o ){
+		return 0;
+	}
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int m = sc.nextInt();
+		Point[] t = new Point[n];
+		Point[] o = new Point[m];
+		for (int i = 0; i < t.length; i++)
+			t[i] = new Point(sc.nextInt(), sc.nextInt());
+
+		for (int i = 0; i < o.length; i++)
+			o[i] = new Point(sc.nextInt(), sc.nextInt());
+		
+		for (int i = 0; i < t.length; i++) {
+			char c=getDirection(i,t,o);
+		}
+
+	}
+}

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="21" version="2.0">
+<workbench progressCount="22" version="2.0">
 <workbenchAdvisor/>
 <window height="686" maximized="true" width="549" x="65" y="24">
 <fastViewData fastViewLocation="1024"/>
@@ -13,8 +13,8 @@
 <coolItem id="org.eclipse.debug.ui.launch.toolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="156" y="30"/>
 <coolItem id="org.eclipse.debug.ui.main.toolbar" itemType="typeToolBarContribution" x="40" y="30"/>
-<coolItem id="com.python.pydev.toolbars.evaluateActionSetterToolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="com.python.pydev.toolbars.evaluateActionSetterToolbar" itemType="typeToolBarContribution" x="40" y="30"/>
+<coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="88" y="30"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="88" y="30"/>
@@ -45,165 +45,45 @@
 <part id="6"/>
 <part id="7"/>
 <part id="8"/>
-<part id="9"/>
-<part id="10"/>
-<part id="11"/>
-<part id="12"/>
-<part id="13"/>
-<part id="14"/>
-<part id="15"/>
-<part id="16"/>
-<part id="17"/>
-<part id="18"/>
-<part id="19"/>
-<part id="20"/>
-<part id="21"/>
-<part id="22"/>
-<part id="23"/>
-<part id="24"/>
-<part id="25"/>
-<part id="26"/>
-<part id="27"/>
-<part id="28"/>
-<part id="29"/>
-<part id="30"/>
-<part id="31"/>
-<part id="32"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DiagonalSum.java" partName="DiagonalSum.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/algo/tree/DiagonalSum.java" title="DiagonalSum.java" tooltip="MyProj/src/algo/tree/DiagonalSum.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/algo/tree/DiagonalSum.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="222"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="WordMatchMatrix.java" partName="WordMatchMatrix.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/algo/dp/WordMatchMatrix.java" title="WordMatchMatrix.java" tooltip="MyProj/src/algo/dp/WordMatchMatrix.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/algo/dp/WordMatchMatrix.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="35" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DiameterOfATree.java" partName="DiameterOfATree.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/algo/tree/DiameterOfATree.java" title="DiameterOfATree.java" tooltip="MyProj/src/algo/tree/DiameterOfATree.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/algo/tree/DiameterOfATree.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="477"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FindQuadruples.java" partName="FindQuadruples.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/algo/dp/FindQuadruples.java" title="FindQuadruples.java" tooltip="MyProj/src/algo/dp/FindQuadruples.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/algo/dp/FindQuadruples.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="812" selectionTopPixel="178"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BuildTree.java" partName="BuildTree.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/algo/tree/BuildTree.java" title="BuildTree.java" tooltip="MyProj/src/algo/tree/BuildTree.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/algo/tree/BuildTree.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="432" selectionTopPixel="50"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PrincessFarida.java" partName="PrincessFarida.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/algo/dp/PrincessFarida.java" title="PrincessFarida.java" tooltip="MyProj/src/algo/dp/PrincessFarida.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/algo/dp/PrincessFarida.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="70" selectionTopPixel="207"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FlattenToPostOrderLinkedList.java" partName="FlattenToPostOrderLinkedList.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/algo/tree/FlattenToPostOrderLinkedList.java" title="FlattenToPostOrderLinkedList.java" tooltip="MyProj/src/algo/tree/FlattenToPostOrderLinkedList.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/algo/tree/FlattenToPostOrderLinkedList.java"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LongestStringOfRB.java" partName="LongestStringOfRB.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/algo/greedy/LongestStringOfRB.java" title="LongestStringOfRB.java" tooltip="MyProj/src/algo/greedy/LongestStringOfRB.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/algo/greedy/LongestStringOfRB.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="19" selectionTopPixel="647"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SieveOfErasthostenes.java" partName="SieveOfErasthostenes.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/algo/number/theory/SieveOfErasthostenes.java" title="SieveOfErasthostenes.java" tooltip="MyProj/src/algo/number/theory/SieveOfErasthostenes.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/algo/number/theory/SieveOfErasthostenes.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="427" selectionTopPixel="371"/>
+</editor>
+<editor id="org.python.pydev.editor.PythonEditor" name="balanced_paranthesis.py" partName="balanced_paranthesis" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/algo/stack/balanced_paranthesis.py" title="balanced_paranthesis" tooltip="MyProj/src/algo/stack/balanced_paranthesis.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/algo/stack/balanced_paranthesis.py"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FlattenTreeToPreOrderLinkedList.java" partName="FlattenTreeToPreOrderLinkedList.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/algo/tree/FlattenTreeToPreOrderLinkedList.java" title="FlattenTreeToPreOrderLinkedList.java" tooltip="MyProj/src/algo/tree/FlattenTreeToPreOrderLinkedList.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/algo/tree/FlattenTreeToPreOrderLinkedList.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="69"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MinimumRoomsHotel.java" partName="MinimumRoomsHotel.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/algo/dp/MinimumRoomsHotel.java" title="MinimumRoomsHotel.java" tooltip="MyProj/src/algo/dp/MinimumRoomsHotel.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/algo/dp/MinimumRoomsHotel.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="49" selectionOffset="723" selectionTopPixel="358"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HouseRobber.java" partName="HouseRobber.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/algo/tree/HouseRobber.java" title="HouseRobber.java" tooltip="MyProj/src/algo/tree/HouseRobber.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/algo/tree/HouseRobber.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MaxSumNonAdjacentSubsequence.java" partName="MaxSumNonAdjacentSubsequence.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/algo/dp/MaxSumNonAdjacentSubsequence.java" title="MaxSumNonAdjacentSubsequence.java" tooltip="MyProj/src/algo/dp/MaxSumNonAdjacentSubsequence.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/algo/dp/MaxSumNonAdjacentSubsequence.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="651" selectionTopPixel="372"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LeftAndRightViewOfTree.java" partName="LeftAndRightViewOfTree.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/algo/tree/LeftAndRightViewOfTree.java" title="LeftAndRightViewOfTree.java" tooltip="MyProj/src/algo/tree/LeftAndRightViewOfTree.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/algo/tree/LeftAndRightViewOfTree.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1258" selectionTopPixel="1106"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="IterativeTreeTraversals.java" partName="IterativeTreeTraversals.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/algo/tree/IterativeTreeTraversals.java" title="IterativeTreeTraversals.java" tooltip="MyProj/src/algo/tree/IterativeTreeTraversals.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/algo/tree/IterativeTreeTraversals.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="950" selectionTopPixel="569"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Test_Strings.java" partName="Test_Strings.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/Test_Strings.java" title="Test_Strings.java" tooltip="MyProj/src/Test_Strings.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/Test_Strings.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="225" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LargestBSTinBT.java" partName="LargestBSTinBT.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/algo/tree/LargestBSTinBT.java" title="LargestBSTinBT.java" tooltip="MyProj/src/algo/tree/LargestBSTinBT.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/algo/tree/LargestBSTinBT.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1508" selectionTopPixel="647"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MinimumEditDistance.java" partName="MinimumEditDistance.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/algo/dp/MinimumEditDistance.java" title="MinimumEditDistance.java" tooltip="MyProj/src/algo/dp/MinimumEditDistance.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/algo/dp/MinimumEditDistance.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NumUniqueBST.java" partName="NumUniqueBST.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/algo/dp/NumUniqueBST.java" title="NumUniqueBST.java" tooltip="MyProj/src/algo/dp/NumUniqueBST.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/algo/dp/NumUniqueBST.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="StringInterleaving.java" partName="StringInterleaving.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/algo/dp/StringInterleaving.java" title="StringInterleaving.java" tooltip="MyProj/src/algo/dp/StringInterleaving.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/algo/dp/StringInterleaving.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="290"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LowestCommonAncestor.java" partName="LowestCommonAncestor.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/algo/tree/LowestCommonAncestor.java" title="LowestCommonAncestor.java" tooltip="MyProj/src/algo/tree/LowestCommonAncestor.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/algo/tree/LowestCommonAncestor.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="290"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MinDepthOfNode.java" partName="MinDepthOfNode.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/algo/tree/MinDepthOfNode.java" title="MinDepthOfNode.java" tooltip="MyProj/src/algo/tree/MinDepthOfNode.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/algo/tree/MinDepthOfNode.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="69"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MirrorTree.java" partName="MirrorTree.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/algo/tree/MirrorTree.java" title="MirrorTree.java" tooltip="MyProj/src/algo/tree/MirrorTree.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/algo/tree/MirrorTree.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="460"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MultiplyWithOnlyAddOperator.java" partName="MultiplyWithOnlyAddOperator.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/algo/MultiplyWithOnlyAddOperator.java" title="MultiplyWithOnlyAddOperator.java" tooltip="MyProj/src/algo/MultiplyWithOnlyAddOperator.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/algo/MultiplyWithOnlyAddOperator.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="12" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NextPermutation.java" partName="NextPermutation.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/algo/arrays/NextPermutation.java" title="NextPermutation.java" tooltip="MyProj/src/algo/arrays/NextPermutation.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/algo/arrays/NextPermutation.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1486" selectionTopPixel="517"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NthLargestandSmallestElementInBST.java" partName="NthLargestandSmallestElementInBST.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/algo/tree/NthLargestandSmallestElementInBST.java" title="NthLargestandSmallestElementInBST.java" tooltip="MyProj/src/algo/tree/NthLargestandSmallestElementInBST.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/algo/tree/NthLargestandSmallestElementInBST.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="414"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NumberOfBSTOfNkeys.java" partName="NumberOfBSTOfNkeys.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/algo/tree/NumberOfBSTOfNkeys.java" title="NumberOfBSTOfNkeys.java" tooltip="MyProj/src/algo/tree/NumberOfBSTOfNkeys.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/algo/tree/NumberOfBSTOfNkeys.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="511"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PathSum.java" partName="PathSum.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/algo/tree/PathSum.java" title="PathSum.java" tooltip="MyProj/src/algo/tree/PathSum.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/algo/tree/PathSum.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PrintNodesAtDistanceK.java" partName="PrintNodesAtDistanceK.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/algo/tree/PrintNodesAtDistanceK.java" title="PrintNodesAtDistanceK.java" tooltip="MyProj/src/algo/tree/PrintNodesAtDistanceK.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/algo/tree/PrintNodesAtDistanceK.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="310"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PruneTree.java" partName="PruneTree.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/algo/tree/PruneTree.java" title="PruneTree.java" tooltip="MyProj/src/algo/tree/PruneTree.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/algo/tree/PruneTree.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="849" selectionTopPixel="465"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RBT.java" partName="RBT.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/algo/tree/RBT.java" title="RBT.java" tooltip="MyProj/src/algo/tree/RBT.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/algo/tree/RBT.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="5803"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RootToLeafPaths.java" partName="RootToLeafPaths.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/algo/tree/RootToLeafPaths.java" title="RootToLeafPaths.java" tooltip="MyProj/src/algo/tree/RootToLeafPaths.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/algo/tree/RootToLeafPaths.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="117"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SerializationValidation.java" partName="SerializationValidation.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/algo/tree/SerializationValidation.java" title="SerializationValidation.java" tooltip="MyProj/src/algo/tree/SerializationValidation.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/algo/tree/SerializationValidation.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1140" selectionTopPixel="494"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SerializeDeserialize.java" partName="SerializeDeserialize.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/algo/tree/SerializeDeserialize.java" title="SerializeDeserialize.java" tooltip="MyProj/src/algo/tree/SerializeDeserialize.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/algo/tree/SerializeDeserialize.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="307"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SortedArrayToBBST.java" partName="SortedArrayToBBST.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/algo/tree/SortedArrayToBBST.java" title="SortedArrayToBBST.java" tooltip="MyProj/src/algo/tree/SortedArrayToBBST.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/algo/tree/SortedArrayToBBST.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="18"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SumOfLeftLeaves.java" partName="SumOfLeftLeaves.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/algo/tree/SumOfLeftLeaves.java" title="SumOfLeftLeaves.java" tooltip="MyProj/src/algo/tree/SumOfLeftLeaves.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/algo/tree/SumOfLeftLeaves.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="259"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SumRootToLeaf2.java" partName="SumRootToLeaf2.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/algo/tree/SumRootToLeaf2.java" title="SumRootToLeaf2.java" tooltip="MyProj/src/algo/tree/SumRootToLeaf2.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/algo/tree/SumRootToLeaf2.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SwappedNodeRecoverBST.java" partName="SwappedNodeRecoverBST.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/algo/tree/SwappedNodeRecoverBST.java" title="SwappedNodeRecoverBST.java" tooltip="MyProj/src/algo/tree/SwappedNodeRecoverBST.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/algo/tree/SwappedNodeRecoverBST.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="137"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TopView.java" partName="TopView.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/algo/tree/TopView.java" title="TopView.java" tooltip="MyProj/src/algo/tree/TopView.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/algo/tree/TopView.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="297"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RainWaterTrappedBuilding.java" partName="RainWaterTrappedBuilding.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/algo/arrays/RainWaterTrappedBuilding.java" title="RainWaterTrappedBuilding.java" tooltip="MyProj/src/algo/arrays/RainWaterTrappedBuilding.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/algo/arrays/RainWaterTrappedBuilding.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="802" selectionTopPixel="0"/>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TanksAndObjects.java" partName="TanksAndObjects.java" path="/home/qwerty/Desktop/mycodes/Workspace/MyProj/src/algo/TanksAndObjects.java" title="TanksAndObjects.java" tooltip="MyProj/src/algo/TanksAndObjects.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyProj/src/algo/TanksAndObjects.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="869" selectionTopPixel="519"/>
 </editor>
 </editors>
 <views>
@@ -245,7 +125,8 @@
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
 <category IMemento.internal.id="Errors"/>
-<category IMemento.internal.id="Warnings (100 of 135 items)"/>
+<category IMemento.internal.id="Warnings (100 of 137 items)"/>
+<category IMemento.internal.id="Warnings"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="261" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -461,194 +342,166 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/tree/BSTIterator.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/tree/CheckATreeIsBST.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/tree/DiagonalSum.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/tree/DiameterOfATree.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/tree/DoublePointer.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/tree/BuildTree.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/tree/FlattenToPostOrderLinkedList.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/tree/FlattenTreeToPreOrderLinkedList.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/tree/HouseRobber.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/tree/LeftAndRightViewOfTree.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/tree/IterativeTreeTraversals.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/Test_Strings.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/tree/LargestBSTinBT.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/dp/MinimumEditDistance.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/dp/NumUniqueBST.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/dp/StringInterleaving.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/dp/UniquePaths.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/tree/LowestCommonAncestor.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/tree/MinDepthOfNode.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/tree/MirrorTree.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/tree/MultiplyWithOnlyAddOperator.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/MultiplyWithOnlyAddOperator.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/tree/NextPermutation.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/arrays/NextPermutation.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/tree/NthLargestandSmallestElementInBST.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/tree/NumberOfBSTOfNkeys.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/tree/PathSum.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/tree/PrintNodesAtDistanceK.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/tree/PruneTree.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/tree/RBT.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/tree/RootToLeafPaths.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/tree/SerializationValidation.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/tree/SerializeDeserialize.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/tree/SortedArrayToBBST.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/tree/SumOfLeftLeaves.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/tree/SumRootToLeaf2.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/tree/SwappedNodeRecoverBST.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/tree/TopView.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/arrays/RainWaterTrappedBuilding.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/dp/PrincessFarida.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/dp/MinimumRoomsHotel.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/dp/LongestStringOfRB.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/greedy/LongestStringOfRB.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/SieveOfErasthostenes.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/number/theory/SieveOfErasthostenes.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/dp/MaxSumNonAdjacentSubsequence.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/backtracking/DecreasingPathMatrix.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/dp/FindQuadruples.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/MyProj/src/algo/stack/balanced_paranthesis.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/TanksAndObjects.java"/>
 </editors>
-<item historyLabel="CheckATreeIsBST.java" index="1">
-<position info="not_deleted" x="614" y="10"/>
+<item historyLabel="LongestStringOfRB.java" index="2">
+<position info="not_deleted" x="1103" y="0"/>
 </item>
-<item historyLabel="BSTIterator.java" index="0">
+<item historyLabel="LongestStringOfRB.java" index="2">
+<position info="not_deleted" x="1166" y="0"/>
+</item>
+<item historyLabel="LongestStringOfRB.java" index="2">
+<position info="not_deleted" x="268" y="0"/>
+</item>
+<item historyLabel="LongestStringOfRB.java" index="2">
+<position info="not_deleted" x="336" y="0"/>
+</item>
+<item historyLabel="LongestStringOfRB.java" index="2">
+<position info="not_deleted" x="357" y="0"/>
+</item>
+<item historyLabel="LongestStringOfRB.java" index="2">
+<position info="not_deleted" x="296" y="4"/>
+</item>
+<item historyLabel="LongestStringOfRB.java" index="2">
+<position info="not_deleted" x="357" y="0"/>
+</item>
+<item historyLabel="LongestStringOfRB.java" index="2">
+<position info="not_deleted" x="684" y="0"/>
+</item>
+<item historyLabel="LongestStringOfRB.java" index="2">
+<position info="not_deleted" x="513" y="0"/>
+</item>
+<item historyLabel="LongestStringOfRB.java" index="2">
+<position info="not_deleted" x="488" y="0"/>
+</item>
+<item historyLabel="LongestStringOfRB.java" index="2">
+<position info="not_deleted" x="513" y="0"/>
+</item>
+<item historyLabel="LongestStringOfRB.java" index="2">
+<position info="not_deleted" x="567" y="0"/>
+</item>
+<item historyLabel="LongestStringOfRB.java" index="2">
+<position info="not_deleted" x="621" y="0"/>
+</item>
+<item historyLabel="LongestStringOfRB.java" index="2">
+<position info="not_deleted" x="647" y="0"/>
+</item>
+<item historyLabel="LongestStringOfRB.java" index="2">
+<position info="not_deleted" x="646" y="0"/>
+</item>
+<item historyLabel="LongestStringOfRB.java" index="2">
+<position info="not_deleted" x="684" y="0"/>
+</item>
+<item historyLabel="LongestStringOfRB.java" index="2">
+<position info="not_deleted" x="682" y="0"/>
+</item>
+<item historyLabel="LongestStringOfRB.java" index="2">
+<position info="not_deleted" x="722" y="0"/>
+</item>
+<item historyLabel="LongestStringOfRB.java" index="2">
+<position info="not_deleted" x="745" y="0"/>
+</item>
+<item historyLabel="LongestStringOfRB.java" index="2">
+<position info="not_deleted" x="786" y="0"/>
+</item>
+<item historyLabel="LongestStringOfRB.java" index="2">
+<position info="not_deleted" x="753" y="0"/>
+</item>
+<item historyLabel="LongestStringOfRB.java" index="2">
+<position info="not_deleted" x="906" y="0"/>
+</item>
+<item historyLabel="LongestStringOfRB.java" index="2">
+<position info="not_deleted" x="944" y="0"/>
+</item>
+<item historyLabel="LongestStringOfRB.java" index="2">
+<position info="not_deleted" x="986" y="0"/>
+</item>
+<item historyLabel="LongestStringOfRB.java" index="2">
+<position info="not_deleted" x="1006" y="0"/>
+</item>
+<item historyLabel="LongestStringOfRB.java" index="2">
+<position info="not_deleted" x="536" y="0"/>
+</item>
+<item historyLabel="LongestStringOfRB.java" index="2">
+<position info="not_deleted" x="590" y="0"/>
+</item>
+<item historyLabel="LongestStringOfRB.java" index="3">
+<position info="not_deleted" x="19" y="0"/>
+</item>
+<item historyLabel="LongestStringOfRB.java" index="3">
+<position info="not_deleted" x="1355" y="0"/>
+</item>
+<item historyLabel="SieveOfErasthostenes.java" index="4">
+<position info="not_deleted" x="28" y="0"/>
+</item>
+<item historyLabel="SieveOfErasthostenes.java" index="5">
+<position info="not_deleted" x="8" y="0"/>
+</item>
+<item historyLabel="SieveOfErasthostenes.java" index="5">
+<position info="not_deleted" x="630" y="0"/>
+</item>
+<item historyLabel="MaxSumNonAdjacentSubsequence.java" index="6">
+<position info="not_deleted" x="473" y="0"/>
+</item>
+<item historyLabel="SieveOfErasthostenes.java" index="5">
+<position info="not_deleted" x="630" y="0"/>
+</item>
+<item historyLabel="DecreasingPathMatrix.java" index="7">
+<position info="not_deleted" x="927" y="0"/>
+</item>
+<item historyLabel="SieveOfErasthostenes.java" index="5">
+<position info="not_deleted" x="630" y="0"/>
+</item>
+<item historyLabel="PrincessFarida.java" index="0">
+<position info="not_deleted" x="70" y="0"/>
+</item>
+<item historyLabel="LongestStringOfRB.java" index="3">
+<position info="not_deleted" x="1355" y="0"/>
+</item>
+<item historyLabel="SieveOfErasthostenes.java" index="5">
+<position info="not_deleted" x="630" y="0"/>
+</item>
+<item historyLabel="FindQuadruples.java" index="8">
+<position info="not_deleted" x="1527" y="0"/>
+</item>
+<item historyLabel="FindQuadruples.java" index="8">
+<position info="not_deleted" x="417" y="0"/>
+</item>
+<item historyLabel="LongestStringOfRB.java" index="3">
+<position info="not_deleted" x="19" y="0"/>
+</item>
+<item historyLabel="FindQuadruples.java" index="8">
+<position info="not_deleted" x="812" y="0"/>
+</item>
+<item historyLabel="SieveOfErasthostenes.java" index="5">
+<position info="not_deleted" x="427" y="0"/>
+</item>
+<item historyLabel="LongestStringOfRB.java" index="3">
+<position info="not_deleted" x="19" y="0"/>
+</item>
+<item historyLabel="PrincessFarida.java" index="0">
+<position info="not_deleted" x="70" y="0"/>
+</item>
+<item historyLabel="balanced_paranthesis" index="9">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="DiagonalSum.java" index="2">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="MinimumRoomsHotel.java" index="1">
+<position info="not_deleted" x="723" y="49"/>
 </item>
-<item historyLabel="DiameterOfATree.java" index="3">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="MaxSumNonAdjacentSubsequence.java" index="6">
+<position info="not_deleted" x="651" y="0"/>
 </item>
-<item historyLabel="DoublePointer.java" index="4">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="DiameterOfATree.java" index="3">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="BuildTree.java" index="5">
-<position info="not_deleted" x="432" y="0"/>
-</item>
-<item historyLabel="FlattenToPostOrderLinkedList.java" index="6">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="FlattenTreeToPreOrderLinkedList.java" index="7">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="HouseRobber.java" index="8">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="LeftAndRightViewOfTree.java" index="9">
-<position info="not_deleted" x="1258" y="0"/>
-</item>
-<item historyLabel="IterativeTreeTraversals.java" index="10">
-<position info="not_deleted" x="950" y="0"/>
-</item>
-<item historyLabel="Test_Strings.java" index="11">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Test_Strings.java" index="11">
-<position info="not_deleted" x="119" y="0"/>
-</item>
-<item historyLabel="Test_Strings.java" index="11">
-<position info="not_deleted" x="143" y="0"/>
-</item>
-<item historyLabel="Test_Strings.java" index="11">
-<position info="not_deleted" x="225" y="0"/>
-</item>
-<item historyLabel="LargestBSTinBT.java" index="12">
-<position info="not_deleted" x="1508" y="0"/>
-</item>
-<item historyLabel="LeftAndRightViewOfTree.java" index="9">
-<position info="not_deleted" x="1258" y="0"/>
-</item>
-<item historyLabel="MinimumEditDistance.java" index="13">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="NumUniqueBST.java" index="14">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="StringInterleaving.java" index="15">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="UniquePaths.java" index="16">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="StringInterleaving.java" index="15">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="LargestBSTinBT.java" index="12">
-<position info="not_deleted" x="1508" y="0"/>
-</item>
-<item historyLabel="LeftAndRightViewOfTree.java" index="9">
-<position info="not_deleted" x="1258" y="0"/>
-</item>
-<item historyLabel="LowestCommonAncestor.java" index="17">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="MinDepthOfNode.java" index="18">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="MirrorTree.java" index="19">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="MinDepthOfNode.java" index="18">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="MirrorTree.java" index="19">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="MultiplyWithOnlyAddOperator.java" index="20">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="MultiplyWithOnlyAddOperator.java" index="21">
-<position info="not_deleted" x="12" y="0"/>
-</item>
-<item historyLabel="NextPermutation.java" index="22">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="NextPermutation.java" index="23">
-<position info="not_deleted" x="1486" y="0"/>
-</item>
-<item historyLabel="NthLargestandSmallestElementInBST.java" index="24">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="NumberOfBSTOfNkeys.java" index="25">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="PathSum.java" index="26">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="PrintNodesAtDistanceK.java" index="27">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="PruneTree.java" index="28">
-<position info="not_deleted" x="849" y="0"/>
-</item>
-<item historyLabel="RBT.java" index="29">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="RootToLeafPaths.java" index="30">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="RBT.java" index="29">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="SerializationValidation.java" index="31">
-<position info="not_deleted" x="1140" y="0"/>
-</item>
-<item historyLabel="SerializeDeserialize.java" index="32">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="SortedArrayToBBST.java" index="33">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="SumOfLeftLeaves.java" index="34">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="SumRootToLeaf2.java" index="35">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="SwappedNodeRecoverBST.java" index="36">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="TopView.java" index="37">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item active="true" historyLabel="RainWaterTrappedBuilding.java" index="38">
+<item active="true" historyLabel="TanksAndObjects.java" index="10">
 <position info="not_deleted" x="0" y="0"/>
 </item>
 </navigationHistory>
@@ -668,50 +521,50 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RainWaterTrappedBuilding.java" tooltip="MyProj/src/algo/arrays/RainWaterTrappedBuilding.java">
-<persistable path="/MyProj/src/algo/arrays/RainWaterTrappedBuilding.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TanksAndObjects.java" tooltip="MyProj/src/algo/TanksAndObjects.java">
+<persistable path="/MyProj/src/algo/TanksAndObjects.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TopView.java" tooltip="MyProj/src/algo/tree/TopView.java">
-<persistable path="/MyProj/src/algo/tree/TopView.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MaxSumNonAdjacentSubsequence.java" tooltip="MyProj/src/algo/dp/MaxSumNonAdjacentSubsequence.java">
+<persistable path="/MyProj/src/algo/dp/MaxSumNonAdjacentSubsequence.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SwappedNodeRecoverBST.java" tooltip="MyProj/src/algo/tree/SwappedNodeRecoverBST.java">
-<persistable path="/MyProj/src/algo/tree/SwappedNodeRecoverBST.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MinimumRoomsHotel.java" tooltip="MyProj/src/algo/dp/MinimumRoomsHotel.java">
+<persistable path="/MyProj/src/algo/dp/MinimumRoomsHotel.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SumRootToLeaf2.java" tooltip="MyProj/src/algo/tree/SumRootToLeaf2.java">
-<persistable path="/MyProj/src/algo/tree/SumRootToLeaf2.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="balanced_paranthesis.py" tooltip="MyProj/src/algo/stack/balanced_paranthesis.py">
+<persistable path="/MyProj/src/algo/stack/balanced_paranthesis.py"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SumOfLeftLeaves.java" tooltip="MyProj/src/algo/tree/SumOfLeftLeaves.java">
-<persistable path="/MyProj/src/algo/tree/SumOfLeftLeaves.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SieveOfErasthostenes.java" tooltip="MyProj/src/SieveOfErasthostenes.java">
+<persistable path="/MyProj/src/SieveOfErasthostenes.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SortedArrayToBBST.java" tooltip="MyProj/src/algo/tree/SortedArrayToBBST.java">
-<persistable path="/MyProj/src/algo/tree/SortedArrayToBBST.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LongestStringOfRB.java" tooltip="MyProj/src/algo/dp/LongestStringOfRB.java">
+<persistable path="/MyProj/src/algo/dp/LongestStringOfRB.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SerializeDeserialize.java" tooltip="MyProj/src/algo/tree/SerializeDeserialize.java">
-<persistable path="/MyProj/src/algo/tree/SerializeDeserialize.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MergingKSortedLinkedList.java" tooltip="MyProj/src/algo/list/MergingKSortedLinkedList.java">
+<persistable path="/MyProj/src/algo/list/MergingKSortedLinkedList.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SerializationValidation.java" tooltip="MyProj/src/algo/tree/SerializationValidation.java">
-<persistable path="/MyProj/src/algo/tree/SerializationValidation.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FindMidPoint.java" tooltip="MyProj/src/algo/list/FindMidPoint.java">
+<persistable path="/MyProj/src/algo/list/FindMidPoint.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RootToLeafPaths.java" tooltip="MyProj/src/algo/tree/RootToLeafPaths.java">
-<persistable path="/MyProj/src/algo/tree/RootToLeafPaths.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PrincessFarida.java" tooltip="MyProj/src/algo/dp/PrincessFarida.java">
+<persistable path="/MyProj/src/algo/dp/PrincessFarida.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RBT.java" tooltip="MyProj/src/algo/tree/RBT.java">
-<persistable path="/MyProj/src/algo/tree/RBT.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DecreasingPathMatrix.java" tooltip="MyProj/src/algo/backtracking/DecreasingPathMatrix.java">
+<persistable path="/MyProj/src/algo/backtracking/DecreasingPathMatrix.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PruneTree.java" tooltip="MyProj/src/algo/tree/PruneTree.java">
-<persistable path="/MyProj/src/algo/tree/PruneTree.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FindQuadruples.java" tooltip="MyProj/src/algo/dp/FindQuadruples.java">
+<persistable path="/MyProj/src/algo/dp/FindQuadruples.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PrintNodesAtDistanceK.java" tooltip="MyProj/src/algo/tree/PrintNodesAtDistanceK.java">
-<persistable path="/MyProj/src/algo/tree/PrintNodesAtDistanceK.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="WordMatchMatrix.java" tooltip="MyProj/src/algo/backtracking/WordMatchMatrix.java">
+<persistable path="/MyProj/src/algo/backtracking/WordMatchMatrix.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PathSum.java" tooltip="MyProj/src/algo/tree/PathSum.java">
-<persistable path="/MyProj/src/algo/tree/PathSum.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Solution.java" tooltip="MyProj/src/Solution.java">
+<persistable path="/MyProj/src/Solution.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NumberOfBSTOfNkeys.java" tooltip="MyProj/src/algo/tree/NumberOfBSTOfNkeys.java">
-<persistable path="/MyProj/src/algo/tree/NumberOfBSTOfNkeys.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="StringConnectRB.java" tooltip="MyProj/src/StringConnectRB.java">
+<persistable path="/MyProj/src/StringConnectRB.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NthLargestandSmallestElementInBST.java" tooltip="MyProj/src/algo/tree/NthLargestandSmallestElementInBST.java">
-<persistable path="/MyProj/src/algo/tree/NthLargestandSmallestElementInBST.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PythagorianTriplets.java" tooltip="MyProj/src/hacker/rank/project/euler/PythagorianTriplets.java">
+<persistable path="/MyProj/src/hacker/rank/project/euler/PythagorianTriplets.java"/>
 </file>
 </mruList>
 </workbench>

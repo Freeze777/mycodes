@@ -1,0 +1,17 @@
+public class SieveOfErasthostenes {
+	public static void main(String[] args) {
+		int max = 100000;
+		int[] isPrime = new int[max + 1];
+		// consider all numbers less than sqrt(max) and mark them true
+		for (int i = 2; i * i <= max; i++) {
+			for (int j = i; i*j <= max; j++) {
+				isNotPrime[i*j]=true;
+			}
+		}
+		
+		for (int i = 0; i < isNotPrime.length; i++) {
+			if(!isNotPrime[i])
+				System.out.println(i);
+		}
+	}
+}

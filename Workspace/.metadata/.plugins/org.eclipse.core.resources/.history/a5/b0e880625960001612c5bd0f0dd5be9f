@@ -1,0 +1,19 @@
+package algo.dp;
+
+import java.util.Scanner;
+
+public class LongestStringOfRB {
+	public static int getMaxLen(String[] s){
+		int ans=0,rr=0,bb=0;
+		List<Integer> rb=new ArrayLisy<Integer>();
+		List<Integer> br=new ArrayLisy<Integer>();
+		
+		return 0;
+	}
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		String[] s=sc.nextLine().split(" ");
+		int ans=getMaxLen(s);
+	}
+
+}

@@ -1,0 +1,8 @@
+import java.math.BigInteger;
+
+public class So {
+	public static void main(String[] args) {
+		BigInteger r;
+		
+	}
+}

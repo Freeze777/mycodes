@@ -2,37 +2,37 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="-" key="selection"/>
+		<item value="t[i]" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="t[i]"/>
+			<item value="board"/>
+			<item value="hashCode"/>
 			<item value="−"/>
 			<item value="10000"/>
 			<item value=".setValue(root)"/>
 			<item value=".getValue()"/>
 			<item value="int"/>
-			<item value="val"/>
-			<item value="and"/>
-			<item value="len(s)"/>
 		</list>
 		<list key="replacehistory">
+			<item value="tank"/>
+			<item value="grid"/>
 			<item value="-"/>
 			<item value="n"/>
 			<item value="[0]=root"/>
 			<item value="[0]"/>
 			<item value="long"/>
 			<item value="data"/>
-			<item value="&amp;&amp;"/>
-			<item value="s.length"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="330" key="DIALOG_WIDTH"/>
 		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
-		<item value="512" key="DIALOG_HEIGHT"/>
+		<item value="568" key="DIALOG_HEIGHT"/>
 		<item value="964" key="DIALOG_X_ORIGIN"/>
-		<item value="210" key="DIALOG_Y_ORIGIN"/>
+		<item value="154" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

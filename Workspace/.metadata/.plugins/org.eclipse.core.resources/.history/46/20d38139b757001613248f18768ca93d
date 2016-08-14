@@ -1,8 +1,0 @@
-public class Test_Strings {
-	public static void main(String[] args) {
-		//int n=3;
-		String s="redblackblueredredblue";
-		s=s.replace("red","R");
-
-	}
-}

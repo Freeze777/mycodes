@@ -1,0 +1,5 @@
+public class StringConnectRB {
+	public static void main(String[] args) {
+		String[] s={"R"}
+	}
+}
