@@ -2,13 +2,15 @@ package algo.trie;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 import java.util.TreeMap;
 
-class Data {
-	public long id;
-	public double price;
+class Data implements Comparable<Data> {
+	public Long id;
+	public Double price;
 	public String category;
 	public String name;
 
@@ -25,9 +27,18 @@ class Data {
 				+ ", name=" + name + "]";
 	}
 
+	@Override
+	public int compareTo(Data o) {
+		if (this.price.equals(o))
+			return this.id.compareTo(o.id);
+		return this.price.compareTo(o.price);
+	}
+
 }
 
 public class CatalogUsingTrie {
+	static Trie trie = new Trie();
+	static TreeMap<Double,List<Data>> map=new TreeMap<Double,List<Data>>();
 	private static class TrieNode {
 		Map<Character, TrieNode> children;
 		boolean isEnd;
@@ -55,6 +66,9 @@ public class CatalogUsingTrie {
 			}
 			crawl.isEnd = true;
 			crawl.data = data;
+			if(!map.containsKey(data.price))
+				map.put(data.price,new ArrayList<Data>());
+			map.get(data.price).add(data);				
 			System.out.println("inserted product: " + data.name);
 		}
 
@@ -95,7 +109,6 @@ public class CatalogUsingTrie {
 	}
 
 	public static void main(String[] args) {
-		Trie trie = new Trie();
 		try {
 			Scanner sc = new Scanner(new File("product.csv"));
 			while (sc.hasNextLine()) {
@@ -105,9 +118,10 @@ public class CatalogUsingTrie {
 				trie.insert(input[1], data);
 
 			}
-			//trie.printContents();
-			//System.out.println(trie.search("iphone 4s"));
+			// trie.printContents();
+			// System.out.println(trie.search("iphone 4s"));
 			System.out.println(trie.startsWith("iph"));
+			System.out.println(map.subMap(357.5,true, 23357.85,true));
 
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
