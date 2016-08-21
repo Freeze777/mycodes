@@ -83,7 +83,9 @@ public class CatalogUsingTrie {
 		}
 
 		public void printContents() {
+			System.out.println("###Contents###");
 			dfs(root);
+			System.out.println("#############");
 		}
 
 		private void dfs(TrieNode root) {
@@ -118,7 +120,7 @@ public class CatalogUsingTrie {
 				trie.insert(input[1], data);
 
 			}
-			// trie.printContents();
+			 trie.printContents();
 			// System.out.println(trie.search("iphone 4s"));
 			System.out.println(trie.startsWith("iph"));
 			System.out.println(map.subMap(357.5,true, 23357.85,true));

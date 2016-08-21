@@ -19,36 +19,11 @@ public class SieveOfErasthostenes {
 				}
 			}
 		}
-		//highest repeating digit among prime numbers in range
-		/*Map<Integer, Integer> map = new HashMap<Integer, Integer>();
-		for (int i = 0; i < 10; i++)
-			map.put(i, 0);
-		int ans = 0;
-		int maxCount = 0;
-		int l = 2, r = 9;
-		for (int i = l; i <= r; i++) {
-			if (isPrime[i] == 1) {
-				int tmp = i;
-				while (tmp != 0) {
-					int dig = tmp % 10;
-					tmp = tmp / 10;
-					int count = map.get(dig);
-					count++;
-					map.put(dig, count);
-					if (count > maxCount) {
-						maxCount = count;
-						ans = dig;
-					} else if (count == maxCount) {
-						ans = Math.max(ans, dig);
-					}
-				}
-			}
-		}
-		System.out.println(ans);*/
+		
 		// prefix sum computation for number of primes in range
 		for (int i = 2; i < isPrime.length; i++) {
 			isPrime[i] += isPrime[i - 1];
 		}
-		System.out.println(isPrime[max]);
+		System.out.println(isPrime[max]);//for testing against standard values
 	}
 }

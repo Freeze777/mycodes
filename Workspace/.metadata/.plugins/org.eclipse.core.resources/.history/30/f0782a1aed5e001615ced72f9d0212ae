@@ -1,8 +1,0 @@
-import java.math.BigInteger;
-
-public class StringConnectRB {
-	public static void main(String[] args) {
-		BigInteger r;
-		r.
-	}
-}

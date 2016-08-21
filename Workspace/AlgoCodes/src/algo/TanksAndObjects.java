@@ -1,5 +1,5 @@
 package algo;
-
+/*http://www.geeksforgeeks.org/walmart-labs-interview-experience/*/
 import java.util.Scanner;
 
 class Point {

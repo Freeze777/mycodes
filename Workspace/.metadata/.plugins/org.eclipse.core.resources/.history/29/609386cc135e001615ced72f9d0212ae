@@ -1,7 +1,0 @@
-public class SieveOfErasthostenes {
-	public static void main(String[] args) {
-		int max=100000;
-		boolean[] isNotPrime=new boolean[max+1];
-		isNotPrime[0]=true;
-	}
-}

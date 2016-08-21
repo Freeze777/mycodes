@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="hacker.rank.ScalarProduct"/>
-<fullyQualifiedTypeName name="java.util.TreeSet"/>
-<fullyQualifiedTypeName name="algo.trees.TopView"/>
-<fullyQualifiedTypeName name="java.util.Queue"/>
-<fullyQualifiedTypeName name="java.util.LinkedList"/>
 <fullyQualifiedTypeName name="algo.trees.QNode"/>
 <fullyQualifiedTypeName name="algo.Permutations"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
@@ -12,7 +7,6 @@
 <fullyQualifiedTypeName name="algo.Password"/>
 <fullyQualifiedTypeName name="java.lang.Object"/>
 <fullyQualifiedTypeName name="Order"/>
-<fullyQualifiedTypeName name="java.lang.Comparable"/>
 <fullyQualifiedTypeName name="java.util.PriorityQueue"/>
 <fullyQualifiedTypeName name="Taxi"/>
 <fullyQualifiedTypeName name="algo.trees.TreeNode"/>
@@ -27,7 +21,6 @@
 <fullyQualifiedTypeName name="algo.trie.Trie"/>
 <fullyQualifiedTypeName name="algo.trie.TrieUsingMap.Trie"/>
 <fullyQualifiedTypeName name="java.lang.StringBuffer"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.util.Set"/>
 <fullyQualifiedTypeName name="java.util.HashSet"/>
 <fullyQualifiedTypeName name="MyClass"/>
@@ -59,5 +52,12 @@
 <fullyQualifiedTypeName name="algo.Utils"/>
 <fullyQualifiedTypeName name="java.lang.Math"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.lang.Comparable"/>
+<fullyQualifiedTypeName name="java.util.TreeSet"/>
 <fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.lang.Runnable"/>
+<fullyQualifiedTypeName name="MySample"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
+<fullyQualifiedTypeName name="Sample"/>
 </qualifiedTypeNameHistroy>

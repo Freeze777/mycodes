@@ -1,0 +1,12 @@
+import java.util.Scanner;
+
+public class T {
+
+	public static int main(String[] args) {
+
+
+		System.out.format("%3s",100);
+		
+		return 0;
+	}
+}
