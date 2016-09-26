@@ -25,7 +25,7 @@ public class IntersectionOfList {
 				headB = headB.next;
 		}
 		while (headB != null && headA != null) {
-			if (headA == headB)//moved from down to handle corner case [1->null] and [1->null]
+			if (headA == headB)//moved up to handle corner case [1->null] and [1->null]
 				break;
 			headB = headB.next;
 			headA = headA.next;

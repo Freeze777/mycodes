@@ -10,13 +10,13 @@
 	</section>
 	<section name="org.eclipse.ui.dialogs.FilteredResourcesSelectionDialog">
 		<item value="true" key="ShowStatusLine"/>
-		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;History&gt;&#x0A;&lt;historyRootNode&gt;&#x0A;&lt;infoNode path=&quot;/MyProj/src/algo/list/ReverseEverykNodes.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/MyProj/src/algo/RotateArrayByk.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/MyProj/src/algo/RobotMoves.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/MyProj/src/algo/stack/BalancedParanthesis.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/MyProj/src/algo/stack/balanced_paranthesis.py&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/MyProj/src/algo/FindithOrderStatistics.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/MyProj/src/algo/FindingSqrtUsingBinarySearch.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/MyProj/src/algo/string/DetectPanagrams.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/MyProj/src/algo/SortedMatrixProblems.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/MyProj/src/algo/SearchInRotatedArray.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/MyProj/src/algo/FindPeakinIncreasingThenDecreasing.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/MyProj/src/algo/stack/MaximumElementInStack.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/MyProj/src/GridSearch.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/MyProj/src/algo/TanksAndObjects.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;/historyRootNode&gt;&#x0A;&lt;/History&gt;" key="History"/>
+		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;History&gt;&#x0A;&lt;historyRootNode&gt;&#x0A;&lt;infoNode path=&quot;/AlgoCodes/src/hacker/rank/nCr.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/AlgoCodes/src/template.cc&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;/historyRootNode&gt;&#x0A;&lt;/History&gt;" key="History"/>
 		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;workingSet workingSetName=&quot;&quot;/&gt;" key="WorkingSet"/>
 		<item value="false" key="ShowDerived"/>
 		<section name="DialogBoundsSettings">
 			<item value="620" key="DIALOG_WIDTH"/>
 			<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
-			<item value="708" key="DIALOG_HEIGHT"/>
+			<item value="724" key="DIALOG_HEIGHT"/>
 			<item value="350" key="DIALOG_X_ORIGIN"/>
 			<item value="0" key="DIALOG_Y_ORIGIN"/>
 		</section>

@@ -17,6 +17,7 @@ public class T {
 
 	public static void main(String[] args) {
 		MySample s=new MySample();
+		System.out.println(Long.MAX_VALUE);
 		Thread t=new Thread();
 	}
 }

@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class Moon {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		boolean up=true;
+		prev=-1;
+		while(n-->0){
+			
+		}
+	}
+}

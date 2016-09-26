@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;AlgoCodes/src/codeforces/secret_combination.cpp&apos; to &apos;secret_combination_fail.cpp&apos;" description="Rename resource &apos;secret_combination.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/codeforces/secret_combination.cpp" name="secret_combination_fail.cpp" stamp="1472800952695" updateReferences="true"/>
+</session>

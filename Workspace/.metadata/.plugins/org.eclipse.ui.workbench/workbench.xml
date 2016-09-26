@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="19" version="2.0">
+<workbench progressCount="15" version="2.0">
 <workbenchAdvisor/>
 <window height="686" maximized="true" width="549" x="65" y="24">
 <fastViewData fastViewLocation="1024"/>
@@ -15,18 +15,18 @@
 <coolItem id="org.eclipse.debug.ui.main.toolbar" itemType="typeToolBarContribution" x="40" y="30"/>
 <coolItem id="com.python.pydev.toolbars.evaluateActionSetterToolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="88" y="30"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="88" y="30"/>
 <coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="124" y="30"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="40" y="30"/>
 <coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="232" y="30"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.cdt.ui.editor.CEditor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.python.pydev.editor.PythonEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.python.pydev.editor.PythonEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
@@ -35,16 +35,10 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Sample.java" partName="Sample.java" path="/home/qwerty/Desktop/mycodes/Workspace/AlgoCodes/src/Sample.java" title="Sample.java" tooltip="AlgoCodes/src/Sample.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/AlgoCodes/src/Sample.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="21" selectionTopPixel="0"/>
-</editor>
 </editors>
 <views>
 <view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc">
@@ -84,7 +78,7 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Warnings (100 of 146 items)"/>
+<category IMemento.internal.id="Warnings"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="261" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -124,7 +118,7 @@
 <viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="org.eclipse.jdt.ui.PackageExplorer" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.ui.internal.ide.application.ResourcePerspective" id="org.eclipse.ui.resourcePerspective" label="Resource"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -298,169 +292,7 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory>
-<editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/dp/PrincessFarida.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/dp/MinimumRoomsHotel.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/greedy/LongestStringOfRB.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/dp/MaxSumNonAdjacentSubsequence.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/MyProj/src/algo/stack/balanced_paranthesis.py"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/TanksAndObjects.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/dp/WordMatchMatrix.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/dp/FindQuadruples.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyProj/src/algo/dp/PrincessFarida.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AlgoCodes/src/algo/trie/CatalogUsingTrie.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/AlgoCodes/product.csv"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/AlgoCodes/product.csv"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AlgoCodes/src/Main.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AlgoCodes/src/T.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AlgoCodes/src/Sample.java"/>
-</editors>
-<item historyLabel="LongestStringOfRB.java" index="2">
-<position info="not_deleted" x="19" y="0"/>
-</item>
-<item historyLabel="PrincessFarida.java" index="0">
-<position info="not_deleted" x="70" y="0"/>
-</item>
-<item historyLabel="balanced_paranthesis" index="4">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="MinimumRoomsHotel.java" index="1">
-<position info="not_deleted" x="723" y="49"/>
-</item>
-<item historyLabel="MaxSumNonAdjacentSubsequence.java" index="3">
-<position info="not_deleted" x="651" y="0"/>
-</item>
-<item historyLabel="TanksAndObjects.java" index="5">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="WordMatchMatrix.java" index="6"/>
-<item historyLabel="FindQuadruples.java" index="7"/>
-<item historyLabel="PrincessFarida.java" index="8"/>
-<item historyLabel="CatalogUsingTrie.java" index="9">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="CatalogUsingTrie.java" index="9">
-<position info="not_deleted" x="705" y="0"/>
-</item>
-<item historyLabel="CatalogUsingTrie.java" index="9">
-<position info="not_deleted" x="781" y="0"/>
-</item>
-<item historyLabel="product.csv" index="10">
-<position info="not_deleted" x="322" y="0"/>
-</item>
-<item historyLabel="CatalogUsingTrie.java" index="9">
-<position info="not_deleted" x="2675" y="0"/>
-</item>
-<item historyLabel="product.csv" index="10">
-<position info="not_deleted" x="322" y="0"/>
-</item>
-<item historyLabel="CatalogUsingTrie.java" index="9">
-<position info="not_deleted" x="785" y="0"/>
-</item>
-<item historyLabel="product.csv" index="10">
-<position info="not_deleted" x="322" y="0"/>
-</item>
-<item historyLabel="CatalogUsingTrie.java" index="9">
-<position info="not_deleted" x="785" y="0"/>
-</item>
-<item historyLabel="product.csv" index="10">
-<position info="not_deleted" x="8" y="0"/>
-</item>
-<item historyLabel="CatalogUsingTrie.java" index="9">
-<position info="not_deleted" x="785" y="0"/>
-</item>
-<item historyLabel="CatalogUsingTrie.java" index="9">
-<position/>
-</item>
-<item historyLabel="product.csv" index="10">
-<position info="not_deleted" x="61" y="5"/>
-</item>
-<item historyLabel="CatalogUsingTrie.java" index="9">
-<position/>
-</item>
-<item historyLabel="product.csv" index="10">
-<position info="not_deleted" x="313" y="8"/>
-</item>
-<item historyLabel="CatalogUsingTrie.java" index="9">
-<position/>
-</item>
-<item historyLabel="CatalogUsingTrie.java" index="9">
-<position/>
-</item>
-<item historyLabel="CatalogUsingTrie.java" index="9">
-<position/>
-</item>
-<item historyLabel="CatalogUsingTrie.java" index="9">
-<position/>
-</item>
-<item historyLabel="product.csv" index="10">
-<position info="not_deleted" x="313" y="8"/>
-</item>
-<item historyLabel="CatalogUsingTrie.java" index="9">
-<position info="not_deleted" x="1676" y="0"/>
-</item>
-<item historyLabel="product.csv" index="10">
-<position info="not_deleted" x="333" y="0"/>
-</item>
-<item historyLabel="CatalogUsingTrie.java" index="9">
-<position info="not_deleted" x="1676" y="0"/>
-</item>
-<item historyLabel="CatalogUsingTrie.java" index="9">
-<position info="not_deleted" x="923" y="0"/>
-</item>
-<item historyLabel="CatalogUsingTrie.java" index="9">
-<position info="not_deleted" x="877" y="4"/>
-</item>
-<item historyLabel="CatalogUsingTrie.java" index="9">
-<position info="not_deleted" x="923" y="0"/>
-</item>
-<item historyLabel="CatalogUsingTrie.java" index="9">
-<position info="not_deleted" x="1590" y="0"/>
-</item>
-<item historyLabel="CatalogUsingTrie.java" index="9">
-<position info="not_deleted" x="1676" y="0"/>
-</item>
-<item historyLabel="CatalogUsingTrie.java" index="9">
-<position info="not_deleted" x="2965" y="0"/>
-</item>
-<item historyLabel="product.csv" index="10">
-<position info="not_deleted" x="172" y="0"/>
-</item>
-<item historyLabel="CatalogUsingTrie.java" index="9">
-<position info="not_deleted" x="2965" y="0"/>
-</item>
-<item historyLabel="product.csv" index="11">
-<position info="not_deleted" x="172" y="0"/>
-</item>
-<item historyLabel="Main.java" index="12">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="T.java" index="13">
-<position info="not_deleted" x="307" y="0"/>
-</item>
-<item historyLabel="Main.java" index="12">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="T.java" index="13">
-<position info="not_deleted" x="307" y="0"/>
-</item>
-<item historyLabel="T.java" index="13">
-<position info="not_deleted" x="305" y="0"/>
-</item>
-<item historyLabel="Sample.java" index="14">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Sample.java" index="14">
-<position info="not_deleted" x="65" y="0"/>
-</item>
-<item historyLabel="Sample.java" index="14">
-<position info="not_deleted" x="118" y="0"/>
-</item>
-<item active="true" historyLabel="Sample.java" index="14">
-<position info="not_deleted" x="119" y="0"/>
-</item>
-</navigationHistory>
+<navigationHistory/>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
@@ -477,50 +309,50 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Sample.java" tooltip="AlgoCodes/src/Sample.java">
-<persistable path="/AlgoCodes/src/Sample.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="template.cc" tooltip="AlgoCodes/src/template.cc">
+<persistable path="/AlgoCodes/src/template.cc"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Template.java" tooltip="AlgoCodes/src/Template.java">
+<persistable path="/AlgoCodes/src/Template.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="modulo_inverse_of_n.cpp" tooltip="AlgoCodes/src/algo/number/theory/modulo_inverse_of_n.cpp">
+<persistable path="/AlgoCodes/src/algo/number/theory/modulo_inverse_of_n.cpp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EfficientSubmatrixSumComputation.java" tooltip="AlgoCodes/src/algo/matrix/EfficientSubmatrixSumComputation.java">
+<persistable path="/AlgoCodes/src/algo/matrix/EfficientSubmatrixSumComputation.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FloodFillAlgorithm.java" tooltip="AlgoCodes/src/algo/graph/tushar/FloodFillAlgorithm.java">
+<persistable path="/AlgoCodes/src/algo/graph/tushar/FloodFillAlgorithm.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="cockroach.py" tooltip="AlgoCodes/src/codeforces/cockroach.py">
+<persistable path="/AlgoCodes/src/codeforces/cockroach.py"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="UnexpectedProblem.java" tooltip="AlgoCodes/src/UnexpectedProblem.java">
+<persistable path="/AlgoCodes/src/UnexpectedProblem.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Moon.java" tooltip="AlgoCodes/src/Moon.java">
+<persistable path="/AlgoCodes/src/Moon.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GravityTree.java" tooltip="AlgoCodes/src/GravityTree.java">
+<persistable path="/AlgoCodes/src/GravityTree.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="T.java" tooltip="AlgoCodes/src/T.java">
 <persistable path="/AlgoCodes/src/T.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" tooltip="AlgoCodes/src/Main.java">
-<persistable path="/AlgoCodes/src/Main.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Solution.java" tooltip="AlgoCodes/src/Solution.java">
+<persistable path="/AlgoCodes/src/Solution.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="product.csv" tooltip="AlgoCodes/product.csv">
-<persistable path="/AlgoCodes/product.csv"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FloydWarshallAllPairShortestPath.java" tooltip="AlgoCodes/src/algo/graph/tushar/FloydWarshallAllPairShortestPath.java">
+<persistable path="/AlgoCodes/src/algo/graph/tushar/FloydWarshallAllPairShortestPath.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CatalogUsingTrie.java" tooltip="AlgoCodes/src/algo/trie/CatalogUsingTrie.java">
-<persistable path="/AlgoCodes/src/algo/trie/CatalogUsingTrie.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FillOsWIthXsIfSurroundedByXs.java" tooltip="AlgoCodes/src/algo/graph/tushar/FillOsWIthXsIfSurroundedByXs.java">
+<persistable path="/AlgoCodes/src/algo/graph/tushar/FillOsWIthXsIfSurroundedByXs.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TanksAndObjects.java" tooltip="MyProj/src/algo/TanksAndObjects.java">
-<persistable path="/MyProj/src/algo/TanksAndObjects.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BinaryMaxHeap.java" tooltip="AlgoCodes/src/algo/graph/tushar/BinaryMaxHeap.java">
+<persistable path="/AlgoCodes/src/algo/graph/tushar/BinaryMaxHeap.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MaxSumNonAdjacentSubsequence.java" tooltip="MyProj/src/algo/dp/MaxSumNonAdjacentSubsequence.java">
-<persistable path="/MyProj/src/algo/dp/MaxSumNonAdjacentSubsequence.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MinimumRoomsHotel.java" tooltip="MyProj/src/algo/dp/MinimumRoomsHotel.java">
-<persistable path="/MyProj/src/algo/dp/MinimumRoomsHotel.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="balanced_paranthesis.py" tooltip="MyProj/src/algo/stack/balanced_paranthesis.py">
-<persistable path="/MyProj/src/algo/stack/balanced_paranthesis.py"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SieveOfErasthostenes.java" tooltip="MyProj/src/SieveOfErasthostenes.java">
-<persistable path="/MyProj/src/SieveOfErasthostenes.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LongestStringOfRB.java" tooltip="MyProj/src/algo/dp/LongestStringOfRB.java">
-<persistable path="/MyProj/src/algo/dp/LongestStringOfRB.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MergingKSortedLinkedList.java" tooltip="MyProj/src/algo/list/MergingKSortedLinkedList.java">
-<persistable path="/MyProj/src/algo/list/MergingKSortedLinkedList.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FindMidPoint.java" tooltip="MyProj/src/algo/list/FindMidPoint.java">
-<persistable path="/MyProj/src/algo/list/FindMidPoint.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PrincessFarida.java" tooltip="MyProj/src/algo/dp/PrincessFarida.java">
-<persistable path="/MyProj/src/algo/dp/PrincessFarida.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DecreasingPathMatrix.java" tooltip="MyProj/src/algo/backtracking/DecreasingPathMatrix.java">
-<persistable path="/MyProj/src/algo/backtracking/DecreasingPathMatrix.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BellmanFordShortestPath.java" tooltip="AlgoCodes/src/algo/graph/tushar/BellmanFordShortestPath.java">
+<persistable path="/AlgoCodes/src/algo/graph/tushar/BellmanFordShortestPath.java"/>
 </file>
 </mruList>
 </workbench>

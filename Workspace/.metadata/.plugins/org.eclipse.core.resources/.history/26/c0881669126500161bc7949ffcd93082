@@ -1,8 +1,0 @@
-
-public class Sample {
-private int a,b,c;
-Sample(int a,int b,int c){
-	this.b=b;
-	this.c=a;
-}
-}
