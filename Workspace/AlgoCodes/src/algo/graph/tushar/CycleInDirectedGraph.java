@@ -1,7 +1,8 @@
-package com.interview.graph;
+package algo.graph.tushar;
 
 import java.util.HashSet;
 import java.util.Set;
+
 
 /**
  * http://www.geeksforgeeks.org/detect-cycle-in-a-graph/

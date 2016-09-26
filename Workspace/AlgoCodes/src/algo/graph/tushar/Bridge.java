@@ -1,9 +1,10 @@
-package com.interview.graph;
+package algo.graph.tushar;
 
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
+
 
 /**
  http://www.geeksforgeeks.org/bridge-in-a-graph/

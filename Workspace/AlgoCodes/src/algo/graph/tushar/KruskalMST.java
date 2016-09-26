@@ -5,6 +5,8 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
+import algo.binary.DisjointSet;
+
 /**
  * Date 09/25/2014
  *

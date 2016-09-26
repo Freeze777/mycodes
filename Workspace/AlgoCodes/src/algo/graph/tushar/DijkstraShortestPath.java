@@ -1,7 +1,10 @@
-package com.interview.graph;
+package algo.graph.tushar;
 
 import java.util.HashMap;
 import java.util.Map;
+
+import algo.binary.BinaryMinHeap;
+import algo.binary.BinaryMinHeap.Node;
 
 /**
  * Date 10/11/2014

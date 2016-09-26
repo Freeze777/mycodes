@@ -2,6 +2,8 @@ package com.interview.graph;
 
 import java.util.*;
 
+import algo.binary.BinaryMinHeap;
+
 /**
  * Date 10/11/2014
  * @author Tushar Roy

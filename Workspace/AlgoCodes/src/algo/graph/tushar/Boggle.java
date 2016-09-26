@@ -1,4 +1,4 @@
-package com.interview.graph;
+package algo.graph.tushar;
 
 import java.util.ArrayList;
 import java.util.HashSet;

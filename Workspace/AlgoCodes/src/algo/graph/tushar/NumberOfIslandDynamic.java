@@ -2,6 +2,8 @@ package com.interview.graph;
 
 import java.util.*;
 
+import algo.binary.DisjointSet;
+
 /**
  * A 2d grid map of m rows and n columns is initially filled with water. We may perform an addLand operation
  * which turns the water at position (row, col) into a land. Given a list of positions to operate,

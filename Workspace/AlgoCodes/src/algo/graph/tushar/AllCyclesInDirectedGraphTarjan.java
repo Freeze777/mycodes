@@ -1,6 +1,7 @@
-package com.interview.graph;
+package algo.graph.tushar;
 
 import java.util.*;
+
 
 /**
  * Find all simple cycles in a directed graph using Tarjan's algorithm.

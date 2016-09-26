@@ -1,7 +1,9 @@
-package com.interview.graph;
+package algo.graph.tushar;
 
 import java.util.HashSet;
 import java.util.Set;
+
+import algo.binary.DisjointSet;
 
 /**
  * Date 10/11/2014
