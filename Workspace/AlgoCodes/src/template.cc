@@ -47,8 +47,8 @@ using namespace std;
 #define rep(i,n) 	for(ll i = 0 ; i < n ; ++i)
 #define rof(i,x,y) for(ll i = (y) ; i >= (x) ; --i)
 #define iter(container, it) for(typeof(container.begin()) it = container.begin(); it != container.end(); it++)
-#define UNIQUE(V) (V).erase(unique((V).begin(),(V).end()),(V).end())
 
+#define UNIQUE(V) (V).erase(unique((V).begin(),(V).end()),(V).end())
 #define POPCOUNT __builtin_popcountll
 #define RIGHTMOST __builtin_ctzll
 #define LEFTMOST(x) (63-__builtin_clzll((x)))
