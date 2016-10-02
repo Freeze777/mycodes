@@ -2,13 +2,42 @@ import java.io.*;
 import java.math.*;
 import java.util.*;
 
-
+class Base{
+    int value = 0;
+    Base(){
+        addValue();
+    }
+    void addValue(){
+        value += 10;
+    }
+    int getValue(){
+        return value;
+    }
+}
+class Derived extends Base{
+    Derived(){
+        addValue();
+    }
+    void addValue(){
+        value +=  30;
+    }
+}
 public class CpTemplate {
 	static long mod=1000000007;
-
-	private static void solve(FastScanner sc, PrintWriter out) {
-		
-	}
+	public static void call(Exception e)
+    {
+        System.out.println("Exception");
+    }
+    public static void call(NullPointerException e)
+    {
+        System.out.println("NullPointer");
+    }
+    public static void call(Object e)
+    {
+        System.out.println("Object");
+    }
+	private static void solve(FastScanner sc, PrintWriter out) { Derived b= new Derived();
+    System.out.println(b.getValue());}
 
 
 	public static void main(String[] args) throws IOException {

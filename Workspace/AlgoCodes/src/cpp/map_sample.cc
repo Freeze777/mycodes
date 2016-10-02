@@ -89,9 +89,9 @@ const double eps = 1e-9;
 #define WRITE                 freopen("output.txt", "w", stdout);
 
 int main(){
- fast_io;
+ 	fast_io;
 	int n;cin>>n;
-   mii m;
+  	mii m;
    REP(i,n){
       int a;cin>>a;
       if(IN(m,a))m[a]++;
