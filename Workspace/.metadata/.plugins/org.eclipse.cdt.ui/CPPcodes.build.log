@@ -1,0 +1,69 @@
+18:00:36 **** Incremental Build of configuration Debug for project CPPcodes ****
+make all 
+Building file: ../hackerearth/easylife.cc
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"hackerearth/easylife.d" -MT"hackerearth/easylife.d" -o "hackerearth/easylife.o" "../hackerearth/easylife.cc"
+../hackerearth/easylife.cc: In function ‘void rev_bfs(int)’:
+../hackerearth/easylife.cc:46:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int k = 0; k < r_aj[u].size(); k++) {
+                     ^
+../hackerearth/easylife.cc: In function ‘int retreat(int&, int)’:
+../hackerearth/easylife.cc:63:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int j = 0; j < aj[i].size(); j++) {
+                    ^
+../hackerearth/easylife.cc: In function ‘LL maxflow(int, int)’:
+../hackerearth/easylife.cc:82:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (j = cur_node[i]; j < aj[i].size(); j++) {
+                           ^
+../hackerearth/easylife.cc:87:9: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (j < aj[i].size()) {
+         ^
+../hackerearth/easylife.cc: In function ‘void find_min_cut(int, int, std::vector<int>&, std::vector<int>&)’:
+../hackerearth/easylife.cc:125:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i = 0; i < aj[u].size(); ++i)
+                    ^
+../hackerearth/easylife.cc: In function ‘LL get_weight(const std::vector<int>&, const std::vector<std::vector<int> >&, const std::vector<std::vector<long long int> >&)’:
+../hackerearth/easylife.cc:134:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i = 0; i < subset.size(); ++i)
+                    ^
+../hackerearth/easylife.cc:137:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i = 0; i < subset.size(); ++i) {
+                    ^
+../hackerearth/easylife.cc:139:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int j = 0; j < G[u].size(); ++j) {
+                     ^
+../hackerearth/easylife.cc: In function ‘std::vector<int> maximum_density_subgraph(const std::vector<std::vector<int> >&, const std::vector<std::vector<long long int> >&)’:
+../hackerearth/easylife.cc:156:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int j = 0; j < W[i].size(); ++j)
+                     ^
+../hackerearth/easylife.cc:181:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for (int j = 0; j < G[i].size(); ++j)
+                      ^
+../hackerearth/easylife.cc:201:7: warning: unused variable ‘weight’ [-Wunused-variable]
+    LL weight = get_weight(res, G, W);
+       ^
+../hackerearth/easylife.cc: In function ‘std::vector<int> brute_force(const std::vector<std::vector<int> >&, const std::vector<std::vector<long long int> >&)’:
+../hackerearth/easylife.cc:224:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (w * bestn > bestw * cur.size())
+                 ^
+../hackerearth/easylife.cc: In function ‘bool density_gt(LL, const std::vector<std::vector<int> >&, const std::vector<std::vector<long long int> >&, std::vector<int>&)’:
+../hackerearth/easylife.cc:287:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int j = 0; j < W[i].size(); ++j)
+                     ^
+../hackerearth/easylife.cc:301:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int j = 0; j < G[i].size(); ++j)
+                     ^
+../hackerearth/easylife.cc: In function ‘void solve(int, const std::vector<std::pair<int, int> >&, const std::vector<std::pair<long long int, long long int> >&)’:
+../hackerearth/easylife.cc:355:13: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  if (weight > res.size()) {
+             ^
+Finished building: ../hackerearth/easylife.cc
+ 
+Building target: CPPcodes
+Invoking: Cross G++ Linker
+g++  -o "CPPcodes"  ./hackerearth/easylife.o ./hackerearth/template.o  ./code_snippets/euler_totient.o ./code_snippets/maximum_density_subgraph.o  ./segment_tree.o   
+Finished building target: CPPcodes
+ 
+
+18:00:37 Build Finished (took 1s.424ms)
+

@@ -10,20 +10,20 @@ public class PrintAllSubMatrix {
 	}
 
 	private static void printSubMatrix(int[][] mat) {
-		int n=mat.length;
-		int m=mat[0].length;
+		int rows=mat.length;
+		int cols=mat[0].length;
 		
 		//prints all submatrix greater than or equal to 2x2
-		for (int sub_n = n; sub_n >= 2; sub_n--) {
-			int off_x = n - sub_n + 1;
-			for (int sub_m = m; sub_m >= 2; sub_m--) {
-				int off_y = m - sub_m + 1;
-				for (int i = 0; i < off_x; i++) {
-					for (int j = 0; j < off_y; j++) {
+		for (int subRow = rows; subRow >= 2; subRow--) {
+			int rowLimit = rows - subRow + 1;
+			for (int subCol = cols; subCol >= 2; subCol--) {
+				int colLimit = cols - subCol + 1;
+				for (int startRow = 0; startRow < rowLimit; startRow++) {
+					for (int startCol = 0; startCol < colLimit; startCol++) {
 
-						for (int xx = 0; xx < sub_n; xx++) {
-							for (int yy = 0; yy < sub_m; yy++) {
-								System.out.print(mat[xx + i][yy + j] + " ");
+						for (int i = 0; i < subRow; i++) {
+							for (int j = 0; j < subCol; j++) {
+								System.out.print(mat[i + startRow][j + startCol] + " ");
 							}
 							System.out.print("\n");
 						}

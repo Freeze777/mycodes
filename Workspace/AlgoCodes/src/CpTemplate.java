@@ -2,43 +2,12 @@ import java.io.*;
 import java.math.*;
 import java.util.*;
 
-class Base{
-    int value = 0;
-    Base(){
-        addValue();
-    }
-    void addValue(){
-        value += 10;
-    }
-    int getValue(){
-        return value;
-    }
-}
-class Derived extends Base{
-    Derived(){
-        addValue();
-    }
-    void addValue(){
-        value +=  30;
-    }
-}
 public class CpTemplate {
-	static long mod=1000000007;
-	public static void call(Exception e)
-    {
-        System.out.println("Exception");
-    }
-    public static void call(NullPointerException e)
-    {
-        System.out.println("NullPointer");
-    }
-    public static void call(Object e)
-    {
-        System.out.println("Object");
-    }
-	private static void solve(FastScanner sc, PrintWriter out) { Derived b= new Derived();
-    System.out.println(b.getValue());}
+	static long mod = 1000000007;
 
+	private static void solve(FastScanner sc, PrintWriter out) {
+		
+	}
 
 	public static void main(String[] args) throws IOException {
 		FastScanner in = new FastScanner(System.in);
@@ -48,13 +17,14 @@ public class CpTemplate {
 		in.close();
 		out.close();
 	}
+
 	public static long gcd(long x, long y) {
 		if (x % y == 0)
 			return y;
 		else
 			return gcd(y, x % y);
 	}
- 
+
 	public static long pow(long n, long p, long m) {
 		long result = 1;
 		if (p == 0)
@@ -73,15 +43,15 @@ public class CpTemplate {
 		}
 		return result;
 	}
- 
+
 	static class Pair implements Comparable<Pair> {
 		int a, b;
- 
+
 		Pair(int a, int b) {
 			this.a = a;
 			this.b = b;
 		}
- 
+
 		public int compareTo(Pair o) {
 			// TODO Auto-generated method stub
 			if (this.a != o.a)
@@ -90,7 +60,7 @@ public class CpTemplate {
 				return Integer.compare(this.b, o.b);
 			// return 0;
 		}
- 
+
 		public boolean equals(Object o) {
 			if (o instanceof Pair) {
 				Pair p = (Pair) o;
@@ -98,12 +68,12 @@ public class CpTemplate {
 			}
 			return false;
 		}
- 
+
 		public int hashCode() {
 			return new Integer(a).hashCode() * 31 + new Integer(b).hashCode();
 		}
 	}
- 
+
 	static class FastScanner {
 		BufferedReader reader;
 		StringTokenizer st;

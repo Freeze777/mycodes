@@ -1,4 +1,7 @@
-﻿import java.util.Scanner;
+﻿package hacker.rank;
+
+
+import java.util.Scanner;
 
 public class UnexpectedProblem {
 	

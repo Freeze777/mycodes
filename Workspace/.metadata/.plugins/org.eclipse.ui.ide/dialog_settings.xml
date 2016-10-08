@@ -10,7 +10,7 @@
 	</section>
 	<section name="org.eclipse.ui.dialogs.FilteredResourcesSelectionDialog">
 		<item value="true" key="ShowStatusLine"/>
-		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;History&gt;&#x0A;&lt;historyRootNode&gt;&#x0A;&lt;infoNode path=&quot;/AlgoCodes/src/hacker/rank/nCr.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/AlgoCodes/src/template.cc&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;/historyRootNode&gt;&#x0A;&lt;/History&gt;" key="History"/>
+		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;History&gt;&#x0A;&lt;historyRootNode&gt;&#x0A;&lt;infoNode path=&quot;/AlgoCodes/src/hacker/rank/nCr.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/AlgoCodes/src/algo/tree/SegmentTreeRMaxQ.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/AlgoCodes/src/algo/number/theory/SieveOfErasthostenes.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;/historyRootNode&gt;&#x0A;&lt;/History&gt;" key="History"/>
 		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;workingSet workingSetName=&quot;&quot;/&gt;" key="WorkingSet"/>
 		<item value="false" key="ShowDerived"/>
 		<section name="DialogBoundsSettings">

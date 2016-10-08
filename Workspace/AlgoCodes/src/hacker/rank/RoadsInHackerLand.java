@@ -16,24 +16,25 @@ class Edge {
 	}
 }
 
-class Vertex implements Comparable<Vertex> {
-	int vertex;
-	ArrayList<Edge> e;
-	long weight;
 
-	Vertex(int v) {
-		vertex = v;
-		e = new ArrayList<Edge>();
-		weight = Long.MAX_VALUE;
-	}
-
-	@Override
-	public int compareTo(Vertex v) {
-		return Long.compare(this.weight, v.weight);
-	}
-}
 
 public class RoadsInHackerLand {
+	static class Vertex implements Comparable<Vertex> {
+		int vertex;
+		ArrayList<Edge> e;
+		long weight;
+
+		Vertex(int v) {
+			vertex = v;
+			e = new ArrayList<Edge>();
+			weight = Long.MAX_VALUE;
+		}
+
+		@Override
+		public int compareTo(Vertex v) {
+			return Long.compare(this.weight, v.weight);
+		}
+	}
 
 	public static void main(String[] args) {
 		/*

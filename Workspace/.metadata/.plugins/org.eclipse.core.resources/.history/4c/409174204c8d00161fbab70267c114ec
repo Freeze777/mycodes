@@ -1,0 +1,64 @@
+#include <bits/stdc++.h>
+#include <set>
+using namespace std;
+#define LL long long
+pair<int, vector<int> > solve(int n, const vector<pair<int, int> >& e,
+		const vector<pair<LL, LL> >& ew) {
+	int m = e.size();
+
+	LL denom = 1;
+	for (int i = 0; i < e.size(); ++i) {
+		denom = lcm(denom, ew[i].second);
+	}
+
+	LL sum = 0;
+	for (int i = 0; i < m; ++i)
+		sum += ew[i].first * (denom / ew[i].second);
+
+	if (sum != (n - 1) * denom) { // if the sum of all edges is not n-1
+		return make_pair(FAIL_SUM, vector<int>());
+	}
+
+	// TODO: This can be done by only doing two min-cut computations
+	// instead of O(log (sum * denom)) min-cut computations.
+	vector<vector<int> > G(n);
+	vector<vector<LL> > W(n);
+	for (int i = 0; i < m; ++i) {
+		int a = e[i].first, b = e[i].second;
+		LL w = ew[i].first * (denom / ew[i].second);
+		G[a].push_back(b);
+		G[b].push_back(a);
+		W[a].push_back(w);
+		W[b].push_back(w);
+	}
+
+	vector<int> res = maximum_density_subgraph(G, W);
+	LL weight = get_weight(res, G, W);
+	//cerr << "\tWEIGHT OF MAX DENSITY " << weight << " SIZE " << res.size() << "\tDIVIDED BY DENOM " << weight/double(res.size())/double(denom) << endl;
+	if (weight > denom * (res.size() - 1)) {
+		//cerr << "\t\tFAIL ON FIRST CASE"  << endl;
+		return make_pair(FAIL_SUBSET, res);
+	}
+
+	for (int k = 0; k < m; ++k) {
+		for (int i = 0; i < n; ++i)
+			G[i].clear(), W[i].clear();
+		for (int i = 0; i < m; ++i) {
+			int a = e[i].first, b = e[i].second;
+			LL w = (ew[i].first) * (denom / ew[i].second)
+					+ (i == k ? denom : 0);
+			G[a].push_back(b);
+			G[b].push_back(a);
+			W[a].push_back(w);
+			W[b].push_back(w);
+		}
+		vector<int> nres = maximum_density_subgraph(G, W);
+		LL nweight = get_weight(nres, G, W);
+		//cerr << "\t NWEIGHT " << nweight << " OLD WEIGHT " << weight << " NRES SIZE " << nres.size() << "\tDIVIDED BY DENOM " << nweight/double(nres.size())/double(denom) << " AGAINST " << denom*nres.size() << endl;
+		if (nweight > denom * nres.size()) {
+			return make_pair(FAIL_SUBSET, nres);
+		}
+		// TODO: Break if we get a different value as before
+	}
+	return make_pair(GST, vector<int>());
+}
