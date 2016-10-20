@@ -1,0 +1,12 @@
+import java.util.*;
+class test34 {
+    public static void main(String args[] ) throws Exception {
+        HashMap<String,Integer> hash=new HashMap<String,Integer> ();
+        hash.put("hack",1);
+        hash.put("earth",1);
+        System.out.println(hash);
+        hash.clear();
+        TreeMap <String,Integer> tm=new TreeMap <String,Integer> (hash);
+        System.out.println(tm);
+    }
+}

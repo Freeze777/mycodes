@@ -1,0 +1,263 @@
+    #include<bits/stdc++.h>
+    using namespace std;
+     
+    #define MAX 100009
+    #define ll long long
+     
+    int arr[MAX],fact_fives[MAX],fact_twos[MAX];
+     
+    struct node{
+    	int F;
+    	int T;
+    };
+    struct node segtree[4*MAX];
+    struct node1{
+    	int F;
+    	int T;
+    	int F_start;
+    	int F_end;
+    	bool flag;
+    };
+    struct node1 lazy[4*MAX];
+    inline int read()
+    {
+    	int ret = 0,temp=1;
+    	int c = getchar_unlocked();
+    	while(c<'0' || c>'9'){
+    		c = getchar_unlocked();
+    	}
+    	while(c>='0' && c<='9')
+    	{
+    		ret = (ret<<3) + (ret<<1) + c - '0';
+    		c = getchar_unlocked();
+    	}
+            return ret;
+    } 
+    void init(){
+    	for(int i=0;i<4*MAX;++i){
+    		lazy[i].F=0;
+    		lazy[i].T=0;
+    		lazy[i].F_start=-1;
+    		lazy[i].F_end=-1;
+    		lazy[i].flag=false;
+    	}
+    }
+    int find_twos(int num){
+    	int cnt=0;
+    	while(num>1){
+    		if(num%2==0){
+    			++cnt;
+    			num=num/2;
+    		}
+    		else{
+    			return cnt;
+    		}
+    	}
+    	return cnt;
+    }
+    int find_fives(int num){
+    	int cnt=0;
+    	while(num>1){
+    		if(num%5==0){
+    			++cnt;
+    			num=num/5;
+    		}
+    		else{
+    			return cnt;
+    		}
+    	}
+    	return cnt;
+    }
+    void precompute(){
+    	int limit=100000;
+    	fact_fives[0]=0;
+    	fact_twos[0]=0;
+    	for(int i=1;i<=limit;++i){
+    		int tfive=find_fives(i);
+    		int ttwo=find_twos(i);
+    		fact_fives[i]=fact_fives[i-1]+tfive;
+    		fact_twos[i]=fact_twos[i-1]+ttwo;
+    	}
+    }
+    void build_segtree(int low,int high,int pos){
+    	if(low==high){
+    		segtree[pos].F=find_fives(arr[low]);
+    		segtree[pos].T=find_twos(arr[low]);
+    		return;
+    	}
+    	int mid=(low+high)/2;
+    	build_segtree(low,mid,2*pos+1);
+    	build_segtree(mid+1,high,2*pos+2);
+    	segtree[pos].F=segtree[2*pos+1].F+segtree[2*pos+2].F;
+    	segtree[pos].T=segtree[2*pos+1].T+segtree[2*pos+2].T;
+    }
+    void regular_update_check(int low,int high,int pos){
+    	if(lazy[pos].flag){
+    		segtree[pos].F=(high-low+1)*lazy[pos].F;
+    		segtree[pos].T=(high-low+1)*lazy[pos].T;
+    		/*
+    		if(low==4&&high==4){
+    			cout<<lazy[pos].F_end<<endl;
+    			cout<<lazy[pos].F_start-1<<endl;
+    			cout<<fact_fives[lazy[pos].F_end]<<endl;
+    			cout<<fact_fives[lazy[pos].F_start-1]<<endl;
+    		}
+    		*/
+    		segtree[pos].F+=(fact_fives[lazy[pos].F_end]-fact_fives[lazy[pos].F_start-1]);
+    		segtree[pos].T+=(fact_twos[lazy[pos].F_end]-fact_twos[lazy[pos].F_start-1]);
+    		if(low!=high){
+    			lazy[2*pos+1].F=lazy[pos].F;
+    			lazy[2*pos+1].T=lazy[pos].T;
+    			lazy[2*pos+2].F=lazy[pos].F;
+    			lazy[2*pos+2].T=lazy[pos].T;
+    			lazy[2*pos+1].flag=true;
+    			lazy[2*pos+2].flag=true;
+    			int st=lazy[pos].F_start;
+    			int ed=lazy[pos].F_end;
+    			int md=(st+ed)/2;
+    			lazy[2*pos+1].F_start=st;
+    			lazy[2*pos+1].F_end=md;
+    			lazy[2*pos+2].F_start=md+1;
+    			lazy[2*pos+2].F_end=ed;
+    		}
+    		lazy[pos].F=0;
+    		lazy[pos].T=0;
+    		lazy[pos].F_start=-1;
+    		lazy[pos].F_end=-1;
+    		lazy[pos].flag=false;
+    	}
+    	else if(lazy[pos].F!=0||lazy[pos].T!=0){
+    		segtree[pos].F+=(high-low+1)*lazy[pos].F;
+    		segtree[pos].T+=(high-low+1)*lazy[pos].T;
+    		if(low!=high){
+    			lazy[2*pos+1].F+=lazy[pos].F;
+    			lazy[2*pos+1].T+=lazy[pos].T;
+    			lazy[2*pos+2].F+=lazy[pos].F;
+    			lazy[2*pos+2].T+=lazy[pos].T;
+    		}
+    		lazy[pos].F=0;
+    		lazy[pos].T=0;
+    		lazy[pos].F_start=-1;
+    		lazy[pos].F_end=-1;
+    		lazy[pos].flag=false;
+    	}
+    }
+    void mul_update(int low,int high,int qlow,int qhigh,int pos,int delta){
+    	if(low>high)
+    		return;
+    	regular_update_check(low,high,pos);
+    	if(qlow>high||qhigh<low)
+    		return;
+    	if(qlow<=low&&qhigh>=high){
+    		int temp1=find_twos(delta);
+    		int temp2=find_fives(delta);
+    		segtree[pos].F+=(high-low+1)*temp2;
+    		segtree[pos].T+=(high-low+1)*temp1;
+    		if(low!=high){
+    			lazy[2*pos+1].F+=temp2;
+    			lazy[2*pos+1].T+=temp1;
+    			lazy[2*pos+2].F+=temp2;
+    			lazy[2*pos+2].T+=temp1;
+    		}
+    		return;
+    	}
+    	int mid=(low+high)/2;
+    	mul_update(low,mid,qlow,qhigh,2*pos+1,delta);
+    	mul_update(mid+1,high,qlow,qhigh,2*pos+2,delta);
+    	segtree[pos].F=segtree[2*pos+1].F+segtree[2*pos+2].F;
+    	segtree[pos].T=segtree[2*pos+1].T+segtree[2*pos+2].T;
+    }
+    void fix_update(int low,int high,int qlow,int qhigh,int pos,int delta){
+    	if(low>high)
+    		return;
+    	//cout<<low<<" "<<high<<endl;
+    	regular_update_check(low,high,pos);
+    	if(qlow>high||qhigh<low)
+    		return;
+    	if(qlow<=low&&qhigh>=high){
+    		int temp1=find_twos(delta);
+    		int temp2=find_fives(delta);
+    		int temp3=fact_fives[(high-qlow+1)]-fact_fives[(low-qlow)];
+    		int temp4=fact_twos[(high-qlow+1)]-fact_twos[(low-qlow)];
+    		segtree[pos].F=(high-low+1)*temp2+temp3;
+    		segtree[pos].T=(high-low+1)*temp1+temp4;
+    		if(low!=high){
+    			lazy[2*pos+1].F=temp2;
+    			lazy[2*pos+1].T=temp1;
+    			lazy[2*pos+1].flag=true;
+    			lazy[2*pos+2].F=temp2;
+    			lazy[2*pos+2].T=temp1;
+    			lazy[2*pos+2].flag=true;
+    			int ed=(high-qlow+1);
+    			int st=(low-qlow+1);
+    			int md=(st+ed)/2;
+    			lazy[2*pos+1].F_start=st;
+    			lazy[2*pos+1].F_end=md;
+    			lazy[2*pos+2].F_start=md+1;
+    			lazy[2*pos+2].F_end=ed;
+    		}
+    		return;
+    	}
+    	int mid=(low+high)/2;
+    	fix_update(low,mid,qlow,qhigh,2*pos+1,delta);
+    	fix_update(mid+1,high,qlow,qhigh,2*pos+2,delta);
+    	segtree[pos].F=segtree[2*pos+1].F+segtree[2*pos+2].F;
+    	segtree[pos].T=segtree[2*pos+1].T+segtree[2*pos+2].T;
+    }
+    struct node dummy={0,0};
+    struct node query_segtree(int low,int high,int qlow,int qhigh,int pos){
+    	if(low>high)
+    		return dummy;
+    	regular_update_check(low,high,pos);
+    	if(qlow>high||qhigh<low)
+    		return dummy;
+    	if(qlow<=low&&qhigh>=high){
+    		return segtree[pos];
+    	}
+    	int mid=(low+high)/2;
+    	struct node n1=query_segtree(low,mid,qlow,qhigh,2*pos+1);
+    	struct node n2=query_segtree(mid+1,high,qlow,qhigh,2*pos+2);
+    	struct node n3;
+    	n3.F=n1.F+n2.F;
+    	n3.T=n1.T+n2.T;
+    	return n3;
+    }
+    int main(){
+    	int t,n,m,ch,l,r,i,delta;
+    	t=read();
+    	precompute();
+    	while(t--){
+    		init();
+    		n=read();
+    		m=read();
+    		//scanf("%d %d",&n,&m);
+    		for(i=0;i<n;++i)
+    			arr[i]=read();
+    			//scanf("%d",&arr[i]);
+    		build_segtree(0,n-1,0);
+    		long long int ananya=0;
+    		for(int j=0;j<m;++j){
+    			ch=read();
+    			l=read();
+    			r=read();
+    			//scanf("%d %d %d",&ch,&l,&r);
+    			--l; --r;
+    			if(ch==1){
+    				delta=read();
+    				//scanf("%d",&delta);
+    				mul_update(0,n-1,l,r,0,delta);
+    			}
+    			else if(ch==2){
+    				delta=read();
+    				//scanf("%d",&delta);
+    				fix_update(0,n-1,l,r,0,delta);
+    			}
+    			else{
+    				struct node ans=query_segtree(0,n-1,l,r,0);
+    				ananya+=(ll)min(ans.F,ans.T);
+    			}
+    		}
+    		printf("%lld\n",ananya);
+    	}
+    	return 0;
+    }  

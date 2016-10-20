@@ -1,0 +1,55 @@
+import java.util.*;
+
+public class TestClass {
+	static Map<Integer, ArrayList<Integer>> adjList;
+
+	public static void main(String args[]) throws Exception {
+		Scanner s = new Scanner(System.in);
+		int n = s.nextInt();
+		int node_val[] = new int[n + 1];
+		adjList = new HashMap<Integer, ArrayList<Integer>>();
+		for (int i = 1; i <= n; i++) {
+			node_val[i] = s.nextInt();
+			adjList.put(i, new ArrayList<Integer>());
+		}
+		for (int i = 0; i < n - 1; i++) {
+			int st = s.nextInt();
+			int d = s.nextInt();
+			adjList.get(st).add(d);
+			adjList.get(d).add(st);
+		}
+		int opt_root =Integer.MAX_VALUE;
+		long[] min = {Integer.MAX_VALUE};
+		for (int root = 1; root <= n; root++) {
+			boolean visited[] = new boolean[n + 1];
+			long f[] = new long[n + 1];
+			long g[] = new long[n + 1];
+			long[] sum = { 0 };
+			dfs(root, visited, f, g, node_val, sum);
+			if (sum[0] <= min[0]) {
+				opt_root = Math.min(opt_root, root);
+				min = sum[0];
+			}
+		}
+
+		System.out.println(opt_root + " " + min);
+
+	}
+
+	public static void dfs(int vertex, boolean[] visited, long[] f, long[] g,
+			int[] node_val, long[] sum) {
+		visited[vertex] = true;
+		g[vertex] += node_val[vertex];
+		f[vertex] += g[vertex];
+		List<Integer> adjNodes = adjList.get(vertex);
+		for (Integer node : adjNodes) {
+			if (!visited[node]) {
+				dfs(node, visited, f, g, node_val, sum);
+				g[vertex] += g[node];
+				f[vertex] += f[node] + g[node];
+			}
+		}
+		sum[0] += f[vertex];
+	}
+
+}

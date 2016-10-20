@@ -20,13 +20,13 @@
 <coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="88" y="30"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="88" y="30"/>
 <coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="96" y="30"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="68" y="30"/>
 <coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="232" y="30"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.cdt.ui.editor.CEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.cdt.ui.editor.CEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.python.pydev.editor.PythonEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -36,26 +36,10 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-<part id="1"/>
-<part id="2"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="template.cc" partName="template.cc" path="/home/qwerty/Desktop/mycodes/Workspace/CPPcodes/hackerearth/template.cc" title="template.cc" tooltip="CPPcodes/hackerearth/template.cc" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CPPcodes/hackerearth/template.cc"/>
-<editorState selectionHorizontalPixel="0" selectionLength="60" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="easylife.cc" partName="easylife.cc" path="/home/qwerty/Desktop/mycodes/Workspace/CPPcodes/hackerearth/easylife.cc" title="easylife.cc" tooltip="CPPcodes/hackerearth/easylife.cc" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CPPcodes/hackerearth/easylife.cc"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3998" selectionTopPixel="3113"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="maximum_density_subgraph.cc" partName="maximum_density_subgraph.cc" path="/home/qwerty/Desktop/mycodes/Workspace/CPPcodes/code_snippets/maximum_density_subgraph.cc" title="maximum_density_subgraph.cc" tooltip="CPPcodes/code_snippets/maximum_density_subgraph.cc" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CPPcodes/code_snippets/maximum_density_subgraph.cc"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="7920" selectionTopPixel="4914"/>
-</editor>
 </editors>
 <views>
 <view id="org.eclipse.ui.views.PropertySheet" partName="Properties"/>
@@ -93,10 +77,6 @@
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<expanded>
-<category IMemento.internal.id="Errors"/>
-<category IMemento.internal.id="Warnings"/>
-</expanded>
 <columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="261" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -116,12 +96,13 @@
 </view>
 <view id="org.eclipse.search.ui.views.SearchView" partName="Search">
 <viewState isPinned="false">
+<view IMemento.internal.id="org.eclipse.cdt.ui.pdomSearchViewPage" definitionColumnWidth="150" locationColumnWidth="300" matchColumnWidth="300" org.eclipse.search.lastActivation="1" org.eclipse.search.resultpage.layout="2" showEnclosingDefinitions="true"/>
 <view IMemento.internal.id="" org.eclipse.search.lastActivation="0"/>
 </viewState>
 </view>
 <view id="org.eclipse.ui.views.TaskList" partName="Tasks">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.completionField" categoryGroup="none" markerContentGenerator="org.eclipse.ui.ide.tasksGenerator" partName="Tasks">
-<columnWidths org.eclipse.ui.ide.completionField="40" org.eclipse.ui.ide.descriptionField="350" org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="173" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.priorityField="35" org.eclipse.ui.ide.resourceField="105"/>
+<columnWidths org.eclipse.ui.ide.completionField="40" org.eclipse.ui.ide.descriptionField="350" org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="186" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.priorityField="35" org.eclipse.ui.ide.resourceField="105"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.completionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.priorityField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.descriptionField"/>
@@ -135,7 +116,7 @@
 <viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.cdt.ui.cview.groupincludes="false" org.eclipse.cdt.ui.cview.groupmacros="false" org.eclipse.cdt.ui.editor.CUChildren="true" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.cdt.ui.editor.CEditor" activePerspective="org.eclipse.cdt.ui.CPerspective">
+<perspectives activePart="org.eclipse.ui.navigator.ProjectExplorer" activePerspective="org.eclipse.cdt.ui.CPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.ui.internal.ide.application.ResourcePerspective" id="org.eclipse.ui.resourcePerspective" label="Resource"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -379,6 +360,7 @@
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
+<page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
@@ -399,163 +381,7 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory>
-<editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CPPcodes/hackerearth/template.cc"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CPPcodes/code_snippets/maximum_density_subgraph.cc"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CPPcodes/hackerearth/easylife.cc"/>
-</editors>
-<item historyLabel="maximum_density_subgraph.cc" index="1">
-<position info="not_deleted" x="16549" y="0"/>
-</item>
-<item historyLabel="maximum_density_subgraph.cc" index="1">
-<position info="not_deleted" x="9226" y="5"/>
-</item>
-<item historyLabel="maximum_density_subgraph.cc" index="1">
-<position info="not_deleted" x="6490" y="0"/>
-</item>
-<item historyLabel="maximum_density_subgraph.cc" index="1">
-<position info="not_deleted" x="3848" y="24"/>
-</item>
-<item historyLabel="easylife.cc" index="2">
-<position info="not_deleted" x="9466" y="0"/>
-</item>
-<item historyLabel="template.cc" index="0">
-<position info="not_deleted" x="2913" y="0"/>
-</item>
-<item historyLabel="maximum_density_subgraph.cc" index="1">
-<position info="not_deleted" x="3848" y="24"/>
-</item>
-<item historyLabel="template.cc" index="0">
-<position info="not_deleted" x="2913" y="0"/>
-</item>
-<item historyLabel="maximum_density_subgraph.cc" index="1">
-<position info="not_deleted" x="3848" y="24"/>
-</item>
-<item historyLabel="easylife.cc" index="2">
-<position info="not_deleted" x="9466" y="0"/>
-</item>
-<item historyLabel="template.cc" index="0">
-<position info="not_deleted" x="0" y="60"/>
-</item>
-<item historyLabel="easylife.cc" index="2">
-<position/>
-</item>
-<item historyLabel="maximum_density_subgraph.cc" index="1">
-<position info="not_deleted" x="16217" y="738"/>
-</item>
-<item historyLabel="easylife.cc" index="2">
-<position/>
-</item>
-<item historyLabel="maximum_density_subgraph.cc" index="1">
-<position info="not_deleted" x="16217" y="738"/>
-</item>
-<item historyLabel="maximum_density_subgraph.cc" index="1">
-<position info="not_deleted" x="10045" y="0"/>
-</item>
-<item historyLabel="maximum_density_subgraph.cc" index="1">
-<position info="not_deleted" x="3836" y="1481"/>
-</item>
-<item historyLabel="easylife.cc" index="2">
-<position/>
-</item>
-<item historyLabel="easylife.cc" index="2">
-<position/>
-</item>
-<item historyLabel="easylife.cc" index="2">
-<position/>
-</item>
-<item historyLabel="maximum_density_subgraph.cc" index="1">
-<position info="not_deleted" x="1817" y="680"/>
-</item>
-<item historyLabel="easylife.cc" index="2">
-<position/>
-</item>
-<item historyLabel="maximum_density_subgraph.cc" index="1">
-<position info="not_deleted" x="0" y="16959"/>
-</item>
-<item historyLabel="easylife.cc" index="2">
-<position info="not_deleted" x="16927" y="0"/>
-</item>
-<item historyLabel="maximum_density_subgraph.cc" index="1">
-<position info="not_deleted" x="3977" y="0"/>
-</item>
-<item historyLabel="maximum_density_subgraph.cc" index="1">
-<position info="not_deleted" x="169" y="0"/>
-</item>
-<item historyLabel="easylife.cc" index="2">
-<position info="not_deleted" x="9465" y="0"/>
-</item>
-<item historyLabel="easylife.cc" index="2">
-<position info="not_deleted" x="9422" y="0"/>
-</item>
-<item historyLabel="easylife.cc" index="2">
-<position info="not_deleted" x="9096" y="0"/>
-</item>
-<item historyLabel="maximum_density_subgraph.cc" index="1">
-<position info="not_deleted" x="8311" y="0"/>
-</item>
-<item historyLabel="easylife.cc" index="2">
-<position info="not_deleted" x="9096" y="0"/>
-</item>
-<item historyLabel="easylife.cc" index="2">
-<position info="not_deleted" x="8929" y="0"/>
-</item>
-<item historyLabel="easylife.cc" index="2">
-<position info="not_deleted" x="9093" y="0"/>
-</item>
-<item historyLabel="easylife.cc" index="2">
-<position info="not_deleted" x="9083" y="0"/>
-</item>
-<item historyLabel="easylife.cc" index="2">
-<position info="not_deleted" x="8928" y="0"/>
-</item>
-<item historyLabel="easylife.cc" index="2">
-<position info="not_deleted" x="9421" y="0"/>
-</item>
-<item historyLabel="easylife.cc" index="2">
-<position info="not_deleted" x="8503" y="5"/>
-</item>
-<item historyLabel="easylife.cc" index="2">
-<position info="not_deleted" x="9422" y="0"/>
-</item>
-<item historyLabel="easylife.cc" index="2">
-<position info="not_deleted" x="8467" y="0"/>
-</item>
-<item historyLabel="maximum_density_subgraph.cc" index="1">
-<position info="not_deleted" x="8311" y="0"/>
-</item>
-<item historyLabel="easylife.cc" index="2">
-<position info="not_deleted" x="8467" y="0"/>
-</item>
-<item historyLabel="maximum_density_subgraph.cc" index="1">
-<position info="not_deleted" x="7920" y="0"/>
-</item>
-<item historyLabel="easylife.cc" index="2">
-<position info="not_deleted" x="8467" y="0"/>
-</item>
-<item historyLabel="easylife.cc" index="2">
-<position info="not_deleted" x="8472" y="0"/>
-</item>
-<item historyLabel="easylife.cc" index="2">
-<position info="not_deleted" x="8443" y="0"/>
-</item>
-<item historyLabel="easylife.cc" index="2">
-<position info="not_deleted" x="7167" y="10"/>
-</item>
-<item historyLabel="easylife.cc" index="2">
-<position info="not_deleted" x="9421" y="0"/>
-</item>
-<item historyLabel="easylife.cc" index="2">
-<position info="not_deleted" x="8503" y="5"/>
-</item>
-<item historyLabel="easylife.cc" index="2">
-<position info="not_deleted" x="8858" y="0"/>
-</item>
-<item active="true" historyLabel="easylife.cc" index="2">
-<position info="not_deleted" x="3846" y="24"/>
-</item>
-</navigationHistory>
+<navigationHistory/>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
@@ -572,50 +398,50 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="maximum_density_subgraph.cc" tooltip="CPPcodes/code_snippets/maximum_density_subgraph.cc">
-<persistable path="/CPPcodes/code_snippets/maximum_density_subgraph.cc"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CpTemplate.java" tooltip="AlgoCodes/src/CpTemplate.java">
+<persistable path="/AlgoCodes/src/CpTemplate.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="easylife.cc" tooltip="CPPcodes/hackerearth/easylife.cc">
-<persistable path="/CPPcodes/hackerearth/easylife.cc"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="EasyLife.cc" tooltip="CPPcodes/hackerearth/EasyLife.cc">
-<persistable path="/CPPcodes/hackerearth/EasyLife.cc"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="template.cc" tooltip="CPPcodes/hackerearth/template.cc">
-<persistable path="/CPPcodes/hackerearth/template.cc"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="euler_totient.cc" tooltip="CPPcodes/code_snippets/euler_totient.cc">
-<persistable path="/CPPcodes/code_snippets/euler_totient.cc"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="segment_tree.cc" tooltip="CPPcodes/segment_tree.cc">
-<persistable path="/CPPcodes/segment_tree.cc"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="template.cc" tooltip="CPPcodes/template.cc">
-<persistable path="/CPPcodes/template.cc"/>
-</file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="ArrayList.class" tooltip="java.util.ArrayList">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=AlgoCodes/\/usr\/lib\/jvm\/java-8-openjdk-amd64\/jre\/lib\/rt.jar&lt;java.util(ArrayList.class"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SieveOfErasthostenes.java" tooltip="AlgoCodes/src/algo/number/theory/SieveOfErasthostenes.java">
-<persistable path="/AlgoCodes/src/algo/number/theory/SieveOfErasthostenes.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Heap.java" tooltip="AlgoCodes/src/algo/heap/Heap.java">
+<persistable path="/AlgoCodes/src/algo/heap/Heap.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestClass.java" tooltip="AlgoCodes/src/TestClass.java">
 <persistable path="/AlgoCodes/src/TestClass.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CpTemplate.java" tooltip="AlgoCodes/src/CpTemplate.java">
-<persistable path="/AlgoCodes/src/CpTemplate.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="VelamAndQueries.java" tooltip="AlgoCodes/src/VelamAndQueries.java">
+<persistable path="/AlgoCodes/src/VelamAndQueries.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SegmentTreeRMaxQ.java" tooltip="AlgoCodes/src/algo/tree/SegmentTreeRMaxQ.java">
-<persistable path="/AlgoCodes/src/algo/tree/SegmentTreeRMaxQ.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="VelmaAndTriplets.java" tooltip="AlgoCodes/src/VelmaAndTriplets.java">
+<persistable path="/AlgoCodes/src/VelmaAndTriplets.java"/>
 </file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="Point.class" tooltip="java.awt.Point">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=AlgoCodes/\/usr\/lib\/jvm\/java-8-openjdk-amd64\/jre\/lib\/rt.jar&lt;java.awt(Point.class"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Test.java" tooltip="AlgoCodes/src/edx/itmo/Test.java">
+<persistable path="/AlgoCodes/src/edx/itmo/Test.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GraphsFull.java" tooltip="AlgoCodes/src/algo/graph/GraphsFull.java">
-<persistable path="/AlgoCodes/src/algo/graph/GraphsFull.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GraphUtility.java" tooltip="AlgoCodes/src/algo/graph/GraphUtility.java">
+<persistable path="/AlgoCodes/src/algo/graph/GraphUtility.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="sample.cc" tooltip="CPPcodes/sample.cc">
-<persistable path="/CPPcodes/sample.cc"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BFS.java" tooltip="AlgoCodes/src/algo/graph/BFS.java">
+<persistable path="/AlgoCodes/src/algo/graph/BFS.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="iterate_it.cc" tooltip="CPPcodes/hackerrank/iterate_it.cc">
+<persistable path="/CPPcodes/hackerrank/iterate_it.cc"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BankHack.java" tooltip="AlgoCodes/src/BankHack.java">
+<persistable path="/AlgoCodes/src/BankHack.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="number_theory.cc" tooltip="CPPcodes/hackerearth/number_theory.cc">
+<persistable path="/CPPcodes/hackerearth/number_theory.cc"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="euler_totient.cc" tooltip="CPPcodes/code_snippets/euler_totient.cc">
+<persistable path="/CPPcodes/code_snippets/euler_totient.cc"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SieveOfErasthostenes.java" tooltip="AlgoCodes/src/algo/number/theory/SieveOfErasthostenes.java">
+<persistable path="/AlgoCodes/src/algo/number/theory/SieveOfErasthostenes.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="OnlineMedianUsingTwoHeaps.java" tooltip="AlgoCodes/src/algo/heap/OnlineMedianUsingTwoHeaps.java">
+<persistable path="/AlgoCodes/src/algo/heap/OnlineMedianUsingTwoHeaps.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="fenwick_iteration.py" tooltip="AlgoCodes/src/algo/bits/fenwick_iteration.py">
+<persistable path="/AlgoCodes/src/algo/bits/fenwick_iteration.py"/>
 </file>
 </mruList>
 </workbench>

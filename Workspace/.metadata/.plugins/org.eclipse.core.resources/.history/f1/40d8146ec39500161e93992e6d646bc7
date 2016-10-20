@@ -1,0 +1,130 @@
+import java.util.*;
+
+public class VelamAndQueries {
+	static Map<Integer, ArrayList<Integer>> levelNode;
+	static Map<Integer, Integer> level;
+	static Map<Integer, Integer> parent;
+	static Map<Integer, ArrayList<Integer>> adjacentList;
+
+	public static void main(String args[]) throws Exception {
+		Scanner s = new Scanner(System.in);
+		int tc = s.nextInt();
+		while (tc-- > 0) {
+			levelNode = new HashMap<Integer, ArrayList<Integer>>();
+			level = new HashMap<Integer, Integer>();
+			parent = new HashMap<Integer, Integer>();
+			int n = s.nextInt();
+			int q = s.nextInt();
+			int nodes[] = new int[n];
+			boolean visited[] = new boolean[n];
+			int max_level[] = { 1 };
+			adjacentList = new HashMap<Integer, ArrayList<Integer>>();
+			for (int i = 0; i < n; i++) {
+				nodes[i] = s.nextInt();
+				adjacentList.put(i, new ArrayList<Integer>());
+			}
+			for (int i = 0; i < n - 1; i++) {
+				int st = s.nextInt() - 1;
+				int d = s.nextInt() - 1;
+				adjacentList.get(st).add(d);
+				adjacentList.get(d).add(st);
+			}
+			visited = new boolean[n];
+			bfs(nodes, visited, 0, max_level);
+			solve(s, q, nodes, max_level);
+		}
+	}
+	public static Set<Integer> subTreeSets(Map<Integer, ArrayList<Integer>> adjacentList,int index,boolean[] visited)
+    {
+    visited[index]=true;
+    ArrayList<Integer> subTree=new ArrayList<Integer>();
+    for(int i=0;i<adjacentList.get(index).size();i++)
+        {
+            if(!visited[adjacentList.get(index).adjacent.get(i)])
+                {
+                //subTree.add(vertex[index].adjacent.get(i));
+                ArrayList<Integer> temp =subTreeSets(vertex,vertex[index].adjacent.get(i),visited);
+                if(temp.size()>0)
+                    subTree.addAll(temp);
+            }
+    }
+    subTree.add(index);
+    vertex[index].subtreeList.addAll(subTree);
+    return subTree;
+}
+
+	public static void bfs(int nodes[], boolean[] visited, int s,
+			int[] max_level) {
+		Queue<Integer> q = new LinkedList<Integer>();
+		q.add(s);
+		q.add(-1);
+		visited[s] = true;
+		int levelNo = 2;
+		levelNode.put(1, new ArrayList<Integer>());
+		levelNode.get(1).add(s);
+		level.put(s, 1);
+		parent.put(s, -1);
+		while (!q.isEmpty()) {
+			int val = (int) (q.poll());
+			if (val == -1) {
+				levelNo++;
+				if (!q.isEmpty())
+					q.add(-1);
+			} else {
+				for (int i : adjacentList.get(val)) {
+					if (!visited[i]) {
+						visited[i] = true;
+						q.add(i);
+						if (!levelNode.containsKey(levelNo))
+							levelNode.put(levelNo, new ArrayList<Integer>());
+						levelNode.get(levelNo).add(i);
+						level.put(i, levelNo);
+						max_level[0] = Math.max(max_level[0], levelNo);
+						parent.put(i, val);
+					}
+				}
+			}
+		}
+	}
+
+	public static void solve(Scanner in, int q, int[] nodes, int[] max_level) {
+		while (q-- > 0) {
+			int s = in.nextInt() - 1;
+			int l = in.nextInt();
+			if (!adjacentList.containsKey(s)) {
+				System.out.println(0);
+				continue;
+			}
+			if (max_level[0] < l) {
+				System.out.println(0);
+				continue;
+			}
+			if (level.get(s) > l) {
+				System.out.println(0);
+				continue;
+			} else if (level.get(s) == l) {
+				System.out.println(nodes[s]);
+				continue;
+			} else {
+				int sum = 0;
+				if (levelNode.containsKey(l)) {
+					for (int i : levelNode.get(l)) {
+						boolean check = checkParent(s, i);
+						if (check)
+							sum += nodes[i];
+					}
+				}
+				System.out.println(sum);
+			}
+		}
+	}
+
+	public static boolean checkParent(int s, int node) {
+		if (parent.get(node) == -1)
+			return false;
+		else if (parent.get(node) == s)
+			return true;
+		else
+			return checkParent(s, parent.get(node));
+	}
+}

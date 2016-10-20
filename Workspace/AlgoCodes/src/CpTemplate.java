@@ -4,9 +4,10 @@ import java.util.*;
 
 public class CpTemplate {
 	static long mod = 1000000007;
-
+	
 	private static void solve(FastScanner sc, PrintWriter out) {
 		
+	      
 	}
 
 	public static void main(String[] args) throws IOException {
