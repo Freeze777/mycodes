@@ -2,10 +2,8 @@ import java.io.*;
 import java.math.*;
 import java.util.*;
 
-
 public class run {
-
-
+	
 	private static void solve(FastScanner sc, PrintWriter out) {
 		out.println("solve");
 	}
@@ -18,6 +16,61 @@ public class run {
 		solve(in, out);
 		in.close();
 		out.close();
+	}
+	public static long gcd(long x, long y) {
+		if (x % y == 0)
+			return y;
+		else
+			return gcd(y, x % y);
+	}
+
+	public static long pow(long n, long p, long m) {
+		long result = 1;
+		if (p == 0)
+			return 1;
+		if (p == 1)
+			return n;
+		while (p != 0) {
+			if (p % 2 == 1)
+				result *= n;
+			if (result >= m)
+				result %= m;
+			p >>= 1;
+			n *= n;
+			if (n >= m)
+				n %= m;
+		}
+		return result;
+	}
+
+	static class Pair implements Comparable<Pair> {
+		int a, b;
+
+		Pair(int a, int b) {
+			this.a = a;
+			this.b = b;
+		}
+
+		public int compareTo(Pair o) {
+			// TODO Auto-generated method stub
+			if (this.a != o.a)
+				return Integer.compare(this.a, o.a);
+			else
+				return Integer.compare(this.b, o.b);
+			// return 0;
+		}
+
+		public boolean equals(Object o) {
+			if (o instanceof Pair) {
+				Pair p = (Pair) o;
+				return p.a == a && p.b == b;
+			}
+			return false;
+		}
+
+		public int hashCode() {
+			return new Integer(a).hashCode() * 31 + new Integer(b).hashCode();
+		}
 	}
 
 	static class FastScanner {
