@@ -174,8 +174,8 @@ public class run {
 		PrintWriter out = new PrintWriter(new BufferedWriter(
 				new OutputStreamWriter(System.out)), false);
 		solve(in, out);
-		in.close();
-		out.close();
+		//in.close();
+		//out.close();
 	}
 	public static long gcd(long x, long y) {
 		if (x % y == 0)
@@ -329,4 +329,3 @@ public class run {
 	}
 
 }
-

@@ -20,8 +20,7 @@ public class run {
 				List<Map<Integer, Integer>> binaryIndexedTree, int[] arr,
 				int newVal, int index, Operation combiner) {
 			int n = binaryIndexedTree.size();
-			int oldVal = arr[index-1];
-			arr[index-1] = newVal;
+			int oldVal = arr[index + 1];
 			while (index < n) {
 				if (binaryIndexedTree.get(index).containsKey(oldVal)) {
 					int value = binaryIndexedTree.get(index).get(oldVal);
@@ -34,10 +33,14 @@ public class run {
 				if (binaryIndexedTree.get(index).containsKey(newVal)) {
 					val = binaryIndexedTree.get(index).get(newVal);
 				}
-				binaryIndexedTree.get(index).put(newVal, val+1);
+				Map<Integer, Integer> map = new HashMap<Integer, Integer>();
+				map.put(val, 1);
+				Map<Integer, Integer> combined = combiner.perform(map,
+						binaryIndexedTree.get(index));
+				binaryIndexedTree.set(index, combined);
 				index = getNext(index);
 			}
-			
+			arr[index + 1] = newVal;
 		}
 
 		public Map<Integer, Integer> getSum(
@@ -114,13 +117,13 @@ public class run {
 	}
 
 	private static void solve(FastScanner sc, PrintWriter out) {
-		int arr[] = { 0,3, 3, 4, 5, 6, 7,7 };
+		int arr[] = { 3, 3, 4, 5, 6, 7 };
 		FenwickTree ft = new FenwickTree();
 		Operation combiner = new Combine();
 		List<Map<Integer, Integer>> binaryIndexedTree = ft.createTree(arr,
 				combiner);
 		Map<Integer, Integer> map = ft.getSum(binaryIndexedTree,
-				arr.length-1, combiner);
+				arr.length - 2, combiner);
 		System.out.println(map);
 
 	}
