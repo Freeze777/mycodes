@@ -1,0 +1,56 @@
+#!/bin/python3
+
+import sys
+direction=[(1,0),(-1,0),(0,-1),(0,1)]
+def isSafe(t,graph,n,m):
+   if t[0]>=n or t[0]<0 or t[1]>=m or t[1]<0:
+      return False
+   if graph[t[0]][t[1]]=='#':
+      return False
+   return True
+def getDir(t):
+   if t==(1,0):
+      return 'D'
+   if t==(-1,0):
+      return 'U'
+   if t==(0,1):
+      return 'R'
+   if t==(0,-1):
+      return 'L'
+   
+def dfs(src,curPath,dest,graph,n,m,visited,ans):
+   #print('dfs at ', src)
+   if src == dest:
+      ans[0]=(ans[0] if len(ans[0])>len(curPath) else curPath)
+      return
+   
+   for t in direction:
+      v=(src[0]+t[0],src[1]+t[1])
+      if isSafe(v,graph,n,m) and (not visited[v[0]][v[1]]):
+         visited[v[0]][v[1]]=True         
+         dfs(v,curPath+getDir(t),dest,graph,n,m,visited,ans)
+         visited[v[0]][v[1]]=False
+         
+n,m=map(int,input().split())
+graph=[]
+visited=[]
+src=-1
+dest=-1
+ans=['']
+for i in range(n):
+   inp=input()
+   graph.append(inp)
+   visited.append([False]*m)
+   if src==-1:
+      idx=inp.find('S')
+      if idx!=-1:
+         src=(i,idx)
+   if dest==-1:
+      idx=inp.find('F')
+      if idx!=-1:
+         dest=(i,idx)
+visited[src[0]][src[1]]=True
+#print(src,dest)
+dfs(src,'',dest,graph,n,m,visited,ans)
+print(ans[0])
+   

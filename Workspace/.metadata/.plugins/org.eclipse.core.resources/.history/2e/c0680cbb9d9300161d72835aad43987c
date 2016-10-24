@@ -1,9 +1,0 @@
-public class test34 {
-    private int variableA = showOutput();
-    static final int variableB = 20;
-    private int showOutput(){
-        return variableB;
-    }
-    public static void main(String[] args) {
-        System.out.println((new test34()).variableB);
-    }}

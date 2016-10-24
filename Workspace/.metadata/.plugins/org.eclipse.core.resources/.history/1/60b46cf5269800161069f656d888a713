@@ -1,0 +1,36 @@
+import java.util.*;
+
+class TestClass {
+	public static void main(String args[]) throws Exception {
+		Scanner s = new Scanner(System.in);
+		int l = s.nextInt();
+		int m = s.nextInt();
+		char[] str = s.next().toCharArray();
+		
+		if (m >= str.length) {
+			System.out.println("");
+			System.exit(0);
+		}
+		int start = 0;
+		while (m > 0) {
+			char max = str[start];
+			int loc = start;
+			for (int i = start; i < start + m; i++) {
+				if (str[i] > max) {
+					loc = i;
+					max = str[i];
+				}
+			}
+			for (int i = start; i < loc; i++) {
+				str[i] = '\0';
+			}
+
+			m -= (loc - start);
+			start = loc + 1;
+		}
+		for (int i = 0; i < str.length; i++) {
+			if (str[i] != '\0')
+				System.out.print(str[i]);
+		}
+	}
+}

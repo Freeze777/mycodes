@@ -1,3 +1,4 @@
+//https://www.hackerearth.com/october-circuits/algorithm/shil-and-magic-of-arrays-10/
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
@@ -6,122 +7,126 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
+import java.util.Set;
 import java.util.StringTokenizer;
+import java.util.TreeSet;
 
 public class run {
 	static long mod = 1000000007;
 
-	static class FenwickTree {
+	static class SegmentTree {
 
-		public void updateBinaryIndexedTree(
-				List<Map<Integer, Integer>> binaryIndexedTree, int[] arr,
-				int newVal, int index, Operation combiner) {
-			int n = binaryIndexedTree.size();
-			int oldVal = arr[index-1];
-			arr[index-1] = newVal;
-			while (index < n) {
-				if (binaryIndexedTree.get(index).containsKey(oldVal)) {
-					int value = binaryIndexedTree.get(index).get(oldVal);
-					if (value == 1)
-						binaryIndexedTree.get(index).remove(oldVal);
-					else
-						binaryIndexedTree.get(index).put(oldVal, value - 1);
-				}
-				int val = 0;
-				if (binaryIndexedTree.get(index).containsKey(newVal)) {
-					val = binaryIndexedTree.get(index).get(newVal);
-				}
-				binaryIndexedTree.get(index).put(newVal, val+1);
-				index = getNext(index);
-			}
-			
+		public List<Set<Pair>> createTree(int arr[], Operation operation) {
+			int height = (int) Math.ceil(Math.log(arr.length) / Math.log(2));
+			int size = (int) (Math.pow(2, height + 1) - 1);
+			List<Set<Pair>> segmentTree = new ArrayList<Set<Pair>>(size);
+			for (int i = 0; i < size; i++)
+				segmentTree.add(new TreeSet<Pair>());
+			constructTree(segmentTree, arr, 0, arr.length - 1, 0, operation);
+			return segmentTree;
 		}
 
-		public Map<Integer, Integer> getSum(
-				List<Map<Integer, Integer>> binaryIndexedTree, int index,
-				Operation combiner) {
-			index = index + 1;
-			Map<Integer, Integer> map = new HashMap<Integer, Integer>();
-			while (index > 0) {
-				map = combiner.perform(map, binaryIndexedTree.get(index));
-				index = getParent(index);
+		private void constructTree(List<Set<Pair>> segmentTree, int arr[],
+				int low, int high, int pos, Operation combine) {
+			if (low == high) {
+				Pair pair = new Pair(arr[low], arr[low]);
+				segmentTree.get(pos).add(pair);
+				return;
 			}
-			return map;
+			int mid = (low + high) / 2;
+			int left = 2 * pos + 1;
+			int right = 2 * pos + 2;
+			constructTree(segmentTree, arr, low, mid, left, combine);
+			constructTree(segmentTree, arr, mid + 1, high, right, combine);
+
+			Set<Pair> combined = combine.perform(segmentTree.get(left),
+					segmentTree.get(right));
+			segmentTree.set(pos, combined);
 		}
 
-		public List<Map<Integer, Integer>> createTree(int arr[],
-				Operation combiner) {
-			List<Map<Integer, Integer>> binaryIndexedTree = new ArrayList<Map<Integer, Integer>>(
-					arr.length + 1);
-			for (int i = 0; i <= arr.length; i++) {
-				binaryIndexedTree.add(new HashMap<Integer, Integer>());
-			}
-
-			for (int i = 1; i <= arr.length; i++) {
-				updateBinaryIndexedTree(binaryIndexedTree, arr, arr[i - 1], i,
-						combiner);
-			}
-			return binaryIndexedTree;
+		public Set<Pair> rangeQuery(List<Set<Pair>> segmentTree, int qlow,
+				int qhigh, int len, Operation operation) {
+			return rangeQuery(segmentTree, 0, len - 1, qlow, qhigh, 0,
+					operation);
 		}
 
-		private int getParent(int index) {
-			return index - (index & -index);
-		}
-
-		private int getNext(int index) {
-			return index + (index & -index);
+		private Set<Pair> rangeQuery(List<Set<Pair>> segmentTree, int low,
+				int high, int qlow, int qhigh, int pos, Operation operation) {
+			if (qlow <= low && qhigh >= high) {
+				return segmentTree.get(pos);
+			}
+			if (qlow > high || qhigh < low) {
+				return new TreeSet<Pair>();
+			}
+			int mid = (low + high) / 2;
+			int left = 2 * pos + 1;
+			int right = 2 * pos + 2;
+			return operation.perform(
+					rangeQuery(segmentTree, low, mid, qlow, qhigh, left,
+							operation),
+					rangeQuery(segmentTree, mid + 1, high, qlow, qhigh, right,
+							operation));
 		}
 
 	}
 
 	static interface Operation {
-		Map<Integer, Integer> perform(Map<Integer, Integer> map1,
-				Map<Integer, Integer> map2);
+		Set<Pair> perform(Set<Pair> set1, Set<Pair> set2);
 
 	}
 
 	static class Combine implements Operation {
 
 		@Override
-		public Map<Integer, Integer> perform(Map<Integer, Integer> map1,
-				Map<Integer, Integer> map2) {
-			Map<Integer, Integer> retMap = new HashMap<Integer, Integer>();
-			for (Map.Entry<Integer, Integer> entry : map1.entrySet()) {
-				int key = entry.getKey();
-				int value = entry.getValue();
-				int old_val = 0;
-				if (retMap.containsKey(key)) {
-					old_val = retMap.get(key);
-				}
-				retMap.put(key, old_val + value);
-			}
-			for (Map.Entry<Integer, Integer> entry : map2.entrySet()) {
-				int key = entry.getKey();
-				int value = entry.getValue();
-				int old_val = 0;
-				if (retMap.containsKey(key)) {
-					old_val = retMap.get(key);
+		public Set<Pair> perform(Set<Pair> set1, Set<Pair> set2) {
+			// System.out.println("combining :"+set1+" "+set2);
+			TreeSet<Pair> tmp = new TreeSet<Pair>(set1);
+			tmp.addAll(set2);
+			if (tmp.size() == 0)
+				return tmp;
+			if (tmp.size() == 1)
+				return tmp;
 
+			Pair first = tmp.pollFirst();
+			int start = first.a;
+			int end = first.b;
+
+			Set<Pair> result = new TreeSet<Pair>();
+
+			for (Pair current : tmp) {
+				if (current.a <= end) {
+					end = Math.max(current.b, end);
+				} else {
+					result.add(new Pair(start, end));
+					start = current.a;
+					end = current.b;
 				}
-				retMap.put(key, old_val + value);
+
 			}
-			return retMap;
+
+			result.add(new Pair(start, end));
+
+			return result;
 		}
-
 	}
 
 	private static void solve(FastScanner sc, PrintWriter out) {
-		int arr[] = { 0,3, 3, 4, 5, 6, 7,7 };
-		FenwickTree ft = new FenwickTree();
+
+		int n = sc.nextInt();
+		int q = sc.nextInt();
+		int arr[] = sc.nextIntArray(n);
+		// int[] arr = { 3, 3, 7, 8, 2 };
+		SegmentTree st = new SegmentTree();
 		Operation combiner = new Combine();
-		List<Map<Integer, Integer>> binaryIndexedTree = ft.createTree(arr,
-				combiner);
-		Map<Integer, Integer> map = ft.getSum(binaryIndexedTree,
-				arr.length-1, combiner);
-		System.out.println(map);
+		List<Set<Pair>> segmentTree = st.createTree(arr, combiner);
+		while (q-- > 0) {
+
+			int l = sc.nextInt() - 1;
+			int r = sc.nextInt() - 1;
+			out.println(st.rangeQuery(segmentTree, l, r, arr.length, combiner)
+					.size());
+		}
 
 	}
 
@@ -131,7 +136,7 @@ public class run {
 				new OutputStreamWriter(System.out)), false);
 		solve(in, out);
 		// in.close();
-		// out.close();
+		out.close();
 	}
 
 	public static long gcd(long x, long y) {
@@ -188,6 +193,12 @@ public class run {
 		public int hashCode() {
 			return new Integer(a).hashCode() * 31 + new Integer(b).hashCode();
 		}
+
+		@Override
+		public String toString() {
+			return "Pair [a=" + a + ", b=" + b + "]";
+		}
+
 	}
 
 	static class FastScanner {

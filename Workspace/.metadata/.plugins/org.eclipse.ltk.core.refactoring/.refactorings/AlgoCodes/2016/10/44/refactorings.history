@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;AlgoCodes/src/longest_path_refined&apos; to &apos;longest_path_refined.py&apos;" description="Rename resource &apos;longest_path_refined&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/longest_path_refined" name="longest_path_refined.py" stamp="1477215004842" updateReferences="true"/>
+</session>
