@@ -1,0 +1,59 @@
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+
+public class TestClass {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		int T = in.nextInt();
+
+		while (T-- > 0) {
+			StringBuilder str = new StringBuilder(in.next());
+
+			Map<Character, Obj> map = new TreeMap<Character, Obj>();
+			for (int i = 0; i < str.length(); i++) {
+
+				char temp = str.charAt(i);
+				if (map.containsKey(temp)) {
+					map.put(temp, new Obj(temp, map.get(temp).count + 1));
+				} else {
+					map.put(temp, new Obj(temp, 1));
+				}
+			}
+			System.out.println();
+			StringBuilder sb = new StringBuilder();
+			for (Obj obj : map.values()) {
+				for (int i = 0; i < obj.count; i++) {
+					sb.append(obj.c);
+				}
+
+			}
+			System.out.println(sb);
+		}
+
+		in.close();
+	}
+
+}
+
+class Obj implements Comparable<Obj> {
+	char c;
+	int count;
+
+	Obj(char ch, int c) {
+		c = ch;
+		count = c;
+	}
+
+	@Override
+	public int compareTo(Obj o) {
+		if (this.count != o.count) {
+			return this.count - o.count;
+		} else {
+			return this.c - o.c;
+		}
+
+	}
+}
