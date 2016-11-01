@@ -1,0 +1,32 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+public class AppendAndDelete {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		String s1 = sc.next();
+		String s2 = sc.next();
+		String small, large;
+		if (s1.length() > s2.length()) {
+			small = s2;
+			large = s1;
+		} else {
+			small = s1;
+			large = s2;
+		}
+		int index = 0;
+		for (char c : large.toCharArray()) {
+			if (index == small.length())
+				break;
+			if (c != small.charAt(index))
+				break;
+			index++;
+		}
+		if (index == 0)
+			System.out
+					.println("" + s1 + " and " + s2 + " have no common prefix");
+		else
+			System.out.println(large.substring(0, index));
+	}
+}

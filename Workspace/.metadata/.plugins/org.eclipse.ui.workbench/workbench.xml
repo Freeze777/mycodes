@@ -17,7 +17,7 @@
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="156" y="30"/>
 <coolItem id="org.eclipse.debug.ui.main.toolbar" itemType="typeToolBarContribution" x="40" y="30"/>
 <coolItem id="com.python.pydev.toolbars.evaluateActionSetterToolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="88" y="30"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="88" y="30"/>
@@ -28,7 +28,7 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="232" y="30"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.cdt.ui.editor.CEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.cdt.ui.editor.CEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.python.pydev.editor.PythonEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -41,22 +41,17 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
-<part id="2"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GenericSegmentTree.java" partName="GenericSegmentTree.java" path="/home/qwerty/Desktop/mycodes/Workspace/AlgoCodes/src/GenericSegmentTree.java" title="GenericSegmentTree.java" tooltip="AlgoCodes/src/GenericSegmentTree.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/AlgoCodes/src/GenericSegmentTree.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="6603" selectionOffset="0" selectionTopPixel="259"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Template.java" partName="Template.java" path="/home/qwerty/Desktop/mycodes/Workspace/AlgoCodes/src/Template.java" title="Template.java" tooltip="AlgoCodes/src/Template.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/AlgoCodes/src/Template.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="72" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.ClassFileEditor" name="Integer.class" partName="Integer.class" path="/tmp/Integer.class2930703051191560339.class" title="Integer.class" tooltip="java.lang.Integer" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" org.eclipse.jdt.ui.ClassFileIdentifier="=AlgoCodes/\/usr\/lib\/jvm\/java-8-openjdk-amd64\/jre\/lib\/rt.jar&lt;java.lang(Integer.class"/>
-<editorState selectionHorizontalPixel="0" selectionLength="66" selectionOffset="22544" selectionTopPixel="9350"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MULT3.java" partName="MULT3.java" path="/home/qwerty/Desktop/mycodes/Workspace/AlgoCodes/src/spoj/MULT3.java" title="MULT3.java" tooltip="AlgoCodes/src/spoj/MULT3.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/AlgoCodes/src/spoj/MULT3.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2673" selectionTopPixel="1553"/>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Test.java" partName="Test.java" path="/home/qwerty/Desktop/mycodes/Workspace/AlgoCodes/src/Test.java" title="Test.java" tooltip="AlgoCodes/src/Test.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/AlgoCodes/src/Test.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="94" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -513,166 +508,176 @@
 <navigationHistory>
 <editors>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AlgoCodes/src/run.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CPPcodes/hackerrank/interesting_fibonnacci.cc"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AlgoCodes/src/run.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AlgoCodes/src/AppendAndDelete.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AlgoCodes/src/BFS.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AlgoCodes/src/algo/MultiplyWithOnlyAddOperator.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AlgoCodes/src/algo/graph/BFS.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AlgoCodes/src/BFSLight.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AlgoCodes/src/algo/graph/BFSLight.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AlgoCodes/src/hacker/rank/AppendAndDelete.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AlgoCodes/src/ShashankAndPalindrome.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AlgoCodes/src/SegmentTreeIntervalAddMax.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AlgoCodes/src/TestClss.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AlgoCodes/src/TestClass.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/AlgoCodes/src/longest_path_refined.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AlgoCodes/src/hacker/earth/ShashankAndPalindrome.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AlgoCodes/src/VelamAndQueries.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AlgoCodes/src/VelmaAndTriplets.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AlgoCodes/src/hacker/earth/VelmaAndTriplets.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AlgoCodes/src/hacker/earth/VelamAndQueries.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AlgoCodes/src/CpTemplate.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AlgoCodes/src/Template.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AlgoCodes/src/StaticExample.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AlgoCodes/src/TestClass.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AlgoCodes/src/GenericSegmentTree.java"/>
-<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=AlgoCodes/\/usr\/lib\/jvm\/java-8-openjdk-amd64\/jre\/lib\/rt.jar&lt;java.lang(Integer.class"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AlgoCodes/src/spoj/MULT3.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AlgoCodes/src/Test.java"/>
 </editors>
 <item historyLabel="run.java" index="0">
-<position info="not_deleted" x="3256" y="0"/>
-</item>
-<item historyLabel="run.java" index="0">
-<position info="not_deleted" x="3592" y="0"/>
-</item>
-<item historyLabel="run.java" index="0">
-<position info="not_deleted" x="3552" y="1"/>
-</item>
-<item historyLabel="run.java" index="0">
-<position info="not_deleted" x="3555" y="1"/>
-</item>
-<item historyLabel="run.java" index="0">
-<position info="not_deleted" x="2565" y="0"/>
+<position info="not_deleted" x="2934" y="0"/>
 </item>
 <item historyLabel="run.java" index="0">
 <position/>
 </item>
 <item historyLabel="run.java" index="0">
-<position/>
+<position info="not_deleted" x="948" y="3"/>
 </item>
 <item historyLabel="run.java" index="0">
-<position info="not_deleted" x="3012" y="0"/>
+<position info="not_deleted" x="75" y="10"/>
 </item>
-<item historyLabel="ShashankAndPalindrome.java" index="1">
+<item historyLabel="interesting_fibonnacci.cc" index="1">
+<position info="not_deleted" x="141" y="0"/>
+</item>
+<item historyLabel="run.java" index="2">
+<position/>
+</item>
+<item historyLabel="interesting_fibonnacci.cc" index="1">
+<position info="not_deleted" x="141" y="0"/>
+</item>
+<item historyLabel="run.java" index="2">
+<position/>
+</item>
+<item historyLabel="AppendAndDelete.java" index="3">
+<position/>
+</item>
+<item historyLabel="AppendAndDelete.java" index="3">
+<position/>
+</item>
+<item historyLabel="AppendAndDelete.java" index="3">
+<position/>
+</item>
+<item historyLabel="AppendAndDelete.java" index="3">
+<position/>
+</item>
+<item historyLabel="AppendAndDelete.java" index="3">
+<position info="not_deleted" x="982" y="0"/>
+</item>
+<item historyLabel="AppendAndDelete.java" index="3">
+<position info="not_deleted" x="969" y="0"/>
+</item>
+<item historyLabel="AppendAndDelete.java" index="3">
+<position info="not_deleted" x="1003" y="0"/>
+</item>
+<item historyLabel="BFS.java" index="4">
+<position info="not_deleted" x="21" y="0"/>
+</item>
+<item historyLabel="BFS.java" index="4">
+<position info="not_deleted" x="200" y="0"/>
+</item>
+<item historyLabel="BFS.java" index="4">
+<position info="not_deleted" x="200" y="0"/>
+</item>
+<item historyLabel="BFS.java" index="4">
+<position info="not_deleted" x="152" y="0"/>
+</item>
+<item historyLabel="AppendAndDelete.java" index="3">
+<position info="not_deleted" x="262" y="0"/>
+</item>
+<item historyLabel="MultiplyWithOnlyAddOperator.java" index="5">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="SegmentTreeIntervalAddMax.java" index="2">
+<item historyLabel="BFS.java" index="4">
+<position info="not_deleted" x="152" y="0"/>
+</item>
+<item historyLabel="BFS.java" index="4">
+<position info="not_deleted" x="20" y="0"/>
+</item>
+<item historyLabel="BFS.java" index="4">
+<position info="not_deleted" x="8" y="10"/>
+</item>
+<item historyLabel="BFS.java" index="6">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="TestClss.java" index="3">
+<item historyLabel="BFS.java" index="4">
+<position info="not_deleted" x="8" y="10"/>
+</item>
+<item historyLabel="BFSLight.java" index="7">
+<position info="not_deleted" x="259" y="0"/>
+</item>
+<item historyLabel="BFSLight.java" index="7">
+<position info="not_deleted" x="240" y="0"/>
+</item>
+<item historyLabel="BFSLight.java" index="8">
+<position info="not_deleted" x="8" y="0"/>
+</item>
+<item historyLabel="BFS.java" index="6">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="TestClass.java" index="4">
-<position info="not_deleted" x="695" y="3"/>
-</item>
-<item historyLabel="TestClass.java" index="4">
-<position/>
-</item>
-<item historyLabel="TestClass.java" index="4">
-<position info="not_deleted" x="183" y="0"/>
-</item>
-<item historyLabel="TestClass.java" index="4">
-<position info="not_deleted" x="154" y="3"/>
-</item>
-<item historyLabel="TestClass.java" index="4">
-<position info="not_deleted" x="328" y="0"/>
-</item>
-<item historyLabel="TestClass.java" index="4">
-<position/>
-</item>
-<item historyLabel="TestClass.java" index="4">
-<position/>
-</item>
-<item historyLabel="longest_path_refined" index="5">
-<position info="not_deleted" x="1421" y="0"/>
-</item>
-<item historyLabel="longest_path_refined" index="5">
-<position info="not_deleted" x="431" y="0"/>
-</item>
-<item historyLabel="VelamAndQueries.java" index="6">
+<item historyLabel="MultiplyWithOnlyAddOperator.java" index="5">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="TestClass.java" index="7">
-<position info="not_deleted" x="269" y="0"/>
+<item historyLabel="BFS.java" index="6">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="GenericSegmentTree.java" index="8">
-<position info="not_deleted" x="7880" y="0"/>
+<item historyLabel="AppendAndDelete.java" index="3">
+<position info="not_deleted" x="262" y="0"/>
 </item>
-<item historyLabel="TestClass.java" index="7">
-<position info="not_deleted" x="269" y="0"/>
+<item historyLabel="AppendAndDelete.java" index="9">
+<position info="not_deleted" x="8" y="0"/>
 </item>
-<item historyLabel="GenericSegmentTree.java" index="8">
-<position info="not_deleted" x="7880" y="0"/>
+<item historyLabel="ShashankAndPalindrome.java" index="10">
+<position info="not_deleted" x="249" y="0"/>
 </item>
-<item historyLabel="GenericSegmentTree.java" index="8">
-<position info="not_deleted" x="852" y="13"/>
+<item historyLabel="ShashankAndPalindrome.java" index="11">
+<position info="not_deleted" x="8" y="0"/>
 </item>
-<item historyLabel="GenericSegmentTree.java" index="8">
-<position info="not_deleted" x="1131" y="0"/>
+<item historyLabel="VelamAndQueries.java" index="12">
+<position info="not_deleted" x="226" y="0"/>
 </item>
-<item historyLabel="GenericSegmentTree.java" index="8">
-<position/>
+<item historyLabel="VelmaAndTriplets.java" index="13">
+<position info="not_deleted" x="249" y="0"/>
 </item>
-<item historyLabel="GenericSegmentTree.java" index="8">
-<position info="not_deleted" x="1270" y="16"/>
+<item historyLabel="VelmaAndTriplets.java" index="14">
+<position info="not_deleted" x="8" y="0"/>
 </item>
-<item historyLabel="GenericSegmentTree.java" index="8">
-<position info="not_deleted" x="1252" y="0"/>
+<item historyLabel="VelamAndQueries.java" index="12">
+<position info="not_deleted" x="226" y="0"/>
 </item>
-<item historyLabel="GenericSegmentTree.java" index="8">
-<position info="not_deleted" x="1318" y="27"/>
+<item historyLabel="VelamAndQueries.java" index="15">
+<position info="not_deleted" x="8" y="0"/>
 </item>
-<item historyLabel="GenericSegmentTree.java" index="8">
-<position info="not_deleted" x="1263" y="0"/>
+<item historyLabel="ShashankAndPalindrome.java" index="11">
+<position info="not_deleted" x="8" y="0"/>
 </item>
-<item historyLabel="GenericSegmentTree.java" index="8">
-<position info="not_deleted" x="2941" y="7"/>
+<item historyLabel="AppendAndDelete.java" index="9">
+<position info="not_deleted" x="8" y="0"/>
 </item>
-<item historyLabel="GenericSegmentTree.java" index="8">
-<position info="not_deleted" x="3124" y="0"/>
+<item historyLabel="CpTemplate.java" index="16">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="GenericSegmentTree.java" index="8">
-<position info="not_deleted" x="3144" y="0"/>
+<item historyLabel="Template.java" index="17">
+<position info="not_deleted" x="72" y="0"/>
 </item>
-<item historyLabel="GenericSegmentTree.java" index="8">
-<position info="not_deleted" x="1906" y="7"/>
+<item historyLabel="StaticExample.java" index="18">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="GenericSegmentTree.java" index="8">
-<position info="not_deleted" x="2785" y="0"/>
+<item historyLabel="Template.java" index="17">
+<position info="not_deleted" x="72" y="0"/>
 </item>
-<item historyLabel="GenericSegmentTree.java" index="8">
-<position/>
+<item historyLabel="TestClass.java" index="19">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="GenericSegmentTree.java" index="8">
-<position info="not_deleted" x="2099" y="11"/>
+<item historyLabel="Template.java" index="17">
+<position info="not_deleted" x="72" y="0"/>
 </item>
-<item historyLabel="GenericSegmentTree.java" index="8">
-<position/>
-</item>
-<item historyLabel="GenericSegmentTree.java" index="8">
-<position/>
-</item>
-<item historyLabel="GenericSegmentTree.java" index="8">
-<position info="not_deleted" x="3966" y="17"/>
-</item>
-<item historyLabel="GenericSegmentTree.java" index="8">
-<position/>
-</item>
-<item historyLabel="Integer.class" index="9">
-<position info="not_deleted" x="22544" y="66"/>
-</item>
-<item historyLabel="GenericSegmentTree.java" index="8">
-<position info="not_deleted" x="5668" y="35"/>
-</item>
-<item historyLabel="GenericSegmentTree.java" index="8">
-<position info="not_deleted" x="3489" y="24"/>
-</item>
-<item historyLabel="GenericSegmentTree.java" index="8">
-<position info="not_deleted" x="0" y="6603"/>
-</item>
-<item historyLabel="MULT3.java" index="10">
-<position info="not_deleted" x="6609" y="0"/>
-</item>
-<item historyLabel="MULT3.java" index="10">
-<position info="not_deleted" x="1034" y="0"/>
-</item>
-<item active="true" historyLabel="MULT3.java" index="10">
-<position info="not_deleted" x="15" y="1"/>
+<item active="true" historyLabel="Test.java" index="20">
+<position info="not_deleted" x="0" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -691,50 +696,50 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MULT3.java" tooltip="AlgoCodes/src/spoj/MULT3.java">
-<persistable path="/AlgoCodes/src/spoj/MULT3.java"/>
-</file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="Integer.class" tooltip="java.lang.Integer">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=AlgoCodes/\/usr\/lib\/jvm\/java-8-openjdk-amd64\/jre\/lib\/rt.jar&lt;java.lang(Integer.class"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GenericSegmentTree.java" tooltip="AlgoCodes/src/GenericSegmentTree.java">
-<persistable path="/AlgoCodes/src/GenericSegmentTree.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Test.java" tooltip="AlgoCodes/src/Test.java">
+<persistable path="/AlgoCodes/src/Test.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestClass.java" tooltip="AlgoCodes/src/TestClass.java">
 <persistable path="/AlgoCodes/src/TestClass.java"/>
 </file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="StaticExample.java" tooltip="AlgoCodes/src/StaticExample.java">
+<persistable path="/AlgoCodes/src/StaticExample.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CpTemplate.java" tooltip="AlgoCodes/src/CpTemplate.java">
+<persistable path="/AlgoCodes/src/CpTemplate.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="VelmaAndTriplets.java" tooltip="AlgoCodes/src/VelmaAndTriplets.java">
+<persistable path="/AlgoCodes/src/VelmaAndTriplets.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="VelamAndQueries.java" tooltip="AlgoCodes/src/VelamAndQueries.java">
 <persistable path="/AlgoCodes/src/VelamAndQueries.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="longest_path_refined.py" tooltip="AlgoCodes/src/longest_path_refined.py">
-<persistable path="/AlgoCodes/src/longest_path_refined.py"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestClss.java" tooltip="AlgoCodes/src/TestClss.java">
-<persistable path="/AlgoCodes/src/TestClss.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SegmentTreeIntervalAddMax.java" tooltip="AlgoCodes/src/SegmentTreeIntervalAddMax.java">
-<persistable path="/AlgoCodes/src/SegmentTreeIntervalAddMax.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ShashankAndPalindrome.java" tooltip="AlgoCodes/src/ShashankAndPalindrome.java">
 <persistable path="/AlgoCodes/src/ShashankAndPalindrome.java"/>
 </file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BFS.java" tooltip="AlgoCodes/src/algo/graph/BFS.java">
+<persistable path="/AlgoCodes/src/algo/graph/BFS.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MultiplyWithOnlyAddOperator.java" tooltip="AlgoCodes/src/algo/MultiplyWithOnlyAddOperator.java">
+<persistable path="/AlgoCodes/src/algo/MultiplyWithOnlyAddOperator.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BFS.java" tooltip="AlgoCodes/src/BFS.java">
+<persistable path="/AlgoCodes/src/BFS.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="interesting_fibonnacci.cc" tooltip="CPPcodes/hackerrank/interesting_fibonnacci.cc">
+<persistable path="/CPPcodes/hackerrank/interesting_fibonnacci.cc"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="run.java" tooltip="AlgoCodes/src/run.java">
 <persistable path="/AlgoCodes/src/run.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LongestValidParanthesis.java" tooltip="AlgoCodes/src/algo/stack/LongestValidParanthesis.java">
-<persistable path="/AlgoCodes/src/algo/stack/LongestValidParanthesis.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="fast_fibonnaci.cc" tooltip="CPPcodes/code_snippets/fast_fibonnaci.cc">
+<persistable path="/CPPcodes/code_snippets/fast_fibonnaci.cc"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BalancedParanthesis.java" tooltip="AlgoCodes/src/algo/stack/BalancedParanthesis.java">
-<persistable path="/AlgoCodes/src/algo/stack/BalancedParanthesis.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LCACompleteBT_Delivery.java" tooltip="AlgoCodes/src/hacker/rank/LCACompleteBT_Delivery.java">
+<persistable path="/AlgoCodes/src/hacker/rank/LCACompleteBT_Delivery.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="longest_path_refined" tooltip="AlgoCodes/src/longest_path_refined">
-<persistable path="/AlgoCodes/src/longest_path_refined"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="lca_query_nlogn.cc" tooltip="AlgoCodes/src/lca_query_nlogn.cc">
-<persistable path="/AlgoCodes/src/lca_query_nlogn.cc"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="longest_path_route.py" tooltip="AlgoCodes/src/longest_path_route.py">
-<persistable path="/AlgoCodes/src/longest_path_route.py"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CatalanNumbers.java" tooltip="AlgoCodes/src/hacker/rank/CatalanNumbers.java">
+<persistable path="/AlgoCodes/src/hacker/rank/CatalanNumbers.java"/>
 </file>
 </mruList>
 </workbench>

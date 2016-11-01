@@ -1,4 +1,5 @@
 import resource, sys
+from fractions import gcd
 #sys.setrecursionlimit(10**6)
 #from itertools import combinations,permutation
 #from heapq import heapify,heappop,heappush
