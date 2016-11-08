@@ -1,13 +1,15 @@
+import java.awt.geom.Ellipse2D;
 import java.io.*;
 import java.math.*;
 import java.util.*;
 
 public class Template {
 	static long mod = 1000000007;
+
 	
+
 	private static void solve(FastScanner sc, PrintStream out) {
-		
-	
+
 	}
 
 	public static void main(String[] args) throws IOException {

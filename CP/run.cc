@@ -14,12 +14,9 @@ typedef map<ll, ll> mll;
 typedef map<char, int> mci;
 typedef map<int, string> mis;
 typedef pair<int, int> pii;
-typedef pair<string, int> psi;
-typedef pair<string, string> pss;
 typedef vector<int> vi;
 typedef vector<string> vs;
 typedef vector<char> vc;
-typedef vector<bool> vb;
 typedef vector<pii> vii;
 
 #define fst                   first
@@ -100,8 +97,32 @@ const double eps = 1e-9;
 
 #define READ                  freopen("input.txt", "r", stdin);
 #define WRITE                 freopen("output.txt", "w", stdout);
+
+
 int main(){
    fast_io;
+   ll t;cin>>t;
+
+   while(t--){
+		ll a,b,c,ans=0;cin>>a>>b>>c;
+		//cout<<a<<" "<<b<<" "<<c<<endl;
+		ll longstep=max(a,b);
+	   	ll smallstep=min(a,b);
+	   	if (c==a||c==b){
+	   		ans=1;
+	   	}
+	   	else if(c==0){
+	   		ans=0;
+	   	}
+	   	else if(c<smallstep||(c>smallstep && c<longstep)){
+	   		ans=2;
+	   	}
+	   	else{	   		
+	   		ans=(c/longstep+1);
+	   	}
+
+   		cout<<ans<<endl;
+	}  	
    
     
    return 0;

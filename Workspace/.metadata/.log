@@ -7788,3 +7788,413 @@ java.nio.file.NoSuchFileException: /usr/lib/python2.7/dist-packages/scipy/lib/de
 
 !ENTRY org.eclipse.wst.common.project.facet.core 4 0 2016-11-01 22:57:51.606
 !MESSAGE Project facet jpt.jpa has not been defined. It is used in plugin org.eclipse.libra.facet.
+!SESSION 2016-11-02 00:05:11.527 -----------------------------------------------
+eclipse.buildId=debbuild
+java.version=1.8.0_91
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IN
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.python.pydev.shared_core 1 1 2016-11-02 00:05:24.522
+!MESSAGE Unable to track file that does not exist: /usr/local/lib/python2.7/dist-packages/pip-8.1.1-py2.7.egg
+!STACK 0
+java.lang.RuntimeException: Unable to track file that does not exist: /usr/local/lib/python2.7/dist-packages/pip-8.1.1-py2.7.egg
+	at org.python.pydev.shared_core.log.Log.logInfo(Log.java:52)
+	at org.python.pydev.shared_core.path_watch.PathWatch.track(PathWatch.java:316)
+	at org.python.pydev.editor.codecompletion.revisited.SyncSystemModulesManagerScheduler.afterSetInfos(SyncSystemModulesManagerScheduler.java:463)
+	at org.python.pydev.editor.codecompletion.revisited.SyncSystemModulesManagerScheduler.afterSetInfos(SyncSystemModulesManagerScheduler.java:444)
+	at org.python.pydev.editor.codecompletion.revisited.SyncSystemModulesManagerScheduler.registerInterpreterManager(SyncSystemModulesManagerScheduler.java:67)
+	at org.python.pydev.editor.codecompletion.revisited.SyncSystemModulesManagerScheduler.start(SyncSystemModulesManagerScheduler.java:89)
+	at org.python.pydev.plugin.PydevPlugin$1.run(PydevPlugin.java:209)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.python.pydev.shared_core 4 4 2016-11-02 00:05:24.904
+!MESSAGE Error. returning: 0
+!STACK 0
+java.nio.file.NoSuchFileException: /usr/lib/python2.7/dist-packages/scipy/lib/decorator.py
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:86)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:55)
+	at sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:144)
+	at sun.nio.fs.LinuxFileSystemProvider.readAttributes(LinuxFileSystemProvider.java:99)
+	at java.nio.file.Files.readAttributes(Files.java:1737)
+	at java.nio.file.Files.getLastModifiedTime(Files.java:2266)
+	at org.python.pydev.shared_core.io.FileUtils.lastModified(FileUtils.java:1055)
+	at org.python.pydev.shared_core.io.FileUtils.lastModified(FileUtils.java:1046)
+	at org.python.pydev.shared_core.io.FileUtils.getLastModifiedTimeFromDir(FileUtils.java:884)
+	at org.python.pydev.shared_core.io.FileUtils.getLastModifiedTimeFromDir(FileUtils.java:880)
+	at org.python.pydev.shared_core.path_watch.EventsStackerRunnable$1.run(EventsStackerRunnable.java:127)
+
+!ENTRY org.eclipse.jface 2 0 2016-11-02 00:05:29.609
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-11-02 00:05:29.609
+!MESSAGE A conflict occurred for ALT+SHIFT+D R:
+Binding(ALT+SHIFT+D R,
+	ParameterizedCommand(Command(org.eclipse.rap.ui.launch.RAPLaunchShortcut.debug,Debug RAP Application,
+		Debug RAP Application,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension$LaunchCommandHandler@13fe5bb7,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+D R,
+	ParameterizedCommand(Command(org.eclipse.wst.server.launchShortcut.debug,Debug on Server,
+		Debug the current selection on a server,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension$LaunchCommandHandler@4276ad40,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-11-02 00:05:29.609
+!MESSAGE A conflict occurred for ALT+SHIFT+X R:
+Binding(ALT+SHIFT+X R,
+	ParameterizedCommand(Command(org.eclipse.rap.ui.launch.RAPLaunchShortcut.run,Run RAP Application,
+		Run RAP Application,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension$LaunchCommandHandler@6e5f5478,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+X R,
+	ParameterizedCommand(Command(org.eclipse.wst.server.launchShortcut.run,Run on Server,
+		Run the current selection on a server,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension$LaunchCommandHandler@5fb07347,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2016-11-02 00:05:32.785
+!MESSAGE Project facet wst.web has not been defined. It is used in plugin org.eclipse.jst.common.project.facet.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2016-11-02 00:05:32.788
+!MESSAGE Project facet jpt.jpa has not been defined. It is used in plugin org.eclipse.libra.facet.
+!SESSION 2016-11-02 12:46:40.694 -----------------------------------------------
+eclipse.buildId=debbuild
+java.version=1.8.0_91
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IN
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.jface 2 0 2016-11-02 12:47:05.426
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-11-02 12:47:05.426
+!MESSAGE A conflict occurred for ALT+SHIFT+X R:
+Binding(ALT+SHIFT+X R,
+	ParameterizedCommand(Command(org.eclipse.rap.ui.launch.RAPLaunchShortcut.run,Run RAP Application,
+		Run RAP Application,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension$LaunchCommandHandler@38c761e9,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+X R,
+	ParameterizedCommand(Command(org.eclipse.wst.server.launchShortcut.run,Run on Server,
+		Run the current selection on a server,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension$LaunchCommandHandler@1cee2e10,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-11-02 12:47:05.426
+!MESSAGE A conflict occurred for ALT+SHIFT+D R:
+Binding(ALT+SHIFT+D R,
+	ParameterizedCommand(Command(org.eclipse.rap.ui.launch.RAPLaunchShortcut.debug,Debug RAP Application,
+		Debug RAP Application,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension$LaunchCommandHandler@7f4e5a39,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+D R,
+	ParameterizedCommand(Command(org.eclipse.wst.server.launchShortcut.debug,Debug on Server,
+		Debug the current selection on a server,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension$LaunchCommandHandler@33de7f3d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.python.pydev.shared_core 1 1 2016-11-02 12:47:11.055
+!MESSAGE Unable to track file that does not exist: /usr/local/lib/python2.7/dist-packages/pip-8.1.1-py2.7.egg
+!STACK 0
+java.lang.RuntimeException: Unable to track file that does not exist: /usr/local/lib/python2.7/dist-packages/pip-8.1.1-py2.7.egg
+	at org.python.pydev.shared_core.log.Log.logInfo(Log.java:52)
+	at org.python.pydev.shared_core.path_watch.PathWatch.track(PathWatch.java:316)
+	at org.python.pydev.editor.codecompletion.revisited.SyncSystemModulesManagerScheduler.afterSetInfos(SyncSystemModulesManagerScheduler.java:463)
+	at org.python.pydev.editor.codecompletion.revisited.SyncSystemModulesManagerScheduler.afterSetInfos(SyncSystemModulesManagerScheduler.java:444)
+	at org.python.pydev.editor.codecompletion.revisited.SyncSystemModulesManagerScheduler.registerInterpreterManager(SyncSystemModulesManagerScheduler.java:67)
+	at org.python.pydev.editor.codecompletion.revisited.SyncSystemModulesManagerScheduler.start(SyncSystemModulesManagerScheduler.java:89)
+	at org.python.pydev.plugin.PydevPlugin$1.run(PydevPlugin.java:209)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.python.pydev.shared_core 4 4 2016-11-02 12:47:14.980
+!MESSAGE Error. returning: 0
+!STACK 0
+java.nio.file.NoSuchFileException: /usr/lib/python2.7/dist-packages/scipy/lib/decorator.py
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:86)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:55)
+	at sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:144)
+	at sun.nio.fs.LinuxFileSystemProvider.readAttributes(LinuxFileSystemProvider.java:99)
+	at java.nio.file.Files.readAttributes(Files.java:1737)
+	at java.nio.file.Files.getLastModifiedTime(Files.java:2266)
+	at org.python.pydev.shared_core.io.FileUtils.lastModified(FileUtils.java:1055)
+	at org.python.pydev.shared_core.io.FileUtils.lastModified(FileUtils.java:1046)
+	at org.python.pydev.shared_core.io.FileUtils.getLastModifiedTimeFromDir(FileUtils.java:884)
+	at org.python.pydev.shared_core.io.FileUtils.getLastModifiedTimeFromDir(FileUtils.java:880)
+	at org.python.pydev.shared_core.path_watch.EventsStackerRunnable$1.run(EventsStackerRunnable.java:127)
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2016-11-02 13:03:28.948
+!MESSAGE Project facet wst.web has not been defined. It is used in plugin org.eclipse.jst.common.project.facet.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2016-11-02 13:03:28.952
+!MESSAGE Project facet jpt.jpa has not been defined. It is used in plugin org.eclipse.libra.facet.
+!SESSION 2016-11-04 11:19:03.453 -----------------------------------------------
+eclipse.buildId=debbuild
+java.version=1.8.0_91
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IN
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.python.pydev.shared_core 1 1 2016-11-04 11:19:28.488
+!MESSAGE Unable to track file that does not exist: /usr/local/lib/python2.7/dist-packages/pip-8.1.1-py2.7.egg
+!STACK 0
+java.lang.RuntimeException: Unable to track file that does not exist: /usr/local/lib/python2.7/dist-packages/pip-8.1.1-py2.7.egg
+	at org.python.pydev.shared_core.log.Log.logInfo(Log.java:52)
+	at org.python.pydev.shared_core.path_watch.PathWatch.track(PathWatch.java:316)
+	at org.python.pydev.editor.codecompletion.revisited.SyncSystemModulesManagerScheduler.afterSetInfos(SyncSystemModulesManagerScheduler.java:463)
+	at org.python.pydev.editor.codecompletion.revisited.SyncSystemModulesManagerScheduler.afterSetInfos(SyncSystemModulesManagerScheduler.java:444)
+	at org.python.pydev.editor.codecompletion.revisited.SyncSystemModulesManagerScheduler.registerInterpreterManager(SyncSystemModulesManagerScheduler.java:67)
+	at org.python.pydev.editor.codecompletion.revisited.SyncSystemModulesManagerScheduler.start(SyncSystemModulesManagerScheduler.java:89)
+	at org.python.pydev.plugin.PydevPlugin$1.run(PydevPlugin.java:209)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.python.pydev.shared_core 4 4 2016-11-04 11:19:33.170
+!MESSAGE Error. returning: 0
+!STACK 0
+java.nio.file.NoSuchFileException: /usr/lib/python2.7/dist-packages/scipy/lib/decorator.py
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:86)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:55)
+	at sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:144)
+	at sun.nio.fs.LinuxFileSystemProvider.readAttributes(LinuxFileSystemProvider.java:99)
+	at java.nio.file.Files.readAttributes(Files.java:1737)
+	at java.nio.file.Files.getLastModifiedTime(Files.java:2266)
+	at org.python.pydev.shared_core.io.FileUtils.lastModified(FileUtils.java:1055)
+	at org.python.pydev.shared_core.io.FileUtils.lastModified(FileUtils.java:1046)
+	at org.python.pydev.shared_core.io.FileUtils.getLastModifiedTimeFromDir(FileUtils.java:884)
+	at org.python.pydev.shared_core.io.FileUtils.getLastModifiedTimeFromDir(FileUtils.java:880)
+	at org.python.pydev.shared_core.path_watch.EventsStackerRunnable$1.run(EventsStackerRunnable.java:127)
+
+!ENTRY org.eclipse.jface 2 0 2016-11-04 11:19:35.308
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-11-04 11:19:35.308
+!MESSAGE A conflict occurred for ALT+SHIFT+D R:
+Binding(ALT+SHIFT+D R,
+	ParameterizedCommand(Command(org.eclipse.rap.ui.launch.RAPLaunchShortcut.debug,Debug RAP Application,
+		Debug RAP Application,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension$LaunchCommandHandler@38c460e8,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+D R,
+	ParameterizedCommand(Command(org.eclipse.wst.server.launchShortcut.debug,Debug on Server,
+		Debug the current selection on a server,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension$LaunchCommandHandler@7a814310,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-11-04 11:19:35.308
+!MESSAGE A conflict occurred for ALT+SHIFT+X R:
+Binding(ALT+SHIFT+X R,
+	ParameterizedCommand(Command(org.eclipse.rap.ui.launch.RAPLaunchShortcut.run,Run RAP Application,
+		Run RAP Application,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension$LaunchCommandHandler@4bbf38b8,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+X R,
+	ParameterizedCommand(Command(org.eclipse.wst.server.launchShortcut.run,Run on Server,
+		Run the current selection on a server,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension$LaunchCommandHandler@4e67cfe1,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2016-11-04 13:00:26.839
+!MESSAGE Project facet wst.web has not been defined. It is used in plugin org.eclipse.jst.common.project.facet.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2016-11-04 13:00:26.843
+!MESSAGE Project facet jpt.jpa has not been defined. It is used in plugin org.eclipse.libra.facet.
+!SESSION 2016-11-04 22:49:48.547 -----------------------------------------------
+eclipse.buildId=debbuild
+java.version=1.8.0_91
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IN
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.python.pydev.shared_core 1 1 2016-11-04 22:50:12.810
+!MESSAGE Unable to track file that does not exist: /usr/local/lib/python2.7/dist-packages/pip-8.1.1-py2.7.egg
+!STACK 0
+java.lang.RuntimeException: Unable to track file that does not exist: /usr/local/lib/python2.7/dist-packages/pip-8.1.1-py2.7.egg
+	at org.python.pydev.shared_core.log.Log.logInfo(Log.java:52)
+	at org.python.pydev.shared_core.path_watch.PathWatch.track(PathWatch.java:316)
+	at org.python.pydev.editor.codecompletion.revisited.SyncSystemModulesManagerScheduler.afterSetInfos(SyncSystemModulesManagerScheduler.java:463)
+	at org.python.pydev.editor.codecompletion.revisited.SyncSystemModulesManagerScheduler.afterSetInfos(SyncSystemModulesManagerScheduler.java:444)
+	at org.python.pydev.editor.codecompletion.revisited.SyncSystemModulesManagerScheduler.registerInterpreterManager(SyncSystemModulesManagerScheduler.java:67)
+	at org.python.pydev.editor.codecompletion.revisited.SyncSystemModulesManagerScheduler.start(SyncSystemModulesManagerScheduler.java:89)
+	at org.python.pydev.plugin.PydevPlugin$1.run(PydevPlugin.java:209)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.python.pydev.shared_core 4 4 2016-11-04 22:50:18.887
+!MESSAGE Error. returning: 0
+!STACK 0
+java.nio.file.NoSuchFileException: /usr/lib/python2.7/dist-packages/scipy/lib/decorator.py
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:86)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:55)
+	at sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:144)
+	at sun.nio.fs.LinuxFileSystemProvider.readAttributes(LinuxFileSystemProvider.java:99)
+	at java.nio.file.Files.readAttributes(Files.java:1737)
+	at java.nio.file.Files.getLastModifiedTime(Files.java:2266)
+	at org.python.pydev.shared_core.io.FileUtils.lastModified(FileUtils.java:1055)
+	at org.python.pydev.shared_core.io.FileUtils.lastModified(FileUtils.java:1046)
+	at org.python.pydev.shared_core.io.FileUtils.getLastModifiedTimeFromDir(FileUtils.java:884)
+	at org.python.pydev.shared_core.io.FileUtils.getLastModifiedTimeFromDir(FileUtils.java:880)
+	at org.python.pydev.shared_core.path_watch.EventsStackerRunnable$1.run(EventsStackerRunnable.java:127)
+
+!ENTRY org.eclipse.jface 2 0 2016-11-04 22:50:36.948
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-11-04 22:50:36.948
+!MESSAGE A conflict occurred for ALT+SHIFT+D R:
+Binding(ALT+SHIFT+D R,
+	ParameterizedCommand(Command(org.eclipse.rap.ui.launch.RAPLaunchShortcut.debug,Debug RAP Application,
+		Debug RAP Application,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension$LaunchCommandHandler@7ef41ca2,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+D R,
+	ParameterizedCommand(Command(org.eclipse.wst.server.launchShortcut.debug,Debug on Server,
+		Debug the current selection on a server,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension$LaunchCommandHandler@6b3f4bd8,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-11-04 22:50:36.948
+!MESSAGE A conflict occurred for ALT+SHIFT+X R:
+Binding(ALT+SHIFT+X R,
+	ParameterizedCommand(Command(org.eclipse.rap.ui.launch.RAPLaunchShortcut.run,Run RAP Application,
+		Run RAP Application,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension$LaunchCommandHandler@3e151e1f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+X R,
+	ParameterizedCommand(Command(org.eclipse.wst.server.launchShortcut.run,Run on Server,
+		Run the current selection on a server,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension$LaunchCommandHandler@d70e9a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2016-11-04 22:50:47.215
+!MESSAGE Project facet wst.web has not been defined. It is used in plugin org.eclipse.jst.common.project.facet.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2016-11-04 22:50:47.218
+!MESSAGE Project facet jpt.jpa has not been defined. It is used in plugin org.eclipse.libra.facet.
+!SESSION 2016-11-07 15:24:36.979 -----------------------------------------------
+eclipse.buildId=debbuild
+java.version=1.8.0_91
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IN
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.jface 2 0 2016-11-07 15:25:00.621
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-11-07 15:25:00.623
+!MESSAGE A conflict occurred for ALT+SHIFT+D R:
+Binding(ALT+SHIFT+D R,
+	ParameterizedCommand(Command(org.eclipse.rap.ui.launch.RAPLaunchShortcut.debug,Debug RAP Application,
+		Debug RAP Application,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension$LaunchCommandHandler@426710f0,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+D R,
+	ParameterizedCommand(Command(org.eclipse.wst.server.launchShortcut.debug,Debug on Server,
+		Debug the current selection on a server,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension$LaunchCommandHandler@5c5a91b4,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-11-07 15:25:00.623
+!MESSAGE A conflict occurred for ALT+SHIFT+X R:
+Binding(ALT+SHIFT+X R,
+	ParameterizedCommand(Command(org.eclipse.rap.ui.launch.RAPLaunchShortcut.run,Run RAP Application,
+		Run RAP Application,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension$LaunchCommandHandler@5e37fb82,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+X R,
+	ParameterizedCommand(Command(org.eclipse.wst.server.launchShortcut.run,Run on Server,
+		Run the current selection on a server,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension$LaunchCommandHandler@59ec7020,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.python.pydev.shared_core 1 1 2016-11-07 15:25:05.131
+!MESSAGE Unable to track file that does not exist: /usr/local/lib/python2.7/dist-packages/pip-8.1.1-py2.7.egg
+!STACK 0
+java.lang.RuntimeException: Unable to track file that does not exist: /usr/local/lib/python2.7/dist-packages/pip-8.1.1-py2.7.egg
+	at org.python.pydev.shared_core.log.Log.logInfo(Log.java:52)
+	at org.python.pydev.shared_core.path_watch.PathWatch.track(PathWatch.java:316)
+	at org.python.pydev.editor.codecompletion.revisited.SyncSystemModulesManagerScheduler.afterSetInfos(SyncSystemModulesManagerScheduler.java:463)
+	at org.python.pydev.editor.codecompletion.revisited.SyncSystemModulesManagerScheduler.afterSetInfos(SyncSystemModulesManagerScheduler.java:444)
+	at org.python.pydev.editor.codecompletion.revisited.SyncSystemModulesManagerScheduler.registerInterpreterManager(SyncSystemModulesManagerScheduler.java:67)
+	at org.python.pydev.editor.codecompletion.revisited.SyncSystemModulesManagerScheduler.start(SyncSystemModulesManagerScheduler.java:89)
+	at org.python.pydev.plugin.PydevPlugin$1.run(PydevPlugin.java:209)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.python.pydev.shared_core 4 4 2016-11-07 15:25:09.402
+!MESSAGE Error. returning: 0
+!STACK 0
+java.nio.file.NoSuchFileException: /usr/lib/python2.7/dist-packages/scipy/lib/decorator.py
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:86)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:55)
+	at sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:144)
+	at sun.nio.fs.LinuxFileSystemProvider.readAttributes(LinuxFileSystemProvider.java:99)
+	at java.nio.file.Files.readAttributes(Files.java:1737)
+	at java.nio.file.Files.getLastModifiedTime(Files.java:2266)
+	at org.python.pydev.shared_core.io.FileUtils.lastModified(FileUtils.java:1055)
+	at org.python.pydev.shared_core.io.FileUtils.lastModified(FileUtils.java:1046)
+	at org.python.pydev.shared_core.io.FileUtils.getLastModifiedTimeFromDir(FileUtils.java:884)
+	at org.python.pydev.shared_core.io.FileUtils.getLastModifiedTimeFromDir(FileUtils.java:880)
+	at org.python.pydev.shared_core.path_watch.EventsStackerRunnable$1.run(EventsStackerRunnable.java:127)
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2016-11-07 15:25:23.838
+!MESSAGE Project facet wst.web has not been defined. It is used in plugin org.eclipse.jst.common.project.facet.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2016-11-07 15:25:23.842
+!MESSAGE Project facet jpt.jpa has not been defined. It is used in plugin org.eclipse.libra.facet.

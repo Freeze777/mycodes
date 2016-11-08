@@ -1,0 +1,143 @@
+import java.util.HashSet;
+import java.util.Scanner;
+import java.util.TreeSet;
+
+public class MagicTicTacToe {
+	static class Cell {
+		char val;
+		int ho = 0, hx = 0;
+		int vo = 0, vx = 0;
+		int ldo = 0, ldx = 0;
+		int rdo = 0, rdx = 0;
+
+		public Cell(char val) {
+			this.val = val;
+		}
+
+	}
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int g = sc.nextInt();
+		while (g-- > 0) {
+			int n, m, k;
+			n = sc.nextInt();
+			m = sc.nextInt();
+			k = sc.nextInt();
+			Cell[][] arr = new Cell[n][m];
+			for (int i = 0; i < arr.length; i++) {
+				String row = sc.next();
+				for (int j = 0; j < row.length(); j++) {
+					arr[i][j] = new Cell(row.charAt(j));
+				}
+			}
+			System.out.println(compute(arr, k, n, m));
+		}
+	}
+
+	private static String compute(Cell[][] arr, int k, int n, int m) {
+
+		TreeSet<Character> winner = new TreeSet<Character>();
+		if (arr[0][0].val == 'O') {
+			arr[0][0].ho = 1;
+			arr[0][0].vo = 1;
+			arr[0][0].ldo = 1;
+			arr[0][0].rdo = 1;
+			if (k == 1)
+				winner.add('O');
+		} else if (arr[0][0].val == 'X') {
+			arr[0][0].hx = 1;
+			arr[0][0].vx = 1;
+			arr[0][0].ldx = 1;
+			arr[0][0].rdx = 1;
+			if (k == 1)
+				winner.add('X');
+		}
+
+		for (int j = 1; j < m; j++) {
+			if (arr[0][j].val == 'O') {
+				if (arr[0][j - 1].val == 'O') {
+					arr[0][j].ho += arr[0][j - 1].ho + 1;
+				}
+				arr[0][j].vo = 1;
+				arr[0][j].ldo = 1;
+				arr[0][j].rdo = 1;
+				if (arr[0][j].ho >= k)
+					winner.add('O');
+
+			} else if (arr[0][j].val == 'X') {
+				if (arr[0][j - 1].val == 'X') {
+					arr[0][j].hx += arr[0][j - 1].hx + 1;
+				}
+				arr[0][j].vx = 1;
+				arr[0][j].ldx = 1;
+				arr[0][j].rdx = 1;
+				if (arr[0][j].hx >= k)
+					winner.add('X');
+			}
+		}
+
+		for (int i = 1; i < n; i++) {
+			for (int j = 0; j < m; j++) {
+				if (arr[i][j].val == 'O') {
+					arr[i][j].ho = 1;
+					arr[i][j].vo = 1;
+					arr[i][j].ldo = 1;
+					arr[i][j].rdo = 1;
+					// vertical
+					if ((i >= 1) && arr[i - 1][j].val == 'O') {
+						arr[i][j].vo += arr[i - 1][j].vo;
+					}
+					// horizontal
+					if ((j >= 1) && arr[i][j - 1].val == 'O') {
+						arr[i][j - 1].ho += arr[i][j - 1].ho;
+					}
+					// right diagonal
+					if ((i >= 1) && (j <= m - 2)
+							&& arr[i - 1][j + 1].val == 'O') {
+						arr[i][j].rdo += arr[i - 1][j + 1].rdo;
+					}
+					// left diagonal
+					if ((i >= 1) && (j >= 1) && arr[i - 1][j - 1].val == 'O') {
+						arr[i][j].ldo += arr[i - 1][j - 1].ldo;
+					}
+					if (arr[i][j].ho >= k || arr[i][j].vo >= k
+							|| arr[i][j].ldo >= k || arr[i][j].rdo >= k)
+						winner.add('O');
+
+				} else if (arr[i][0].val == 'X') {
+					arr[i][j].hx = 1;
+					arr[i][j].vx = 1;
+					arr[i][j].ldx = 1;
+					arr[i][j].rdx = 1;
+					// vertical
+					if ((i >= 1) && arr[i - 1][j].val == 'X') {
+						arr[i][j].vx += arr[i - 1][j].vx;
+					}
+					// horizontal
+					if ((j >= 1) && arr[i][j - 1].val == 'X') {
+						arr[i][j - 1].hx += arr[i][j - 1].hx;
+					}
+					// right diagonal
+					if ((i >= 1) && (j <= m - 2)
+							&& arr[i - 1][j + 1].val == 'X') {
+						arr[i][j].rdx += arr[i - 1][j + 1].rdx;
+					}
+					// left diagonal
+					if ((i >= 1) && (j >= 1) && arr[i - 1][j - 1].val == 'X') {
+						arr[i][j].ldx += arr[i - 1][j - 1].ldx;
+					}
+
+					if (arr[i][j].hx >= k || arr[i][j].vx >= k
+							|| arr[i][j].ldx >= k || arr[i][j].rdx >= k)
+						winner.add('X');
+				}
+			}
+
+		}
+		if(winner.size()==2||winner.isEmpty())
+			return "NONE";
+			char w=winner.pollFirst();
+			return w=='O'?"Firs"
+	}
+}
