@@ -117,13 +117,13 @@ int main(){
 	   	else if(c<smallstep||(c>smallstep && c<longstep)){
 	   		ans=2;
 	   	}
-	   	else{	   		
+	   	else{
 	   		ans=(c/longstep+1);
 	   	}
 
    		cout<<ans<<endl;
-	}  	
-   
-    
+	}
+
+
    return 0;
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="22" version="2.0">
+<workbench progressCount="25" version="2.0">
 <workbenchAdvisor/>
 <window height="686" maximized="true" width="549" x="65" y="24">
 <fastViewData fastViewLocation="1024"/>
@@ -40,28 +40,13 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
-<part id="1"/>
-<part id="2"/>
-<part id="3"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" partName="Main.java" path="/home/qwerty/Desktop/mycodes/Workspace/AlgoCodes/src/Main.java" title="Main.java" tooltip="AlgoCodes/src/Main.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/AlgoCodes/src/Main.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="512" selectionTopPixel="259"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Template.java" partName="Template.java" path="/home/qwerty/Desktop/mycodes/Workspace/AlgoCodes/src/Template.java" title="Template.java" tooltip="AlgoCodes/src/Template.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/AlgoCodes/src/Template.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="2989" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CatalanNumbers.java" partName="CatalanNumbers.java" path="/home/qwerty/Desktop/mycodes/Workspace/AlgoCodes/src/hacker/rank/CatalanNumbers.java" title="CatalanNumbers.java" tooltip="AlgoCodes/src/hacker/rank/CatalanNumbers.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/AlgoCodes/src/hacker/rank/CatalanNumbers.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="3917" selectionOffset="0" selectionTopPixel="379"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SuperValidBracketSequence.java" partName="SuperValidBracketSequence.java" path="/home/qwerty/Desktop/mycodes/Workspace/AlgoCodes/src/SuperValidBracketSequence.java" title="SuperValidBracketSequence.java" tooltip="AlgoCodes/src/SuperValidBracketSequence.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/AlgoCodes/src/SuperValidBracketSequence.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="813" selectionTopPixel="258"/>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GaintNumbers.java" partName="GaintNumbers.java" path="/home/qwerty/Desktop/mycodes/Workspace/AlgoCodes/src/GaintNumbers.java" title="GaintNumbers.java" tooltip="AlgoCodes/src/GaintNumbers.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/AlgoCodes/src/GaintNumbers.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="556" selectionTopPixel="273"/>
 </editor>
 </editors>
 <views>
@@ -102,10 +87,6 @@
 <view id="org.eclipse.cdt.visualizer.view" partName="Visualizer"/>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<expanded>
-<category IMemento.internal.id="Errors"/>
-<category IMemento.internal.id="Warnings"/>
-</expanded>
 <columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="261" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -526,10 +507,8 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AlgoCodes/src/hacker/rank/MagicTicTacToe.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AlgoCodes/src/hacker/rank/CatalanNumbers.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AlgoCodes/src/SuperValidBracketSequence.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AlgoCodes/src/GaintNumbers.java"/>
 </editors>
-<item historyLabel="SpiralMessage.java" index="1">
-<position info="not_deleted" x="1574" y="0"/>
-</item>
 <item historyLabel="SpiralMessage.java" index="1">
 <position info="not_deleted" x="1214" y="0"/>
 </item>
@@ -674,8 +653,11 @@
 <item historyLabel="CatalanNumbers.java" index="5">
 <position info="not_deleted" x="0" y="3917"/>
 </item>
-<item active="true" historyLabel="SuperValidBracketSequence.java" index="6">
-<position/>
+<item historyLabel="SuperValidBracketSequence.java" index="6">
+<position info="not_deleted" x="946" y="0"/>
+</item>
+<item active="true" historyLabel="GaintNumbers.java" index="7">
+<position info="not_deleted" x="906" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -694,6 +676,9 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GaintNumbers.java" tooltip="AlgoCodes/src/GaintNumbers.java">
+<persistable path="/AlgoCodes/src/GaintNumbers.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SuperValidBracketSequence.java" tooltip="AlgoCodes/src/SuperValidBracketSequence.java">
 <persistable path="/AlgoCodes/src/SuperValidBracketSequence.java"/>
 </file>
@@ -735,9 +720,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ShashankAndPalindrome.java" tooltip="AlgoCodes/src/ShashankAndPalindrome.java">
 <persistable path="/AlgoCodes/src/ShashankAndPalindrome.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BFS.java" tooltip="AlgoCodes/src/algo/graph/BFS.java">
-<persistable path="/AlgoCodes/src/algo/graph/BFS.java"/>
 </file>
 </mruList>
 </workbench>
