@@ -1,0 +1,10 @@
+package algo.query.SparseTable;
+
+public class RMQSparseTable {
+	static int MAXN=(int)1e6+1;
+	static int LOGN=20;	
+	static int[][] table=new int[][];
+	public static void main(String[] args) {
+
+	}
+}

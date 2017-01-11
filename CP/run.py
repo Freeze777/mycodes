@@ -10,3 +10,8 @@ from fractions import gcd
 #list(map(int,input().split()))
 #int('10010',2)
 #resource.setrlimit(resource.RLIMIT_STACK, (2**29,-1))
+g=int(input())
+while g:
+    n=int(input())
+
+    g-=1

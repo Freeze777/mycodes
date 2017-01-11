@@ -1,0 +1,8 @@
+package algo.query.SparseTable;
+
+public class RMQSparseTable {
+	static int[][] table;
+	public static void main(String[] args) {
+
+	}
+}

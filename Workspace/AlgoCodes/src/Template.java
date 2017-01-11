@@ -9,7 +9,7 @@ public class Template {
 	
 
 	private static void solve(FastScanner sc, PrintStream out) {
-
+		System.out.println(~10);
 	}
 
 	public static void main(String[] args) throws IOException {

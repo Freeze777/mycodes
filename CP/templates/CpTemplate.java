@@ -25,6 +25,9 @@ public class CPTemplate {
 		else
 			return gcd(y, x % y);
 	}
+	public static long lcm(long x, long y) {
+		return x / gcd(y, x % y) * y;
+	}
 
 	public static long pow(long n, long p, long m) {
 		long result = 1;

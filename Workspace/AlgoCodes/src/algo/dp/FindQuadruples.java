@@ -46,7 +46,7 @@ public class FindQuadruples {
 				}
 			}
 		}
-		return dp[s][4];
+		return dp[s][k];
 	}
 
 	private static long getCountAllAbove1(int s) {

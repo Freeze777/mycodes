@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class CoinChangeNumWays {
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
+		/*Scanner sc = new Scanner(System.in);
 		int t = sc.nextInt();
 		while (t-- > 0) {
 			int n = sc.nextInt();
@@ -14,7 +14,8 @@ public class CoinChangeNumWays {
 			}
 			int amt = sc.nextInt();
 			System.out.println(numWays(coins, amt));
-		}
+		}*/
+		System.out.println(numWays(new int[]{1,2},4));
 	}
 	// O(mn) time , O(amt) space
 	public static long numWays(int[] coins, int amt) {

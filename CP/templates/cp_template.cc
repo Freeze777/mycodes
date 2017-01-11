@@ -45,7 +45,6 @@ typedef vector<pii> vii;
 #define UNIQUE(V)           (V).erase(unique((V).begin(),(V).end()),(V).end())
 #define FILL(a,v)           memset(a, v, sizeof(a))
 #define RUNTIME             cout<< "TIME TAKEN:" << (clock() / CLOCKS_PER_SEC) <<"sec"<< endl;
-//#define INT(s,n)            if ( ! (istringstream(s) >> n) ) n = 0;
 
 #define SQR(n)                ( n * n )
 #define POPCOUNT __builtin_popcountll
@@ -67,7 +66,7 @@ inline ll PMOD(ll a,ll m){a%=m; return a>=0?a:a+m;}
 inline ll INT(string s){SS ss(s);ll x;ss >> x;return x;}
 
 template<class T> T GCD(T a,T b){if(b == 0)return a;return GCD(b,a%b);}
-template<class T> T LCM(T a, T b ){return (a*b)/GCD(a,b);}
+template<class T> T LCM(T a, T b ){return a / GCD(a,b) * b;} // avoids overflow issues
 template < class T > string STR( T n ){SS x;x << n;return x.str();}
 
 /*string split() function*/

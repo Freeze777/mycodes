@@ -1,115 +1,119 @@
-import java.awt.Polygon;
-import java.awt.Shape;
-import java.awt.geom.AffineTransform;
-import java.awt.geom.Area;
-import java.awt.geom.Ellipse2D;
-import java.awt.geom.Point2D;
-import java.awt.geom.Rectangle2D;
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.io.PrintStream;
-import java.util.StringTokenizer;
+import java.util.Scanner;
 
 public class run {
 	static long mod = 1000000007;
+	static int max = (int) 1e6 + 1;
+	static int[] sp = new int[max];
+	static boolean[] v = new boolean[max];
 
-	public static Ellipse2D getEllipseFromCenter(double x, double y,
-			double width, double height) {
-		double newX = x - width / 2.0;
-		double newY = y - height / 2.0;
-
-		Ellipse2D ellipse = new Ellipse2D.Double(newX, newY, width, height);
-
-		return ellipse;
+	static long isSquare(long x) {
+		long sq = (long) (Math.sqrt(x) + 0.5);
+		if (sq * sq == x)
+			return sq;
+		return 0;
 	}
 
-	public static Shape makeEllipse(int x1, int y1, int x2, int y2,
-			double majorAxis) {
-		// Create foci points
-		Point2D f1 = new Point2D.Double(x1, y1);
-		Point2D f2 = new Point2D.Double(x2, y2);
-
-		// Calculate ellipse characteristics
-		double a = majorAxis / 2.0;
-		double c = f1.distance(f2) / 2.0;
-		double b = Math.sqrt(a * a - c * c);
-		//System.out.println(a + " " + b);
-
-		Point2D centre = new Point2D.Double((x1 + x2) / 2.0, (y1 + y2) / 2.0);
-
-		/*double newX = centre.getX() - a;
-		double newY = centre.getY() - b;
-
-		Ellipse2D ellipse = new Ellipse2D.Double(newX, newY, 2 * a, 2 * b);
-		return ellipse;*/
-		
-
-		 // Create a transform to rotate and translate the ellipse
-        double theta = Math.atan2 (y2 - y1, x2 - x1);
-        AffineTransform trans = new AffineTransform();
-        trans.translate (centre.getX(), centre.getY());
-        trans.rotate(theta);
-
-        // Create an ellipse with correct size but origin at centre 
-        Ellipse2D tmpEllipse = new Ellipse2D.Double (-a, -b, 2 * a, 2 * b);
-
-        // Translate and rotate it to where it should be
-        Shape ellipse = trans.createTransformedShape (tmpEllipse);
-
-        return ellipse;
+	static long isCube(long x) {
+		long cb = (long) (Math.cbrt(x) + 0.5);
+		if (cb * cb * cb == x)
+			return cb;
+		return 0;
 	}
 
-	private static void solve(FastScanner sc, PrintStream out) {
-		int n = sc.nextInt();
-		int v = sc.nextInt();
-		int x[]=new int[v];
-		int y[]=new int[v];
-		
-		for (int i = v-1; i>=0; i--) {
-			x[i] = sc.nextInt();
-			y[i] = sc.nextInt();
-		}
-		Polygon p = new Polygon(x,y,v);
-		Area commonArea = new Area(p);
-		n--;
-		while (n-- > 0) {
-			 v = sc.nextInt();
-			 x=new int[v];
-			 y=new int[v];
-			
-			for (int i = v-1; i>=0; i--) {
-				x[i] = sc.nextInt();
-				y[i] = sc.nextInt();
+	static long isFourthPower(long x) {
+		long fp = isSquare(x);
+		if (fp == 0)
+			return 0;
+		fp = isSquare(fp);
+		if (fp == 0)
+			return 0;
+		return fp;
+
+	}
+
+	static void sieve() {
+		sp[1] = 1;
+		for (int i = 2; i < max; i += 2)
+			sp[i] = 2;
+		for (int i = 3; i < max; i += 2) {
+			if (!v[i]) {
+				sp[i] = i;
+				for (long j = i; (j * i) < max; j += 2) {
+					int idx = (int) (j * i);
+					if (!v[idx]) {
+						v[idx] = true;
+						sp[idx] = i;
+					}
+				}
 			}
-			p = new Polygon(x,y,v);
-			Area pArea = new Area(p);
-			commonArea.intersect(pArea);
 		}
-		// returns the rectangle-- (bottom left corner(x,y),width, hieght)
-		//System.out.println(commonArea.getBounds());
+	}
 
-		int m = sc.nextInt();
-		while (m-- > 0) {
-			int f1x = sc.nextInt();
-			int f1y = sc.nextInt();
-			int f2x = sc.nextInt();
-			int f2y = sc.nextInt();
-			int majorAxis = sc.nextInt() * 2;
-			Area eArea = new Area(makeEllipse(f1x, f1y, f2x, f2y, majorAxis*1.0000000001));
-			commonArea.intersect(eArea);
+	private static boolean isSquareSum(int sq_sum) {
+		if(sq_sum==0)return false;
+		if (isSquare(sq_sum) != 0)
+			return false;
+		while (sq_sum > 1) {
+			int count = 0, p = sp[sq_sum];
+			while (p!=0 && sq_sum % p == 0) {
+				sq_sum /= p;
+				count++;
+			}
+			if (p % 4 == 3 && count % 2 == 1)
+				return false;
 		}
-		// Ellipse2D e=new Ellipse2D.Double(x, y, w, h)
-		Rectangle2D ans=commonArea.getBounds2D();
-		out.printf("%.9f\n",ans.getCenterX());
-		out.printf("%.9f\n",ans.getCenterY());
-		//System.out.println(1.000343253456346455540001);
+
+		return true;
+	}
+
+	private static void solve(Scanner sc, PrintStream out) {
+		sieve();
+
+		long f2, f3, f4, l, r, q, a = 0, b = 0, c = 0, cmax = 15000;
+		q = sc.nextLong();
+		while (q-- > 0) {
+			f2 = sc.nextLong();
+			f3 = sc.nextLong();
+			f4 = sc.nextLong();
+			l = sc.nextLong();
+			r = sc.nextLong();
+			for (long tc = 1; tc <= cmax; tc++) {
+				int sq_sum = (int) (f2 - tc * tc);
+				if (sq_sum >= 1 && isSquareSum(sq_sum)) {
+					for (long tb =  tc; tb <= cmax - tc; tb++) {
+
+						long sq = f2 - tc * tc - tb * tb;
+						long cb = f3 - tc * tc * tc - tb * tb * tb;
+						long fp = f4 - tc * tc * tc * tc - tb * tb * tb * tb;
+						if (sq >= 1 && cb >= 1 && fp >= 1 && (isCube(cb) != 0)
+								&& (isFourthPower(fp) != 0)) {
+							a = isSquare(sq);
+							b = tb;
+							c = tc;
+							break;
+						}
+
+					}
+				}
+			}
+			
+			long ans = 0;
+			for (long i = l; i <= r; i++) {
+				ans += pow(a, i, mod) % mod;
+				ans += pow(b, i, mod) % mod;
+				ans += pow(c, i, mod) % mod;
+			}
+
+			System.out.println(ans);
+
+		}
 
 	}
 
 	public static void main(String[] args) throws IOException {
-		FastScanner in = new FastScanner(System.in);
+		Scanner in = new Scanner(System.in);
 		PrintStream out = System.out;
 		solve(in, out);
 		in.close();
@@ -140,131 +144,6 @@ public class run {
 				n %= m;
 		}
 		return result;
-	}
-
-	static class Pair implements Comparable<Pair> {
-		int a, b;
-
-		Pair(int a, int b) {
-			this.a = a;
-			this.b = b;
-		}
-
-		public int compareTo(Pair o) {
-			// TODO Auto-generated method stub
-			if (this.a != o.a)
-				return Integer.compare(this.a, o.a);
-			else
-				return Integer.compare(this.b, o.b);
-			// return 0;
-		}
-
-		public boolean equals(Object o) {
-			if (o instanceof Pair) {
-				Pair p = (Pair) o;
-				return p.a == a && p.b == b;
-			}
-			return false;
-		}
-
-		public int hashCode() {
-			return new Integer(a).hashCode() * 31 + new Integer(b).hashCode();
-		}
-	}
-
-	static class FastScanner {
-		BufferedReader reader;
-		StringTokenizer st;
-
-		FastScanner(InputStream stream) {
-			reader = new BufferedReader(new InputStreamReader(stream));
-			st = null;
-		}
-
-		String next() {
-			while (st == null || !st.hasMoreTokens()) {
-				try {
-					String line = reader.readLine();
-					if (line == null) {
-						return null;
-					}
-					st = new StringTokenizer(line);
-				} catch (Exception e) {
-					throw new RuntimeException();
-				}
-			}
-			return st.nextToken();
-		}
-
-		String nextLine() {
-			String s = null;
-			try {
-				s = reader.readLine();
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-			return s;
-		}
-
-		int nextInt() {
-			return Integer.parseInt(next());
-		}
-
-		long nextLong() {
-			return Long.parseLong(next());
-		}
-
-		double nextDouble() {
-			return Double.parseDouble(next());
-		}
-
-		char nextChar() {
-			return next().charAt(0);
-		}
-
-		int[] nextIntArray(int n) {
-			int[] arr = new int[n];
-			int i = 0;
-			while (i < n) {
-				arr[i++] = nextInt();
-			}
-			return arr;
-		}
-
-		long[] nextLongArray(int n) {
-			long[] arr = new long[n];
-			int i = 0;
-			while (i < n) {
-				arr[i++] = nextLong();
-			}
-			return arr;
-		}
-
-		int[] nextIntArrayOneBased(int n) {
-			int[] arr = new int[n + 1];
-			int i = 1;
-			while (i <= n) {
-				arr[i++] = nextInt();
-			}
-			return arr;
-		}
-
-		long[] nextLongArrayOneBased(int n) {
-			long[] arr = new long[n + 1];
-			int i = 1;
-			while (i <= n) {
-				arr[i++] = nextLong();
-			}
-			return arr;
-		}
-
-		void close() {
-			try {
-				reader.close();
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-		}
 	}
 
 }

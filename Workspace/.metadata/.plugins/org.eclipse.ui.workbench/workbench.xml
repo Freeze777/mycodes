@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="25" version="2.0">
+<workbench progressCount="22" version="2.0">
 <workbenchAdvisor/>
 <window height="686" maximized="true" width="549" x="65" y="24">
 <fastViewData fastViewLocation="1024"/>
@@ -28,7 +28,7 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="232" y="30"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.cdt.ui.editor.CEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.cdt.ui.editor.CEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.python.pydev.editor.PythonEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -40,13 +40,98 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+<part id="6"/>
+<part id="7"/>
+<part id="8"/>
+<part id="9"/>
+<part id="10"/>
+<part id="11"/>
+<part id="12"/>
+<part id="13"/>
+<part id="14"/>
+<part id="15"/>
+<part id="16"/>
+<part id="17"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GaintNumbers.java" partName="GaintNumbers.java" path="/home/qwerty/Desktop/mycodes/Workspace/AlgoCodes/src/GaintNumbers.java" title="GaintNumbers.java" tooltip="AlgoCodes/src/GaintNumbers.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/AlgoCodes/src/GaintNumbers.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="556" selectionTopPixel="273"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RPLN.java" partName="RPLN.java" path="/home/qwerty/Desktop/mycodes/Workspace/AlgoCodes/src/spoj/RPLN.java" title="RPLN.java" tooltip="AlgoCodes/src/spoj/RPLN.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/AlgoCodes/src/spoj/RPLN.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="2875" selectionOffset="0" selectionTopPixel="207"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Clouds.java" partName="Clouds.java" path="/home/qwerty/Desktop/mycodes/Workspace/AlgoCodes/src/algo/dp/Clouds.java" title="Clouds.java" tooltip="AlgoCodes/src/algo/dp/Clouds.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/AlgoCodes/src/algo/dp/Clouds.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="155"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CoinChangeMinimumCoins.java" partName="CoinChangeMinimumCoins.java" path="/home/qwerty/Desktop/mycodes/Workspace/AlgoCodes/src/algo/dp/CoinChangeMinimumCoins.java" title="CoinChangeMinimumCoins.java" tooltip="AlgoCodes/src/algo/dp/CoinChangeMinimumCoins.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/AlgoCodes/src/algo/dp/CoinChangeMinimumCoins.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="569"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BuildingBridges.java" partName="BuildingBridges.java" path="/home/qwerty/Desktop/mycodes/Workspace/AlgoCodes/src/algo/dp/BuildingBridges.java" title="BuildingBridges.java" tooltip="AlgoCodes/src/algo/dp/BuildingBridges.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/AlgoCodes/src/algo/dp/BuildingBridges.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="647"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CoinChangeNumWays.java" partName="CoinChangeNumWays.java" path="/home/qwerty/Desktop/mycodes/Workspace/AlgoCodes/src/algo/dp/CoinChangeNumWays.java" title="CoinChangeNumWays.java" tooltip="AlgoCodes/src/algo/dp/CoinChangeNumWays.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/AlgoCodes/src/algo/dp/CoinChangeNumWays.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="290"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CountPossibleDecodings.java" partName="CountPossibleDecodings.java" path="/home/qwerty/Desktop/mycodes/Workspace/AlgoCodes/src/algo/dp/CountPossibleDecodings.java" title="CountPossibleDecodings.java" tooltip="AlgoCodes/src/algo/dp/CountPossibleDecodings.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/AlgoCodes/src/algo/dp/CountPossibleDecodings.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="984"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FindQuadruples.java" partName="FindQuadruples.java" path="/home/qwerty/Desktop/mycodes/Workspace/AlgoCodes/src/algo/dp/FindQuadruples.java" title="FindQuadruples.java" tooltip="AlgoCodes/src/algo/dp/FindQuadruples.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/AlgoCodes/src/algo/dp/FindQuadruples.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1269" selectionTopPixel="125"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="IntegerBreak.java" partName="IntegerBreak.java" path="/home/qwerty/Desktop/mycodes/Workspace/AlgoCodes/src/algo/dp/IntegerBreak.java" title="IntegerBreak.java" tooltip="AlgoCodes/src/algo/dp/IntegerBreak.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/AlgoCodes/src/algo/dp/IntegerBreak.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="KnapSackUnbounded.java" partName="KnapSackUnbounded.java" path="/home/qwerty/Desktop/mycodes/Workspace/AlgoCodes/src/algo/dp/KnapSackUnbounded.java" title="KnapSackUnbounded.java" tooltip="AlgoCodes/src/algo/dp/KnapSackUnbounded.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/AlgoCodes/src/algo/dp/KnapSackUnbounded.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="545"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LargestSubMatrixOf1s.java" partName="LargestSubMatrixOf1s.java" path="/home/qwerty/Desktop/mycodes/Workspace/AlgoCodes/src/algo/dp/LargestSubMatrixOf1s.java" title="LargestSubMatrixOf1s.java" tooltip="AlgoCodes/src/algo/dp/LargestSubMatrixOf1s.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/AlgoCodes/src/algo/dp/LargestSubMatrixOf1s.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LargestSubSquareMatrixOf1s.java" partName="LargestSubSquareMatrixOf1s.java" path="/home/qwerty/Desktop/mycodes/Workspace/AlgoCodes/src/algo/dp/LargestSubSquareMatrixOf1s.java" title="LargestSubSquareMatrixOf1s.java" tooltip="AlgoCodes/src/algo/dp/LargestSubSquareMatrixOf1s.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/AlgoCodes/src/algo/dp/LargestSubSquareMatrixOf1s.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LongestCommonSubsequence.java" partName="LongestCommonSubsequence.java" path="/home/qwerty/Desktop/mycodes/Workspace/AlgoCodes/src/algo/dp/LongestCommonSubsequence.java" title="LongestCommonSubsequence.java" tooltip="AlgoCodes/src/algo/dp/LongestCommonSubsequence.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/AlgoCodes/src/algo/dp/LongestCommonSubsequence.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LongestIncreasingSubsequence.java" partName="LongestIncreasingSubsequence.java" path="/home/qwerty/Desktop/mycodes/Workspace/AlgoCodes/src/algo/dp/LongestIncreasingSubsequence.java" title="LongestIncreasingSubsequence.java" tooltip="AlgoCodes/src/algo/dp/LongestIncreasingSubsequence.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/AlgoCodes/src/algo/dp/LongestIncreasingSubsequence.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LongestSubstringWithoutRepeatingCharacters.java" partName="LongestSubstringWithoutRepeatingCharacters.java" path="/home/qwerty/Desktop/mycodes/Workspace/AlgoCodes/src/algo/dp/LongestSubstringWithoutRepeatingCharacters.java" title="LongestSubstringWithoutRepeatingCharacters.java" tooltip="AlgoCodes/src/algo/dp/LongestSubstringWithoutRepeatingCharacters.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/AlgoCodes/src/algo/dp/LongestSubstringWithoutRepeatingCharacters.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MaximumSubArrayAndSubsequence.java" partName="MaximumSubArrayAndSubsequence.java" path="/home/qwerty/Desktop/mycodes/Workspace/AlgoCodes/src/algo/dp/MaximumSubArrayAndSubsequence.java" title="MaximumSubArrayAndSubsequence.java" tooltip="AlgoCodes/src/algo/dp/MaximumSubArrayAndSubsequence.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/AlgoCodes/src/algo/dp/MaximumSubArrayAndSubsequence.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MaxNumberOfAUsingNKeyStrokes.java" partName="MaxNumberOfAUsingNKeyStrokes.java" path="/home/qwerty/Desktop/mycodes/Workspace/AlgoCodes/src/algo/dp/MaxNumberOfAUsingNKeyStrokes.java" title="MaxNumberOfAUsingNKeyStrokes.java" tooltip="AlgoCodes/src/algo/dp/MaxNumberOfAUsingNKeyStrokes.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/AlgoCodes/src/algo/dp/MaxNumberOfAUsingNKeyStrokes.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="52"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="run.java" partName="run.java" path="/home/qwerty/Desktop/mycodes/Workspace/AlgoCodes/src/run.java" title="run.java" tooltip="AlgoCodes/src/run.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/AlgoCodes/src/run.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="310"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Template.java" partName="Template.java" path="/home/qwerty/Desktop/mycodes/Workspace/AlgoCodes/src/Template.java" title="Template.java" tooltip="AlgoCodes/src/Template.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/AlgoCodes/src/Template.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="236" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -500,164 +585,181 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AlgoCodes/src/Main.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AlgoCodes/src/SpiralMessage.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AlgoCodes/src/algo/matrix/SpiralMessage.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AlgoCodes/src/MagicTicTacToe.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AlgoCodes/src/hacker/rank/MagicTicTacToe.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AlgoCodes/src/hacker/rank/CatalanNumbers.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AlgoCodes/src/SuperValidBracketSequence.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AlgoCodes/src/GaintNumbers.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AlgoCodes/src/DQUERY.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/AlgoCodes/src/input.txt"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/AlgoCodes/src/input.txt"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AlgoCodes/src/algo/query/SparseTable/RMQSparseTable.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/AlgoCodes/src/algo/query/SparseTable/input.txt"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AlgoCodes/src/spoj/RMQSparseTable.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AlgoCodes/src/spoj/RPLN.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AlgoCodes/src/algo/dp/Clouds.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AlgoCodes/src/algo/dp/CoinChangeMinimumCoins.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AlgoCodes/src/algo/dp/BuildingBridges.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AlgoCodes/src/algo/dp/BalancedPartitioning.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AlgoCodes/src/algo/dp/CoinChangeNumWays.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AlgoCodes/src/algo/dp/CountPossibleDecodings.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AlgoCodes/src/algo/dp/FindQuadruples.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AlgoCodes/src/algo/dp/IntegerBreak.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AlgoCodes/src/algo/dp/KnapSackUnbounded.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AlgoCodes/src/algo/dp/LargestSubMatrixOf1s.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AlgoCodes/src/algo/dp/LargestSubSquareMatrixOf1s.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AlgoCodes/src/algo/dp/LongestCommonSubsequence.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AlgoCodes/src/algo/dp/LongestIncreasingSubsequence.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AlgoCodes/src/algo/dp/LongestSubstringWithoutRepeatingCharacters.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AlgoCodes/src/algo/dp/MaximumSubArrayAndSubsequence.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AlgoCodes/src/algo/dp/MaxNumberOfAUsingNKeyStrokes.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AlgoCodes/src/run.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AlgoCodes/src/Template.java"/>
 </editors>
-<item historyLabel="SpiralMessage.java" index="1">
-<position info="not_deleted" x="1214" y="0"/>
+<item historyLabel="DQUERY.java" index="0">
+<position info="not_deleted" x="1697" y="0"/>
 </item>
-<item historyLabel="SpiralMessage.java" index="1">
-<position info="not_deleted" x="1283" y="0"/>
+<item historyLabel="DQUERY.java" index="0">
+<position info="not_deleted" x="2001" y="20"/>
 </item>
-<item historyLabel="SpiralMessage.java" index="1">
-<position info="not_deleted" x="1285" y="0"/>
-</item>
-<item historyLabel="SpiralMessage.java" index="1">
-<position info="not_deleted" x="1558" y="0"/>
-</item>
-<item historyLabel="SpiralMessage.java" index="1">
-<position info="not_deleted" x="1339" y="0"/>
-</item>
-<item historyLabel="SpiralMessage.java" index="1">
-<position info="not_deleted" x="1294" y="0"/>
-</item>
-<item historyLabel="SpiralMessage.java" index="1">
-<position info="not_deleted" x="1558" y="0"/>
-</item>
-<item historyLabel="SpiralMessage.java" index="1">
-<position info="not_deleted" x="1465" y="0"/>
-</item>
-<item historyLabel="SpiralMessage.java" index="1">
-<position info="not_deleted" x="1556" y="0"/>
-</item>
-<item historyLabel="SpiralMessage.java" index="2">
-<position info="not_deleted" x="8" y="0"/>
-</item>
-<item historyLabel="Main.java" index="0">
-<position info="not_deleted" x="512" y="0"/>
-</item>
-<item historyLabel="MagicTicTacToe.java" index="3">
-<position info="not_deleted" x="277" y="0"/>
-</item>
-<item historyLabel="MagicTicTacToe.java" index="3">
-<position info="not_deleted" x="695" y="0"/>
-</item>
-<item historyLabel="MagicTicTacToe.java" index="3">
-<position info="not_deleted" x="715" y="0"/>
-</item>
-<item historyLabel="MagicTicTacToe.java" index="3">
-<position info="not_deleted" x="937" y="0"/>
-</item>
-<item historyLabel="MagicTicTacToe.java" index="3">
-<position info="not_deleted" x="883" y="0"/>
-</item>
-<item historyLabel="MagicTicTacToe.java" index="3">
-<position info="not_deleted" x="815" y="1"/>
-</item>
-<item historyLabel="MagicTicTacToe.java" index="3">
-<position info="not_deleted" x="829" y="0"/>
-</item>
-<item historyLabel="MagicTicTacToe.java" index="3">
-<position info="not_deleted" x="826" y="0"/>
-</item>
-<item historyLabel="MagicTicTacToe.java" index="3">
-<position info="not_deleted" x="877" y="0"/>
-</item>
-<item historyLabel="MagicTicTacToe.java" index="3">
-<position info="not_deleted" x="931" y="0"/>
-</item>
-<item historyLabel="MagicTicTacToe.java" index="3">
-<position info="not_deleted" x="1932" y="0"/>
-</item>
-<item historyLabel="MagicTicTacToe.java" index="3">
-<position info="not_deleted" x="1396" y="0"/>
-</item>
-<item historyLabel="MagicTicTacToe.java" index="3">
+<item historyLabel="DQUERY.java" index="0">
 <position/>
 </item>
-<item historyLabel="MagicTicTacToe.java" index="3">
-<position info="not_deleted" x="1094" y="0"/>
-</item>
-<item historyLabel="MagicTicTacToe.java" index="3">
-<position info="not_deleted" x="1219" y="0"/>
-</item>
-<item historyLabel="MagicTicTacToe.java" index="3">
+<item historyLabel="DQUERY.java" index="0">
 <position/>
 </item>
-<item historyLabel="MagicTicTacToe.java" index="3">
-<position info="not_deleted" x="1444" y="0"/>
+<item historyLabel="DQUERY.java" index="0">
+<position info="not_deleted" x="1684" y="0"/>
 </item>
-<item historyLabel="MagicTicTacToe.java" index="3">
-<position info="not_deleted" x="1063" y="0"/>
-</item>
-<item historyLabel="MagicTicTacToe.java" index="3">
-<position info="not_deleted" x="1197" y="0"/>
-</item>
-<item historyLabel="MagicTicTacToe.java" index="3">
-<position info="not_deleted" x="1219" y="0"/>
-</item>
-<item historyLabel="MagicTicTacToe.java" index="3">
-<position info="not_deleted" x="3339" y="0"/>
-</item>
-<item historyLabel="MagicTicTacToe.java" index="3">
-<position info="not_deleted" x="3708" y="0"/>
-</item>
-<item historyLabel="MagicTicTacToe.java" index="3">
-<position info="not_deleted" x="3820" y="0"/>
-</item>
-<item historyLabel="MagicTicTacToe.java" index="3">
-<position info="not_deleted" x="3683" y="0"/>
-</item>
-<item historyLabel="MagicTicTacToe.java" index="3">
-<position info="not_deleted" x="3570" y="1"/>
-</item>
-<item historyLabel="MagicTicTacToe.java" index="3">
-<position info="not_deleted" x="3651" y="0"/>
-</item>
-<item historyLabel="MagicTicTacToe.java" index="3">
-<position info="not_deleted" x="3657" y="0"/>
-</item>
-<item historyLabel="MagicTicTacToe.java" index="3">
-<position info="not_deleted" x="3555" y="0"/>
-</item>
-<item historyLabel="MagicTicTacToe.java" index="4">
-<position info="not_deleted" x="153" y="0"/>
-</item>
-<item historyLabel="Main.java" index="0">
-<position info="not_deleted" x="512" y="0"/>
-</item>
-<item historyLabel="CatalanNumbers.java" index="5">
-<position info="not_deleted" x="736" y="0"/>
-</item>
-<item historyLabel="SuperValidBracketSequence.java" index="6">
+<item historyLabel="input.txt" index="1">
 <position/>
 </item>
-<item historyLabel="CatalanNumbers.java" index="5">
-<position info="not_deleted" x="303" y="29"/>
-</item>
-<item historyLabel="SuperValidBracketSequence.java" index="6">
+<item historyLabel="DQUERY.java" index="0">
 <position/>
 </item>
-<item historyLabel="CatalanNumbers.java" index="5">
-<position info="not_deleted" x="743" y="0"/>
+<item historyLabel="DQUERY.java" index="0">
+<position/>
 </item>
-<item historyLabel="SuperValidBracketSequence.java" index="6">
-<position info="not_deleted" x="381" y="0"/>
+<item historyLabel="DQUERY.java" index="0">
+<position/>
 </item>
-<item historyLabel="CatalanNumbers.java" index="5">
-<position info="not_deleted" x="0" y="3917"/>
+<item historyLabel="DQUERY.java" index="0">
+<position/>
 </item>
-<item historyLabel="SuperValidBracketSequence.java" index="6">
-<position info="not_deleted" x="946" y="0"/>
+<item historyLabel="input.txt" index="1">
+<position info="not_deleted" x="1" y="0"/>
 </item>
-<item active="true" historyLabel="GaintNumbers.java" index="7">
-<position info="not_deleted" x="906" y="0"/>
+<item historyLabel="DQUERY.java" index="0">
+<position info="not_deleted" x="1672" y="0"/>
+</item>
+<item historyLabel="DQUERY.java" index="0">
+<position info="not_deleted" x="1688" y="0"/>
+</item>
+<item historyLabel="input.txt" index="1">
+<position info="not_deleted" x="0" y="25"/>
+</item>
+<item historyLabel="DQUERY.java" index="0">
+<position info="not_deleted" x="1688" y="0"/>
+</item>
+<item historyLabel="DQUERY.java" index="0">
+<position info="not_deleted" x="1999" y="22"/>
+</item>
+<item historyLabel="DQUERY.java" index="0">
+<position/>
+</item>
+<item historyLabel="input.txt" index="1">
+<position info="not_deleted" x="0" y="25"/>
+</item>
+<item historyLabel="DQUERY.java" index="0">
+<position/>
+</item>
+<item historyLabel="DQUERY.java" index="0">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="input.txt" index="2">
+<position info="not_deleted" x="0" y="25"/>
+</item>
+<item historyLabel="RMQSparseTable.java" index="3">
+<position info="not_deleted" x="364" y="0"/>
+</item>
+<item historyLabel="input.txt" index="4">
+<position info="not_deleted" x="125" y="0"/>
+</item>
+<item historyLabel="RMQSparseTable.java" index="3">
+<position info="not_deleted" x="0" y="3370"/>
+</item>
+<item historyLabel="RMQSparseTable.java" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="RPLN.java" index="6">
+<position info="not_deleted" x="1254" y="0"/>
+</item>
+<item historyLabel="RMQSparseTable.java" index="3">
+<position info="not_deleted" x="31" y="0"/>
+</item>
+<item historyLabel="input.txt" index="4">
+<position info="not_deleted" x="125" y="0"/>
+</item>
+<item historyLabel="RPLN.java" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Clouds.java" index="7">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="CoinChangeMinimumCoins.java" index="8">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="BuildingBridges.java" index="9">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="BalancedPartitioning.java" index="10">
+<position info="not_deleted" x="634" y="0"/>
+</item>
+<item historyLabel="BuildingBridges.java" index="9">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Clouds.java" index="7">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="CoinChangeMinimumCoins.java" index="8">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="CoinChangeNumWays.java" index="11">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="CountPossibleDecodings.java" index="12">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="FindQuadruples.java" index="13">
+<position info="not_deleted" x="1269" y="0"/>
+</item>
+<item historyLabel="IntegerBreak.java" index="14">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="KnapSackUnbounded.java" index="15">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="LargestSubMatrixOf1s.java" index="16">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="LargestSubSquareMatrixOf1s.java" index="17">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="LongestCommonSubsequence.java" index="18">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="LongestIncreasingSubsequence.java" index="19">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="LongestSubstringWithoutRepeatingCharacters.java" index="20">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="MaximumSubArrayAndSubsequence.java" index="21">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="MaxNumberOfAUsingNKeyStrokes.java" index="22">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="run.java" index="23">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item active="true" historyLabel="Template.java" index="24">
+<position info="not_deleted" x="0" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -676,50 +778,50 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GaintNumbers.java" tooltip="AlgoCodes/src/GaintNumbers.java">
-<persistable path="/AlgoCodes/src/GaintNumbers.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SuperValidBracketSequence.java" tooltip="AlgoCodes/src/SuperValidBracketSequence.java">
-<persistable path="/AlgoCodes/src/SuperValidBracketSequence.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CatalanNumbers.java" tooltip="AlgoCodes/src/hacker/rank/CatalanNumbers.java">
-<persistable path="/AlgoCodes/src/hacker/rank/CatalanNumbers.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MagicTicTacToe.java" tooltip="AlgoCodes/src/MagicTicTacToe.java">
-<persistable path="/AlgoCodes/src/MagicTicTacToe.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SpiralMessage.java" tooltip="AlgoCodes/src/SpiralMessage.java">
-<persistable path="/AlgoCodes/src/SpiralMessage.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" tooltip="AlgoCodes/src/Main.java">
-<persistable path="/AlgoCodes/src/Main.java"/>
-</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Template.java" tooltip="AlgoCodes/src/Template.java">
 <persistable path="/AlgoCodes/src/Template.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Test.java" tooltip="AlgoCodes/src/Test.java">
-<persistable path="/AlgoCodes/src/Test.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="run.java" tooltip="AlgoCodes/src/run.java">
+<persistable path="/AlgoCodes/src/run.java"/>
 </file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="PrintStream.class" tooltip="java.io.PrintStream">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=AlgoCodes/\/usr\/lib\/jvm\/java-8-openjdk-amd64\/jre\/lib\/rt.jar&lt;java.io(PrintStream.class"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MaxNumberOfAUsingNKeyStrokes.java" tooltip="AlgoCodes/src/algo/dp/MaxNumberOfAUsingNKeyStrokes.java">
+<persistable path="/AlgoCodes/src/algo/dp/MaxNumberOfAUsingNKeyStrokes.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestClass.java" tooltip="AlgoCodes/src/TestClass.java">
-<persistable path="/AlgoCodes/src/TestClass.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MaximumSubArrayAndSubsequence.java" tooltip="AlgoCodes/src/algo/dp/MaximumSubArrayAndSubsequence.java">
+<persistable path="/AlgoCodes/src/algo/dp/MaximumSubArrayAndSubsequence.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="StaticExample.java" tooltip="AlgoCodes/src/StaticExample.java">
-<persistable path="/AlgoCodes/src/StaticExample.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LongestSubstringWithoutRepeatingCharacters.java" tooltip="AlgoCodes/src/algo/dp/LongestSubstringWithoutRepeatingCharacters.java">
+<persistable path="/AlgoCodes/src/algo/dp/LongestSubstringWithoutRepeatingCharacters.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CpTemplate.java" tooltip="AlgoCodes/src/CpTemplate.java">
-<persistable path="/AlgoCodes/src/CpTemplate.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LongestIncreasingSubsequence.java" tooltip="AlgoCodes/src/algo/dp/LongestIncreasingSubsequence.java">
+<persistable path="/AlgoCodes/src/algo/dp/LongestIncreasingSubsequence.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="VelmaAndTriplets.java" tooltip="AlgoCodes/src/VelmaAndTriplets.java">
-<persistable path="/AlgoCodes/src/VelmaAndTriplets.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LongestCommonSubsequence.java" tooltip="AlgoCodes/src/algo/dp/LongestCommonSubsequence.java">
+<persistable path="/AlgoCodes/src/algo/dp/LongestCommonSubsequence.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="VelamAndQueries.java" tooltip="AlgoCodes/src/VelamAndQueries.java">
-<persistable path="/AlgoCodes/src/VelamAndQueries.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LargestSubSquareMatrixOf1s.java" tooltip="AlgoCodes/src/algo/dp/LargestSubSquareMatrixOf1s.java">
+<persistable path="/AlgoCodes/src/algo/dp/LargestSubSquareMatrixOf1s.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ShashankAndPalindrome.java" tooltip="AlgoCodes/src/ShashankAndPalindrome.java">
-<persistable path="/AlgoCodes/src/ShashankAndPalindrome.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LargestSubMatrixOf1s.java" tooltip="AlgoCodes/src/algo/dp/LargestSubMatrixOf1s.java">
+<persistable path="/AlgoCodes/src/algo/dp/LargestSubMatrixOf1s.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="KnapSackUnbounded.java" tooltip="AlgoCodes/src/algo/dp/KnapSackUnbounded.java">
+<persistable path="/AlgoCodes/src/algo/dp/KnapSackUnbounded.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="IntegerBreak.java" tooltip="AlgoCodes/src/algo/dp/IntegerBreak.java">
+<persistable path="/AlgoCodes/src/algo/dp/IntegerBreak.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FindQuadruples.java" tooltip="AlgoCodes/src/algo/dp/FindQuadruples.java">
+<persistable path="/AlgoCodes/src/algo/dp/FindQuadruples.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CountPossibleDecodings.java" tooltip="AlgoCodes/src/algo/dp/CountPossibleDecodings.java">
+<persistable path="/AlgoCodes/src/algo/dp/CountPossibleDecodings.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CoinChangeNumWays.java" tooltip="AlgoCodes/src/algo/dp/CoinChangeNumWays.java">
+<persistable path="/AlgoCodes/src/algo/dp/CoinChangeNumWays.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BalancedPartitioning.java" tooltip="AlgoCodes/src/algo/dp/BalancedPartitioning.java">
+<persistable path="/AlgoCodes/src/algo/dp/BalancedPartitioning.java"/>
 </file>
 </mruList>
 </workbench>

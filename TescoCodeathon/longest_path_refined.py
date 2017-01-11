@@ -1,3 +1,4 @@
+###Power of random of walk!!!##
 def isSafe(t):
    if t[0] >= n or t[0] < 0 or t[1] >= m or t[1] < 0:
       return False
@@ -14,11 +15,12 @@ def dfs(src, curPath):
       t = nxt[1]
       v = (src[0] + t[0], src[1] + t[1])
       if isSafe(v) and (not visited[v[0]][v[1]]):
-         visited[v[0]][v[1]] = True         
+         visited[v[0]][v[1]] = True
          dfs(v, curPath + direction_dic[t])
+         ## toss a coin and mark it visited or not
          if random() > prob:
            visited[v[0]][v[1]] = False
-         
+
 import time
 import resource, sys
 resource.setrlimit(resource.RLIMIT_STACK, (2 ** 29, -1))

@@ -29,11 +29,15 @@ void dfs(int par, int u, int depth) {
         }
     }
 }
-
+//DP precomputation - Sparse Table - O(nlogn)
 void calcRoot(int n) {
     int i, j;
+    /*root[i][j] : ancestor at 2^j-th level above node i*/
+    /*initialising ancestor as -1*/
     memset(root, -1, sizeof root);
+    /*j=0 means immediate parent*/
     for(i = 1; i <= n; i++) root[i][0] = pi[i];
+    /*DP*/
     for(j = 1; 1<<j < n; j++)
         for(i = 1; i <= n; i++)
             if(root[i][j-1]!=-1)
@@ -68,7 +72,7 @@ int main() {
         }
         //dfs from root- O(n)
         dfs(-1, 1, 0);
-        //DP precomputation for lca- O(nlogn)
+
         calcRoot(n);
 
         while(q--){
