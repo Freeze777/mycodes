@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename package &apos;algo.stacks&apos; to &apos;algo.stack&apos;&#x0A;- Original project: &apos;MyProj&apos;&#x0A;- Original element: &apos;MyProj/src/algo.stacks&apos;&#x0A;- Renamed element: &apos;MyProj/src/algo.stack&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;algo.stacks&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;algo.stacks" name="algo.stack" qualified="false" references="true" stamp="1464117181561" textual="false" version="1.0"/>
-</session>

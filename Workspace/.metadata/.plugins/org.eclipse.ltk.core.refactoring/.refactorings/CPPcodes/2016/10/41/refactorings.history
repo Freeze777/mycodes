@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;CPPcodes/sample.cc&apos; to &apos;template.cc&apos;" description="Rename resource &apos;sample.cc&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="sample.cc" name="template.cc" stamp="1475859280081" updateReferences="true"/>&#x0A;<refactoring comment="Move 1 resources to &apos;hackerearth&apos;" description="Move 1 resources to &apos;hackerearth&apos;" destination="hackerearth" element1="template.cc" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1475920193715" updateReferences="true"/>
-</session>

@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Move 4 elements to &apos;MyProj/src/hacker.rank.project.euler&apos;&#x0A;- Original project: &apos;MyProj&apos;&#x0A;- Destination element: &apos;MyProj/src/hacker.rank.project.euler&apos;&#x0A;- Original elements:&#x0A;     LargestPrimeFactor.java&#x0A;     LCMOfGroupOfNumbers.java&#x0A;     LargestProductInSeries.java&#x0A;     Largest6DigitPalidrome.java&#x0A;- Update references to refactored element" description="Move compilation units" destination="/src&lt;hacker.rank.project.euler" element1="/src&lt;{LargestPrimeFactor.java" element2="/src&lt;{LCMOfGroupOfNumbers.java" element3="/src&lt;{LargestProductInSeries.java" element4="/src&lt;{Largest6DigitPalidrome.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1462566910187" units="4" version="1.0"/>
-</session>

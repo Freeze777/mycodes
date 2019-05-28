@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename field &apos;adjacentList&apos; in &apos;TestClass&apos; to &apos;adjList&apos;&#x0A;- Original project: &apos;AlgoCodes&apos;&#x0A;- Original element: &apos;TestClass.adjacentList&apos;&#x0A;- Renamed element: &apos;TestClass.adjList&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" delegate="false" deprecate="false" description="Rename field &apos;adjacentList&apos;" flags="589830" getter="false" id="org.eclipse.jdt.ui.rename.field" input="/src&lt;{TestClass.java[TestClass^adjacentList" name="adjList" references="true" setter="false" stamp="1476872848048" textual="false" version="1.0"/>
-</session>

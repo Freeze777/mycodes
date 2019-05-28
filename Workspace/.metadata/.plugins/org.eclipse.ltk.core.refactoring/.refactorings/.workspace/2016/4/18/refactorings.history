@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Delete resource &apos;librec&apos;" deleteContents="false" description="Delete resource &apos;librec&apos;" element1="/librec" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1461821918208"/>
-</session>

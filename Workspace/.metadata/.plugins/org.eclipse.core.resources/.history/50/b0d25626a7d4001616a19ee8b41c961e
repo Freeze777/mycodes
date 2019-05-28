@@ -1,5 +1,0 @@
-package algo.query.SparseTable;
-
-public class RMQSparseTable {
-
-}

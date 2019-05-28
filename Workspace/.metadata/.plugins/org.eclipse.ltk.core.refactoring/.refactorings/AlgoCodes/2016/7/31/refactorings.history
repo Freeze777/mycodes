@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename package &apos;algo.trees&apos; to &apos;algo.tree&apos;&#x0A;- Original project: &apos;MyProj&apos;&#x0A;- Original element: &apos;MyProj/src/algo.trees&apos;&#x0A;- Renamed element: &apos;MyProj/src/algo.tree&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;algo.trees&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;algo.trees" name="algo.tree" qualified="false" references="true" stamp="1469774511426" textual="false" version="1.0"/>
-</session>
